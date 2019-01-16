@@ -9,10 +9,9 @@
 
 		<!-- All Recipe -->
 		<div class="recipe_group" *ngIf="!is_search_active">
-			<article *ngFor="let recipe of all_recipes | async" routerLink="/recipe/{{recipe.url}}">
-				<div class="illustration" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'"></div>
+			<article *ngFor="let recipe of all_recipes" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
 				<div class="content">
-					<h3>{{recipe.title}}</h3>alex
+					<h3>{{recipe.title}}</h3>
 				</div>
 			</article>
 		</div>
