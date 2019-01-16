@@ -10,6 +10,7 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RecipesComponent } from './views/recipes/recipes.component';
 import { RecipeComponent } from './views/recipe/recipe.component';
+import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 
 //PIPES
 
@@ -23,7 +24,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     RecipesComponent,
-    RecipeComponent
+    RecipeComponent,
+    SanitizerPipe
   ],
   imports: [
     BrowserModule,

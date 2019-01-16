@@ -5,5 +5,22 @@
 		<span class="icon"></span>
 		<input type="text" placeholder="SEARCH">
 	</div>
-	<div class="main_container"></div>
+	<div class="main_container">
+
+		<!-- All Recipe -->
+		<div class="recipe_group" *ngIf="!is_search_active">
+			<article *ngFor="let recipe of all_recipes | async" routerLink="/recipe/{{recipe.url}}">
+				<div class="illustration" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'"></div>
+				<div class="content">
+					<h3>{{recipe.title}}</h3>alex
+				</div>
+			</article>
+		</div>
+
+		<!-- Searched Recipe -->
+		<div class="recipe_group" *ngIf="is_search_active">
+			<div class="body"></div>
+			<div class="empty_states"></div>
+		</div>
+	</div>
 </section>
