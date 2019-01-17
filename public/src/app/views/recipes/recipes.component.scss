@@ -4,6 +4,8 @@
 @import "../../../assets/styles/ui_mixines";
 
 section.recipes{
+	position: relative;
+
 	div.hero{
 		height: 300px;
 		background-position: center center;
@@ -59,6 +61,7 @@ section.recipes{
 				width: 100%;
 				cursor: pointer;
 				padding: 100px 0 20px 0;
+				outline: none;
 
 				div.content{
 					width: 70%;
@@ -71,11 +74,32 @@ section.recipes{
 						font-family: 'courrier_new';
 						font-size: 18px;
 						font-weight: 800;
-						color: black;
+						color: #3C4F71;
 					}
 				}
 			}
 		}
+	}
+}
+
+section.recipe_modal{
+	div.dark_background{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(black, .7);
+		z-index: 100;
+	}
+	div.container{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: white;
+		z-index: 101;
 	}
 }
 
@@ -96,11 +120,16 @@ section.recipes{
 			div.recipe_group{
 				display:flex;
 				align-items: flex-start;
-				justify-content: space-between;
+				justify-content: flex-start;
 				flex-flow: row wrap;
 
 				article{
 					width: calc(50% - 10px);
+					margin-right: 20px;
+
+					&:nth-child(3n){
+						margin-right: 0;
+					}
 				}
 			}
 		}

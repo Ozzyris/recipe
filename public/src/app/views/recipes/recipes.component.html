@@ -1,12 +1,10 @@
 <section class="recipes">
-	<div class="hero" style="background-image: url('../../../assets/images/illustration_1.jpg');">
-	</div>
-		<div class="search">
+	<div class="hero" style="background-image: url('../../../assets/images/illustration_1.jpg');"></div>
+	<div class="search">
 		<span class="icon"></span>
 		<input type="text" placeholder="SEARCH">
 	</div>
 	<div class="main_container">
-
 		<!-- All Recipe -->
 		<div class="recipe_group" *ngIf="!is_search_active">
 			<article *ngFor="let recipe of all_recipes" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
@@ -20,6 +18,15 @@
 		<div class="recipe_group" *ngIf="is_search_active">
 			<div class="body"></div>
 			<div class="empty_states"></div>
+		</div>
+	</div>
+</section>
+
+<section class="recipe_modal">
+	<div class="dark_background"></div>
+	<div class="container">
+		<div class="header">
+			<a class="back"><span class="icon"><</span> Back</a>
 		</div>
 	</div>
 </section>
