@@ -10,14 +10,14 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RecipesComponent } from './views/recipes/recipes.component';
 import { RecipeComponent } from './views/recipe/recipe.component';
-import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 
 //PIPES
+import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent, data: { title: 'Recipes' } },
   { path: '',   redirectTo: 'recipes', pathMatch: 'full' },
-  { path: 'recipe/:name', component: RecipeComponent, data: { title: 'Recipe' } }
+  { path: 'recipe/:url', component: RecipeComponent, data: { title: 'Recipe' } }
 ];
 
 @NgModule({

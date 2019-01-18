@@ -82,27 +82,6 @@ section.recipes{
 	}
 }
 
-section.recipe_modal{
-	div.dark_background{
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background-color: rgba(black, .7);
-		z-index: 100;
-	}
-	div.container{
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background-color: white;
-		z-index: 101;
-	}
-}
-
 /*
     TABLET VERSION
 */
@@ -127,7 +106,7 @@ section.recipe_modal{
 					width: calc(50% - 10px);
 					margin-right: 20px;
 
-					&:nth-child(3n){
+					&:nth-child(2n){
 						margin-right: 0;
 					}
 				}
@@ -156,6 +135,13 @@ section.recipe_modal{
 			div.recipe_group{
 				article{
 					width: calc(33% - 10px);
+
+					&:nth-child(2n){
+						margin-right: 20px;
+					}
+					&:nth-child(3n){
+						margin-right: 0;
+					}
 				}
 			}
 		}

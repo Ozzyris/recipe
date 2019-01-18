@@ -12,9 +12,7 @@ export class RecipesComponent implements OnInit {
 	search_input: string;
 	is_search_active: boolean = false;
 
-	constructor(){
-		console.log(RECIPES);
-	}
+	constructor(){}
 	ngOnInit(){}
 
 }
