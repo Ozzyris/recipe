@@ -1,0 +1,226 @@
+// =============================================================================
+// IMPORT
+// =============================================================================
+@import "../../../assets/styles/ui_mixines";
+
+section.recipes{
+	div.breadcrumb{
+		@include container_sizing( 600px );
+		padding: 18px 0;
+		a{
+			font-family: 'courrier_new';
+			color: #3C4F71;
+			font-weight: 800;
+			font-size: 20px;
+			cursor: pointer;
+
+			span.icon{
+				font-family: 'font_awesome';
+				color: #3C4F71;
+				font-weight: 800;
+				font-size: 16px;
+			}
+		}
+	}
+	div.inner_container{
+		div.hero{
+			width: 100%;
+			height: auto;
+			min-height: 200px;
+			background-size: cover;
+			background-position: center center;
+		}
+		div.introduction{
+			@include container_sizing( 600px );
+			padding: 20px 0 40px 0;
+
+			h1{
+				font-size: 24px;
+				font-weight: 800;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 14px;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				line-height: 22px;
+			}
+		}
+		div.ingredient{
+			@include container_sizing( 600px );
+			padding: 20px 0 40px 0;
+			position: relative;
+			background-color: #F9FAFC;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				display: block;
+				height: 2px;
+				width: 32px;
+				background-color: #FFC414;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: 800;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				margin-bottom: 20px;
+			}
+			ul{
+				padding-left: 20px;
+
+				li{
+					list-style-type: disc;
+					font-size: 16px;
+					color: #3C4F71;
+					font-family: 'courrier_new';
+					margin-bottom: 20px;
+				}
+			}
+		}
+		div.preparation{
+			@include container_sizing( 600px );
+			padding: 20px 0 40px 0;
+			position: relative;
+			background-color: #F9FAFC;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				display: block;
+				height: 2px;
+				width: 32px;
+				background-color: #FFC414;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: 800;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				margin-bottom: 20px;
+			}
+			ol{
+				padding-left: 0px;
+
+				li{
+					font-size: 16px;
+					color: #3C4F71;
+					font-family: 'courrier_new';
+					margin-bottom: 20px;
+					line-height: 18px;
+
+					p{
+						display: inline;
+						font-family: 'courrier_new';
+						font-weight: 800;
+					}
+				}
+			}
+		}
+
+		div.details{
+			background-color: #FFFFFF;
+			position: relative;
+			padding: 20px 5% 80px 5%;
+			width: calc(100% - 10%);
+
+			ul.tags{
+				overflow: auto;
+				margin-bottom: 20px;
+
+				li.tag{
+					background-color: #F7F8FA;
+					padding: 8px 12px;
+					border-radius: 20px;
+					color: #3C4F71;
+					text-transform: uppercase;
+					font-weight: 800;
+					font-size: 12px;
+					font-family: 'courrier_new';
+					margin: 6px;
+					display: block;
+					float: left;
+				}
+			}
+			p{
+				font-size: 14px;
+				color: rgba(#3C4F71, .5);
+				font-family: 'courrier_new';
+			}
+		}
+	}
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.recipes{
+		padding: 40px 0;
+
+		div.breadcrumb{
+			a{
+				span.icon{}
+			}
+		}
+		div.inner_container{
+			@include container_sizing( 600px );
+			box-shadow: 0 0 5px rgba(black,.2);
+			border-radius: 3px;
+
+			div.hero{
+				min-height: 300px;
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+			}
+			div.introduction{
+				h1{}
+				p{}
+			}
+			div.ingredient{
+				h3{}
+				ul{
+					li{}
+				}
+			}
+			div.preparation{
+				h3{
+					ul{
+						li{}
+					}
+				}
+			}
+			div.details{
+				border-bottom-left-radius: 3px;
+				border-bottom-right-radius: 3px;
+				padding: 20px 5% 40px 5%;
+
+				ul.tags{
+					li.tag{}
+				}
+				p{}
+			}
+		}
+	}
+}
+
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}

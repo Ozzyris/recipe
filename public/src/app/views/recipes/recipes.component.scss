@@ -3,6 +3,53 @@
 // =============================================================================
 @import "../../../assets/styles/ui_mixines";
 
+nav.top_container{
+	width: 100%;
+	height: 40px;
+	padding: 5px 0;
+	background-color: white;
+
+	div.inner_container{
+		overflow: auto;
+		@include container_sizing( 800px );
+
+		div.logo{
+			float: left;
+			overflow: auto;
+
+    		img{
+    			float: left;
+    			margin-top: 0;
+    			height: 40px;
+    			margin: -10px 10px 0 0;
+    		}
+    		h2{
+    			float: left;
+    			line-height: 40px;
+    			font-family: 'courrier_new';
+    			color: #3C4F71;
+    			font-weight: 400;
+
+    		}
+    	}
+    	ul.menu{
+    		float: right;
+
+			li{
+				a{
+					font-family: 'courrier_new';
+    				color: #3C4F71;
+    				font-weight: 800;
+    				font-size: 14px;
+					line-height: 40px;
+                    cursor: pointer;
+				}
+			}
+    	}
+
+	}
+}
+
 section.recipes{
 	position: relative;
 
@@ -51,30 +98,32 @@ section.recipes{
 		div.recipe_group{
 			width: 100%;
 
-			article{
-				background-color: white;
-				border-radius: 3px;
-				background-size: cover;
-				background-position: center, center;
-				box-shadow: 0px 0px 5px rgba(black, 0.2);
-				margin: 10px 0 15px;
-				width: 100%;
-				cursor: pointer;
-				padding: 100px 0 20px 0;
-				outline: none;
-
-				div.content{
-					width: 70%;
-					background-color: rgba(white, .9);
-					border-top-right-radius: 3px;
-					border-bottom-right-radius: 3px;
-					padding: 12px;
-
-					h3{
-						font-family: 'courrier_new';
-						font-size: 18px;
-						font-weight: 800;
-						color: #3C4F71;
+			div.body{
+				article{
+					background-color: white;
+					border-radius: 3px;
+					background-size: cover;
+					background-position: center, center;
+					box-shadow: 0px 0px 5px rgba(black, 0.2);
+					margin: 10px 0 15px;
+					width: 100%;
+					cursor: pointer;
+					padding: 100px 0 20px 0;
+					outline: none;
+	
+					div.content{
+						width: 70%;
+						background-color: rgba(white, .9);
+						border-top-right-radius: 3px;
+						border-bottom-right-radius: 3px;
+						padding: 12px;
+	
+						h3{
+							font-family: 'courrier_new';
+							font-size: 18px;
+							font-weight: 800;
+							color: #3C4F71;
+						}
 					}
 				}
 			}
@@ -97,17 +146,19 @@ section.recipes{
 			padding-top: 40px;
 
 			div.recipe_group{
-				display:flex;
-				align-items: flex-start;
-				justify-content: flex-start;
-				flex-flow: row wrap;
-
-				article{
-					width: calc(50% - 10px);
-					margin-right: 20px;
-
-					&:nth-child(2n){
-						margin-right: 0;
+				div.body{
+					display:flex;
+					align-items: flex-start;
+					justify-content: flex-start;
+					flex-flow: row wrap;
+	
+					article{
+						width: calc(50% - 10px);
+						margin-right: 20px;
+	
+						&:nth-child(2n){
+							margin-right: 0;
+						}
 					}
 				}
 			}
@@ -133,14 +184,16 @@ section.recipes{
 		}
 		div.main_container{
 			div.recipe_group{
-				article{
-					width: calc(33% - 10px);
-
-					&:nth-child(2n){
-						margin-right: 20px;
-					}
-					&:nth-child(3n){
-						margin-right: 0;
+				div.body{
+					article{
+						width: calc(33% - 10px);
+	
+						&:nth-child(2n){
+							margin-right: 20px;
+						}
+						&:nth-child(3n){
+							margin-right: 0;
+						}
 					}
 				}
 			}

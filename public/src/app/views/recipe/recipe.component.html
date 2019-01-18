@@ -5,27 +5,29 @@
 			Back
 		</a>
 	</div>
-	<div class="hero" [style.backgroundImage]="'url(' + recipe_content.illustration + ')' | sanitizer: 'style'"></div>
-	<div class="introduction">
-		<h1 class="title">{{recipe_content.title}}</h1>
-		<p>{{recipe_content.summary}}</p>
-	</div>
-	<div class="ingredient">
-		<h3>Ingredients</h3>
-		<ul>
-			<li *ngFor="let ingredient of recipe_content.ingredients">{{ingredient.name}}</li>
-		</ul>
-	</div>
-	<div class="preparation">
-			<h3>Preparation</h3>
-		<ul>
-			<li *ngFor="let step of recipe_content.preparation">{{step.step}}</li>
-		</ul>
-	</div>
-	<div class="details">
-		<ul class="tags">
-			<li class="tag" *ngFor="let tag of recipe_content.tags">{{tag}}</li>
-		</ul>
-		<p>Last updated, Yesterday at 09:23pm</p>
+	<div class="inner_container">
+			<div class="hero" [style.backgroundImage]="'url(' + recipe_content.illustration + ')' | sanitizer: 'style'"></div>
+		<div class="introduction">
+			<h1 class="title">{{recipe_content.title}}</h1>
+			<p>{{recipe_content.summary}}</p>
+		</div>
+		<div class="ingredient">
+			<h3>Ingredients</h3>
+			<ul>
+				<li *ngFor="let ingredient of recipe_content.ingredients">{{ingredient.name}}</li>
+			</ul>
+		</div>
+		<div class="preparation">
+				<h3>Preparation</h3>
+			<ol>
+				<li *ngFor="let step of recipe_content.preparation; let index = index"><p>{{index+1}}. </p>{{step.step}}</li>
+			</ol>
+		</div>
+		<div class="details">
+			<ul class="tags">
+				<li class="tag" *ngFor="let tag of recipe_content.tags">{{tag}}</li>
+			</ul>
+			<p>Last updated, Yesterday at 09:23pm</p>
+		</div>
 	</div>
 </section>

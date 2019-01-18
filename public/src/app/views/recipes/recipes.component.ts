@@ -15,4 +15,12 @@ export class RecipesComponent implements OnInit {
 	constructor(){}
 	ngOnInit(){}
 
+	display_search(){
+		if(this.search_input != ''){
+			this.is_search_active = true;
+		}else{
+			this.is_search_active = false;
+		}
+	}
+
 }

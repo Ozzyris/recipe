@@ -1,23 +1,45 @@
+<nav class="top_container">
+  <div class="inner_container">
+    <div class="logo">
+    	<img src="../../assets/images/salad.gif" alt="">
+    	<h2>Recipe</h2>
+    </div>
+    <ul class="menu">
+    	<li><a>Login</a></li>
+    </ul>
+  </div>
+</nav>
+
 <section class="recipes">
 	<div class="hero" style="background-image: url('../../../assets/images/illustration_1.jpg');"></div>
 	<div class="search">
 		<span class="icon"></span>
-		<input type="text" placeholder="SEARCH">
+		<input type="text" placeholder="SEARCH" [(ngModel)]="search_input" (ngModelChange)="display_search()">
 	</div>
 	<div class="main_container">
 		<!-- All Recipe -->
 		<div class="recipe_group" *ngIf="!is_search_active">
-			<article *ngFor="let recipe of all_recipes" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
-				<div class="content">
-					<h3>{{recipe.title}}</h3>
-				</div>
-			</article>
+			<div class="body">
+				<article *ngFor="let recipe of all_recipes" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
+					<div class="content">
+						<h3>{{recipe.title}}</h3>
+					</div>
+				</article>
+			</div>
 		</div>
 
 		<!-- Searched Recipe -->
 		<div class="recipe_group" *ngIf="is_search_active">
-			<div class="body"></div>
-			<div class="empty_states"></div>
+			<div class="body" >
+				<article *ngFor="let recipe of all_recipes | searcher_pipe: search_input" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
+					<div class="content">
+						<h3>{{recipe.title}}</h3>
+					</div>
+				</article>
+			</div>
+			<div class="empty_states" *ngIf="(all_recipes | searcher_pipe: search_input).length === 0">
+				<p>Nothing found</p>
+			</div>
 		</div>
 	</div>
 </section>

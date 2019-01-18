@@ -13,6 +13,7 @@ import { RecipeComponent } from './views/recipe/recipe.component';
 
 //PIPES
 import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
+import { SearcherPipe } from './pipes/searcher/searcher.pipe';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent, data: { title: 'Recipes' } },
@@ -25,7 +26,8 @@ const routes: Routes = [
     AppComponent,
     RecipesComponent,
     RecipeComponent,
-    SanitizerPipe
+    SanitizerPipe,
+    SearcherPipe
   ],
   imports: [
     BrowserModule,
