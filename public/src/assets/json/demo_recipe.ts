@@ -64,68 +64,58 @@ export const RECIPES = [
 		url: '3-cheese-cauliflower-casserole',
 	},
 	{
-		title: '3 Cheese Cauliflower Casserole ',
-		summary: 'A nice a heavy cauliflower casserole that will warm you winter off.',
-		illustration: '../../../assets/images/illustration_2.jpg',
+		title: 'Vietnamese-Style Pork Meatballs',
+		summary: 'These nuoc cham-inspired meatballs are perfect to fill lettuce cups topped with fresh basil or cilantro. (Add steamed rice for a more substantial meal.) The Ritz crackers here make for a juicier meatball, but feel free to substitute plain dry bread crumbs. To make the Ritz crumbs, place the crackers in a resealable plastic bag and lightly crush them with the back of a wooden spoon or measuring cup. For an easy dipping sauce, spike 1/4 cup mayonnaise with 2 teaspoons toasted sesame oil or soy sauce. And save any leftover meatballs: They\'re great simmered in chicken broth the next day. The ginger and garlic in them release their aromatics into the broth for a deeply flavorful soup base.',
+		illustration: '../../../assets/images/kc-vietnamese-pork-meatballs-articleLarge-v2.jpg',
+		time: 20,
 		ingredients: [
 			{
-				name: '2 tablespoons butter, plus more for greasing.',
+				name: '2 tablespoons peeled and minced ginger',
 				order: 0,
 			},
 			{
-				name: '2 tablespoons all-purpose flour',
+				name: '1 tablespoon minced garlic (from about 3 large cloves)',
 				order: 1,
 			},
 			{
-				name: '1 cup heavy cream',
+				name: '1 tablespoon fish sauce',
 				order: 2,
 			},
 			{
-				name: '¾ cup grated Gruyère cheese',
+				name: '1 teaspoon freshly ground black pepper',
 				order: 3,
 			},
 			{
-				name: '½ cup grated fontina cheese',
+				name: '½ teaspoon kosher salt',
 				order: 4,
 			},
 			{
-				name: '¼ cup bread crumbs',
-				order: 5,
+				name: '½ cup finely crushed Ritz crackers (12 crackers) ',
+				order: 5
 			},
 			{
-				name: '2 tablespoons parmesan',
+				name: '1 pound ground pork ',
 				order: 6,
-			},
-			{
-				name: '1 tablespoon of thyme',
-				order: 7,
-			},
+			}
 		],
 		preparation: [
 			{
-				step: 'Bring a large pot of salted water to a boil and blanch the cauliflower until tender, about 5 minutes. Drain it then left it out on a towel in the stove for about 30 minutes. (Switch on the stove for 5 minutes prior to help the eva poration)',
+				step: 'Heat oven to 425 degrees. In a large bowl, combine all the ingredients and use your hands to gently mix.',
 				order: 1
 			},
 			{
-				step: 'Heat oven to 200 degrees C and butter a 2-quart glass baking dish.',
+				step: 'Shape the meat into 12 golf-ball-size rounds (about 2 inches in diameter) and arrange on a greased rimmed baking sheet.',
 				order: 2
 			},
 			{
-				step: 'In a small saucepan, melt the 2 tablespoons butter over medium heat. Stir in the flour until it forms a pale-golden paste, about 1 to 2 minutes. Stir in the heavy cream and bring the mixture to a low simmer, stirring frequently, until it thickens, about 2 to 3 minutes. Off heat, stir in half the Gruyère and fontina.',
+				step: 'Bake until golden and cooked through, about 15 minutes. Serve warm.',
 				order: 3
-			},
-			{
-				step: 'Pat the cauliflower dry then transfer it to the saucepan. Transfer the cauliflower mixture to the buttered baking dish, spreading it in an even layer. Top with the remaining Gruyère, fontina and the Parmesan. Sprinkle the thyme for the final touch.',
-				order: 4
-			},
-			{
-				step: 'Bake until the mixture begins to bubble and the cauliflower starts to turn golden, about 20 minutes. Allow the casserole to cool for about 5 minutes or so, then serve. Season with flaky salt, if desired.',
-				order: 5
-			},
+			}
 		],
-		tags: ['Main', 'Vegetarian', 'Cheese', 'NYT', 'Cauliflower' ],
+		tips: 'Leftover meatballs freeze well and can be reheated in the oven at 375 degrees until warmed through (about 20 minutes).',
+		tags: ['Main', 'Meetball', 'NYT', 'Pork' ],
 		last_edited: '',
-		url: '4-cheese-cauliflower-casserole',
+		url: 'vietnamese-style-pork-meatballs ',
 	},
 	{
 		title: '3 Cheese Cauliflower Casserole ',
