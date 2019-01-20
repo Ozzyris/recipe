@@ -11,6 +11,7 @@ export class RecipesComponent implements OnInit {
 	all_recipes: any = RECIPES;
 	search_input: string;
 	is_search_active: boolean = false;
+	is_modal_actice: boolean = true;
 
 	constructor(){}
 	ngOnInit(){}
