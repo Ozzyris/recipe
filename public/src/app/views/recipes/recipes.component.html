@@ -5,7 +5,18 @@
 			<h2>Login</h2>
 			<span class="icon" (click)="is_modal_actice = false" ></span>
 		</div>
-		<div class="body"></div>
+		<div class="body">
+			<div class="input_container">
+				<label for="email">Email</label>
+				<input type="text" id="email" placeholder="john.doe@gmail.com">
+				<p class="error_message">Your email is incorrect</p>
+			</div>
+			<div class="input_container">
+				<label for="password">Password</label>
+				<input type="password" id="password" placeholder="GhY64hn8i">
+				<p class="error_message">Your password connot be empty</p>
+			</div>
+		</div>
 		<div class="footer">
 			<a class="button" (click)="login()" >Login</a>
 		</div>
