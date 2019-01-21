@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { RECIPES } from '../../../assets/json/demo_recipe';
 
+//Services
+import { LoginModalService } from '../../services/login_modal/login-modal.service';
+
 @Component({
 	selector: 'app-recipes',
 	templateUrl: './recipes.component.html',
@@ -13,7 +16,7 @@ export class RecipesComponent implements OnInit {
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
 
-	constructor(){}
+	constructor( private loginModal_service: LoginModalService ){}
 	ngOnInit(){}
 
 	display_search(){

@@ -1,27 +1,4 @@
-<section class="modal" [ngClass]="{'active': is_modal_actice}" >
-	<div class="dark_filter"></div>
-	<div class="card">
-		<div class="header">
-			<h2>Login</h2>
-			<span class="icon" (click)="is_modal_actice = false" ></span>
-		</div>
-		<div class="body">
-			<div class="input_container">
-				<label for="email">Email</label>
-				<input type="text" id="email" placeholder="john.doe@gmail.com">
-				<p class="error_message">Your email is incorrect</p>
-			</div>
-			<div class="input_container">
-				<label for="password">Password</label>
-				<input type="password" id="password" placeholder="GhY64hn8i">
-				<p class="error_message">Your password connot be empty</p>
-			</div>
-		</div>
-		<div class="footer">
-			<a class="button" (click)="login()" >Login</a>
-		</div>
-	</div>
-</section>
+<login-modal></login-modal>
 
 <nav class="top_container">
   <div class="inner_container">
@@ -30,7 +7,7 @@
     	<h2>Recipe</h2>
     </div>
     <ul class="menu">
-    	<li><a (click)="is_modal_actice = true">Login</a></li>
+    	<li><a (click)="loginModal_service.open_modal()">Login</a></li>
     </ul>
   </div>
 </nav>

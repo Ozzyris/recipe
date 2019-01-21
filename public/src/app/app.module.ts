@@ -15,6 +15,9 @@ import { RecipeComponent } from './views/recipe/recipe.component';
 import { SanitizerPipe } from './pipes/sanitizer/sanitizer.pipe';
 import { SearcherPipe } from './pipes/searcher/searcher.pipe';
 
+//DIRECTIVE
+import { LoginModalDirective } from './directives/login_modal/login-modal.directive';
+
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent, data: { title: 'Recipes' } },
   { path: '',   redirectTo: 'recipes', pathMatch: 'full' },
@@ -27,7 +30,8 @@ const routes: Routes = [
     RecipesComponent,
     RecipeComponent,
     SanitizerPipe,
-    SearcherPipe
+    SearcherPipe,
+    LoginModalDirective
   ],
   imports: [
     BrowserModule,
