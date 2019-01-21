@@ -16,7 +16,7 @@ export class RecipesComponent implements OnInit {
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
 
-	constructor( private loginModal_service: LoginModalService ){}
+	constructor( public loginModal_service: LoginModalService ){}
 	ngOnInit(){}
 
 	display_search(){

@@ -24,7 +24,7 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 		password: ''
 	};
 
-	constructor( private loginModal_service: LoginModalService, private validator_service: ValidatorService ){}
+	constructor( public loginModal_service: LoginModalService, private validator_service: ValidatorService ){}
 	ngOnInit(){
 		this.modal_subscription = this.loginModal_service.get_modal_status().subscribe(
 			is_modal_open => {
