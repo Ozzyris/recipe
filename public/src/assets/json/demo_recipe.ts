@@ -1,67 +1,57 @@
 export const RECIPES = [
 	{
-		title: '3 Cheese Cauliflower Casserole',
-		summary: 'A nice a heavy cauliflower casserole that will warm you winter off.',
-		illustration: '../../../assets/images/illustration_2.jpg',
+		title: 'Pasta With Fresh Herbs',
+		summary: 'If you don’t grow your own herbs, I suggest that you buy a bunch of parsley along with basil or chives to keep on hand in your refrigerator. The herbs will keep for a week if properly stored. Produce departments often use misters, a practice that drives me crazy because leafy greens don’t keep well once wet. So when you get home, spin the herbs in salad spinner if they’re wet, wrap them in a paper towel and then bag them.',
+		time: 20,
+		illustration: '../../../assets/images/merlin_148333092_dd24e230-fbfb-457e-9b7c-1c3156f91930-articleLarge.jpg',
 		ingredients: [
 			{
-				name: '2 tablespoons butter, plus more for greasing.',
+				name: '½ cup finely chopped fresh herbs, such as parsley, basil, tarragon, mint and chives',
 				order: 0,
 			},
 			{
-				name: '2 tablespoons all-purpose flour',
+				name: 'Zest of 1 organic lemon, finely chopped',
 				order: 1,
 			},
 			{
-				name: '1 cup heavy cream',
+				name: '1 garlic clove, finely minced',
 				order: 2,
 			},
 			{
-				name: '¾ cup grated Gruyère cheese',
+				name: '2 tablespoons fresh lemon juice',
 				order: 3,
 			},
 			{
-				name: '½ cup grated fontina cheese',
+				name: '3 tablespoons extra virgin olive oil',
 				order: 4,
 			},
 			{
-				name: '¼ cup bread crumbs',
+				name: '¾ pound pasta, any type',
 				order: 5,
 			},
 			{
-				name: '2 tablespoons parmesan',
+				name: '1 cup frozen peas, thawed',
 				order: 6,
 			},
 			{
-				name: '1 tablespoon of thyme',
+				name: '¼ cup freshly grated Parmesan or pecorino',
 				order: 7,
 			},
 		],
 		preparation: [
 			{
-				step: 'Bring a large pot of salted water to a boil and blanch the cauliflower until tender, about 5 minutes. Drain it then left it out on a towel in the stove for about 30 minutes. (Switch on the stove for 5 minutes prior to help the eva poration)',
+				step: 'Bring a large pot of water to a boil. Meanwhile, in a large bowl or pasta bowl, combine the herbs, lemon zest, garlic, lemon juice and olive oil.',
 				order: 1
 			},
 			{
-				step: 'Heat oven to 200 degrees C and butter a 2-quart glass baking dish.',
+				step: 'When the water comes to a boil, salt generously and add the pasta. Follow the cooking instructions on the package, but check the pasta a minute before the indicated time. A few minutes before the pasta is done, add the peas to the water. When the pasta is just about al dente, remove a half cup of the cooking water and add to the bowl with the herbs. Drain the pasta and peas, toss with the herb mixture and the cheese, and serve.',
 				order: 2
-			},
-			{
-				step: 'In a small saucepan, melt the 2 tablespoons butter over medium heat. Stir in the flour until it forms a pale-golden paste, about 1 to 2 minutes. Stir in the heavy cream and bring the mixture to a low simmer, stirring frequently, until it thickens, about 2 to 3 minutes. Off heat, stir in half the Gruyère and fontina.',
-				order: 3
-			},
-			{
-				step: 'Pat the cauliflower dry then transfer it to the saucepan. Transfer the cauliflower mixture to the buttered baking dish, spreading it in an even layer. Top with the remaining Gruyère, fontina and the Parmesan. Sprinkle the thyme for the final touch.',
-				order: 4
-			},
-			{
-				step: 'Bake until the mixture begins to bubble and the cauliflower starts to turn golden, about 20 minutes. Allow the casserole to cool for about 5 minutes or so, then serve. Season with flaky salt, if desired.',
-				order: 5
-			},
+			}
 		],
-		tags: ['Main', 'Vegetarian', 'Cheese', 'NYT', 'Cauliflower' ],
+		tips: 'Advance preparation: The herbs can be chopped several hours ahead, but don’t combine the ingredients until you’ve put the water on for the pasta.',
+		tags: ['Main', 'Vegetarian', 'Pasta', 'NYT', 'Herbs' ],
 		last_edited: '',
-		url: '3-cheese-cauliflower-casserole',
+		url: 'pasta-with-fresh-herbs',
 	},
 	{
 		title: 'Vietnamese-Style Pork Meatballs',
