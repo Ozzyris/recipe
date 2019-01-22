@@ -14,7 +14,7 @@
 		<div class="ingredient">
 			<h3>Ingredients</h3>
 			<ul>
-				<li *ngFor="let ingredient of recipe_content.ingredients">{{ingredient.name}}</li>
+				<li *ngFor="let ingredient of recipe_content.ingredients; let index = index"><span class="checkbox"><input type="checkbox" id="checkbox_{{index}}"></span><label for="checkbox_{{index}}">{{ingredient.name}}</label></li>
 			</ul>
 		</div>
 		<div class="preparation">

@@ -71,14 +71,28 @@ section.recipes{
 				margin-bottom: 20px;
 			}
 			ul{
-				padding-left: 20px;
+				overflow: auto;
 
 				li{
-					list-style-type: disc;
-					font-size: 16px;
-					color: #3C4F71;
-					font-family: 'courrier_new';
-					margin-bottom: 20px;
+					span.checkbox{
+						display: block;
+						width: 20px;
+						float: left;
+
+						input{
+							margin: -2px 0 0 0;
+						}
+					}
+					label{
+						display: block;
+						float: left;
+						width: calc(100% - 20px);
+						font-size: 16px;
+						color: #3C4F71;
+						font-family: 'courrier_new';
+						margin-bottom: 20px;
+					}
+					
 				}
 			}
 		}
