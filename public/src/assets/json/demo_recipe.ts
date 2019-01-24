@@ -515,23 +515,110 @@ export const RECIPES = [
 		preparation: [
 			{
 				step: 'Cook rice with 1/2 teaspoon kosher salt according to package instructions. Set aside, covered, to steam.',
-				order: 1
+				order: 0
 			},
 			{
 				step: 'Meanwhile, heat the oil over medium in your largest skillet or griddle until glistening. Crack in the eggs and cook until golden-brown around the edges, about 2 minutes. Cover loosely using a lid or aluminum foil and cook until the whites are just set and the yolks are still runny but starting to set. (They’ll break and mingle with the rice in a beautiful way.) Season with salt and pepper.',
-				order: 2
+				order: 1
 			},
 			{
 				step: 'While the eggs cook, fluff the cooked rice with a fork, then stir in the kale, cilantro and parsley. Add the garlic and jalapeño a little at a time and taste, adding more salt, garlic or jalapeño to your liking.',
-				order: 3
+				order: 2
 			},
 			{
 				step: 'Spoon rice into shallow bowls and top with the fried eggs, radishes, cheese and lime wedges. Serve with your hot sauce of choice.',
-				order: 4
+				order: 3
 			}
 		],
 		tags: ['Rice', 'Vegetarian', 'Egg', 'NYT' ],
 		last_edited: '',
 		url: 'fried-eggs-with-garlicky-rice',
+	},
+	{
+		title: 'Ginger-Molasses Cookies',
+		summary: 'Think of these cookies as a cross between a gingerbread man and a chewy molasses cookie. Adding molasses gives them a softer texture with a decidedly adult, almost caramel flavor. Instead of rolling or slicing these cookies, this rich, soft dough is perfect for rolling into balls and coating in coarse sugar before baking. The dough can even be made up to 5 days ahead and refrigerated, or baked 2 days ahead and stored at room temperature.',
+		yield: 'About 2 dozen cookies',
+		time: 45,
+		illustration: '../../../assets/images/merlin_148112727_965e0f17-e62d-4fcc-a76b-50a818c3ad53-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '3 cups/435 grams all-purpose flour',
+				order: 0,
+			},
+			{
+				name: '1 tablespoon ground ginger',
+				order: 1,
+			},
+			{
+				name: '2 teaspoons ground cinnamon',
+				order: 2,
+			},
+			{
+				name: '1 teaspoon baking powder',
+				order: 3,
+			},
+			{
+				name: '1 teaspoon kosher salt',
+				order: 4,
+			},
+			{
+				name: '½ teaspoon ground allspice',
+				order: 5,
+			},
+			{
+				name: '1 ½ cups/341 grams (3 sticks) unsalted butter, at room temperature',
+				order: 6,
+			},
+			{
+				name: '¾ cup/177 milliliters molasses',
+				order: 7,
+			},
+			{
+				name: '½ cup/100 grams granulated sugar',
+				order: 8,
+			},
+			{
+				name: '2 large eggs',
+				order: 9,
+			},
+			{
+				name: '1 teaspoon vanilla extract ',
+				order: 10,
+			},
+			{
+				name: 'About 3/4 cup/165 grams pearl, Demerara or coarse sugar, for rolling',
+				order: 11,
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large bowl, whisk together flour, ginger, cinnamon, baking powder, salt and allspice.',
+				order: 0
+			},
+			{
+				step: 'In another bowl, using an electric mixer, beat together butter, molasses and sugar on medium-high until the mixture is superlight, fluffy and pale, about 5 minutes. Scrape down the sides of the bowl and add in eggs, 1 at a time, beating well after each addition. Add vanilla extract, and beat until everything is well combined, again stopping to scrape down bowl as necessary.',
+				order: 1
+			},
+			{
+				step: 'Add dry ingredients all at once, and mix on low speed until just incorporated.',
+				order: 2
+			},
+			{
+				step: 'Chill dough in refrigerator for 30 to 45 minutes, until firm enough to roll.',
+				order: 3
+			},
+			{
+				step: 'Heat oven to 325 degrees.',
+				order: 4
+			},
+			{
+				step: 'Using your hands, roll heaping tablespoons of dough into balls, then roll them in coarse sugar. (Sanding sugar is festive, but turbinado or coarse sugar will do the trick as well.) If dough becomes too soft to roll, put back in the refrigerator for 10 to 15 minutes. Place balls on a parchment-lined baking tray 2 inches apart and bake until the cookies are puffed, golden brown around the edges and baked through and the tops spring back slightly when touched, 12 to 15 minutes.',
+				order: 5
+			}
+		],
+		tips: 'Cookie dough can be made 5 days ahead, refrigerated. Bring dough to room temperature before rolling. Cookies can be baked 2 days ahead, wrapped tightly and stored at room temperature. ',
+		tags: ['Gingner', 'Cookies', 'Dessert', 'NYT' ],
+		last_edited: '',
+		url: 'ginger-molasses-cookies',
 	}
 ]; 
