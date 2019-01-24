@@ -1,83 +1,5 @@
 export const RECIPES = [
 	{
-		title: 'Fried Eggs With Garlicky Rice',
-		summary: 'Fried eggs are a simple vegetarian staple. But set them on top of garlicky kale- and herb-flecked rice, and they form a deeply satisfying supper. This recipe is endlessly customizable: Go with what you have — reheated leftover rice works equally well as a fresh pot — or use any whole grain you have. The secret here is locking flavor into the grains by stirring in garlic herbs while the rice is warm. To finish, be generous with the lime — the acid brings all the flavors up a notch — and play around with your tolerance for garlic and heat. Lastly, don\'t be afraid to raid your fridge: Avocado or leftover beans would be right at home here, too.',
-		yield: '4 servings',
-		time: 30,
-		illustration: '../../../assets/images/sc-fried-eggs-articleLarge.jpg',
-		ingredients: [
-			{
-				name: '2 cups brown or white basmati or long-grain rice, rinsed and drained',
-				order: 0,
-			},
-			{
-				name: '½ teaspoon kosher salt, plus more for seasoning',
-				order: 1,
-			},
-			{
-				name: '2 tablespoons olive oil',
-				order: 2,
-			},
-			{
-				name: '4 large eggs',
-				order: 3,
-			},
-			{
-				name: '½ small bunch kale, stems removed and leaves finely chopped (about 1 packed cup)',
-				order: 4,
-			},
-			{
-				name: '½ bunch fresh cilantro, stems discarded and leaves finely chopped (about 1 packed cup)',
-				order: 5,
-			},
-			{
-				name: '½ bunch fresh parsley, stems discarded and leaves finely chopped (about 1 packed cup)',
-				order: 6,
-			},
-			{
-				name: '4 garlic cloves, finely chopped',
-				order: 7,
-			},
-			{
-				name: '1 jalapeño, seeded and finely chopped',
-				order: 8,
-			},
-			{
-				name: '4 small pink radishes or 1 large watermelon radish, thinly sliced',
-				order: 9,
-			},
-			{
-				name: '4 ounces cotija cheese or queso fresco',
-				order: 10,
-			},
-			{
-				name: '2 limes, cut in wedges',
-				order: 11,
-			}
-		],
-		preparation: [
-			{
-				step: 'Cook rice with 1/2 teaspoon kosher salt according to package instructions. Set aside, covered, to steam.',
-				order: 1
-			},
-			{
-				step: 'Meanwhile, heat the oil over medium in your largest skillet or griddle until glistening. Crack in the eggs and cook until golden-brown around the edges, about 2 minutes. Cover loosely using a lid or aluminum foil and cook until the whites are just set and the yolks are still runny but starting to set. (They’ll break and mingle with the rice in a beautiful way.) Season with salt and pepper.',
-				order: 2
-			},
-			{
-				step: 'While the eggs cook, fluff the cooked rice with a fork, then stir in the kale, cilantro and parsley. Add the garlic and jalapeño a little at a time and taste, adding more salt, garlic or jalapeño to your liking.',
-				order: 3
-			},
-			{
-				step: 'Spoon rice into shallow bowls and top with the fried eggs, radishes, cheese and lime wedges. Serve with your hot sauce of choice.',
-				order: 4
-			}
-		],
-		tags: ['Rice', 'Vegetarian', 'Egg', 'NYT' ],
-		last_edited: '',
-		url: 'fried-eggs-with-garlicky-rice',
-	},
-	{
 		title: 'Pasta With Fresh Herbs',
 		summary: 'If you don’t grow your own herbs, I suggest that you buy a bunch of parsley along with basil or chives to keep on hand in your refrigerator. The herbs will keep for a week if properly stored. Produce departments often use misters, a practice that drives me crazy because leafy greens don’t keep well once wet. So when you get home, spin the herbs in salad spinner if they’re wet, wrap them in a paper towel and then bag them.',
 		time: 20,
@@ -533,5 +455,83 @@ export const RECIPES = [
 		tags: ['Tomato', 'Soup', 'Parmesan', 'NYT' ],
 		last_edited: '',
 		url: 'tomato-parmesan-soup',
+	},
+	{
+		title: 'Fried Eggs With Garlicky Rice',
+		summary: 'Fried eggs are a simple vegetarian staple. But set them on top of garlicky kale- and herb-flecked rice, and they form a deeply satisfying supper. This recipe is endlessly customizable: Go with what you have — reheated leftover rice works equally well as a fresh pot — or use any whole grain you have. The secret here is locking flavor into the grains by stirring in garlic herbs while the rice is warm. To finish, be generous with the lime — the acid brings all the flavors up a notch — and play around with your tolerance for garlic and heat. Lastly, don\'t be afraid to raid your fridge: Avocado or leftover beans would be right at home here, too.',
+		yield: '4 servings',
+		time: 30,
+		illustration: '../../../assets/images/sc-fried-eggs-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 cups brown or white basmati or long-grain rice, rinsed and drained',
+				order: 0,
+			},
+			{
+				name: '½ teaspoon kosher salt, plus more for seasoning',
+				order: 1,
+			},
+			{
+				name: '2 tablespoons olive oil',
+				order: 2,
+			},
+			{
+				name: '4 large eggs',
+				order: 3,
+			},
+			{
+				name: '½ small bunch kale, stems removed and leaves finely chopped (about 1 packed cup)',
+				order: 4,
+			},
+			{
+				name: '½ bunch fresh cilantro, stems discarded and leaves finely chopped (about 1 packed cup)',
+				order: 5,
+			},
+			{
+				name: '½ bunch fresh parsley, stems discarded and leaves finely chopped (about 1 packed cup)',
+				order: 6,
+			},
+			{
+				name: '4 garlic cloves, finely chopped',
+				order: 7,
+			},
+			{
+				name: '1 jalapeño, seeded and finely chopped',
+				order: 8,
+			},
+			{
+				name: '4 small pink radishes or 1 large watermelon radish, thinly sliced',
+				order: 9,
+			},
+			{
+				name: '4 ounces cotija cheese or queso fresco',
+				order: 10,
+			},
+			{
+				name: '2 limes, cut in wedges',
+				order: 11,
+			}
+		],
+		preparation: [
+			{
+				step: 'Cook rice with 1/2 teaspoon kosher salt according to package instructions. Set aside, covered, to steam.',
+				order: 1
+			},
+			{
+				step: 'Meanwhile, heat the oil over medium in your largest skillet or griddle until glistening. Crack in the eggs and cook until golden-brown around the edges, about 2 minutes. Cover loosely using a lid or aluminum foil and cook until the whites are just set and the yolks are still runny but starting to set. (They’ll break and mingle with the rice in a beautiful way.) Season with salt and pepper.',
+				order: 2
+			},
+			{
+				step: 'While the eggs cook, fluff the cooked rice with a fork, then stir in the kale, cilantro and parsley. Add the garlic and jalapeño a little at a time and taste, adding more salt, garlic or jalapeño to your liking.',
+				order: 3
+			},
+			{
+				step: 'Spoon rice into shallow bowls and top with the fried eggs, radishes, cheese and lime wedges. Serve with your hot sauce of choice.',
+				order: 4
+			}
+		],
+		tags: ['Rice', 'Vegetarian', 'Egg', 'NYT' ],
+		last_edited: '',
+		url: 'fried-eggs-with-garlicky-rice',
 	}
 ]; 
