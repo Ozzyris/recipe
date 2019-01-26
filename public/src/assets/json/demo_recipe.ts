@@ -620,5 +620,230 @@ export const RECIPES = [
 		tags: ['Gingner', 'Cookies', 'Dessert', 'NYT' ],
 		last_edited: '',
 		url: 'ginger-molasses-cookies',
+	},
+	{
+		title: 'Breakfast Salad',
+		summary: 'This one was created at Carthage Must Be Destroyed, an airy (and slightly eccentric) Australian-style cafe hidden behind an unmarked entrance in Brooklyn. The chef and owner Amanda Bechara likes to leave the lettuce leaves whole to make it easier to eat with your fingers. (You can prepare the vegetables the day before, and skip marinating the feta if you must.) This would also make a lovely lunch.',
+		yield: '2 servings',
+		time: 30,
+		illustration: '../../../assets/images/25ausrex1-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '4 ounces feta cheese (not crumbled), preferably a creamy type made with some sheep’s milk',
+				order: 0,
+			},
+			{
+				name: '1 garlic clove, smashed and peeled',
+				order: 1,
+			},
+			{
+				name: '1 dozen black or mixed peppercorns, coarsely cracked',
+				order: 2,
+			},
+			{
+				name: 'Extra-virgin olive oil, preferably cold-pressed',
+				order: 3,
+			},
+			{
+				name: '2 large hearts romaine lettuce, outer leaves removed',
+				order: 4,
+			},
+			{
+				name: '2 lemons, halved',
+				order: 5,
+			},
+			{
+				name: '1 avocado, halved, pit removed',
+				order: 6,
+			},
+			{
+				name: 'About 2 ounces sprouts, such as alfalfa, clover or rainbow',
+				order: 7,
+			},
+			{
+				name: '2 mini or Kirby cucumbers, cut into spears or sliced',
+				order: 8,
+			},
+			{
+				name: '2 or 3 hard-boiled eggs, at room temperature, peeled and halved',
+				order: 9,
+			},
+			{
+				name: 'Flaky salt and coarsely ground black pepper',
+				order: 10,
+			},
+			{
+				name: '2 handfuls soft herbs, such as basil, chives, cilantro and mint',
+				order: 11,
+			}
+		],
+		preparation: [
+			{
+				step: 'A day before serving, marinate the cheese: Place feta in a small container with a tight-fitting lid. Add garlic clove and peppercorns. Pour in enough olive oil to just cover the cheese. Cover and refrigerate overnight.',
+				order: 0
+			},
+			{
+				step: 'Wash and crisp the lettuce: Fill a deep bowl with very cold water, hold the lettuce heart by the stem, dip it in and swish it gently to loosen any dirt. Lift out and let drain upside down. Repeat with the other heart. Cut off the white stem ends and gently unfurl each romaine heart onto a large plate. Use your fingers to fluff and separate the leaves, but try to keep the natural formation intact.',
+				order: 1
+			},
+			{
+				step: 'Squeeze half a lemon over each lettuce heart. Use a spoon to scoop chunks of avocado on top. Place tufts of sprouts among the romaine leaves. Place cucumber pieces and egg halves near the base of the lettuce. Add about 6 chunks of cheese.',
+				order: 2
+			},
+			{
+				step: 'Liberally sprinkle the plate with flaky salt and black pepper, then splash on plenty of olive oil, making sure to hit the egg, cheese and avocado. (You can use the oil used to marinate the feta, if you like.) Tuck the herb leaves in among the lettuce leaves or just sprinkle them over the top. Place the remaining lemon halves near the egg halves.',
+				order: 3
+			},
+			{
+				step: 'Serve with warm toast if you like. At the table, squeeze lemon over the salad and eat with a knife and fork, or with your hands.',
+				order: 4
+			}
+		],
+		tips: 'If time is tight, plain feta can be used instead of marinating it first.',
+		tags: ['Salad', 'Breakfast', 'Avocado', 'NYT' ],
+		last_edited: '',
+		url: 'breakfast-salad',
+	},
+	{
+		title: 'Union Square Tuna Club Sandwich',
+		summary: 'This update on a workaday sandwich takes time and work, it’s true. But the result, Julia Reed says, is the best old-fashioned tuna salad sandwich you’ve ever had in your life. You’ll need one pound of yellowfin tuna, which you’ll poach with aromatics, cool and then mix with a few chopped peppers, fennel seed, onion and herbs. If you plan ahead, you can make the tuna salad without the herbs, refrigerate it overnight, and add them in before assembling your sandwiches. Layer it on toasted bread with a lemon-pepper aioli, slab bacon and arugula. This is picnic food for the gods.',
+		yield: '4 servings',
+		time: 45,
+		illustration: '../../../assets/images/19COOKING-TUNACLUB-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 egg yolks',
+				order: 0,
+			},
+			{
+				name: '1 ½ tablespoons lemon juice',
+				order: 1,
+			},
+			{
+				name: '2 teaspoons red wine vinegar',
+				order: 2,
+			},
+			{
+				name: '1 tablespoon Dijon mustard',
+				order: 3,
+			},
+			{
+				name: '2 teaspoons finely minced garlic',
+				order: 4,
+			},
+			{
+				name: '½ teaspoon kosher salt',
+				order: 5,
+			},
+			{
+				name: '1 ½ cups olive oil',
+				order: 6,
+			},
+			{
+				name: '¾ teaspoon coarsely ground pepper',
+				order: 7,
+			},
+			{
+				name: '½ cup coarsely chopped onion',
+				order: 8,
+			},
+			{
+				name: '⅓ cup coarsely chopped carrot',
+				order: 9,
+			},
+			{
+				name: '⅓ cup sliced celery',
+				order: 10,
+			},
+			{
+				name: '1 bay leaf',
+				order: 11,
+			},
+			{
+				name: '3 whole black peppercorns',
+				order: 12,
+			},
+			{
+				name: '1 pound yellowfin tuna, skinless, cut into 2-inch pieces',
+				order: 13,
+			},
+			{
+				name: '1 teaspoon fennel seeds',
+				order: 14,
+			},
+			{
+				name: '2 tablespoons diced red bell pepper',
+				order: 15,
+			},
+			{
+				name: '2 tablespoons diced yellow bell pepper',
+				order: 16,
+			},
+			{
+				name: '¼ cup minced red onion',
+				order: 17,
+			},
+			{
+				name: '1 tablespoon julienned fresh basil leaves',
+				order: 18,
+			},
+			{
+				name: '1 teaspoon finely chopped mint',
+				order: 19,
+			},
+			{
+				name: '¾ teaspoon kosher salt',
+				order: 20,
+			},
+			{
+				name: 'Freshly ground black pepper to taste',
+				order: 21,
+			},
+			{
+				name: 'Fresh lemon juice to taste',
+				order: 22,
+			},
+			{
+				name: '12 slices sourdough, white or whole wheat bread, lightly toasted',
+				order: 23,
+			},
+			{
+				name: '2 ½ cups arugula, trimmed, washed and dried',
+				order: 24,
+			},
+			{
+				name: '8 ( 1/4-inch-thick) slices slab bacon, cooked until crisp',
+				order: 25,
+			}
+		],
+		preparation: [
+			{
+				step: 'Make aioli: Combine egg yolks, lemon juice, vinegar, mustard, garlic and salt in a food processor. With the machine running, slowly add the olive oil in a constant stream through the feed tube until all the oil is absorbed and the mixture has the consistency of mayonnaise. Add pepper and mix 10 seconds. Transfer to a bowl, cover and refrigerate.',
+				order: 0
+			},
+			{
+				step: 'Combine 4 cups water, onion, carrot, celery, bay leaf and peppercorns in a 2-quart saucepan and bring to a boil over high heat. Lower to simmer, cover and cook for 15 minutes. Add the tuna pieces and simmer until they are barely cooked through, about 10 minutes.',
+				order: 1
+			},
+			{
+				step: 'Remove the cooked tuna from the cooking liquid to a bowl using a slotted spoon. While the fish is still warm, flake it into small pieces with a fork or your fingers. (The fish firms up as it cools and will not flake as nicely.) Cover loosely and let cool.',
+				order: 2
+			},
+			{
+				step: 'Crush the fennel seeds between two sheets of waxed paper; dry fry in a small skillet until fragrant. Place in large bowl; add 1/2 cup aioli, the red and yellow peppers, onion, herbs and salt and set aside.',
+				order: 3
+			},
+			{
+				step: 'Mix the flaked tuna into the fennel mixture. Combine well and taste for seasonings, adding salt, pepper and lemon juice as needed. (The tuna salad can be made ahead to this point without the herbs and refrigerated until the next day; stir in the herbs just before using.)',
+				order: 4
+			},
+			{
+				step: 'Spread a slice of sourdough bread with the aioli, then with a spoonful of the tuna salad. Top with a few leaves of the arugula and one slice of bacon. Repeat with a second slice of sourdough. Stack one layer on top of another and finish by topping with a third slice of sourdough. Repeat to make three more club sandwiches. Slice each sandwich into halves or thirds and secure each piece with a toothpick.',
+				order: 5
+			}
+		],
+		tags: ['Tuna', 'Sandwich', 'Lunch', 'NYT' ],
+		last_edited: '',
+		url: 'union-square-tuna-club-sandwich',
 	}
 ]; 

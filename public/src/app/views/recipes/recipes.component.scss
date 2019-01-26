@@ -108,8 +108,10 @@ section.recipes{
 					margin: 10px 0 15px;
 					width: 100%;
 					cursor: pointer;
-					padding: 100px 0 20px 0;
+					// padding: 100px 0 20px 0;
 					outline: none;
+					height: 180px;
+					position: relative;
 	
 					div.content{
 						width: 70%;
@@ -117,6 +119,9 @@ section.recipes{
 						border-top-right-radius: 3px;
 						border-bottom-right-radius: 3px;
 						padding: 12px;
+						position: absolute;
+						left: 0;
+						bottom: 20px;
 	
 						h3{
 							font-family: 'courrier_new';
