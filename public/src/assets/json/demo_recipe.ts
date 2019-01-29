@@ -845,5 +845,158 @@ export const RECIPES = [
 		tags: ['Tuna', 'Sandwich', 'Lunch', 'NYT' ],
 		last_edited: '',
 		url: 'union-square-tuna-club-sandwich',
+	},
+	{
+		title: 'Easiest Lentil Soup',
+		summary: 'This earthy, simple-to-make lentil soup can be embellished however you please. Leave it plain, and it’s warming and velvety. Or dress it up as you like, either with one or two of the suggested garnishes listed in the recipe (see tip), or with anything else in your pantry or fridge. If you’d like to make this in a pressure cooker, reduce the stock to 3 1/2 cups, and cook on high pressure for 12 minutes, allowing the pressure to release naturally.',
+		yield: '4 to 6 servings',
+		time: 60,
+		illustration: '../../../assets/images/23apperex-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '6 tablespoons extra-virgin olive oil, plus more as needed',
+				order: 0,
+			},
+			{
+				name: '1 large onion, diced',
+				order: 1,
+			},
+			{
+				name: '1 ½ teaspoons kosher salt, plus more as needed',
+				order: 2,
+			},
+			{
+				name: '1 quart chicken, beef or vegetable stock, preferably homemade',
+				order: 3,
+			},
+			{
+				name: '1 cup brown or green lentils, rinsed',
+				order: 4,
+			},
+			{
+				name: '2 thyme or rosemary sprigs',
+				order: 5,
+			},
+			{
+				name: '1 to 2 garlic cloves, finely grated or pushed through a garlic press',
+				order: 6,
+			},
+			{
+				name: '1 teaspoon white-wine, sherry or cider vinegar, or lemon or lime juice, plus more to taste',
+				order: 7,
+			},
+			{
+				name: '½ cup parsley leaves, chopped',
+				order: 8,
+			},
+			{
+				name: '½ cup thinly sliced radicchio, or red or green cabbage (optional)',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat 1/4 cup oil in a medium pot over medium-high heat. Stir in onions and 1/2 teaspoon salt, and cook until onions start to brown at the edges, stirring frequently, 6 to 9 minutes.',
+				order: 0
+			},
+			{
+				step: 'Stir in stock, lentils, thyme and remaining 1 teaspoon salt. Bring to a simmer, cover, and cook until lentils are tender, about 30 to 40 minutes. Discard thyme sprigs.',
+				order: 1
+			},
+			{
+				step: 'Stir in garlic, and remaining 2 tablespoons oil, and use an immersion blender to purée the soup to the desired consistency, keeping it chunky or making it smooth. (Alternatively, ladle it into a blender and blend in batches.) Stir in vinegar, then taste and add more salt and vinegar if needed.',
+				order: 2
+			},
+			{
+				step: 'In a small bowl, toss radicchio (if using) and parsley with a drizzle of oil and a sprinkle of salt. To serve, ladle soup into bowls and top with a small mound of radicchio and parsley, and/or any other garnishes you like.',
+				order: 3
+			}
+		],
+		tips: 'Dairy (yogurt or sour cream, crumbled feta or goat cheese, or grated Parmesan); spices (toasted cumin seeds, chile flakes, or garam masala); savory vegetables and tart fruit (cubed avocado, browned leeks or onions, grated citrus zest, diced tomatoes, diced orange or grapefruit segments, diced roasted red peppers or pickled jalapeños); or salty finishes (croutons, chopped cooked bacon, sliced olives, crumbled nori or dried seaweed snacks, sesame seeds and sesame oil) are all worthy toppings.',
+		tags: ['Lentil', 'Soup', 'Lunch', 'Dinner', 'NYT' ],
+		last_edited: '',
+		url: 'easiest-lentil-soup',
+	},
+	{
+		title: 'Pasta Alla Vodka',
+		summary: 'There’s no need to order takeout from your neighborhood restaurant when this beloved, easy-to-assemble Italian-American classic gets dinner on the table in no time. Adding pancetta brings a salty smokiness, but if you leave it out, you’re still in for a quick and flavorful dish. If you’re feeling ambitious, the pasta is delightful with Caesar salad or garlic bread, but it’s also satisfying enough to take centerstage. Put on some Puccini, open up a bottle of red and you’re guaranteed a more relaxed dining experience than the one you might get at the local red-and-white checkered-tablecloth joint.',
+		yield: '4 to 6 servings',
+		time: 30,
+		illustration: '../../../assets/images/merlin_145792752_fabec26c-908c-4f71-8c84-2b145849da43-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 pound rigatoni or penne pasta',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons olive oil',
+				order: 1,
+			},
+			{
+				name: '4 ounces diced pancetta, optional',
+				order: 2,
+			},
+			{
+				name: '1 medium yellow onion, finely chopped',
+				order: 3,
+			},
+			{
+				name: '2 garlic cloves, finely chopped',
+				order: 4,
+			},
+			{
+				name: '½ teaspoon red-pepper flakes',
+				order: 5,
+			},
+			{
+				name: '¾ cup vodka',
+				order: 6,
+			},
+			{
+				name: '1 (28-ounce) can crushed tomatoes',
+				order: 7,
+			},
+			{
+				name: 'Freshly ground black pepper',
+				order: 8,
+			},
+			{
+				name: '¾ cup heavy cream',
+				order: 9,
+			},
+			{
+				name: '¼ cup grated Grana Padano or Parmesan cheese, plus more for serving',
+				order: 10,
+			},
+			{
+				name: '1 tablespoon roughly chopped fresh oregano',
+				order: 11,
+			},
+			{
+				name: '2 tablespoons roughly chopped Italian parsley ',
+				order: 12,
+			}
+		],
+		preparation: [
+			{
+				step: 'Bring a large pot of salted water to a boil (2 heaping tablespoons kosher salt to about 7 quarts water). Add the pasta and cook according to package instructions until al dente.',
+				order: 0
+			},
+			{
+				step: 'Meanwhile, prepare the sauce: Heat the oil in a deep 12-inch skillet or pot over medium. Add the pancetta, if using, and fry until crispy, stirring occasionally, 3 to 5 minutes. Add the onion, garlic and red-pepper flakes and cook, stirring occasionally, until onion is translucent, about 3 minutes. Turn the heat to medium-low, add the vodka and cook until reduced by half, 2 to 3 minutes.',
+				order: 1
+			},
+			{
+				step: 'Stir in the tomatoes and then fill the can halfway with water and swish it around to loosen up any leftover tomatoes; add that to the pan as well. Simmer until the sauce begins to thicken, about 10 minutes, and season with salt and pepper. Reduce heat to low, add the cream and cook, stirring, until the sauce becomes an even pinkish-rust color, about 1 minute.',
+				order: 2
+			},
+			{
+				step: 'Stir in the cooked pasta and 1/4 cup cheese; toss to coat. Season to taste with salt and pepper. Divide among bowls, top with additional cheese, if desired, and sprinkle with the oregano and parsley.',
+				order: 3
+			}
+		],
+		tags: ['Pasta', 'Vodka', 'Lunch', 'Dinner', 'NYT' ],
+		last_edited: '',
+		url: 'pasta-alla-vodka',
 	}
 ]; 
