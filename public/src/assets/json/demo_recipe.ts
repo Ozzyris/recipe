@@ -231,7 +231,7 @@ export const RECIPES = [
 				order: 3
 			}
 		],
-		tags: ['Main', 'Cheese', 'NYT', 'Salmon' ],
+		tags: ['Cheese', 'Salmon', 'Fish', 'Green beans', 'Dinner', 'NYT' ],
 		last_edited: '',
 		url: 'maple-salmon-with-green-beans',
 	},
@@ -904,7 +904,7 @@ export const RECIPES = [
 				order: 5
 			}
 		],
-		tags: ['Tuna', 'Sandwich', 'Lunch', 'NYT' ],
+		tags: ['Tuna', 'Sandwich', 'Lunch', 'Fish', 'NYT' ],
 		last_edited: '',
 		url: 'union-square-tuna-club-sandwich',
 	},
@@ -1060,5 +1060,166 @@ export const RECIPES = [
 		tags: ['Pasta', 'Vodka', 'Lunch', 'Dinner', 'NYT' ],
 		last_edited: '',
 		url: 'pasta-alla-vodka',
+	},
+	{
+		title: 'Takeout-Style Sesame Noodles',
+		summary: 'Eddie Schoenfeld, the affable yarn-spinner and restaurateur who opened Red Farm in the West Village and on the Upper West Side of Manhattan, is also one of New York\'s finest practitioners of Chinese cuisine. In 2007, he helped The Times drill down into the taste history of sesame noodles in America, and specifically to the ones made and sold by Shorty Tang at the restaurant Hwa Yuan on East Broadway. Soft and luxurious, bathed in an emulsified mixture of sesame paste and peanut butter, rendered vivid and fiery by chili oil and sweetened by sugar, then cut by vinegar, this version brings home what used to be classic New York takeout. “The art is in the balance,” Mr. Schoenfeld said at the time, “between the salt and sweet, the sweet and the fire, and the fire and the acidity.”',
+		yield: '4 servings',
+		time: 10,
+		illustration: '../../../assets/images/23COOKING-TAKEOUTSESAMENOODLES2-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 pound Chinese egg noodles (1/8-inch-thick), frozen or (preferably) fresh, available in Asian markets',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons sesame oil, plus a splash',
+				order: 1,
+			},
+			{
+				name: '3 ½ tablespoons soy sauce',
+				order: 2,
+			},
+			{
+				name: '2 tablespoons Chinese rice vinegar',
+				order: 3,
+			},
+			{
+				name: '2 tablespoons Chinese sesame paste',
+				order: 4,
+			},
+			{
+				name: '1 tablespoon smooth peanut butter',
+				order: 5,
+			},
+			{
+				name: '1 tablespoon sugar',
+				order: 6,
+			},
+			{
+				name: '1 tablespoon finely grated ginger',
+				order: 7,
+			},
+			{
+				name: '2 teaspoons minced garlic',
+				order: 8,
+			},
+			{
+				name: '2 teaspoons chili-garlic paste, or to taste',
+				order: 9,
+			},
+			{
+				name: 'Half a cucumber, peeled, seeded, and cut into 1/8-inch by 1/8-inch by 2-inch sticks',
+				order: 10,
+			},
+			{
+				name: '¼ cup chopped roasted peanuts',
+				order: 11,
+			}
+		],
+		preparation: [
+			{
+				step: 'Bring a large pot of water to a boil. Add noodles and cook until barely tender, about 5 minutes; they should retain a hint of chewiness. Drain, rinse with cold water, drain again and toss with a splash of sesame oil.',
+				order: 0
+			},
+			{
+				step: 'In a medium bowl, whisk together the remaining 2 tablespoons sesame oil, the soy sauce, rice vinegar, sesame paste, peanut butter, sugar, ginger, garlic and chili-garlic paste.',
+				order: 1
+			},
+			{
+				step: 'Pour the sauce over the noodles and toss. Transfer to a serving bowl, and garnish with cucumber and peanuts.',
+				order: 2
+			}
+		],
+		tips: 'The Chinese sesame paste called for here is made of toasted sesame seeds; it is not the same as tahini, the Middle Eastern paste made of plain, untoasted sesame. But you could use tahini in a pinch. You need only add a little toasted sesame oil to compensate for flavor, and perhaps some peanut butter to keep the sauce emulsified.',
+		tags: ['Vegetarian', 'Noodle', 'Chinese', 'Sesame', 'Lunch', 'Dinner', 'NYT' ],
+		last_edited: '',
+		url: 'takeout-style sesame noodles',
+	},
+	{
+		title: 'Roasted Halibut and Potatoes With Rosemary',
+		summary: 'This is a great method for roasting any type of firm-fleshed fish fillet. The seasoning mimics one often used for pork chops, and all the cooking is done in the oven, except for the initial boiling of the potatoes. The result ticks all the boxes — it is easy to prepare; it uses a minimum of pots and pans; and most important, it is utterly delicious.',
+		yield: '4 servings',
+		time: 60,
+		illustration: '../../../assets/images/30kitchrex1-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ pounds fingerling potatoes',
+				order: 0,
+			},
+			{
+				name: 'Kosher salt',
+				order: 1,
+			},
+			{
+				name: 'Extra-virgin olive oil',
+				order: 2,
+			},
+			{
+				name: '4 (6- to 8-ounce) halibut fillets (or substitute other firm-fleshed white fish), about 1-inch thick',
+				order: 3,
+			},
+			{
+				name: 'Black pepper',
+				order: 4,
+			},
+			{
+				name: '2 garlic cloves, minced',
+				order: 5,
+			},
+			{
+				name: '1 teaspoon roughly chopped rosemary, plus 1/2 teaspoon finely chopped rosemary, for garnish',
+				order: 6,
+			},
+			{
+				name: 'Pinch of red-pepper flakes',
+				order: 7,
+			},
+			{
+				name: '½ teaspoon crushed fennel seeds (optional)',
+				order: 8,
+			},
+			{
+				name: '3 tablespoons chopped parsley',
+				order: 9,
+			},
+			{
+				name: '½ teaspoon grated lemon zest',
+				order: 10,
+			},
+			{
+				name: 'Lemon wedges, for serving',
+				order: 11,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 400 degrees. Boil potatoes in well-salted water for 15 minutes, until tender. Rinse with cold water to cool, then cut each potato in half lengthwise.',
+				order: 0
+			},
+			{
+				step: 'Transfer potatoes to shallow roasting pan, or rimmed baking sheet large enough to hold potato halves in 1 layer.',
+				order: 1
+			},
+			{
+				step: 'Drizzle potatoes generously with 2 to 3 tablespoons olive oil. Using your hands, massage the potatoes to coat with oil and turn potatoes cut-side up. Sprinkle lightly with salt. Roast potatoes, uncovered, until nicely browned, 20 to 25 minutes.',
+				order: 2
+			},
+			{
+				step: 'As potatoes cook, prepare the fish: Season fish fillets on both sides with salt and pepper. Sprinkle with garlic, rosemary, red-pepper flakes and crushed fennel seeds, if using. Drizzle with 1 tablespoon olive oil, then rub seasoning into fillets.',
+				order: 3
+			},
+			{
+				step: 'When potatoes are brown, use a spatula to push them to the sides of baking dish, leaving room in the center for the fish. Lay fillets side by side in 1 layer. Roast fish until opaque and just cooked through, about 15 minutes. It should flake when pressed gently.',
+				order: 4
+			},
+			{
+				step: 'Transfer fish and potatoes to a warm platter or individual plates. In a small bowl, mix together parsley, lemon zest and finely chopped rosemary. Sprinkle parsley mixture over fish and potatoes. Serve with lemon wedges.',
+				order: 5
+			}
+		],
+		tags: ['Fish', 'Potatoes', 'Roasted', 'Dinner', 'NYT' ],
+		last_edited: '',
+		url: 'roasted-halibut-and-potatoes-with-rosemary',
 	}
 ]; 
