@@ -20,14 +20,10 @@ app.use(function(req, res, next) {
     }
 });
 
-// ALLOW STATIC IMAGES
-app.use('/uploads', express.static('uploads'))
-
 // MORGAN LOGGING THE CALLS
 app.use(morgan('dev'));
 
 // ROUTES
 app.use('/public', require('./controllers/public').public);
-app.use('/admin-auth', require('./controllers/admin_auth').admin_auth);
+app.use('/auth', require('./controllers/auth').auth);
 app.use('/admin', require('./controllers/admin').admin);
-app.use('/admin-upload', require('./controllers/admin_upload').admin_upload);

@@ -1,4 +1,4 @@
-var users = require('../models/users').users,
+var user_model = require('../models/user').user,
 	moment = require('moment');
 
 //HELPERS
@@ -13,7 +13,7 @@ function check_auth(req, res, next) {
 		return;
 	}
 
-	users.get_auth_detail_from_xtoken( xtoken )
+	user_model.get_auth_detail_from_xtoken( xtoken )
 		.then(token_details => {
 			session = token_details;
 			return token_manager.check_if_token_is_valid( token_details );
@@ -24,7 +24,7 @@ function check_auth(req, res, next) {
 			}else{
 				session.expiration_date = moment().add(1,'day');
 			}
-			return users.update_token_timestamp_from_xtoken( xtoken, session );
+			return user_model.update_token_timestamp_from_xtoken( xtoken, session );
 		})
 		.then(is_token_updated => {
 			return next();

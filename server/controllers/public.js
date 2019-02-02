@@ -6,7 +6,7 @@ const express = require('express'),
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
-	router.get('/ping-server', function (req, res) {
+	router.get('/ping', function (req, res) {
 		res.status(200).json({message: 'pong'});
 	});
 
