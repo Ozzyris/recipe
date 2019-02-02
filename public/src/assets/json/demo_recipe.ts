@@ -410,45 +410,33 @@ export const RECIPES = [
 				order: 3,
 			},
 			{
-				name: '2 (28-ounce) cans whole peeled tomatoes',
+				name: '2 (800g) cans whole peeled tomatoes or 900G or tomatoes',
 				order: 4,
 			},
 			{
-				name: '6 ounces Parmesan rind',
+				name: '½ Cup of grqted parmesan, plus more for serving',
 				order: 5,
-			},
-			{
-				name: '4 (about 3/4-inch thick) slices of baguette',
-				order: 6,
-			},
-			{
-				name: '1 garlic clove, peeled',
-				order: 7,
-			},
-			{
-				name: '¼ cup finely grated Parmesan',
-				order: 8,
 			}
 		],
 		preparation: [
 			{
-				step: 'In a large saucepan or Dutch oven over medium heat, melt the butter. Once it starts bubbling, stir in the onions and sauté until golden, 5 to 7 minutes. Add the garlic, red-pepper flakes, and generous pinches of salt and pepper, and sauté until fragrant, 2 to 3 minutes.',
+				step: 'If using fresh tomatoes, Bring a liter of water to a boil and drop the tomatoes in. When the tomatoes are cooked (skin deeply crackle), remove them, let them cool and remove the skin and pedicel.',
 				order: 0
 			},
 			{
-				step: 'Stir in the tomatoes and their juices, 1 cup water and the Parmesan rind, and bring to a boil. Turn the heat down to a simmer and cook, stirring occasionally, until the tomatoes are broken down and the mixture has thickened, about 30 minutes. (If you find during your stirring that the Parmesan rind is stuck to the bottom or sides of the pot, pry it off with a wooden spoon.',
+				step: 'In a large saucepan or Dutch oven over medium heat, melt the butter. Once it starts bubbling, stir in the onions and sauté until golden, 5 to 7 minutes. Add the garlic, red-pepper flakes, and generous pinches of salt and pepper, and sauté until fragrant, 2 to 3 minutes.',
 				order: 1
 			},
 			{
-				step: 'Remove the rind from the soup, and let cool slightly. If you’re planning to make the Parmesan toast, heat the oven to 400 degrees.',
+				step: 'Stir in the tomatoes and their juices, 1 cup water and the Parmesan, and bring to a boil. Turn the heat down to a simmer and cook, stirring occasionally, until the tomatoes are broken down and the mixture has thickened, about 30 minutes.',
 				order: 2
 			},
 			{
-				step: 'Use an immersion blender to purée the soup. (Alternatively, ladle the soup into a blender, and blend until smooth. For a super-smooth soup, run it through a fine-mesh sieve.) Season to taste with salt, pepper and grated Parmesan.',
+				step: 'Let cool slightly.',
 				order: 3
 			},
 			{
-				step: 'If you’re making the toast, rub 1 side of each slice of baguette with the garlic clove, then place on a parchment-lined baking sheet. Sprinkle cheese over the top, then bake until golden brown, about 10 minutes. Serve the soup with a toast alongside or on top.',
+				step: 'Use an immersion blender to purée the soup. (Alternatively, ladle the soup into a blender, and blend until smooth. For a super-smooth soup, run it through a fine-mesh sieve.) Season to taste with salt, pepper and grated Parmesan.',
 				order: 4
 			}
 		],
