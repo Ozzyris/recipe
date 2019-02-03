@@ -27,6 +27,108 @@ var recipe = new mongoose.Schema({
     ]
 }, {collection: 'recipe'});
 
+//TITLE
+recipe.statics.update_title = function(recipe_id, payload){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id : recipe_id }, {
+            title: payload.title,
+            url: payload.url,
+            edit_date: moment()
+        })
+        .exec()
+        .then(session =>{
+            resolve( true );
+        })
+    })
+};
+//SUMMARY
+recipe.statics.update_summary = function(recipe_id, summary){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            summary: summary,
+            edit_date: moment()
+
+        }).exec()
+        .then(session =>{
+            resolve(true);
+        })
+    })
+};
+//TIPS
+recipe.statics.update_tips = function(recipe_id, tips){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            tips: tips,
+            edit_date: moment()
+
+        }).exec()
+        .then(session =>{
+            resolve(true);
+        })
+    })
+};
+//TIME
+recipe.statics.update_time = function(recipe_id, time){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            time: time,
+            edit_date: moment()
+
+        }).exec()
+        .then(session =>{
+            resolve(true);
+        })
+    })
+};
+//YIELD
+recipe.statics.update_yield = function(recipe_id, yield){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            yield: yield,
+            edit_date: moment()
+
+        }).exec()
+        .then(session =>{
+            resolve(true);
+        })
+    })
+};
+//TAGS
+recipe.statics.update_tags = function(recipe_id, tags){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            tags: tags,
+            edit_date: moment()
+
+        }).exec()
+        .then(session =>{
+            resolve(true);
+        })
+    })
+};
+//INGREDIENTS
+recipe.statics.insert_ingredients = function(recipe_id, ingredient){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+                $push:{
+                    'ingredients': ingredient
+                }
+            }).exec()
+            .then (wallet => {
+                resolve( true );
+            })
+    })
+};
+recipe.statics.update_ingredients = function(recipe_id, ingredient){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ 'ingredients._id': '5c56836fc5785da21cda5434' }, {
+                'ingredients': ingredient
+            }).exec()
+            .then (wallet => {
+                resolve( true );
+            })
+    })
+};
 
 var recipe = mongoose.DB.model('recipe', recipe);
 

@@ -344,7 +344,7 @@ export const RECIPES = [
 		illustration: '../../../assets/images/pizza-daugh.png',
 		ingredients: [
 			{
-				name: '153 grams 00 flour (1 cup plus 1 tablespoon)',
+				name: '153 grams of flour (1 cup plus 1 tablespoon)',
 				order: 0,
 			},
 			{
