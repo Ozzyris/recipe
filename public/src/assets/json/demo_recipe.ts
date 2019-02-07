@@ -1209,5 +1209,104 @@ export const RECIPES = [
 		tags: ['Fish', 'Potatoes', 'Roasted', 'Dinner', 'NYT' ],
 		last_edited: '',
 		url: 'roasted-halibut-and-potatoes-with-rosemary',
+	},
+	{
+		title: 'Blue-Cheese Hanger Steak',
+		summary: 'Why fuss with reservations when you can have your own bistro night at home? Hanger steaks are readily available, quick cooking and full of flavor. In this recipe, the steaks are seared, then slathered in blue cheese butter and served alongside an endive and radish salad dressed in a citrus vinaigrette, a perfect complement to the rich steak. This very special dinner comes together in about 30 minutes. If you\'d like, toss baby potatoes with a little olive oil, salt and pepper and pop them into the oven to roast while you prepare the steak and salad.',
+		yield: '2 servings',
+		time: 30,
+		illustration: '../../../assets/images/ch-hanger-steak-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '4 tablespoons unsalted butter, slightly softened',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons good-quality blue cheese, such as Roquefort, Stilton or Gorgonzola',
+				order: 1,
+			},
+			{
+				name: '1 tablespoon finely chopped shallot',
+				order: 2,
+			},
+			{
+				name: '¾ to 1 pound hanger or skirt steak, at room temperature',
+				order: 3,
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 4,
+			},
+			{
+				name: '1 tablespoon canola or grapeseed oil',
+				order: 5,
+			},
+			{
+				name: 'Flaky salt (optional)',
+				order: 6,
+			},
+			{
+				name: '2 Belgian endives, leaves separated',
+				order: 7,
+			},
+			{
+				name: '4 to 5 thinly sliced radishes, a variety of colors if you can find them',
+				order: 8,
+			},
+			{
+				name: '½ small fennel bulb, cored and thinly sliced (about 1/3 cup)',
+				order: 9,
+			},
+			{
+				name: '2 tablespoons good quality white-wine vinegar',
+				order: 10,
+			},
+			{
+				name: '¼ teaspoon orange zest',
+				order: 11,
+			},
+			{
+				name: '1 tablespoon plus 1 teaspoon olive oil',
+				order: 12,
+			},
+			{
+				name: '¼ cup Italian parsley leaves, torn',
+				order: 13,
+			},
+			{
+				name: '1 tablespoon chives, cut on an angle into 1/2-inch pieces',
+				order: 14,
+			},
+			{
+				name: '1 tablespoon roughly chopped tarragon ',
+				order: 15,
+			}
+		],
+		preparation: [
+			{
+				step: 'In a small bowl, stir together butter, blue cheese and shallot, and set aside.',
+				order: 0
+			},
+			{
+				step: 'Season steaks well with salt and pepper on both sides and set aside.',
+				order: 1
+			},
+			{
+				step: 'Meanwhile, assemble your salad: In a large bowl, gently toss together the endive leaves, radishes and fennel. In a small bowl, whisk together the white-wine vinegar, orange zest, olive oil, parsley leaves, chives and tarragon, season to taste with salt and pepper and set aside.',
+				order: 2
+			},
+			{
+				step: 'Heat a large cast-iron pan over medium-high heat until very hot, 2 to 3 minutes. Add the canola oil. When it shimmers, add the hanger steak and let it cook, undisturbed, until it begins to crisp and brown on one side, 3 to 4 minutes. Flip and finish cooking about 3 minutes more or until a meat thermometer inserted in the thickest part reads 130 degrees for medium-rare.',
+				order: 3
+			},
+			{
+				step: 'Move the steak to a cutting board, and spread with 2 tablespoons or so of the blue cheese butter and let rest 5 to 7 minutes. Slice steaks against the grain and finish with flaky salt, if desired. Plate the steak and serve with the salad alongside, spooning the dressing on top of the salad.',
+				order: 4
+			}
+		],
+		tips: 'There will most likely be leftover blue-cheese butter. Pass it at the table or slather it on top of a roast chicken later in the week. It will last up to five days in the fridge.',
+		tags: ['Meat', 'Steak', 'Salad', 'Dinner', 'NYT' ],
+		last_edited: '',
+		url: 'blue-cheese-hanger-steak',
 	}
 ]; 
