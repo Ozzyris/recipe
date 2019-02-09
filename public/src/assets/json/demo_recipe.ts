@@ -1374,5 +1374,75 @@ export const RECIPES = [
 		tags: ['carbonara', 'bacon', 'noodle', 'dinner', 'lunch', 'NYT' ],
 		last_edited: '',
 		url: 'ramen-carbonara',
+	},
+	{
+		title: 'Chocolate Lava Cake',
+		summary: 'Chocolate lava cakes gained popularity in the late 1990s thanks to the chef Jean-Georges Vongerichten, and they have stuck around on dessert menus for good reason: They are rich chocolate cake and velvety sauce all in one, and they are surprisingly easy to make in under an hour. If you like to plan ahead, you can prepare the batter a day in advance, refrigerate it, then pop the cake into the oven when you are ready for dessert. This recipe, made in a 10-ounce baking dish, is meant for sharing, but you can also make it in two 6-ounce ramekins. Just cut the baking time to 7 to 9 minutes. Also, be sure to use chopped chocolate bars or chocolate féves rather than chocolate chips here. Chips are made with stabilizers that inhibit melting and will negatively affect the texture of your dessert.',
+		yield: '2 servings',
+		time: 25,
+		illustration: '../../../assets/images/ya-molten-lava-cake-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '3 ounces/85 grams bittersweet chocolate, 70 to 74 percent cacao (not chips), chopped (about 1/2 cup)',
+				order: 0,
+			},
+			{
+				name: '3 tablespoons unsalted butter, cut into cubes, plus more for the ramekin',
+				order: 1,
+			},
+			{
+				name: '3 tablespoons granulated sugar, plus more for the ramekin',
+				order: 2,
+			},
+			{
+				name: '1 large egg',
+				order: 3,
+			},
+			{
+				name: '1 large egg yolk',
+				order: 4,
+			},
+			{
+				name: '½ teaspoon vanilla extract',
+				order: 5,
+			},
+			{
+				name: '⅛ teaspoon kosher salt',
+				order: 6,
+			},
+			{
+				name: '2 tablespoons all-purpose flour ',
+				order: 7,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 425 degrees and butter a 10-ounce ramekin. Dust the buttered ramekin with granulated sugar.',
+				order: 0
+			},
+			{
+				step: 'Combine the chocolate and 3 tablespoons butter in a heat-safe bowl set over a pan of simmering water. Cook, stirring occasionally, until melted and smooth. (Alternatively, combine in a bowl and microwave in 30-second blasts, stirring in between, until melted and smooth, about 1 minute.) Remove from the heat and set aside.',
+				order: 1
+			},
+			{
+				step: 'In a medium bowl, combine the 3 tablespoons sugar, egg, egg yolk, vanilla and salt. Whisk vigorously until the mixture is thick, foamy and pale, about 2 minutes. Whisk in the flour until smooth.',
+				order: 2
+			},
+			{
+				step: 'Using a spatula, add the chocolate to the egg mixture and stir gently until combined.',
+				order: 3
+			},
+			{
+				step: 'Pour the mixture into the ramekin. Bake for 12 to 14 minutes or until the edges are set and puffed, but the center is still soft when lightly pressed. (You can also cover and refrigerate the batter up to a day in advance. Add an additional minute or 2 to baking time if you are baking the cake directly from the refrigerator.)',
+				order: 4
+			},
+			{
+				step: 'Use an offset spatula or small knife to loosen the edges of the cake from the ramekin. Place a plate over the ramekin and carefully invert the warm cake. Use an oven mitt or clean kitchen towel to remove the ramekin, dust the cake with confectioners’ sugar and serve with ice cream or whipped cream.',
+				order: 5
+			},
+		],
+		tags: ['chocolate', 'melting', 'dessert', 'cake', 'NYT' ],
+		last_edited: '',
+		url: 'chocolate-lava-cake',
 	}
 ]; 
