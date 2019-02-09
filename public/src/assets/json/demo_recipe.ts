@@ -1308,5 +1308,71 @@ export const RECIPES = [
 		tags: ['Meat', 'Steak', 'Salad', 'Dinner', 'NYT' ],
 		last_edited: '',
 		url: 'blue-cheese-hanger-steak',
+	},
+	{
+		title: 'Ramen Carbonara',
+		summary: 'If you have bacon, eggs and a pack of ramen noodles in the pantry, this quick dinner (or breakfast or lunch) comes together in a snap. The strategy: Cook the noodles in a Parmesan-rich broth in the same pan you use to cook the bacon. The clever cook who invented this is the novelist Stacey Ballis, a regular contributor to the breakfast blog Extra Crispy. Since ramen noodles are parcooked, they quickly soften and soak up the broth. (Stirring in eggs thickens it into a sauce.) If you use pancetta and good Parmesan, it tastes surprisingly like the Roman original. But it is always delicious and filling, and even more unctuous if you add a runny fried egg on top.',
+		yield: '2 servings',
+		time: 25,
+		illustration: '../../../assets/images/23pantryrex-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '6 to 8 slices bacon or pancetta, cut crosswise into 1/2-inch strips or lardons (4 to 6 ounces)',
+				order: 0,
+			},
+			{
+				name: '2 cups boiling water',
+				order: 1,
+			},
+			{
+				name: '3 tablespoons butter, plus more for frying eggs',
+				order: 2,
+			},
+			{
+				name: '1 cup grated Parmesan or pecorino, or a combination (about 4 ounces)',
+				order: 3,
+			},
+			{
+				name: '2 (3-ounce) packages ramen noodles (noodle blocks only; discard the seasoning packs)',
+				order: 4,
+			},
+			{
+				name: '2 eggs, whisked together until smooth',
+				order: 5,
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 6,
+			},
+			{
+				name: '2 whole eggs, at room temperature ',
+				order: 7,
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large skillet (preferably nonstick), cook bacon over medium heat until fat is rendered and meat is cooked through. Adjust the heat as needed to prevent scorching. When bacon is cooked, use a slotted spoon to transfer it to a paper-towel-lined plate. Set aside.',
+				order: 0
+			},
+			{
+				step: 'Pour off the extra bacon fat in the pan, leaving behind any browned bits stuck on the bottom. Return pan to medium-high heat and add boiling water, butter and half the cheese. Stir, scraping up bacon bits, and bring to a boil. Add noodle blocks and boil, gently separating the strands as they soften, until noodles are almost cooked through, about 3 minutes. The noodles will absorb some of the liquid, and there will be a thick broth in the pan. Keep the heat high; you want most of the liquid to evaporate.',
+				order: 1
+			},
+			{
+				step: 'Reduce heat to low. Add whisked eggs, stir into noodles very well, and cook, stirring constantly and scraping the bottom of the pan, about 1 minute. The sauce should remain quite runny; the eggs will continue to cook after you remove them from the heat. Mix in cooked bacon, remaining cheese and plenty of black pepper and immediately remove from the heat.',
+				order: 2
+			},
+			{
+				step: 'Scrape mixture into 2 large serving bowls. If not making fried eggs, serve immediately, grinding pepper over the top of each bowl.',
+				order: 3
+			},
+			{
+				step: 'If making fried eggs, cover the noodle bowls to keep them warm. Return empty pan to medium heat, add a lump of butter, and swirl until melted and foaming. Crack the eggs into the pan and fry until yolks are just set and edges are brown, about 3 minutes. Transfer to noodle bowls, grind on more pepper, and serve immediately.',
+				order: 4
+			}
+		],
+		tags: ['carbonara', 'bacon', 'noodle', 'dinner', 'lunch', 'NYT' ],
+		last_edited: '',
+		url: 'ramen-carbonara',
 	}
 ]; 
