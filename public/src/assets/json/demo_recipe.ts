@@ -1444,5 +1444,91 @@ export const RECIPES = [
 		tags: ['chocolate', 'melting', 'dessert', 'cake', 'NYT' ],
 		last_edited: '',
 		url: 'chocolate-lava-cake',
+	},
+	{
+		title: 'Crunchy Eggplant Parmesan',
+		summary: 'In most eggplant Parmesan recipes, crusty slices of fried eggplant go into a casserole with sauce and cheese -- where they quickly turn to sludge. This recipe holds on to the crunch by transforming each whole eggplant into a crisp cutlet. You can make one eggplant per person to serve this as an appetizer, or add a bed of pasta to make it more substantial. There\'s no Parmesan cheese in this recipe, but that\'s not a mistake: in Italian the phrase "alla Parmigiana" refers to a style of dish. It doesn\'t refer to Parmigiano-Reggiano cheese.',
+		yield: '4 to 5 entree servings',
+		time: 90,
+		illustration: '../../../assets/images/22Eggplant1-mediumThreeByTwo440.jpg',
+		ingredients: [
+			{
+				name: '8 to 10 small eggplants',
+				order: 0,
+			},
+			{
+				name: 'Salt',
+				order: 1,
+			},
+			{
+				name: '3 tablespoons granulated sugar, plus more for the ramekin',
+				order: 2,
+			},
+			{
+				name: '2 cups all-purpose flour',
+				order: 3,
+			},
+			{
+				name: '3 large egg yolks',
+				order: 4,
+			},
+			{
+				name: '2 cups dry bread crumbs or panko, seasoned with 1 teaspoon each salt, black pepper, garlic powder and dried oregano',
+				order: 5,
+			},
+			{
+				name: 'Vegetable oil, for frying',
+				order: 6,
+			},
+			{
+				name: '3 cups tomato sauce',
+				order: 7,
+			},
+			{
+				name: '4 to 6 ounces packaged mozzarella, shredded or diced',
+				order: 8,
+			},
+			{
+				name: ' Freshly minced basil or parsley, for serving',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 325 degrees. Set a large ovenproof wire rack over a large rimmed baking sheet.',
+				order: 0
+			},
+			{
+				step: 'With a small, sharp knife, starting just below the stem, cut each eggplant lengthwise into 1/4-inch-thick slices, keeping them attached at the stem. Place them on paper towels and press down on the eggplants to fan the slices out. Sprinkle with salt on both sides and set aside.',
+				order: 1
+			},
+			{
+				step: 'Measure out 2 cups ice water. In a medium bowl, whisk the flour with the egg yolks and half the water until almost smooth, then whisk in the remaining water. Add a little more water if the batter seems too thick; it should be runny, like glue.',
+				order: 2
+			},
+			{
+				step: 'Place the bread crumbs and seasonings in a medium bowl and lightly mix and crush together with your hands.',
+				order: 3
+			},
+			{
+				step: 'In a large, deep skillet, heat a generous 1/2 inch of vegetable oil until shimmering (about 350 degrees).',
+				order: 4
+			},
+			{
+				step: 'Working in batches, dip eggplants in the batter, dredge in bread crumbs and add to the skillet. Fry until nicely browned on the bottom, about 3 minutes. Reduce the heat if the eggplants are browning too quickly. Turn and cook until browned on the second side, about 3 minutes longer. Transfer to the rack set over the baking sheet and season with salt; transfer the baking sheet with the rack to the oven to keep warm while you fry the remaining eggplant.',
+				order: 5
+			},
+			{
+				step: 'In a wide skillet, heat the marinara sauce over low heat until bubbling. Divide the mozzarella into 8 to 10 piles (one for each eggplant). Pick up and place the piles of cheese in the sauce, spacing the piles out so they melt separately. You may need to do this in 2 batches.',
+				order: 6
+			},
+			{
+				step: 'Divide eggplants on plates. Place a spoonful of sauce next to or on top of each eggplant. Top sauce with melted mozzarella, lifting it out with a slotted spoon. Sprinkle with fresh herbs, and serve immediately.',
+				order: 7
+			},
+		],
+		tags: ['vegetarian', 'italian', 'eggplan', 'parmesan', 'NYT' ],
+		last_edited: '',
+		url: 'crunch-eggplant-parmesan',
 	}
 ]; 
