@@ -1530,5 +1530,204 @@ export const RECIPES = [
 		tags: ['vegetarian', 'italian', 'eggplan', 'parmesan', 'NYT' ],
 		last_edited: '',
 		url: 'crunch-eggplant-parmesan',
+	},
+	{
+		title: 'Roasted Salmon With Fennel',
+		summary: 'Fennel is used several ways to flavor these tender fillets of slow-roasted salmon. The seeds are mixed with lime zest and salt to rub all over the fish before cooking, which perfumes it through and through. Then a shaved fennel bulb is used two ways, both roasted in the pan beneath the fillets and tossed with lime juice into a crunchy, slawlike salad to serve on the side. Elegant yet supremely simple, this is fast enough for a weeknight but special enough to share with friends.',
+		yield: '4 servings',
+		time: 45,
+		illustration: '../../../assets/images/20apperex1-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 limes',
+				order: 0,
+			},
+			{
+				name: '1 teaspoon fennel seeds, lightly crushed using a mortar and pestle or the flat side of a knife',
+				order: 1,
+			},
+			{
+				name: 'Kosher salt and freshly ground black pepper',
+				order: 2,
+			},
+			{
+				name: '4 (6- to 8-ounce) skinless salmon fillets',
+				order: 3,
+			},
+			{
+				name: '1 large fennel bulb with fronds',
+				order: 4,
+			},
+			{
+				name: 'Extra-virgin olive oil, for drizzling',
+				order: 5,
+			},
+			{
+				name: '6 fresh marjoram or thyme sprigs',
+				order: 6,
+			},
+			{
+				name: 'Flaky sea salt, for serving',
+				order: 7,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 325 degrees. Finely grate the zest from 1 lime into a small bowl, and set aside the zested lime. Add fennel seeds, 1/2 teaspoon kosher salt and 1/2 teaspoon pepper to the bowl and toss to combine. Sprinkle mixture all over salmon.',
+				order: 0
+			},
+			{
+				step: 'Meanwhile, remove the fennel fronds from the bulb and chop up enough to make 1/4 cup. Trim fennel bulb, discarding stalks, and slice bulb thinly using a mandoline or a sharp knife. Spread half the fennel slices in a baking dish in an even layer and drizzle with oil. Arrange salmon on top.',
+				order: 1
+			},
+			{
+				step: 'Slice the whole, unzested lime into thin rounds and lay the slices on top of the salmon. Tuck marjoram around the salmon and drizzle salmon generously with more olive oil',
+				order: 2
+			},
+			{
+				step: 'Roast until salmon is just cooked through, 15 to 20 minutes. (Thinner fillets may take less time, so start checking for doneness at 10 minutes.)',
+				order: 3
+			},
+			{
+				step: 'Meanwhile, toss chopped fennel fronds and remaining fennel slices with a pinch of salt in a medium bowl. Juice the zested lime and add some of the juice to the fennel, to taste. Drizzle the sliced fennel with olive oil and set aside to serve with the salmon.',
+				order: 4
+			},
+			{
+				step: 'When the salmon is done, drizzle it with more lime juice and sprinkle with flaky salt. Serve with the fennel salad on top, and the roast fennel on the side, if you like.',
+				order: 5
+			}
+		],
+		tags: ['fennel', 'salmon', 'fish', 'lime', 'NYT' ],
+		last_edited: '',
+		url: 'roasted-salmon-with-fennel',
+	},
+	{
+		title: 'Pasta With Brown Butter and Parmesan',
+		summary: 'Sometimes you just want a big bowl of pasta with butter and Parmesan. Starchy, silky and salty, it’s always good — and practically foolproof. To make it a little more grown up, just take it one step further: Brown the butter. When you slide the butter into the skillet, let it cook until the milk solids turn a toasty brown. It adds a rich, nutty flavor that makes the dish a bit more sophisticated with very little extra work.',
+		yield: '4 servings',
+		time: 25,
+		illustration: '../../../assets/images/merlin_150298908_b992b854-cd91-4306-b1ad-5428bfad8614-articleLarge.jpg',
+		ingredients: [
+			{
+				name: 'Kosher salt',
+				order: 0,
+			},
+			{
+				name: '1 pound spaghetti, linguine or other long noodle',
+				order: 1,
+			},
+			{
+				name: '8 tablespoons unsalted butter',
+				order: 2,
+			},
+			{
+				name: '1 cup freshly grated Parmesan, plus more for serving',
+				order: 3,
+			},
+			{
+				name: 'Freshly ground black pepper',
+				order: 4,
+			}
+		],
+		preparation: [
+			{
+				step: 'Bring a large pot of heavily salted water (2 heaping tablespoons kosher salt to about 7 quarts water) to a boil. Add pasta to boiling water and cook according to package directions until al dente. Reserve 1/2 cup of the pasta cooking water, then drain the pasta, but don’t shake it fully dry.',
+				order: 0
+			},
+			{
+				step: 'In a skillet or Dutch oven large enough to hold the pasta (and preferably with a light-colored bottom so you can see the butter solids brown), melt the butter over medium heat. Cook, swirling occasionally, until the foam subsides, the milk solids turn golden-brown and it smells nutty and toasty, 3 to 4 minutes. (Watch carefully to see that it does not burn. If it does, start over.) Remove from heat immediately.',
+				order: 1
+			},
+			{
+				step: 'Add the cooked pasta to the skillet and toss with the brown butter. Stir in the cheese until melted. Stir in pasta water, 1 tablespoon at a time, until the pasta is glossy with sauce (you probably won’t need the full 1/2 cup).',
+				order: 2
+			},
+			{
+				step: 'Serve with black pepper and more Parmesan on top.',
+				order: 3
+			}
+		],
+		tags: ['vegetarian', 'italian', 'butter', 'parmesan', 'pasta', 'NYT' ],
+		last_edited: '',
+		url: 'pasta-with-brown-butter-and-parmesan',
+	},
+	{
+		title: 'Cauliflower Adobo',
+		summary: 'Chicken adobo, the national dish of the Philippines, is made by braising chicken in a salty, sour and sweet mixture of soy sauce, vinegar and brown sugar. In this vegetarian version, cauliflower, rather than chicken, is caramelized on one side, then simmered in the pungent but not prickly sauce until toothsome yet tender. The simmer mellows the vinegar and soy sauce into a sauce interlaced with pepper, garlic and something herbal but not immediately traceable — that’s the bay leaves. Serve the cauliflower and sauce over rice or another grain with something green on the side.',
+		yield: '4 servings',
+		time: 45,
+		illustration: '../../../assets/images/as-cauliflower-adobo-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 large cauliflower (2 1/2 to 3 pounds)',
+				order: 0,
+			},
+			{
+				name: 'Kosher salt',
+				order: 1,
+			},
+			{
+				name: '2 teaspoons black pepper, plus more as needed',
+				order: 2,
+			},
+			{
+				name: '3 tablespoons canola oil, plus more as needed',
+				order: 3,
+			},
+			{
+				name: '½ cup rice-wine vinegar',
+				order: 4,
+			},
+			{
+				name: '5 tablespoons soy sauce ',
+				order: 5,
+			},
+			{
+				name: '2 teaspoons raw or light brown sugar ',
+				order: 6,
+			},
+			{
+				name: '6 garlic cloves, smashed and peeled',
+				order: 7,
+			},
+			{
+				name: '3 bay leaves',
+				order: 8,
+			},
+			{
+				name: '1 Thai chile, halved lengthwise, or 1/4 teaspoon red-pepper flakes',
+				order: 9,
+			},
+			{
+				name: '3 scallions, thinly sliced, for serving',
+				order: 10,
+			}
+		],
+		preparation: [
+			{
+				step: 'Trim leaves and woody stalk from the cauliflower, then cut through the root into 8 wedges. Season both sides of each wedge with salt and pepper. Reserve any loose cauliflower pieces.',
+				order: 0
+			},
+			{
+				step: 'In a large skillet or Dutch oven, heat the oil over medium-high heat. Place one layer of the wedges in the skillet cut-side down and cook without moving them until well browned on one side, 3 to 4 minutes. Transfer to a plate and continue until all the cauliflower is seared, adding more oil as needed. Return all the cauliflower to the pan with uncooked side facing down.',
+				order: 1
+			},
+			{
+				step: 'Add 1/4 cup water, any loose cauliflower pieces, 2 teaspoons black pepper, rice-wine vinegar, soy sauce, sugar, garlic, bay leaves and Thai chile. Cover and let simmer over medium heat until the cauliflower is crisp-tender, about 5 minutes.',
+				order: 2
+			},
+			{
+				step: 'Uncover, turn the heat to medium-high, and cook, basting the cauliflower occasionally with the sauce, until the cauliflower is tender and the sauce has thickened and reduced to about 3/4 cup, 8 to 10 minutes.',
+				order: 3
+			},
+			{
+				step: 'Serve the cauliflower with plenty of sauce and a sprinkle of scallions.',
+				order: 3
+			}
+		],
+		tags: ['vegetarian', 'vegan', 'filipino', 'cauliflower', 'rice', 'NYT' ],
+		tips: 'if you plan to eat rice with the adobo, bring 1 3/4 cups water to a boil in a medium saucepan before you start the recipe. Stir in 1 teaspoon salt and 1 cup long-grain rice, cover, and let simmer on the lowest heat possible for 18 minutes. Proceed with the adobo. Let the rice sit, covered and off the heat, until the adobo is ready. Fluff rice with a fork before serving.',
+		last_edited: '',
+		url: 'cauliflower-adobo',
 	}
 ]; 
