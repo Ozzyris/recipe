@@ -341,7 +341,7 @@ export const RECIPES = [
 		summary: 'This recipe, adapted from Roberta’s, the pizza and hipster haute-cuisine utopia in Bushwick, Brooklyn, provides a delicate, extraordinarily flavorful dough that will last in the refrigerator for up to a week. It rewards close attention to weight rather than volume in the matter of the ingredients, and asks for a mixture of finely ground Italian pizza flour (designated “00” on the bags and available in some supermarkets, many specialty groceries and always online) and regular all-purpose flour. As ever with breads, rise time will depend on the temperature and humidity of your kitchen and refrigerator.',
 		time: 20,
 		yield: '2 12’ pizza',
-		illustration: '../../../assets/images/pizza-daugh.png',
+		illustration: '../../../assets/images/pizza-daugh.jpg',
 		ingredients: [
 			{
 				name: '153 grams of flour (1 cup plus 1 tablespoon)',
@@ -1722,12 +1722,665 @@ export const RECIPES = [
 			},
 			{
 				step: 'Serve the cauliflower with plenty of sauce and a sprinkle of scallions.',
-				order: 3
+				order: 4
 			}
 		],
 		tags: ['vegetarian', 'vegan', 'filipino', 'cauliflower', 'rice', 'NYT' ],
 		tips: 'if you plan to eat rice with the adobo, bring 1 3/4 cups water to a boil in a medium saucepan before you start the recipe. Stir in 1 teaspoon salt and 1 cup long-grain rice, cover, and let simmer on the lowest heat possible for 18 minutes. Proceed with the adobo. Let the rice sit, covered and off the heat, until the adobo is ready. Fluff rice with a fork before serving.',
 		last_edited: '',
 		url: 'cauliflower-adobo',
+	},
+	{
+		title: 'Quick Pizza Dough',
+		summary: 'The trouble with most homemade pizza dough recipes is that they’re sort of a pain. You have to plan ahead. Knead the dough. Let it rise. Clean up after it. This might be the pizza dough recipe that finally persuades you it’s worth the effort — what little effort is required. With the help of two allies in the kitchen — your food processor and your freezer — now homemade pizza dough is nearly as simple as taking a chicken breast out of the freezer to thaw on your way out the door in the morning.',
+		yield: '2 crusts (4 servings)',
+		time: 30,
+		illustration: '../../../assets/images/20150408PIZZA-slide-OI5A-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 ¾ cups/390 grams bread flour',
+				order: 0,
+			},
+			{
+				name: '2 ½ teaspoons/7 grams active dry yeast (1 packet)',
+				order: 1,
+			},
+			{
+				name: '2 teaspoons sea salt',
+				order: 2,
+			},
+			{
+				name: '¼ cup extra-virgin olive oil',
+				order: 3,
+			},
+			{
+				name: '1 cup warm water',
+				order: 4,
+			},
+			{
+				name: '2 or 3 tablespoons medium or coarse cornmeal',
+				order: 5,
+			}
+		],
+		preparation: [
+			{
+				step: 'Put the flour, yeast and salt in a food processor. With the machine running, pour the oil through the feed tube, then add the water in a slow, steady stream. Continue to process for 2 to 3 minutes (the dough should form a rough ball and ride around in the processor). The finished dough should be soft, slightly sticky and elastic. If too dry, add a bit more water; if too wet, a tablespoon or so more flour.',
+				order: 0
+			},
+			{
+				step: 'Lay a 12-inch-long piece of plastic wrap on a clean work surface. Work the dough into a rectangle on the plastic, about 8 inches long and 6 inches wide. Press your fingers into the top of the dough all over, making indentations as though it were a focaccia. Fold the left third of the dough over (as you would a letter) and repeat the indentations. Fold the right third over and make the indentations again. Cover the folded dough with plastic wrap and let rise for 20 minutes.',
+				order: 1
+			},
+			{
+				step: 'Cut the dough in half, form each piece into a neat ball, wrap tightly in plastic wrap and transfer to the freezer. The morning before you want to make pizza, transfer the dough to the refrigerator to thaw.',
+				order: 2
+			},
+			{
+				step: 'Bring the dough to room temperature, 15 to 20 minutes. Put a pizza stone in the oven and preheat to 550 degrees. (If you don’t have a stone, oil a rimmed baking sheet and set aside.) Dust a peel or the greased baking sheet generously with cornmeal. Working with the dough in your hands (not flat on a work surface), gently begin to stretch the dough into a circular shape, pressing your fist into the center of the dough and pulling at the edges with your other hand. With both hands, stretch the dough, being careful not to tear it. Working in a circular motion, pull the thicker edges of the dough outward, letting gravity help you. Continue to stretch the dough until it’s relatively even in thickness (the edges will be thicker) and you have the size you want. Carefully lay it on the peel or baking sheet.',
+				order: 3
+			},
+			{
+				step: 'Top the pizza as desired and either slide it off the peel and onto your heated stone, or place the baking sheet into the oven. Cook the pizza for 6 to 10 minutes or until the crust is golden and the cheese is bubbling.',
+				order: 4
+			}
+		],
+		tags: ['active dry yeast', 'pizza', 'bread flour', 'dought', 'NYT' ],
+		last_edited: '',
+		url: 'quick-pizza-dough',
+	},
+	{
+		title: 'Beef Tenderloin With Red Wine',
+		summary: '“How To Eat” by Nigella Lawson is a cookbook, but one of its great joys is its narrative form: Very few of the recipes are written in standard recipe format. This recipe, from the Dinner chapter, is an exception. “This, to me, is the perfect dinner,” Ms. Lawson writes, “simple, impeccable, beautiful.” She suggests serving it with a pea and avocado salad, and adding arugula leaves not only for decorative reasons but also because “its pepperiness perfectly offsets the salty pungency of the anchovy-red-wine sauce.”',
+		yield: '8 servings',
+		time: 60,
+		illustration: '../../../assets/images/merlin_150586146_70e47f46-ab23-4191-ba03-c1f0b34a6e47-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '4 tablespoons unsalted butter (1/2 stick), 2 tablespoons cut into small dice and chilled',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons extra-virgin olive oil',
+				order: 1,
+			},
+			{
+				name: '8 shallots, sliced or minced',
+				order: 2,
+			},
+			{
+				name: 'Kosher salt',
+				order: 3,
+			},
+			{
+				name: '2 teaspoons fresh thyme leaves or 1 scant teaspoon dried thyme',
+				order: 4,
+			},
+			{
+				name: '8 garlic cloves, peeled and crushed with the flat side of a chef’s knife',
+				order: 5,
+			},
+			{
+				name: '12 anchovy fillets packed in olive oil, drained and minced',
+				order: 6,
+			},
+			{
+				name: '2 pieces beef tenderloin, 1 1/2 pounds each, trimmed and cleaned',
+				order: 7,
+			},
+			{
+				name: 'Freshly milled black pepper',
+				order: 8,
+			},
+			{
+				name: '2 teaspoons sugar',
+				order: 9,
+			},
+			{
+				name: '¼ cup brandy',
+				order: 10,
+			},
+			{
+				name: '1 ¼ cups good red wine',
+				order: 11,
+			},
+			{
+				name: 'Fresh arugula, for serving',
+				order: 12,
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large, heavy-bottomed Dutch oven or pot in which the beef will fit comfortably (the two pieces mustn’t touch each other, and no scrunching at the ends), heat 2 tablespoons butter and 1 tablespoon oil over lowish heat. Add the shallots, sprinkle with a little salt, and sauté until soft and transparent but in no way coloring, about 5 minutes. Add the thyme and give 2 more minutes, stirring, then add the garlic and push about the pot.',
+				order: 0
+			},
+			{
+				step: 'Add the anchovies and cook until they’ve started fusing with the oniony, buttery, oily mess in the pot. Transfer this shallot mixture to a bowl for a minute so you can brown the meat.',
+				order: 1
+			},
+			{
+				step: 'Add the remaining 1 tablespoon oil to the pot and turn up the heat. Pat the beef dry and season it all over with salt and pepper. Sear the beef on all sides, sprinkling with the sugar as you do so, till you’ve got a good crusty exterior. Add the brandy, let it bubble up a bit, then pour in the wine.',
+				order: 2
+			},
+			{
+				step: 'Return the shallot mixture to the pot. Lower the heat and turn the meat over. Give everything a good stir to make sure the shallots, garlic and so on are not burning or sticking. Cover and cook for 10 minutes — the meat is braising, frying and steaming all at the same time; as it cooks it breathes in flavor.',
+				order: 3
+			},
+			{
+				step: 'Uncover, peek in, prod or poke. If the meat is springy, it’s rare; springy but with some resistance, medium-rare to medium. Turn the meat over, cover again, and leave for another 5 to 10 minutes, depending on your findings and taste. When the meat is almost as you like it, transfer it to a cutting board (it will cook a little more as it rests) and get on with the sauce. And you can do all this before you sit down for the first course.',
+				order: 4
+			},
+			{
+				step: 'Fish out the garlic from the pot with a spoon. Then turn up the heat and let the sauce bubble up a good bit, and taste, adding salt, if needed, and pepper. You may want to add some water. Take off the heat, but warm up before serving, at which time you should first pour into it the meat juices that have run out of the cooked beef as it stands and whisk in the remaining chilled, diced butter.',
+				order: 5
+			},
+			{
+				step: 'Carve the beef, arrange on a large, warmed platter, and surround with arugula. Drizzle over some of the sauce, leaving the rest in a sauce boat or pitcher for people to pour for themselves.',
+				order: 6
+			}
+		],
+		tags: ['anchovy', 'beef tenderloin', 'red wine', 'shallot', 'meat', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'beef-tenderloin-with-red-wine',
+	},
+	{
+		title: 'Greens and Beans With Bacon',
+		summary: 'These stewed greens develop deep flavor thanks to a quick onion-garlic broth and bacon, used two ways. Sliced bacon is cooked until tender, blending in but imparting its smoky, porky essence, while crisp bacon morsels are sprinkled on top for a salty, crunchy hit. This 30-minute dish is great spooned over rice or polenta, or alongside buttery cornbread for a hearty weeknight meal, but you could also top it with an egg to bring it into brunch territory.',
+		yield: '4 to 6 servings',
+		time: 30,
+		illustration: '../../../assets/images/gk-greens-and-beans-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 bunches dark and sturdy leafy greens, like collards, kale or mustard greens (about 1 pound)',
+				order: 0,
+			},
+			{
+				name: '4 bacon slices',
+				order: 1,
+			},
+			{
+				name: '1 large red onion (about 1 pound), finely chopped',
+				order: 2,
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 3,
+			},
+			{
+				name: '6 garlic cloves, sliced',
+				order: 4,
+			},
+			{
+				name: '1 teaspoon dried sage',
+				order: 5,
+			},
+			{
+				name: '1 cup chicken or vegetable stock',
+				order: 6,
+			},
+			{
+				name: '2 (15-ounce) cans red kidney beans, rinsed and drained',
+				order: 7,
+			},
+			{
+				name: '1 teaspoon hot sauce, plus more for serving',
+				order: 8,
+			}
+		],
+		preparation: [
+			{
+				step: 'Prepare the greens: Cut the tough stems out of the greens and discard. Stack the leaves, roll tightly crosswise and slice into 3/4-inch-wide ribbons. Transfer to a large bowl, cover with cold water and swish to remove grit. Transfer greens to a colander, cleaning them a second time if the water remaining in the bowl is visibly dirty.',
+				order: 0
+			},
+			{
+				step: 'Cook 2 bacon slices in a large Dutch oven or other heavy pot over medium heat, turning occasionally, until browned and crisp, about 6 minutes. Transfer the cooked bacon to a paper towel-lined plate. Meanwhile, cut the remaining 2 bacon slices crosswise into 1/4-inch-wide strips.',
+				order: 1
+			},
+			{
+				step: 'Add the 1/4-inch bacon strips to the hot bacon fat and cook, stirring, until the fat in the bacon strips starts to render, about 1 minute. Add the onion and a pinch each of salt and pepper and cook, stirring often, until golden brown around the edges, about 3 minutes. Add the garlic and sage and cook, stirring, until fragrant, about 1 minute.',
+				order: 2
+			},
+			{
+				step: 'Stir in the stock, scraping up any browned bits on the bottom of the pot. Cover, reduce the heat to low and simmer, 5 minutes.',
+				order: 3
+			},
+			{
+				step: 'Increase the heat to medium, add the greens, season with salt and pepper and stir until just wilted, about 2 minutes. Cover and cook until tender with a little bite, about 3 minutes.',
+				order: 4
+			},
+			{
+				step: 'Uncover and add the beans and hot sauce. Stir until the beans are heated through, 2 to 3 minutes. Season to taste with salt and pepper. Divide among serving dishes and crumble the cooked bacon slices on top. Serve with more hot sauce.',
+				order: 5
+			}
+		],
+		tags: ['bacon', 'collard green', 'gree', 'kale', 'kidney bean', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'greens-and-beans-with-bacon',
+	},
+	{
+		title: 'Farro With Roasted Squash',
+		summary: 'Falling somewhere between a grain bowl and a warm grain salad, this colorful dish is substantial enough to be a meatless main course, or it makes a hearty side dish to simple roasted meat or fish. You can use whatever kind of squash you like here, either peeled or unpeeled. Squash skin is perfectly edible; let anyone who objects cut theirs away at the table (though see if you can get them to try it first). If you don’t have farro, you can substitute brown rice. Just increase the cooking time by about 20 minutes.',
+		yield: '4 to 6 servings',
+		time: 45,
+		illustration: '../../../assets/images/clark-squash-still-master675.jpg',
+		ingredients: [
+			{
+				name: '3 tablespoons extra-virgin olive oil',
+				order: 0,
+			},
+			{
+				name: '2 teaspoons sugar',
+				order: 1,
+			},
+			{
+				name: '¾ teaspoon ground cinnamon',
+				order: 2,
+			},
+			{
+				name: '¾ teaspoon fine sea salt, more as needed',
+				order: 3,
+			},
+			{
+				name: '¼ teaspoon black pepper ',
+				order: 4,
+			},
+			{
+				name: '⅛ teaspoon cayenne, or to taste',
+				order: 5,
+			},
+			{
+				name: '3 pounds winter squash, such as kabocha, carnival or butternut, seeded and cut into 1/2-inch thick slices (leave the peels on or remove as desired)',
+				order: 6,
+			},
+			{
+				name: '1 ½ cups apple cider',
+				order: 7,
+			},
+			{
+				name: '2 ½ teaspoons kosher salt, more to taste',
+				order: 8,
+			},
+			{
+				name: '1 ½ cups farro',
+				order: 9,
+			},
+			{
+				name: '2 tablespoons apple cider vinegar, more to taste',
+				order: 10,
+			},
+			{
+				name: '2 garlic cloves, grated on a Microplane or minced',
+				order: 11,
+			},
+			{
+				name: '½ teaspoon black pepper',
+				order: 12,
+			},
+			{
+				name: '7 tablespoons extra-virgin olive oil, more as needed',
+				order: 13,
+			},
+			{
+				name: '3 ounces feta cheese, crumbled (about 3/4 cup)',
+				order: 14,
+			},
+			{
+				name: 'Fresh mint or arugula leaves, or both',
+				order: 15,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 450 degrees. Prepare the squash: In a large bowl, mix together olive oil, sugar, cinnamon, salt, pepper and cayenne. Add squash and toss well to coat with the spiced oil. Lay the squash pieces out flat on one or two rimmed baking sheets.',
+				order: 0
+			},
+			{
+				step: 'Roast squash until the bottoms are golden, 10 to 15 minutes. Carefully turn the pieces over and continue to roast until tender, another 10 to 20 minutes.',
+				order: 1
+			},
+			{
+				step: 'Meanwhile, make the farro: In a medium pot, bring the apple cider, 2 cups water and the salt to a simmer. Add farro and simmer until water is absorbed and the farro is tender, 20 to 30 minutes. If the liquid evaporates before the farro is done, add a little more water. Or, if there’s still liquid in the pot when the farro is done, drain it.',
+				order: 2
+			},
+			{
+				step: 'In a large bowl, whisk together vinegar, garlic and pepper. Whisk in olive oil. Add farro and toss well, adding more oil or salt, or both, if needed.',
+				order: 3
+			},
+			{
+				step: 'To serve, spoon the farro on a platter and top with the squash, feta, mint or arugula, or both, and a drizzle of olive oil.',
+				order: 4
+			}
+		],
+		tags: ['vegetarian', 'apple cider', 'faro', 'feta', 'mint', 'squash', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'farro-with-roasted-squash',
+	},
+	{
+		title: 'Lemon Sheet Cake',
+		summary: 'This pleasantly zesty lemon cake is baked in a standard 9-by-13-inch pan, no layering or trimming required, and is easy enough to bake on a weekday. Cover the cake with casual swoops of fluffy lemon buttercream for the perfect teatime or anytime treat.',
+		yield: 'One 9-by-13-inch cake',
+		time: 50,
+		illustration: '../../../assets/images/02COOKING-LEMONCAKE1-articleLarge-v3.jpg',
+		ingredients: [
+			{
+				name: '1 cup/227 grams unsalted butter (2 sticks), softened, plus more for preparing the pan',
+				order: 0,
+			},
+			{
+				name: '3 cups/385 grams all-purpose flour, plus more for preparing the pan',
+				order: 1,
+			},
+			{
+				name: '1 ⅓ cups whole milk',
+				order: 2,
+			},
+			{
+				name: '¼ cup fresh lemon juice',
+				order: 3,
+			},
+			{
+				name: '1 ¼ teaspoons baking powder',
+				order: 4,
+			},
+			{
+				name: '¾ teaspoon baking soda',
+				order: 5,
+			},
+			{
+				name: '1 teaspoon kosher salt',
+				order: 6,
+			},
+			{
+				name: '2 cups/403 grams granulated sugar',
+				order: 7,
+			},
+			{
+				name: '4 teaspoons packed finely grated lemon zest',
+				order: 8,
+			},
+			{
+				name: '4 large eggs, at room temperature',
+				order: 9,
+			},
+			{
+				name: '¾ cup/170 grams unsalted butter (1 1/2 sticks), softened',
+				order: 10,
+			},
+			{
+				name: '2 cups/246 grams confectioners’ sugar',
+				order: 11,
+			},
+			{
+				name: '1 teaspoon finely grated lemon zest',
+				order: 12,
+			},
+			{
+				name: 'Pinch kosher salt',
+				order: 13,
+			},
+			{
+				name: '4 to 5 tablespoons fresh lemon juice',
+				order: 14,
+			}
+		],
+		preparation: [
+			{
+				step: 'Make the cake: Heat oven to 350 degrees. Line a 9-by-13-inch baking pan with parchment paper, butter and flour the paper.',
+				order: 0
+			},
+			{
+				step: 'In a measuring cup with a spout, combine the milk and lemon juice. Whisk the flour, baking powder, baking soda and salt together in a medium bowl.',
+				order: 1
+			},
+			{
+				step: 'In the bowl of a stand mixer fitted with the paddle attachment, cream butter, sugar and lemon zest until light and fluffy, about 5 minutes. Add eggs, one at a time, mixing for about 30 seconds after each. Scrape down bottom and sides of the mixer to ensure the mixture is well combined.',
+				order: 2
+			},
+			{
+				step: 'With the mixer on low speed, alternately add the flour mixture and milk mixture to the bowl in three additions. Mix until just combined, then use a rubber spatula to finish mixing the batter. Pour the batter into the prepared pan, smooth the top and tap the pan on the counter a few times to release any large air pockets. Bake for 35 to 40 minutes or until puffed and golden and a cake tester inserted into the center comes out clean. Cool the cake completely on a rack before frosting.',
+				order: 3
+			},
+			{
+				step: 'Meanwhile, prepare the frosting: Combine the butter, confectioners\' sugar, lemon zest and a pinch of salt in the bowl of a stand mixer fitted with the paddle attachment. Mix on low until combined, then turn the mixer up to medium-high and stream in 3 tablespoons of lemon juice. Whip the frosting until very light and fluffy, about 5 minutes, adding additional lemon juice as necessary until frosting is smooth and spreadable.',
+				order: 4
+			},
+			{
+				step: 'Spread the frosting over the cooled cake and serve. Store leftover cake at room temperature, covered for up to 2 days.',
+				order: 5
+			}
+		],
+		tags: ['lemon juice', 'lemon zest', 'dessert', 'cake', 'NYT' ],
+		last_edited: '',
+		url: 'lemon-sheet-cake',
+	},
+	{
+		title: 'Sausages With Potatoes and Cabbage',
+		summary: 'A full meal baked in one pan, this easy weeknight dish yields tender, sweet red cabbage and crisp, golden potatoes seasoned with whole caraway and coriander and topped with meaty sausages. You can make this with any kind of sausage: whether spicy turkey, chicken and mushroom, classic pork bratwurst, chorizo or hot Italian links. A metal pan will give you slightly better browning on the potatoes, but use what you’ve got.',
+		yield: '4 to 6 servings',
+		time: 75,
+		illustration: '../../../assets/images/27apperex-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '¼ cup extra-virgin olive oil',
+				order: 0,
+			},
+			{
+				name: '1 pound baby potatoes, halved crosswise or quartered if large',
+				order: 1,
+			},
+			{
+				name: '½ head red cabbage (about 1 pound), core removed, cut into 1-inch-thick wedges',
+				order: 2,
+			},
+			{
+				name: '1 teaspoon caraway seeds, lightly crushed',
+				order: 3,
+			},
+			{
+				name: '1 teaspoon coriander seeds, lightly crushed',
+				order: 4,
+			},
+			{
+				name: '1 teaspoon kosher salt',
+				order: 5,
+			},
+			{
+				name: '1 large onion, thinly sliced',
+				order: 6,
+			},
+			{
+				name: '4 thyme sprigs',
+				order: 7,
+			},
+			{
+				name: '2 rosemary sprigs',
+				order: 8,
+			},
+			{
+				name: '6 fresh pork, turkey, chicken or other sausages (about 1 1/2 pounds)',
+				order: 9,
+			},
+			{
+				name: '1 ½ tablespoons Dijon mustard, plus more for serving',
+				order: 10,
+			},
+			{
+				name: '½ cup freshly grated Parmesan',
+				order: 11,
+			},
+			{
+				name: '1 lemon',
+				order: 12,
+			},
+			{
+				name: '¼ cup chopped dill',
+				order: 13,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 425 degrees. Brush 1 tablespoon oil all over a preferably metal 9-by-13-inch baking dish. Arrange potatoes, cut side down, on one half of the dish. Arrange cabbage wedges on the other side, overlapping slightly to fit.',
+				order: 0
+			},
+			{
+				step: 'Sprinkle caraway and coriander seeds and 3/4 teaspoon salt on top. Scatter onions in an even layer and drizzle with 3 tablespoons oil. Tuck in thyme and rosemary sprigs. Bake for 25 minutes.',
+				order: 1
+			},
+			{
+				step: 'Cut sausages in half lengthwise, then use a pastry brush or spoon to coat mustard all over the pieces.',
+				order: 2
+			},
+			{
+				step: 'When potatoes and cabbage have roasted for 30 minutes, remove baking pan from oven and use tongs to flip cabbage (but not potatoes). Sprinkle everything with Parmesan, arrange sausages, cut side down, on top of cabbage and potatoes, and return to oven.',
+				order: 3
+			},
+			{
+				step: 'Roast until vegetables and sausages are browned on top, another 15 to 25 minutes, depending on the kind of sausages. The sausages are done when they are no longer pink inside and browned on top.',
+				order: 4
+			},
+			{
+				step: 'Remove from oven and transfer sausages to a plate. Discard herb sprigs, grate lemon zest over the vegetables and sprinkle with dill. Cut the zested lemon into wedges. Return sausages to pan (or transfer everything to a serving platter) and serve immediately with more mustard and lemon wedges on the side.',
+				order: 5
+			}
+		],
+		tags: ['baby potato', 'red cabbage', 'sausages', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'sausages-with-potatoes-and-cabbage',
+	},
+	{
+		title: 'Nutella Banana Bread',
+		summary: 'This banana bread definitely leans toward dessert, thanks to thick swirls of chocolate-hazelnut spread. Browning the butter may seem a little fussy, but it\'s totally worth the time and effort. The resulting toasty warm flavor pairs perfectly with sweet bananas and the rich spread. After all, the French term for brown butter is “beurre noisette” which literally translates to hazelnut butter.',
+		yield: 'One 9-inch loaf',
+		time: 80,
+		illustration: '../../../assets/images/01COOKING-NUTELLABROWNIE3-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '½ cup/113 grams unsalted butter (1 stick), plus more for greasing the pan ',
+				order: 0,
+			},
+			{
+				name: '2 cups/256 grams all-purpose flour, plus more for flouring the pan',
+				order: 1,
+			},
+			{
+				name: '1 teaspoon baking soda',
+				order: 2,
+			},
+			{
+				name: '¾ teaspoon kosher salt',
+				order: 3,
+			},
+			{
+				name: '1 ½ cups/310 grams mashed bananas, from about 3 medium bananas',
+				order: 4,
+			},
+			{
+				name: '⅔ cup/134 grams granulated sugar',
+				order: 5,
+			},
+			{
+				name: '¼ cup/57 grams plain Greek yogurt',
+				order: 6,
+			},
+			{
+				name: '2 eggs',
+				order: 7,
+			},
+			{
+				name: '1 teaspoon vanilla extract',
+				order: 8,
+			},
+			{
+				name: '⅓ cup/99 grams chocolate-hazelnut spread, like Nutella',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 350 degrees. Butter and flour a 9x5x3-inch loaf pan.',
+				order: 0
+			},
+			{
+				step: 'Stir the flour, baking soda and salt together in a bowl.',
+				order: 1
+			},
+			{
+				step: 'Brown butter: Melt butter in a light-colored saucepan over medium heat. Cook butter, occasionally scraping the bottom and sides of the pan with a rubber spatula until it turns a deep golden brown and smells nutty. Don’t walk away from the pan during this process. The butter will go from browned and nutty to acrid and burnt in moments. Transfer butter to a large heat-safe mixing bowl and let it cool slightly.',
+				order: 2
+			},
+			{
+				step: 'When the butter has cooled a bit, add the mashed bananas, sugar, yogurt, eggs and vanilla extract. Stir until well combined, then add the flour mixture and stir until just combined. Do not overmix.',
+				order: 3
+			},
+			{
+				step: 'Pour half the batter into prepared pan and spread it evenly with a knife or offset spatula. Spoon half the chocolate-hazelnut spread in several dollops over the top and use a toothpick or skewer to swirl it into the batter. Spoon and spread the remaining batter over the top followed by dollops of the remaining spread. Swirl in the spread, then bake the bread for 55 to 60 minutes or until golden brown and a toothpick inserted into the center comes out clean.',
+				order: 4
+			}
+		],
+		tags: ['banana', 'nutella', 'cake', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'nutella-banana-bread',
+	},
+	{
+		title: 'Honey-and-Soy-Glazed Chicken Thighs',
+		summary: 'In this simple weeknight recipe, chicken thighs are tossed with a sweet-salty glaze made of honey and soy sauce that caramelizes into a sticky coating as it roasts in the oven. Serve the sliced chicken with bibb lettuce cups for wrapping, or over steamed rice to catch all the juices. Leftovers can be chopped and combined with vegetables for a tasty clean-out-the-fridge fried rice.',
+		yield: '4 servings',
+		time: 45,
+		illustration: '../../../assets/images/merlin_146711217_a96fe5d5-6c82-4be2-9f1a-b9d7d7dcfe00-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 tablespoons canola oil',
+				order: 0,
+			},
+			{
+				name: '1 tablespoon minced garlic',
+				order: 1,
+			},
+			{
+				name: ' tablespoon minced ginger',
+				order: 2,
+			},
+			{
+				name: '6 tablespoons low-sodium soy sauce (see tip)',
+				order: 3,
+			},
+			{
+				name: '5 tablespoons mild honey, such as clover, acacia or orange blossom',
+				order: 4,
+			},
+			{
+				name: '3 tablespoons unsalted butter',
+				order: 5,
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 6,
+			},
+			{
+				name: '8 bone-in, skin-on chicken thighs (about 3 pounds)',
+				order: 7,
+			},
+			{
+				name: 'Lemon wedges, for serving',
+				order: 8,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 425 degrees. Heat 1 tablespoon oil in a small saucepan over low heat. Add the garlic and ginger and cook, stirring occasionally, until softened, 3 minutes. Add the soy sauce and honey and simmer, stirring occasionally, until reduced and slightly thickened, about 10 minutes. Turn off the heat then whisk in the butter. Season with salt and pepper.',
+				order: 0
+			},
+			{
+				step: 'On an aluminum foil-lined rimmed baking sheet, season the chicken all over with salt and pepper. Add half the glaze and the remaining 1 tablespoon oil and toss the chicken to coat. Arrange in an even layer, skin side up, and roast until browned, 15 minutes. Brush the chicken all over with 2 tablespoons of the remaining glaze. Roast until golden and cooked through, about 10 minutes.',
+				order: 1
+			},
+			{
+				step: 'Drizzle the chicken with the remaining glaze and serve with lemon wedges.',
+				order: 2
+			}
+		],
+		tips: 'The sauce can be made ahead and refrigerated overnight; just rewarm it in the microwave or stovetop before using. If gluten is a concern, substitute the soy sauce with low-sodium tamari.',
+		tags: ['asian', 'chicken', 'garlic', 'ginger', 'honey', 'soy Sauce', 'meat', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'honey-and-soy-glazed-chicken-thighs',
 	}
 ]; 
