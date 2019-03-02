@@ -414,7 +414,7 @@ export const RECIPES = [
 				order: 4,
 			},
 			{
-				name: '½ Cup of grqted parmesan, plus more for serving',
+				name: '½ Cup of grated parmesan, plus more for serving',
 				order: 5,
 			}
 		],
