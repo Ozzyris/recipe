@@ -2336,7 +2336,7 @@ export const RECIPES = [
 				order: 1,
 			},
 			{
-				name: ' tablespoon minced ginger',
+				name: '1 tablespoon minced ginger',
 				order: 2,
 			},
 			{
@@ -2382,5 +2382,400 @@ export const RECIPES = [
 		tags: ['asian', 'chicken', 'garlic', 'ginger', 'honey', 'soy Sauce', 'meat', 'dinner', 'NYT' ],
 		last_edited: '',
 		url: 'honey-and-soy-glazed-chicken-thighs',
+	},
+	{
+		title: 'Roasted Vegetables',
+		summary: 'The key to roasting all kinds of vegetables is to know the right temperature for cooking them. Dense, low-moisture vegetables (like the roots and squashes in this recipe) need lower heat and more time in the oven than vegetables with more moisture, like eggplant or zucchini. Then simply toss your vegetables with oil and season with salt and pepper before roasting. Top your roasted vegetable with a couple of fried eggs or a dollop of yogurt, or both, and you have a meal.',
+		yield: '4 to 6 servings',
+		time: 45,
+		illustration: '../../../assets/images/23ROASTEDVEGETABLES-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)',
+				order: 0,
+			},
+			{
+				name: 'Oil (olive, coconut or grapeseed)',
+				order: 1,
+			},
+			{
+				name: 'Salt and pepper',
+				order: 2,
+			},
+			{
+				name: 'Fried eggs and/or plain yogurt',
+				order: 3,
+			},
+			{
+				name: 'Fresh herbs, torn or chopped',
+				order: 4,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 425 degrees. Toss vegetables with oil, salt, and pepper. Roast, 30 minutes to an hour, stirring at least once or twice during roasting for even cooking and browning.',
+				order: 0
+			},
+			{
+				step: 'Serve with fried eggs and/or yogurt, ground black pepper and plenty of torn herbs on top.',
+				order: 1
+			}
+		],
+		tips: 'You can use 2 pounds high-moisture vegetables instead (eggplant, peppers, zucchini, fennel, onions, brussels sprouts). Slice them and cut into chunks or wedges. Roast at 450 degrees until golden brown all over, 10 to 40 minutes depending on variety and the size of the pieces. Or use 1 to 2 pounds hardy green vegetables (broccoli rabe, snow peas, green beans, kale, collard greens, chard) or cherry tomatoes, trimmed. Roast at 450 degrees for 7 to 15 minutes.',
+		tags: ['egg', 'root vedgetable', 'vegetarian', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'roasted-vegetables',
+	},
+	{
+		title: 'Creamy Queso With Pickled Jalapeños',
+		summary: 'Queso, the crown jewel of Tex-Mex cuisine, is a creamy, tangy dip made with melted cheese. But it can\'t be just any cheese. This is one of those rare instances (see also: cheeseburger) where the preferred cheese is good, old-fashioned, highly processed American cheese. Velveeta is tops, but Land O\'Lakes and Boar’s Head have deli versions that will do. Kraft singles work, too, but it\'s a lot of unwrapping. The pickled jalapeños in this recipe aren’t traditional, but they do add some welcome heat and a bit of tang that cut through the richness.',
+		yield: '6 servings',
+		time: 30,
+		illustration: '../../../assets/images/16COOKING-QUEST-mediumThreeByTwo440.jpg',
+		ingredients: [
+			{
+				name: '2 jalapeños, with seeds, finely chopped',
+				order: 0,
+			},
+			{
+				name: '½ cup white distilled vinegar',
+				order: 1,
+			},
+			{
+				name: 'Kosher salt, freshly ground pepper',
+				order: 2,
+			},
+			{
+				name: '2 tablespoons vegetable oil',
+				order: 3,
+			},
+			{
+				name: '2 cloves garlic, finely chopped',
+				order: 4,
+			},
+			{
+				name: '1 medium yellow onion, finely chopped',
+				order: 5,
+			},
+			{
+				name: '1 ¾ cups whole milk, plus more as needed',
+				order: 6,
+			},
+			{
+				name: '1 pound Monterey Jack or white Cheddar, grated',
+				order: 7,
+			},
+			{
+				name: '1 pound white or yellow American cheese, shredded or diced into 1/2-inch pieces',
+				order: 8,
+			},
+			{
+				name: '½ cup sour cream',
+				order: 9,
+			},
+			{
+				name: '4 scallions, white and light green parts, thinly sliced',
+				order: 10,
+			},
+			{
+				name: '¾ cup cilantro, tender leaves and stems, chopped',
+				order: 11,
+			},
+			{
+				name: 'Tortilla chips, for serving',
+				order: 12,
+			}
+		],
+		preparation: [
+			{
+				step: 'Place half of the jalapeños in a small bowl and cover with vinegar. Season with salt and pepper and set aside.',
+				order: 0
+			},
+			{
+				step: 'Heat oil in a medium pot over medium heat. Add garlic, onion and remaining jalapeño. Season with salt and pepper and cook, stirring occasionally, until vegetables have softened and onion is translucent, but not browned, about 5 to 8 minutes. Add milk and bring to a simmer. Reduce heat to low and add cheese, one handful at a time, whisking so that none of it settles on the bottom (it can burn that way), encouraging it to melt.',
+				order: 1
+			},
+			{
+				step: 'Keep an eye on the pot and continue whisking until the cheese is completely melted (it can take a while for the American cheese to totally melt) and the mixture is thickened considerably, 8 to 10 minutes. Season with salt and pepper and keep on low until ready to serve (you can always thin with milk if it thickens too much).',
+				order: 2
+			},
+			{
+				step: 'To serve, ladle queso into a large bowl and top with sour cream, scallions, reserved pickled jalapeños and cilantro. Serve with chips for dipping.',
+				order: 3
+			}
+		],
+		tags: ['mexican', 'vegetarial', 'soup', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'creamy-queso-with-pickled-jalapeños',
+	},
+	{
+		title: 'Muffuletta',
+		summary: 'Here is The Times\'s take on a classic New Orleans sandwich, built between slices of light, airy sesame bread, and layered thick with olive salad and cold cuts. It is among the best picnic sandwiches on the planet.',
+		yield: 'Serves 6 to 8',
+		time: 30,
+		illustration: '../../../assets/images/merlin_150672987_2c385b61-c216-48a7-a273-80db45c78551-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 cup roughly chopped pitted green olives, preferably Bella di Cerignola',
+				order: 0,
+			},
+			{
+				name: '1 cup roughly chopped pitted Kalamata olives',
+				order: 1,
+			},
+			{
+				name: '½ cup roughly chopped peeled roasted red peppers',
+				order: 2,
+			},
+			{
+				name: '⅓ cup roughly chopped flat-leaf parsley',
+				order: 3,
+			},
+			{
+				name: '¼ cup celery leaves, torn',
+				order: 4,
+			},
+			{
+				name: '¾ cup thinly sliced celery',
+				order: 5,
+			},
+			{
+				name: '1 clove garlic, minced',
+				order: 6,
+			},
+			{
+				name: '¼ cup extra virgin olive oil',
+				order: 7,
+			},
+			{
+				name: '2 tablespoons red wine vinegar',
+				order: 8,
+			},
+			{
+				name: '½ teaspoon dried oregano',
+				order: 9,
+			},
+			{
+				name: 'Pinch freshly ground black pepper',
+				order: 10,
+			},
+			{
+				name: 'One (8 to 9 inches in diameter and 4 inches high) round loaf crusty Italian bread',
+				order: 11,
+			},
+			{
+				name: '4 ounces soppressata, thinly sliced',
+				order: 12,
+			},
+			{
+				name: '8 ounces provolone cheese, sliced',
+				order: 13,
+			},
+			{
+				name: '4 ounces Italian deli ham, thinly sliced',
+				order: 14,
+			},
+			{
+				name: '4 ounces mortadella, thinly sliced',
+				order: 15,
+			},
+			{
+				name: '4 ounces sweet coppa (cured Italian pork), thinly sliced',
+				order: 16,
+			},
+			{
+				name: '4 ounces hard salami or bresaola, thinly sliced',
+				order: 17,
+			}
+		],
+		preparation: [
+			{
+				step: 'Make the olive salad by combining all ingredients in a large bowl. Set aside to marinate.',
+				order: 0
+			},
+			{
+				step: 'Assemble the muffuletta by slicing the loaf of bread horizontally into 2 large pieces, with the top piece 2/3 the size of the bottom piece. Hollow out the top piece by removing the soft bread inside, leaving 1/2 inch of bread near the crust. Spread half of the olive salad on the bottom piece. Begin layering the meats, starting with the soppressata and adding 1/4 of the provolone cheese between each layer of meat except for the last.',
+				order: 1
+			},
+			{
+				step: 'Spread the remaining olive salad on the last layer of meat and top with the hollowed bread. Press down lightly and let sit at least 10 minutes. To serve, slice into 6 or 8 wedges. It will keep for several hours in the refrigerator wrapped in plastic.',
+				order: 2
+			}
+		],
+		tags: ['italian', 'green olive', 'provolone', 'salami', 'sandwich', 'lunch', 'NYT' ],
+		last_edited: '',
+		url: 'muffuletta',
+	},
+	{
+		title: 'Citrus Salad With Peanuts',
+		summary: 'There’s really no need for leafy greens in a big, meaty citrus salad. The first step is to acquire a range of fruit — citrus of different colors, sizes and shapes, with varied levels of acidity and sweetness. Cutting the fruit so you don’t lose too much juice is key: Cut the pith and peel with a knife, then slice the fruit horizontally with a sharp knife that doesn’t crush and squeeze. A simple dressing of fish sauce, sweetened with a little brown sugar, works well, especially when it’s offset with some fatty pieces of avocado and some fresh herbs.',
+		yield: '4 servings',
+		time: 35,
+		illustration: '../../../assets/images/03mag-eat-slideshow-slide-OZX8-articleLarge.png',
+		ingredients: [
+			{
+				name: '2 blood oranges',
+				order: 0,
+			},
+			{
+				name: '2 grapefruits',
+				order: 1,
+			},
+			{
+				name: '2 tangerines',
+				order: 2,
+			},
+			{
+				name: '1 ripe avocado',
+				order: 3,
+			},
+			{
+				name: '¼ cup fish sauce',
+				order: 4,
+			},
+			{
+				name: '2 tablespoons packed light-brown sugar',
+				order: 5,
+			},
+			{
+				name: '1 tablespoon rice-wine vinegar',
+				order: 6,
+			},
+			{
+				name: '1 shallot, minced',
+				order: 7,
+			},
+			{
+				name: '1 handful mint leaves',
+				order: 8,
+			},
+			{
+				name: '1 handful cilantro leaves',
+				order: 9,
+			},
+			{
+				name: '½ cup roasted, salted peanuts, roughly chopped',
+				order: 10,
+			}
+		],
+		preparation: [
+			{
+				step: 'Slice off citrus tips on both sides using a sharp knife to create two flat surfaces. Setting the citrus on one flat surface, slice off the skin and pith, following the shape of the sphere. Once skins are fully removed, slice each fruit horizontally into 1/2-inch-thick rounds. Roughly dice the avocado.',
+				order: 0
+			},
+			{
+				step: 'Whisk the fish sauce, sugar and vinegar in a large bowl until the sugar dissolves, then stir in the shallot. Transfer the citrus segments, avocado, half the herbs and half the peanuts to the dressing bowl, and gently toss to coat. Tip into a serving plate, and garnish with remaining herbs and peanuts.',
+				order: 1
+			}
+		],
+		tags: ['blod orange', 'salad', 'brown sugar', 'mint leave', 'salad', 'lunch', 'NYT' ],
+		last_edited: '',
+		url: 'citrus-salad-with-peanuts',
+	},
+	{
+		title: 'Lemony Chicken Soup With Fennel',
+		summary: 'Lighter than traditional stew, this lemony chicken number relies on potatoes to thicken it, rather than flour or another starch. If you can, buy fennel with the stem and fronds intact so you can take full advantage of every part of the vegetable: the bulb for aromatics while building the soup, the stems for crunchy texture, and the fronds for a fresh, herblike garnish.',
+		yield: '4 to 6 servings',
+		time: 60,
+		illustration: '../../../assets/images/06romanrex-1-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 to 3 pounds bone-in, skin-on chicken legs, thighs, drumsticks or a mix',
+				order: 0,
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 1,
+			},
+			{
+				name: '6 tablespoons olive oil',
+				order: 2,
+			},
+			{
+				name: '1 large fennel bulb (preferably with the top on)',
+				order: 3,
+			},
+			{
+				name: '4 garlic cloves, thinly sliced',
+				order: 4,
+			},
+			{
+				name: '1 large yellow onion, coarsely chopped',
+				order: 5,
+			},
+			{
+				name: '1 pound small potatoes, sliced about 1/4-inch thick',
+				order: 6,
+			},
+			{
+				name: '1 lemon, coarsely chopped (discard the seeds), plus 1 additional lemon for zesting and juicing',
+				order: 7,
+			},
+			{
+				name: '4 dried chiles de árbol or 1/2 teaspoon red-pepper flakes (optional)',
+				order: 8,
+			},
+			{
+				name: '6 cups chicken or vegetable broth',
+				order: 9,
+			},
+			{
+				name: '1 tablespoon fennel seed',
+				order: 10,
+			},
+			{
+				name: '1 cup dill, coarsely chopped',
+				order: 11,
+			},
+			{
+				name: '2 scallions, thinly sliced',
+				order: 12,
+			},
+			{
+				name: 'Sour cream, full-fat Greek yogurt or feta (optional)',
+				order: 13,
+			},
+			{
+				name: 'Sumac (optional)',
+				order: 14,
+			}
+		],
+		preparation: [
+			{
+				step: 'Season chicken with salt and pepper. Heat 2 tablespoons olive oil in a large Dutch oven or heavy-bottomed pot over medium-high heat.',
+				order: 0
+			},
+			{
+				step: 'Working in batches, add chicken, skin-side down, and cook until skin is well browned and fat has started to render, 5 to 8 minutes. Using tongs, flip chicken and continue to cook until well browned, another 3 to 5 minutes. Leaving all the fat and drippings behind, transfer chicken to a rimmed baking sheet, a large plate or a cutting board and let rest.',
+				order: 1
+			},
+			{
+				step: 'Meanwhile, if you’ve got the top of the fennel bulb, thinly slice it, fronds and all; set aside.',
+				order: 2
+			},
+			{
+				step: 'Coarsely chop the white part of the fennel bulb and add to the pot along with the garlic and onion. Season with salt and pepper and cook, stirring occasionally, until the vegetables have softened but not yet browned, 5 to 8 minutes. Add potatoes, chopped lemon and chiles, and stir to coat.',
+				order: 3
+			},
+			{
+				step: 'Return chicken to the pot and add broth, seasoning with salt and pepper. Bring to a simmer and place the lid on the pot. Reduce heat to medium-low and continue to cook at a strong simmer until chicken is cooked through and nearly falling off the bone, 20 to 25 minutes. Using tongs, remove chicken and let rest until it’s cool enough to handle. Pick the meat from the chicken, removing any cartilage, skin and bones. (Alternatively, leave the chicken pieces intact and serve that way.)',
+				order: 4
+			},
+			{
+				step: 'Return meat to the pot along with the thinly sliced fennel top, if using. Season the soup with salt and pepper, turn the heat to medium-low and continue to gently simmer while you make the toasted fennel seed topping.',
+				order: 5
+			},
+			{
+				step: 'Heat remaining 4 tablespoons olive oil in a small pot or skillet over medium. Add fennel seed and half of the fresh dill, and swirl until fennel seed is toasted and dill is sizzling and crispy, about 2 minutes.',
+				order: 6
+			},
+			{
+				step: 'Divide soup among bowls, and spoon fennel seed topping over it, followed by scallions and remaining fresh dill. Add a dollop of yogurt or sour cream (or crumbles of feta) and sprinkle with sumac, if you like. Zest the remaining lemon over the bowls, then cut lemon in half to squeeze juice over them too.',
+				order: 7
+			}
+		],
+		tags: ['chicken', 'dill', 'fennel', 'lemon', 'potato', 'soup', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'lemony-chicken-soup-with-fennel',
 	}
 ]; 
