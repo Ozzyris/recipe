@@ -18,15 +18,21 @@
 			</ul>
 		</div>
 		<div class="preparation">
-				<h3>Preparation</h3>
+			<h3>Preparation</h3>
 			<ol>
 				<li *ngFor="let step of recipe_content.preparation; let index = index"><p>{{index+1}}. </p>{{step.step}}</li>
 			</ol>
+		</div>
+		<div class="tips" *ngIf="recipe_content.tips">
+			<h3>Tips</h3>
+			<p>{{recipe_content.tips}}</p>
 		</div>
 		<div class="details">
 			<ul class="tags">
 				<li class="tag" *ngFor="let tag of recipe_content.tags">{{tag}}</li>
 			</ul>
+			<p>{{recipe_content.time}} min</p>
+			<p>{{recipe_content.yield}}</p>
 			<p>Last updated, Yesterday at 09:23pm</p>
 		</div>
 	</div>

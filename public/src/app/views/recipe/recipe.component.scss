@@ -136,6 +136,36 @@ section.recipes{
 				}
 			}
 		}
+		div.tips{
+			@include container_sizing( 600px );
+			padding: 20px 0 40px 0;
+			position: relative;
+			background-color: #F9FAFC;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				display: block;
+				height: 2px;
+				width: 32px;
+				background-color: #FFC414;
+			}
+			h3{
+				font-size: 18px;
+				font-weight: 800;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 16px;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+				margin-bottom: 20px;
+				line-height: 18px;
+			}
+		}
 
 		div.details{
 			background-color: #FFFFFF;
