@@ -28,6 +28,7 @@
 					</div>
 				</article>
 			</div>
+			<p class="recipe-number" >{{all_recipes.length}} Recipes</p>
 		</div>
 
 		<!-- Searched Recipe -->
@@ -40,6 +41,7 @@
 				</article>
 			</div>
 			<div class="empty_states" *ngIf="(all_recipes | searcher_pipe: search_input).length === 0">
+				<img src="../../../assets/images/nothing-found.png" alt="Nothing found">
 				<p>Nothing found</p>
 			</div>
 		</div>

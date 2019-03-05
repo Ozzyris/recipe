@@ -132,6 +132,31 @@ section.recipes{
 					}
 				}
 			}
+			div.empty_states{
+				img{
+					width: 200px;
+					margin: 0 auto;
+					display: block;
+				}
+				p{
+					width: 100%;
+					font-family: 'courrier_new';
+					font-size: 18px;
+					font-weight: 400;
+					color: #3C4F71;
+					text-align: center;
+					line-height: 48px;
+				}
+			}
+			p.recipe-number{
+				width: 100%;
+				font-family: 'courrier_new';
+				font-size: 12px;
+				font-weight: 400;
+				color: #3C4F71;
+				text-align: center;
+				line-height: 48px;
+			}
 		}
 	}
 }

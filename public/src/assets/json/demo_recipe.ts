@@ -2777,5 +2777,216 @@ export const RECIPES = [
 		tags: ['chicken', 'dill', 'fennel', 'lemon', 'potato', 'soup', 'dinner', 'NYT' ],
 		last_edited: '',
 		url: 'lemony-chicken-soup-with-fennel',
+	},
+	{
+		title: 'Beignets',
+		summary: 'The French might have been the first to deep-fry choux pastry, but it’s in New Orleans that beignets became a true mainstay in bakeries and cafes. This version is relatively easy to make at home: The yeast-leavened dough comes together quickly, is very forgiving to work with and fries up light and airy. The yeast must be fresh and active: Once stirred with warm water and sugar, let the mixture stand for 10 minutes. If the yeast is fresh, it will create a foamy, bubbly layer on top. (If this doesn’t happen, you’ll need to start over with new yeast.) You can cook the beignets in a Dutch oven or deep skillet, no deep-fryer necessary. To obtain the perfect puffs, fry the fritters in batches so they have plenty of room to cook evenly on all sides. Beignets are best eaten hot, buried in a blanket of powdered sugar.',
+		yield: 'About 3 dozen',
+		time: 45,
+		illustration: '../../../assets/images/merlin_150865437_30e3a845-e17d-4688-a595-ca13cef488bc-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ teaspoons active dry yeast',
+				order: 0,
+			},
+			{
+				name: '¼ cup/50 grams granulated sugar',
+				order: 1,
+			},
+			{
+				name: '¾ cup/180 milliliters warm water',
+				order: 2,
+			},
+			{
+				name: '½ cup/120 milliliters whole milk',
+				order: 3,
+			},
+			{
+				name: '1 large egg',
+				order: 4,
+			},
+			{
+				name: '2 tablespoons unsalted butter, melted',
+				order: 5,
+			},
+			{
+				name: '½ teaspoon kosher salt',
+				order: 6,
+			},
+			{
+				name: '3 ½ cups/450 grams all-purpose flour, plus more for dusting',
+				order: 7,
+			},
+			{
+				name: 'Vegetable oil, for greasing the bowl and deep-frying',
+				order: 8,
+			},
+			{
+				name: 'Confectioners’ sugar, for dusting',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'In the bowl of a stand mixer fitted with a dough hook attachment, combine yeast, 1 tablespoon granulated sugar and warm water; use a fork to mix well. Let stand until foamy, about 10 minutes. Add milk, egg, butter, salt and remaining 3 tablespoons granulated sugar and beat with fork to blend. With machine on low speed, gradually add flour. Increase speed to medium and beat just until a smooth dough forms, about 5 minutes.',
+				order: 0
+			},
+			{
+				step: 'Lightly grease a large bowl with vegetable oil. Transfer dough to the prepared bowl and turn to coat dough in oil. Cover bowl with plastic wrap and let stand at room temperature until doubled in size and very puffy, about 3 hours.',
+				order: 1
+			},
+			{
+				step: 'In a Dutch oven or cast-iron skillet, heat 2 inches of oil over medium to 350 degrees. On a lightly floured surface, turn out dough and cut in half. Working with one piece at a time and using a lightly floured rolling pin, roll dough into a 10-by-8-inch rectangle (about 1/4-inch thick). Cut into 2-inch squares and transfer to a parchment-lined baking sheet. Repeat with remaining dough, transferring to a second parchment-lined sheet.',
+				order: 2
+			},
+			{
+				step: 'In batches, fry dough until puffed and golden underneath, about 2 minutes. Flip the beignets and fry until golden on second side, 1 minute more. Transfer beignets to a paper towel-lined baking sheet and let stand for 1 minute. Generously dust with confectioners’ sugar and serve warm.',
+				order: 3
+			}
+		],
+		tags: ['active dry yeast', 'confectioners sugar', 'milk', 'sugar', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'beignets',
+	},
+	{
+		title: 'Zuni Café’s Focaccia',
+		summary: 'The excellent hamburger at Zuni Café in San Francisco has always been served on a square of toasted rosemary focaccia. The pastry chef Annie Callan offers this house recipe: Scaled to a reasonable size, it is easy to put together and fun to make. Bake it in a 9-by-12-inch rimmed baking sheet for a nice, thick focaccia that can be cut into six 4-inch squares (the trimmings are a delicious snack), and split horizontally into a hamburger bun. The baked focaccia can be kept for several days in an airtight container and needs only a brief toasting to bring it back to life. But you can also roll the dough thinner and bake a more pizzalike flatbread, perhaps topped with stewed onions or peppers.',
+		yield: '6 squares',
+		time: 150,
+		illustration: '../../../assets/images/merlin_150546081_d75979bf-29cd-456c-87b1-99fcd83fef12-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ¼ cups/300 milliliters warm water',
+				order: 0,
+			},
+			{
+				name: '1 ½ teaspoons dry active yeast',
+				order: 1,
+			},
+			{
+				name: '3 tablespoons olive oil, plus more for greasing pan',
+				order: 2,
+			},
+			{
+				name: '2 teaspoons minced rosemary',
+				order: 3,
+			},
+			{
+				name: '1 ⅔ cups/215 grams bread flour',
+				order: 4,
+			},
+			{
+				name: '1 ⅔ cups/215 grams all-purpose flour, plus more for kneading',
+				order: 5,
+			},
+			{
+				name: '1 ½ teaspoons kosher salt',
+				order: 6,
+			},
+			{
+				name: 'Fine cornmeal or semolina, for dusting bottom of pan',
+				order: 7,
+			}
+		],
+		preparation: [
+			{
+				step: 'In the mixing bowl of a stand mixer, combine water and yeast, stirring to dissolve. Add 3 tablespoons oil and rosemary. Add bread flour and mix, using dough hook, to make a stiff batter. Let sit at room temperature until bubbly and doubled in size, about 20 minutes.',
+				order: 0
+			},
+			{
+				step: 'Add all-purpose flour and salt. Mix at low speed until dough comes together. Continue mixing for 10 minutes, until smooth.',
+				order: 1
+			},
+			{
+				step: 'Remove dough hook and cover bowl with plastic wrap. Let dough rise until doubled, about 40 minutes. Punch down dough, remove from bowl and knead briefly on work surface. Dough should be soft and slightly sticky. Dust with about 2 tablespoons all-purpose flour, if necessary, for easier handling.',
+				order: 2
+			},
+			{
+				step: 'Using a rolling pin, stretch the dough into a rectangle about 10 by 14 inches. Cover loosely with plastic wrap, and let relax for 10 minutes.',
+				order: 3
+			},
+			{
+				step: 'Grease a 9-by-12-inch rimmed baking sheet with 1 tablespoon olive oil. Dust bottom of pan lightly with cornmeal.',
+				order: 4
+			},
+			{
+				step: 'Transfer dough to baking sheet, and, using your hands, stretch it to the edges of the baking sheet. Dough will spring back: Let it rest again for a few minutes; it may take several attempts to fill entire baking sheet evenly.',
+				order: 5
+			},
+			{
+				step: 'Cover stretched dough loosely with a damp kitchen towel (or use an inverted rimmed baking sheet), set in a somewhat-warm place, and let rise to top of baking sheet, or slightly higher, about 40 minutes.',
+				order: 6
+			},
+			{
+				step: 'Heat oven to 400 degrees. Uncover and bake for 35 to 40 minutes, until nicely browned. Cool on a rack and cut into 4-inch squares. (The extra focaccia trimmings are delicious toasted.) Split squares horizontally and reheat before serving.',
+				order: 7
+			}
+		],
+		tips: 'Dough may be prepared through Step 2 up to 24 hours in advance and refrigerated in a resealable plastic bag. If you\'d prefer to make individual buns, weigh out 4-ounce/120-gram pieces of dough. Form into balls, then flatten. Place 3 inches apart on an oiled, cornmeal-dusted baking sheet. Cover loosely with a damp kitchen towel, and let rise until doubled, about 30 minutes. Bake at 400 degrees for 15 minutes, until nicely browned.',
+		tags: ['vegan', 'vegetarian sugar', 'italian', 'yeast', 'bread', 'rosemary', 'NYT' ],
+		last_edited: '',
+		url: 'zuni-café-s-focaccia',
+	},
+	{
+		title: 'Zuni Café’s Hamburger',
+		summary: 'Made to exacting standards, the hamburger at Zuni Café, in San Francisco, is legendary. First, grass-fed beef is salted well in advance of grinding, which gives the meat its succulence. Grilled over coals and flipped three times to prevent it from overcharring or becoming tough, the patty is rested, like a roast. It is then served on a toasted square of rosemary focaccia, smeared with handmade aioli and accompanied by Zuni’s acclaimed house pickles: fuchsia-red onion rings and turmeric-tinged sliced zucchini. With all the attention to detail, you’ll see why a Zuni burger sells for $18. It is wonderful on its own, but toppings like Shelburne Farms Cheddar, Bayley Hazen blue cheese, grilled onions or portobello mushroom are also available, and most customers can’t resist a heaping plate of shoestring potatoes alongside. It’s perfectly possible to make these burgers at home, but know that the full project involves several recipes, so it’s probably best to spread the work out over a few days.',
+		yield: '4 servings',
+		time: 60,
+		illustration: '../../../assets/images/merlin_150550896_37ba3d6a-edde-4060-9285-6865be03e3b3-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ pounds boneless beef chuck, well marbled',
+				order: 0,
+			},
+			{
+				name: '1 generous teaspoon kosher salt',
+				order: 1,
+			},
+			{
+				name: 'Focaccia <a routerLink="/recipe/zuni-café-s-focaccia">See recipe</a>',
+				order: 2,
+			},
+			{
+				name: 'Small-batch aioli',
+				order: 3,
+			},
+			{
+				name: 'Red oak leaf or other lettuce leaves, for garnish',
+				order: 4,
+			},
+			{
+				name: 'Zucchini pickles',
+				order: 5,
+			},
+			{
+				name: 'Red onion pickles',
+				order: 6,
+			}
+		],
+		preparation: [
+			{
+				step: 'Cut meat into 1-inch chunks or strips. Sprinkle with salt, tossing to coat well, and refrigerate, covered, for about 8 hours or up to 24 hours.',
+				order: 0
+			},
+			{
+				step: 'Assemble your meat grinder, using the grinder plate with 3/16-inch holes. Chill the grinder in a bowl of ice water for 30 minutes or refrigerate for several hours. With motor set to medium speed, drop cold meat into grinding tube and let the machine pull pieces through (resist forcing the meat through with pushing tool) into a chilled bowl. Grind the meat twice. (You may also hand-chop the meat in small batches or use a food processor with a very sharp blade, but the patties will be a bit more fragile.)',
+				order: 1
+			},
+			{
+				step: 'Working quickly, form 6-ounce patties by hand, first making spheres, then flattening them to a 3/4-inch thickness. Press patties slightly thinner in the middle. (This ensures an even thickness in the finished burgers.) Keep patties refrigerated until ready to cook.',
+				order: 2
+			},
+			{
+				step: 'If grilling, prepare your coals. Grill patties over medium-hot coals, flipping them three times to make sure they don’t char. A cold 6-ounce patty will take about 9 minutes for a rosy medium-rare. Rest for 2 to 3 minutes off the heat, as you would a roast, before serving. If using a preheated cast-iron pan over medium heat, cook burgers for about 10 minutes, also flipping three times, plus resting.',
+				order: 3
+			},
+			{
+				step: 'To serve, warm a piece of focaccia for each burger and split the bread horizontally. Smear the bottom half with a dab of aioli, the add lettuce leaves and the cooked burger. Top with the other half of the focaccia. Serve with zucchini pickles and red onion pickles.',
+				order: 4
+			}
+		],
+		tags: ['american', 'beef chunk', 'burger', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'zuni-café-s-hamburger',
 	}
 ]; 
