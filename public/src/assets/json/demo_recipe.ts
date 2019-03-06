@@ -2988,5 +2988,67 @@ export const RECIPES = [
 		tags: ['american', 'beef chunk', 'burger', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
 		url: 'zuni-café-s-hamburger',
+	},
+	{
+		title: 'Roman Egg Drop Soup',
+		summary: 'Stracciatella alla Romana, or Roman egg drop soup, can be made in any season, and goes together quickly, as long as you have the most important ingredient: good homemade chicken stock. Parmesan and eggs are whisked together and poured into the bubbling broth to make “i straccetti,” or savory, eggy little rags.',
+		yield: '6 servings',
+		time: 20,
+		illustration: '../../../assets/images/romaneggdrop-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '12 cups homemade chicken broth',
+				order: 0,
+			},
+			{
+				name: 'Salt',
+				order: 1,
+			},
+			{
+				name: '6 large eggs',
+				order: 2,
+			},
+			{
+				name: 'Nutmeg, for grating',
+				order: 3,
+			},
+			{
+				name: 'Zest of 1 lemon, grated',
+				order: 4,
+			},
+			{
+				name: 'Freshly ground black pepper',
+				order: 5,
+			},
+			{
+				name: 'Parmesan for grating',
+				order: 6,
+			},
+			{
+				name: '2 to 3 tablespoons chopped Italian parsley',
+				order: 6,
+			}
+		],
+		preparation: [
+			{
+				step: 'In a soup pot over high heat, bring chicken broth to a boil. Season to taste with salt and reduce heat to a simmer.',
+				order: 0
+			},
+			{
+				step: 'Crack eggs into a medium-size bowl and beat lightly with a wire whisk. Whisk in about 1/2 teaspoon of grated nutmeg, the lemon zest, a large pinch of salt, several twists of the pepper mill and 1 3/4 ounces grated Parmesan.',
+				order: 1
+			},
+			{
+				step: 'Pour egg mixture into simmering chicken broth and stir gently until mixture forms little rags. Simmer for another minute or so.',
+				order: 2
+			},
+			{
+				step: 'Ladle the soup into individual bowls and sprinkle parsley over each serving. Pass more grated Parmesan separately.',
+				order: 3
+			}
+		],
+		tags: ['soup', 'chicken broth', 'egg', 'itlian', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'roman-egg-drop-soup',
 	}
 ]; 
