@@ -3047,8 +3047,188 @@ export const RECIPES = [
 				order: 3
 			}
 		],
-		tags: ['soup', 'chicken broth', 'egg', 'itlian', 'lunch', 'dinner', 'NYT' ],
+		tags: ['soup', 'chicken broth', 'egg', 'italian', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
 		url: 'roman-egg-drop-soup',
+	},
+	{
+		title: 'Toll House Chocolate Chip Cookies',
+		summary: 'In the 1930s, Ruth Wakefield, the inventor of the chocolate chip cookie, ran the Toll House Inn, a popular restaurant in eastern Massachusetts, with her husband. Using an ice pick, Wakefield broke a semisweet chocolate bar into little bits, mixed them into brown-sugar dough, and the chocolate chip cookie was born. In 1939, she sold Nestlé the rights to reproduce her recipe on its packages (reportedly for only $1) and was hired to write recipes for the company, which supposedly supplied her with free chocolate for life. This recipe is very close to Mrs. Wakefield\'s original (hers called for a teaspoon of hot water and 1/2-teaspoon-sized cookies), and the one you\'ll still find on the back of every yellow bag of Nestlé chocolate chips.',
+		yield: '5 dozen',
+		time: 30,
+		illustration: '../../../assets/images/merlin_150672999_92f7eb0d-5f5c-4fe0-baa4-8935414e67d2-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 ¼ cups all-purpose flour',
+				order: 0,
+			},
+			{
+				name: '1 teaspoon baking soda',
+				order: 1,
+			},
+			{
+				name: '1 teaspoon salt',
+				order: 2,
+			},
+			{
+				name: '1 cup butter (2 sticks), softened',
+				order: 3,
+			},
+			{
+				name: '¾ cup granulated sugar',
+				order: 4,
+			},
+			{
+				name: '¾ cup packed brown sugar',
+				order: 5,
+			},
+			{
+				name: '1 teaspoon vanilla extract',
+				order: 6,
+			},
+			{
+				name: '2 large eggs',
+				order: 6,
+			},
+			{
+				name: '2 cups/12 ounces semisweet chocolate chips',
+				order: 7,
+			},
+			{
+				name: '1 cup chopped nuts (optional)',
+				order: 8,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 375. Combine flour, baking soda and salt in small bowl. Beat butter, granulated sugar, brown sugar and vanilla extract in large mixing bowl until creamy. Add eggs, one at a time, beating well after each addition. Gradually beat in flour mixture. Stir in chocolate chips and nuts, if using. Drop by rounded tablespoon onto ungreased baking sheets.',
+				order: 0
+			},
+			{
+				step: 'Bake for 9 to 11 minutes or until golden brown. Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.',
+				order: 1
+			}
+		],
+		tags: ['dessert', 'cake', 'chocolate', 'NYT' ],
+		last_edited: '',
+		url: 'toll-couse-chocolate-chip-cookies',
+	},
+	{
+		title: 'Chicken-Tarragon Pot Pie',
+		summary: 'This recipe, which is adapted from “Julia and Jacques at Home” by Julia Child and Jacques Pépin and was featured in a New York Times article about roast chicken, makes delicious use of leftovers (it would be excellent with the Thanksgiving turkey remainders as well). It is rich, but packed with vegetables. You can substitute dried tarragon for fresh, but use less than a tablespoon, and season to taste.',
+		yield: '8 servings',
+		time: 90,
+		illustration: '../../../assets/images/16COOKING_CHICKENTARRPOTPIE-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 cups all-purpose flour',
+				order: 0,
+			},
+			{
+				name: '14 tablespoons (1 3/4 sticks) cold unsalted butter, cut into pieces',
+				order: 1,
+			},
+			{
+				name: '1 tablespoon cold vegetable shortening',
+				order: 2,
+			},
+			{
+				name: 'Scant 1/2 teaspoon salt',
+				order: 3,
+			},
+			{
+				name: 'Scant 1/2 teaspoon sugar',
+				order: 4,
+			},
+			{
+				name: '1 egg',
+				order: 5,
+			},
+			{
+				name: '5 tablespoons unsalted butter',
+				order: 6,
+			},
+			{
+				name: '1 cup chopped carrot',
+				order: 6,
+			},
+			{
+				name: '1 cup chopped celery',
+				order: 7,
+			},
+			{
+				name: '1 cup thinly sliced leeks',
+				order: 8,
+			},
+			{
+				name: '1 tablespoon chopped fresh tarragon ',
+				order: 9,
+			},
+			{
+				name: '1 cup frozen baby green peas',
+				order: 10,
+			},
+			{
+				name: '4 tablespoons all-purpose flour',
+				order: 11,
+			},
+			{
+				name: '2 ½ cups chicken broth',
+				order: 12,
+			},
+			{
+				name: '1 cup heavy cream',
+				order: 13,
+			},
+			{
+				name: '¼ teaspoon salt',
+				order: 14,
+			},
+			{
+				name: '¼ teaspoon freshly ground pepper',
+				order: 15,
+			},
+			{
+				name: '3 cups leftover roast chicken, cut into 1/2-inch chunks',
+				order: 16,
+			}
+		],
+		preparation: [
+			{
+				step: 'To make the crust, combine flour, butter, shortening, salt and sugar in a food processor. Pulse together just until the mixture is crumbly and butter is broken into small pieces. Pour 1/3 cup ice water into the machine, and pulse 3 or 4 times. Squeeze a little dough in your hand to see whether it clumps together and is evenly moist. If not, add another tablespoon of water, and pulse 1 or 2 times more. Don\'t overmix so that the dough forms a ball.',
+				order: 0
+			},
+			{
+				step: 'Turn out dough on a large sheet of plastic wrap. Lift ends of plastic to gather dough together inside. Press into a large disk, and wrap tightly in plastic wrap. Refrigerate until ready to use, up to 2 days.',
+				order: 1
+			},
+			{
+				step: 'To make the filling, melt 2 tablespoons butter in a large skillet over medium-high heat. Add carrot, celery, leeks and tarragon, and cook, stirring, just until slightly softened but not browned (reduce the heat if necessary to prevent browning), about 3 minutes. Transfer cooked vegetables to a bowl, wipe out the skillet, and place it back on the stove.',
+				order: 2
+			},
+			{
+				step: 'Add remaining 3 tablespoons butter, and melt over medium heat. Whisk in flour, and cook, whisking, until the mixture bubbles and smells cooked. Do not let it brown. Whisk in 2 cups broth, and cook, whisking, 1 minute. Whisk in cream, and cook 2 or 3 minutes, just until thickened. Add salt and pepper. If the sauce is too thick, whisk in remaining broth.',
+				order: 3
+			},
+			{
+				step: 'Heat the oven to 400 degrees. Add cooked vegetables and peas, chicken and sauce to 8-inch deep pie dish or other baking dish, mix gently, and taste for seasoning.',
+				order: 4
+			},
+			{
+				step: 'Flour a work surface. Remove dough from refrigerator. Roll out the dough, turning and flouring often, and cut a shape approximately the size of your baking dish plus 1 1/2 inches overlap all around.',
+				order: 5
+			},
+			{
+				step: 'Roll dough up onto the rolling pin, and unroll over dish, so it rests evenly on top of filling. Fold the edges under and crimp. Poke tip of knife through crust to create 3 vent holes near the center. Whisk the egg with a teaspoon of cold water. Use a pastry brush to lightly coat the entire crust with egg wash. Place on cookie sheet, and place in oven.',
+				order: 6
+			},
+			{
+				step: 'Bake 20 minutes, then reduce temperature to 375 degrees. Bake 25 to 30 minutes more, until crust is golden and filling is bubbling through vents. Let rest 10 minutes before serving.',
+				order: 7
+			}
+		],
+		tags: ['pie', 'dinner', 'chicken', 'NYT' ],
+		last_edited: '',
+		url: 'chicken-tarragon-pot-pie',
 	}
 ]; 
