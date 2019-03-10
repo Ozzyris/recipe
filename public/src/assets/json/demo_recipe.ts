@@ -3161,7 +3161,7 @@ export const RECIPES = [
 				order: 8,
 			},
 			{
-				name: '1 tablespoon chopped fresh tarragon ',
+				name: '1 tablespoon chopped fresh tarragon',
 				order: 9,
 			},
 			{
@@ -3230,5 +3230,83 @@ export const RECIPES = [
 		tags: ['pie', 'dinner', 'chicken', 'NYT' ],
 		last_edited: '',
 		url: 'chicken-tarragon-pot-pie',
+	},
+	{
+		title: 'Irish Cream Poundcake',
+		summary: 'This classic poundcake has a boozy twist that’s perfect for parties, St. Patrick’s Day and beyond. Irish cream liqueur — a rich blend of Irish whiskey, cream, sugar, vanilla and other flavorings — is added to both the batter and the glaze, which yields doubly flavorful results. The alcohol in the cake burns off during baking, but if you’d like to mute the hint of alcohol in the glaze, simply bring the Irish cream to a simmer and let it cool before whisking it with the confectioners’ sugar. Serve the cake alone, with a scoop of coffee ice cream or a hot cup of coffee (spiked with Irish cream, perhaps). The cake keeps well at room temperature, tightly wrapped, for up to 4 days.',
+		yield: '8 servings',
+		time: 90,
+		illustration: '../../../assets/images/em-irish-cream-poundcake-articleLarge.jpg',
+		ingredients: [
+			{
+				name: 'Nonstick cooking spray',
+				order: 0,
+			},
+			{
+				name: '1 cup/225 grams unsalted butter (2 sticks), at room temperature, plus more for greasing the pan',
+				order: 1,
+			},
+			{
+				name: '1 ⅔ cups/215 grams all-purpose flour, plus more for dusting the pan',
+				order: 2,
+			},
+			{
+				name: '⅔ cup/145 grams light brown sugar',
+				order: 3,
+			},
+			{
+				name: '½ cup/100 grams granulated sugar',
+				order: 4,
+			},
+			{
+				name: '4 large eggs, at room temperature',
+				order: 5,
+			},
+			{
+				name: '1 ¼ teaspoons baking powder',
+				order: 6,
+			},
+			{
+				name: '½ teaspoon fine sea salt',
+				order: 6,
+			},
+			{
+				name: '½ cup/120 milliliters Irish cream',
+				order: 7,
+			},
+			{
+				name: '1 ¼ cups/155 grams confectioners’ sugar',
+				order: 8,
+			},
+			{
+				name: '3 tablespoons Irish cream, plus more as needed',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 350 degrees. Spray a 9-inch loaf pan with nonstick spray, then dust with flour.',
+				order: 0
+			},
+			{
+				step: 'In the bowl of a stand mixer fitted with the paddle attachment, cream the butter, brown sugar and granulated sugar on medium speed until light and fluffy, 4 to 5 minutes. Add the eggs one at a time, mixing on medium speed until incorporated, about 30 seconds each. Scrape down the sides of the bowl after each addition.',
+				order: 1
+			},
+			{
+				step: 'In a medium bowl, whisk together the flour, baking powder and salt. Add the mixture to the bowl of the stand mixer and mix on low until incorporated, about 30 seconds. Add the Irish cream and mix on low to combine, 15 seconds more.',
+				order: 2
+			},
+			{
+				step: 'Pour the batter into the prepared pan and spread in an even layer. Bake until the surface of the cake is lightly golden brown and a toothpick inserted into the thickest part comes out clean, 55 to 65 minutes. Let cool in the pan for 10 minutes, then unmold onto a wire rack to cool completely.',
+				order: 3
+			},
+			{
+				step: 'Make the glaze: Whisk the powdered sugar and Irish cream together in a medium bowl to form a thick glaze. Spoon the glaze over the surface of the loaf, letting the excess drip down the sides. Let the glaze set for 10 to 15 minutes before slicing.',
+				order: 4
+			}
+		],
+		tags: ['irish', 'cake', 'dessert', 'irish cream', 'NYT' ],
+		last_edited: '',
+		url: 'irish-cream-poundcake',
 	}
 ]; 
