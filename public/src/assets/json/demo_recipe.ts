@@ -3308,5 +3308,91 @@ export const RECIPES = [
 		tags: ['irish', 'cake', 'dessert', 'irish cream', 'NYT' ],
 		last_edited: '',
 		url: 'irish-cream-poundcake',
+	},
+	{
+		title: 'Beef Short Rib Rice Bowls',
+		summary: 'Inspired by galbi, or Korean barbecued short ribs, this recipe takes a sharp turn away from the traditional sweet, fruity treatment and instead skews savory, with warm spices like cumin, coriander and turmeric. Meaty short ribs generally require a lengthy cook time, but slice them thinly off the bone and they’ll tenderize quickly when seared on the stovetop—or you could use slivers of skirt steak or hanger steak instead. The skinny strips also have a higher surface area, which means they’ll quickly soak up the flavors of the marinade. Rice is the perfect canvas for the meat, and celery and lettuce balance out the bold flavors with lightness and crunch.',
+		yield: '4 servings',
+		time: 15,
+		illustration: '../../../assets/images/merlin_150549891_0b1acbfc-5444-4fbd-954b-5f9e2a02eb77-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 pound boneless beef short ribs, sliced 1/4-inch thick',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons soy sauce',
+				order: 1,
+			},
+			{
+				name: '1 tablespoon grated fresh ginger',
+				order: 2,
+			},
+			{
+				name: '1 tablespoon light brown sugar',
+				order: 3,
+			},
+			{
+				name: '2 garlic cloves, grated',
+				order: 4,
+			},
+			{
+				name: '1 teaspoon ground coriander',
+				order: 5,
+			},
+			{
+				name: '1 teaspoon ground turmeric',
+				order: 6,
+			},
+			{
+				name: '½ teaspoon red-pepper flakes',
+				order: 6,
+			},
+			{
+				name: 'Kosher salt',
+				order: 7,
+			},
+			{
+				name: '2 tablespoons vegetable oil',
+				order: 8,
+			},
+			{
+				name: '4 cups cooked short-grain rice',
+				order: 9,
+			},
+			{
+				name: '1 small head green leaf lettuce, shredded',
+				order: 10,
+			},
+			{
+				name: '2 stalks celery, thinly sliced crosswise',
+				order: 11,
+			},
+			{
+				name: 'Fresh cilantro, for serving',
+				order: 12,
+			},
+			{
+				name: 'Lime wedges, for serving',
+				order: 13,
+			}
+		],
+		preparation: [
+			{
+				step: 'Combine short ribs, soy sauce, ginger, sugar, garlic, coriander, cumin, turmeric, red-pepper flakes and 1 teaspoon kosher salt in a medium bowl and toss to coat. Cover, transfer to the fridge and let marinate for 5 minutes or up to 8 hours, if desired.',
+				order: 0
+			},
+			{
+				step: 'Heat oil in a large skillet over medium. Working in batches, cook meat until browned all over, about 3 minutes per side.',
+				order: 1
+			},
+			{
+				step: 'Divide rice and short ribs among bowls. Top with lettuce, celery and cilantro. Serve with lime wedges for squeezing on top.',
+				order: 2
+			}
+		],
+		tags: ['celery', 'ginger', 'rice', 'shortrib', 'meat', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'beef-short-rib-rice-bowls',
 	}
 ]; 
