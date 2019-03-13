@@ -107,7 +107,15 @@ recipe.statics.update_tags = function(recipe_id, tags){
     })
 };
 //INGREDIENTS
-recipe.statics.insert_ingredients = function(recipe_id, ingredient){
+recipe.statics.count_ingredients = function(recipe_id){
+    return new Promise((resolve, reject) => {
+        recipe.findOne({ _id: recipe_id }).exec()
+        .then( recipe => {
+            resolve( recipe.ingredients.length );
+        })
+    })
+};
+recipe.statics.add_ingredients = function(recipe_id, ingredient){
     return new Promise((resolve, reject) => {
         recipe.updateOne({ _id: recipe_id }, {
                 $push:{
@@ -119,12 +127,21 @@ recipe.statics.insert_ingredients = function(recipe_id, ingredient){
             })
     })
 };
-recipe.statics.update_ingredients = function(recipe_id, ingredient){
+recipe.statics.get_ingredient_id = function(recipe_id, ingredient_order){
     return new Promise((resolve, reject) => {
-        recipe.updateOne({ 'ingredients._id': '5c56836fc5785da21cda5434' }, {
+        recipe.findOne({ _id: recipe_id }).exec()
+        .then( recipe => {
+            resolve( recipe.ingredients[ingredient_order]._id );
+        })
+    })
+};
+
+recipe.statics.update_ingredients = function(ingredient_id, ingredient){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ 'ingredients._id': ingredient_id }, {
                 'ingredients': ingredient
             }).exec()
-            .then (wallet => {
+            .then (ingredient => {
                 resolve( true );
             })
     })
