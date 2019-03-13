@@ -3161,7 +3161,7 @@ export const RECIPES = [
 				order: 8,
 			},
 			{
-				name: '1 tablespoon chopped fresh tarragon ',
+				name: '1 tablespoon chopped fresh tarragon',
 				order: 9,
 			},
 			{
@@ -3230,5 +3230,375 @@ export const RECIPES = [
 		tags: ['pie', 'dinner', 'chicken', 'NYT' ],
 		last_edited: '',
 		url: 'chicken-tarragon-pot-pie',
+	},
+	{
+		title: 'Irish Cream Poundcake',
+		summary: 'This classic poundcake has a boozy twist that’s perfect for parties, St. Patrick’s Day and beyond. Irish cream liqueur — a rich blend of Irish whiskey, cream, sugar, vanilla and other flavorings — is added to both the batter and the glaze, which yields doubly flavorful results. The alcohol in the cake burns off during baking, but if you’d like to mute the hint of alcohol in the glaze, simply bring the Irish cream to a simmer and let it cool before whisking it with the confectioners’ sugar. Serve the cake alone, with a scoop of coffee ice cream or a hot cup of coffee (spiked with Irish cream, perhaps). The cake keeps well at room temperature, tightly wrapped, for up to 4 days.',
+		yield: '8 servings',
+		time: 90,
+		illustration: '../../../assets/images/em-irish-cream-poundcake-articleLarge.jpg',
+		ingredients: [
+			{
+				name: 'Nonstick cooking spray',
+				order: 0,
+			},
+			{
+				name: '1 cup/225 grams unsalted butter (2 sticks), at room temperature, plus more for greasing the pan',
+				order: 1,
+			},
+			{
+				name: '1 ⅔ cups/215 grams all-purpose flour, plus more for dusting the pan',
+				order: 2,
+			},
+			{
+				name: '⅔ cup/145 grams light brown sugar',
+				order: 3,
+			},
+			{
+				name: '½ cup/100 grams granulated sugar',
+				order: 4,
+			},
+			{
+				name: '4 large eggs, at room temperature',
+				order: 5,
+			},
+			{
+				name: '1 ¼ teaspoons baking powder',
+				order: 6,
+			},
+			{
+				name: '½ teaspoon fine sea salt',
+				order: 6,
+			},
+			{
+				name: '½ cup/120 milliliters Irish cream',
+				order: 7,
+			},
+			{
+				name: '1 ¼ cups/155 grams confectioners’ sugar',
+				order: 8,
+			},
+			{
+				name: '3 tablespoons Irish cream, plus more as needed',
+				order: 9,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 350 degrees. Spray a 9-inch loaf pan with nonstick spray, then dust with flour.',
+				order: 0
+			},
+			{
+				step: 'In the bowl of a stand mixer fitted with the paddle attachment, cream the butter, brown sugar and granulated sugar on medium speed until light and fluffy, 4 to 5 minutes. Add the eggs one at a time, mixing on medium speed until incorporated, about 30 seconds each. Scrape down the sides of the bowl after each addition.',
+				order: 1
+			},
+			{
+				step: 'In a medium bowl, whisk together the flour, baking powder and salt. Add the mixture to the bowl of the stand mixer and mix on low until incorporated, about 30 seconds. Add the Irish cream and mix on low to combine, 15 seconds more.',
+				order: 2
+			},
+			{
+				step: 'Pour the batter into the prepared pan and spread in an even layer. Bake until the surface of the cake is lightly golden brown and a toothpick inserted into the thickest part comes out clean, 55 to 65 minutes. Let cool in the pan for 10 minutes, then unmold onto a wire rack to cool completely.',
+				order: 3
+			},
+			{
+				step: 'Make the glaze: Whisk the powdered sugar and Irish cream together in a medium bowl to form a thick glaze. Spoon the glaze over the surface of the loaf, letting the excess drip down the sides. Let the glaze set for 10 to 15 minutes before slicing.',
+				order: 4
+			}
+		],
+		tags: ['irish', 'cake', 'dessert', 'irish cream', 'NYT' ],
+		last_edited: '',
+		url: 'irish-cream-poundcake',
+	},
+	{
+		title: 'Beef Short Rib Rice Bowls',
+		summary: 'Inspired by galbi, or Korean barbecued short ribs, this recipe takes a sharp turn away from the traditional sweet, fruity treatment and instead skews savory, with warm spices like cumin, coriander and turmeric. Meaty short ribs generally require a lengthy cook time, but slice them thinly off the bone and they’ll tenderize quickly when seared on the stovetop—or you could use slivers of skirt steak or hanger steak instead. The skinny strips also have a higher surface area, which means they’ll quickly soak up the flavors of the marinade. Rice is the perfect canvas for the meat, and celery and lettuce balance out the bold flavors with lightness and crunch.',
+		yield: '4 servings',
+		time: 15,
+		illustration: '../../../assets/images/merlin_150549891_0b1acbfc-5444-4fbd-954b-5f9e2a02eb77-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 pound boneless beef short ribs, sliced 1/4-inch thick',
+				order: 0,
+			},
+			{
+				name: '2 tablespoons soy sauce',
+				order: 1,
+			},
+			{
+				name: '1 tablespoon grated fresh ginger',
+				order: 2,
+			},
+			{
+				name: '1 tablespoon light brown sugar',
+				order: 3,
+			},
+			{
+				name: '2 garlic cloves, grated',
+				order: 4,
+			},
+			{
+				name: '1 teaspoon ground coriander',
+				order: 5,
+			},
+			{
+				name: '1 teaspoon ground turmeric',
+				order: 6,
+			},
+			{
+				name: '½ teaspoon red-pepper flakes',
+				order: 6,
+			},
+			{
+				name: 'Kosher salt',
+				order: 7,
+			},
+			{
+				name: '2 tablespoons vegetable oil',
+				order: 8,
+			},
+			{
+				name: '4 cups cooked short-grain rice',
+				order: 9,
+			},
+			{
+				name: '1 small head green leaf lettuce, shredded',
+				order: 10,
+			},
+			{
+				name: '2 stalks celery, thinly sliced crosswise',
+				order: 11,
+			},
+			{
+				name: 'Fresh cilantro, for serving',
+				order: 12,
+			},
+			{
+				name: 'Lime wedges, for serving',
+				order: 13,
+			}
+		],
+		preparation: [
+			{
+				step: 'Combine short ribs, soy sauce, ginger, sugar, garlic, coriander, cumin, turmeric, red-pepper flakes and 1 teaspoon kosher salt in a medium bowl and toss to coat. Cover, transfer to the fridge and let marinate for 5 minutes or up to 8 hours, if desired.',
+				order: 0
+			},
+			{
+				step: 'Heat oil in a large skillet over medium. Working in batches, cook meat until browned all over, about 3 minutes per side.',
+				order: 1
+			},
+			{
+				step: 'Divide rice and short ribs among bowls. Top with lettuce, celery and cilantro. Serve with lime wedges for squeezing on top.',
+				order: 2
+			}
+		],
+		tags: ['celery', 'ginger', 'rice', 'shortrib', 'meat', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'beef-short-rib-rice-bowls',
+	},
+	{
+		title: 'Japanese-Style Pancake',
+		summary: 'Even though I always prefer waffles than pancakes, however, if there’s one type of pancake that I will always get whenever it is available, it’s the Japanese-Style pancake. It’s thick, fluffy, light, and jiggly, and super fun to eat & make. This recipe makes about 4 pancakes.',
+		yield: '? servings',
+		time: 0,
+		illustration: '../../../assets/images/img_6440.jpg',
+		ingredients: [
+			{
+				name: '2 egg yolks',
+				order: 0,
+			},
+			{
+				name: '1/4 cup sugar',
+				order: 1,
+			},
+			{
+				name: '1/2 cup milk',
+				order: 2,
+			},
+			{
+				name: '3/4 cup pancake mix',
+				order: 3,
+			},
+			{
+				name: '4 egg whites',
+				order: 4,
+			}
+		],
+		preparation: [
+			{
+				step: 'Mix together the egg yolks, milk, and pancake mix until it turns smooth.',
+				order: 0
+			},
+			{
+				step: 'In another bowl, beat the egg whites until it has a stiff peak, add the sugar while you are whisking.',
+				order: 1
+			},
+			{
+				step: 'Carefully fold the egg whites into the pancake batter.',
+				order: 2
+			},
+			{
+				step: 'Grease a 3.5-inch metal ring mold and set them in the middle of a pan over the low heat, fill the molds about 1/2 of the way full, then cover the pan and cook for about 10 minutes, then flip it over, Cover and cook for another 5 minutes.',
+				order: 3
+			},
+			{
+				step: 'Serve it with butter, syrup, and berries.',
+				order: 4
+			}
+		],
+		tags: ['pancake', 'japanese', 'cake', 'dessert' ],
+		last_edited: '',
+		url: 'japanese-style-pancake',
+	},
+	{
+		title: 'Katsu Curry',
+		summary: 'Japanese food is not only famous for its traditional dishes like sushi, ramen or the different “don”s, but also for perfectly incorporating western ingredients & flavors into traditional Japanese cooking, these dishes are called Yoshoku or western food. So, today, we are making an easy and fast dish that you can find almost everywhere in Japan.',
+		yield: '? servings',
+		time: 0,
+		illustration: '../../../assets/images/img_6930-e1548301371490.jpg',
+		ingredients: [
+			{
+				name: '3 cubes Japanese curry roux',
+				order: 0,
+			},
+			{
+				name: '3/4 cup chicken broth',
+				order: 1,
+			},
+			{
+				name: '1/2 lb mushroom',
+				order: 2,
+			},
+			{
+				name: '1 large potato',
+				order: 3,
+			},
+			{
+				name: '1 large carrot',
+				order: 4,
+			},
+			{
+				name: '1/2 medium sweet onion',
+				order: 4,
+			},
+			{
+				name: '1 tbsp oil',
+				order: 5,
+			},
+			{
+				name: '2 slices pork loin chops',
+				order: 6,
+			},
+			{
+				name: '1 egg',
+				order: 7,
+			},
+			{
+				name: '2 tbsp flour',
+				order: 8,
+			},
+			{
+				name: '1 cup panko breadcrumb',
+				order: 9,
+			},
+			{
+				name: 'oil for frying',
+				order: 10,
+			}
+		],
+		preparation: [
+			{
+				step: 'Slice the onion and mushroom, then sweat them in an oiled deep pan or pot over medium heat. Peel the carrot and potato, cut them into 1/2-inch or 1 cm thick cubes, add them to the pan/pot and sautée for about 1 min, then add the chicken broth, bring it to a simmer, cover and cook for about 15 min.',
+				order: 0
+			},
+			{
+				step: 'Pre-heat the oil to 170C or 340F. Lightly pound the pork chop, cover it with flour, drench it in the beaten egg, then cover it with panko bread crumb. Fry them for about 7 to 8 min.',
+				order: 1
+			},
+			{
+				step: 'Add the curry roux cubes into the stock with the cooked vegetable, stir gently while the stock is simmering for about 2 min or until it thickens.',
+				order: 2
+			},
+			{
+				step: 'Cut the pork chop, serve it over some rice and cover it with the curry sauce.',
+				order: 3
+			}
+		],
+		tags: ['curry', 'japanese', 'pork', 'fried', 'dinner' ],
+		last_edited: '',
+		url: 'katsu-curry',
+	},
+	{
+		title: 'Chicken Teriyaki',
+		summary: 'As someone who lived in Seattle for 5 years, Chicken Teriyaki is always the most convenient, affordable and delicious meal you can get in the Emerald City. Invented in the Seattle by American Japanese and Koreans, the biggest difference between this Seattle favorite and the traditional Teriyaki is that instead of using mostly seafood and light sauce being brushed on, in Seattle, chicken thigh is often used, grilled and chared after marinating in a heavy sauce. This dish is easy to make and takes no time, this recipe serves 4.',
+		yield: '4 servings',
+		time: 0,
+		illustration: '../../../assets/images/h1f6jlk-e1513652519893.jpg',
+		ingredients: [
+			{
+				name: '1/2 cup brown sugar',
+				order: 0,
+			},
+			{
+				name: '1/2 cup soy sauce',
+				order: 1,
+			},
+			{
+				name: '1/4 cup cider vinegar',
+				order: 2,
+			},
+			{
+				name: '1 clove of garlic, minced',
+				order: 3,
+			},
+			{
+				name: '1 tsp ground ginger',
+				order: 4,
+			},
+			{
+				name: '1 tsp ground black pepper',
+				order: 4,
+			},
+			{
+				name: '1 tbsp cornstarch',
+				order: 5,
+			},
+			{
+				name: '1 tbsp water',
+				order: 6,
+			},
+			{
+				name: '1 tbsp sesame',
+				order: 7,
+			},
+			{
+				name: '10 to 12 skinless chicken thighs',
+				order: 8,
+			}
+		],
+		preparation: [
+			{
+				step: 'Mix the water, brown sugar, soy sauce, vinegar, garlic, ginger, and ground black pepper in a saucepan. Let the sauce simmer, then add the cornstarch, stir it frequently, until sauce thickens and bubbles.',
+				order: 0
+			},
+			{
+				step: 'Heat up a non-stick pan, put some oil and heat it on high, brown the chicken thighs.',
+				order: 1
+			},
+			{
+				step: 'Let the chicken cook in the sauce for 5 min, then place in a pre-heated 165C/330F degree oven, and bake them for 10 min or until the inside of the meat reaches 70C/160F degrees.',
+				order: 2
+			},
+			{
+				step: 'Turn on the broiler, brush on another layer of sauce (which is very thick at this point) on the chicken, and let it cook for 2-3 min.',
+				order: 3
+			},
+			{
+				step: 'Sprinkle some chopped green onion or sesame seed to add more flavor.',
+				order: 3
+			}
+		],
+		tags: ['chicken', 'japanese', 'teriyaki', 'sweet', 'dinner' ],
+		last_edited: '',
+		url: 'chicken-teriyaki',
 	}
 ]; 
