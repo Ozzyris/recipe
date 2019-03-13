@@ -3594,11 +3594,171 @@ export const RECIPES = [
 			},
 			{
 				step: 'Sprinkle some chopped green onion or sesame seed to add more flavor.',
-				order: 3
+				order: 4
 			}
 		],
 		tags: ['chicken', 'japanese', 'teriyaki', 'sweet', 'dinner' ],
 		last_edited: '',
 		url: 'chicken-teriyaki',
+	},
+	{
+		title: 'Chocolate Snacking Cake',
+		summary: 'This moist, darkly bittersweet snacking cake is easily mixed with a whisk. Using a neutral oil rather than butter allows the chocolate flavor to shine, and gives the crumb an especially velvety texture under a sweet-tart glaze. You can use any kind of orange for the topping. Tangerines and mandarins (including clementines) are bright and spicy, but regular navel or juice oranges work just as well. Or if you can find blood oranges, the glaze will take on a pinkish hue and a sweeter, richer flavor.',
+		yield: '12 servings',
+		time: 60,
+		illustration: '../../../assets/images/merlin_150934335_09143881-cbb1-4f05-9a24-6e69b7f013e6-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '⅓ cup/80 milliliters neutral oil, such as grapeseed or canola, plus more for pan',
+				order: 0,
+			},
+			{
+				name: '¾ cup/95 grams all-purpose flour',
+				order: 1,
+			},
+			{
+				name: '½ cup/50 grams Dutch-processed cocoa powder',
+				order: 2,
+			},
+			{
+				name: '½ teaspoon baking soda',
+				order: 3,
+			},
+			{
+				name: '¼ teaspoon baking powder',
+				order: 4,
+			},
+			{
+				name: '¼ teaspoon fine sea salt',
+				order: 5,
+			},
+			{
+				name: '½ cup/120 milliliters hot coffee',
+				order: 6,
+			},
+			{
+				name: '¾ cup/155 grams light brown sugar',
+				order: 7,
+			},
+			{
+				name: '⅓ cup/80 milliliters sour cream',
+				order: 8,
+			},
+			{
+				name: '2 large eggs',
+				order: 9,
+			},
+			{
+				name: '1 teaspoon vanilla extract',
+				order: 10,
+			},
+			{
+				name: '½ tablespoon finely grated tangerine zest',
+				order: 11,
+			},
+			{
+				name: '1 tablespoon tangerine juice',
+				order: 12,
+			},
+			{
+				name: '1 teaspoon fresh lemon juice',
+				order: 13,
+			},
+			{
+				name: '1 cup/115 grams confectioners’ sugar',
+				order: 14,
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 350 degrees. Grease a 9-by-9-inch pan and line with parchment paper, letting the two long edges hang over the sides by at least 2 inches.',
+				order: 0
+			},
+			{
+				step: 'In a large bowl, whisk together flour, cocoa powder, baking soda, baking powder and salt.',
+				order: 1
+			},
+			{
+				step: 'In a heatproof bowl, melt chocolate in the microwave in 30-second intervals, stirring in between. Or you can melt the chocolate in a double boiler over simmering water on the stove, stirring well. Whisk in hot coffee.',
+				order: 2
+			},
+			{
+				step: 'Whisk together flour mixture, coffee-chocolate mixture, brown sugar, sour cream, oil, eggs and vanilla. Scrape into baking pan and smooth the top. Bake until the top is springy and a toothpick inserted in the center comes out clean, about 35 minutes. Let cool completely before glazing.',
+				order: 3
+			},
+			{
+				step: 'When cake is cool, make the glaze: Whisk together tangerine zest, tangerine juice and lemon juice, then whisk in confectioners’ sugar. Taste, and if it’s too sweet, add another drop or two of lemon juice. Pour glaze onto cooled cake, and spread to the edges. Let glaze set for at least 30 minutes before serving.',
+				order: 4
+			}
+		],
+		tags: ['coffee', 'sour cream', 'tangerine juice', 'cake', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'chocolate-snacking-cake',
+	},
+	{
+		title: 'Spaghetti Carbonara',
+		summary: 'This dish is a deli egg-bacon-and-cheese-on-a-roll that has been pasta-fied, fancified, fetishized and turned into an Italian tradition that, like many inviolate Italian traditions, is actually far less old than the Mayflower. Because America may have contributed to its creation, carbonara is Exhibit A in the back-and-forth between Italy and the United States when it comes to food. Remember: the main goal is creaminess.',
+		yield: '4 servings',
+		time: 25,
+		illustration: '../../../assets/images/carbonara-horizontal-mediumThreeByTwo440.jpg',
+		ingredients: [
+			{
+				name: 'Salt',
+				order: 0,
+			},
+			{
+				name: '2 large eggs and 2 large yolks, room temperature',
+				order: 1,
+			},
+			{
+				name: '1 ounce (about 1/3 packed cup) grated pecorino Romano, plus additional for serving',
+				order: 2,
+			},
+			{
+				name: '1 ounce (about 1/3 packed cup) grated Parmesan ',
+				order: 3,
+			},
+			{
+				name: 'Coarsely ground black pepper',
+				order: 4,
+			},
+			{
+				name: '1 tablespoon olive oil ',
+				order: 5,
+			},
+			{
+				name: '3 ½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about 1/4 inch thick by 1/3 inch square ',
+				order: 6,
+			},
+			{
+				name: '12 ounces spaghetti (about 3/4 box)',
+				order: 7,
+			}
+		],
+		preparation: [
+			{
+				step: 'Place a large pot of lightly salted water (no more than 1 tablespoon salt) over high heat, and bring to a boil. Fill a large bowl with hot water for serving, and set aside.',
+				order: 0
+			},
+			{
+				step: 'In a mixing bowl, whisk together the eggs, yolks and pecorino and Parmesan. Season with a pinch of salt and generous black pepper.',
+				order: 1
+			},
+			{
+				step: 'Set the water to boil. Meanwhile, heat oil in a large skillet over medium heat, add the pork, and sauté until the fat just renders, on the edge of crispness but not hard. Remove from heat and set aside.',
+				order: 2
+			},
+			{
+				step: 'Add pasta to the water and boil until a bit firmer than al dente. Just before pasta is ready, reheat guanciale in skillet, if needed. Reserve 1 cup of pasta water, then drain pasta and add to the skillet over low heat. Stir for a minute or so.',
+				order: 3
+			},
+			{
+				step: 'Empty serving bowl of hot water. Dry it and add hot pasta mixture. Stir in cheese mixture, adding some reserved pasta water if needed for creaminess. Serve immediately, dressing it with a bit of additional grated pecorino and pepper.',
+				order: 4
+			}
+		],
+		tags: ['italian', 'cheese', 'pasta', 'pancetta', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'spaghetti-carbonara',
 	}
 ]; 
