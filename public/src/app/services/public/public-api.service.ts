@@ -25,9 +25,7 @@ export class PublicApiService {
 	}
 
 	get_recipe( payload ):Observable<any>{
-		console.log(payload);
 		let url = this.base_url + 'get-recipe';
-		// return this.http.get(url, this.httpOptions);
 		return this.http.post(url, payload, this.httpOptions);
 	}
 }

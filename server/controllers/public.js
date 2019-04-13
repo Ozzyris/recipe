@@ -23,7 +23,6 @@ router.use(bodyParser.json());
 
 	router.post('/get-recipe', function (req, res) {
 		let recipe_url = req.body.recipe_url;
-		console.log(recipe_url);
 		recipe_model.get_recipes( recipe_url )
 			.then( recipe => {
 				res.status(200).json(recipe);
