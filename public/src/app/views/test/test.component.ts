@@ -6,12 +6,12 @@ import { LoginModalService } from '../../services/login_modal/login-modal.servic
 import { PublicApiService } from '../../services/public/public-api.service';
 
 @Component({
-	selector: 'app-recipes',
-	templateUrl: './recipes.component.html',
-	styleUrls: ['./recipes.component.scss']
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.scss']
 })
 
-export class RecipesComponent implements OnInit {
+export class TestComponent implements OnInit {
 	all_recipes: any = [];
 	search_input: string;
 	is_search_active: boolean = false;
@@ -19,7 +19,8 @@ export class RecipesComponent implements OnInit {
 
 	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
-		this.all_recipes = this.publicApi_service.get_all_recipes();
+		// this.all_recipes = this.publicApi_service.get_all_recipes();
+		this.all_recipes = this.publicApi_service.get_recipe( {recipe_url: 'pasta-with-fresh-herbs'} );
 	}
 
 	display_search(){

@@ -127,25 +127,60 @@ recipe.statics.add_ingredients = function(recipe_id, ingredient){
             })
     })
 };
-recipe.statics.get_ingredient_id = function(recipe_id, ingredient_order){
+recipe.statics.update_ingredients = function(recipe_id, ingredient){
     return new Promise((resolve, reject) => {
-        recipe.findOne({ _id: recipe_id }).exec()
-        .then( recipe => {
-            resolve( recipe.ingredients[ingredient_order]._id );
-        })
-    })
-};
-
-recipe.statics.update_ingredients = function(ingredient_id, ingredient){
-    return new Promise((resolve, reject) => {
-        recipe.updateOne({ 'ingredients._id': ingredient_id }, {
-                'ingredients': ingredient
+        recipe.updateOne({ _id: recipe_id, 'ingredients._id': ingredient.id }, 
+            { $set: 
+                { 
+                    "ingredients.$.name" : ingredient.name,
+                    "ingredients.$.order" : ingredient.order,
+                }
             }).exec()
             .then (ingredient => {
                 resolve( true );
             })
     })
 };
+recipe.statics.remove_ingredients = function(recipe_id, ingredient){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id, 'ingredients._id': ingredient.id }, 
+            { pull: 
+                { 
+                    "ingredients.$" : ingredient,
+                }
+            }).exec()
+            .then (ingredient => {
+                resolve( true );
+            })
+    })
+};
+
+//PUBLIC
+recipe.statics.get_all_recipes = function(){
+    return new Promise((resolve, reject) => {
+        recipe.find({}, {'title':1, 'url':1, 'illustration':1, 'tags':1}).exec()
+            .then(articles => {
+                if( articles ){
+                    resolve( articles );
+                }else{
+                    reject({ message: 'Error accessing all recipes', code: 'error_all_recipes'});
+                }
+            })
+    })
+};
+recipe.statics.get_recipes = function(recipe_url){
+    return new Promise((resolve, reject) => {
+        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparation':1}).exec()
+            .then(articles => {
+                if( articles ){
+                    resolve( articles );
+                }else{
+                    reject({ message: 'Error accessing the recipe', code: 'error_recipe'});
+                }
+            })
+    })
+};
+
 
 var recipe = mongoose.DB.model('recipe', recipe);
 

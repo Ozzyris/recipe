@@ -136,6 +136,7 @@ router.use(bodyParser.json());
 	router.post('/update-ingredients', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			ingredient = {
+				id: req.body.ingredient_id,
 				name: req.body.name,
 				order: req.body.order
 			}
@@ -143,17 +144,29 @@ router.use(bodyParser.json());
 		recipe_model.count_ingredients( recipe_id )
 			.then( ingredient_count => {
 				if( ingredient.order < ingredient_count){
-					return recipe_model.get_ingredient_id( recipe_id, ingredient.order );
+					console.log( ingredient_count );
+					return recipe_model.update_ingredients( recipe_id, ingredient );
 				}else{
 					throw { message: 'Your ingredient position isn\'t correct', code: 'wrong_ingredient_position' };
 				}
 			})
-			.then( ingredient_id => {
-				console.log( ingredient_id );
-				return recipe_model.update_ingredients( ingredient_id, ingredient );
-			})
 			.then( is_ingredient_updated => {
 				res.status(200).json({message: 'Ingredient updated', code: 'ingredient_updated'});
+			})
+			.catch( error => {
+				res.status(401).json( error );
+			})
+	});
+
+	router.post('/remove-ingredients', function (req, res) {
+		let recipe_id = req.body.recipe_id,
+			ingredient = {
+				id: req.body.ingredient_id
+			}
+
+			recipe_model.remove_ingredients( recipe_id, ingredient )
+			.then( is_ingredient_deleted => {
+				res.status(200).json({message: 'Ingredient removed', code: 'ingredient_removed'});
 			})
 			.catch( error => {
 				res.status(401).json( error );

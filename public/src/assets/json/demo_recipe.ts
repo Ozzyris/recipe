@@ -7,35 +7,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '½ cup finely chopped fresh herbs, such as parsley, basil, tarragon, mint and chives',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Zest of 1 organic lemon, finely chopped',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 garlic clove, finely minced',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 tablespoons fresh lemon juice',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '3 tablespoons extra virgin olive oil',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '400g pasta, any type',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 cup frozen peas, thawed',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '¼ cup freshly grated Parmesan or pecorino',
-				order: 7,
+				order: 7
 			},
 		],
 		preparation: [
@@ -51,7 +51,7 @@ export const RECIPES = [
 		tips: 'Advance preparation: The herbs can be chopped several hours ahead, but don’t combine the ingredients until you’ve put the water on for the pasta.',
 		tags: ['Main', 'Vegetarian', 'Pasta', 'NYT', 'Herbs' ],
 		last_edited: '',
-		url: 'pasta-with-fresh-herbs',
+		url: 'pasta-with-fresh-herbs'
 	},
 	{
 		title: 'Vietnamese-Style Pork Meatballs',
@@ -61,23 +61,23 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 tablespoons peeled and minced ginger',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 tablespoon minced garlic (from about 3 large cloves)',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon fish sauce',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 teaspoon freshly ground black pepper',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '½ teaspoon kosher salt',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ cup finely crushed Ritz crackers (12 crackers) ',
@@ -85,7 +85,7 @@ export const RECIPES = [
 			},
 			{
 				name: '1 pound ground pork ',
-				order: 6,
+				order: 6
 			}
 		],
 		preparation: [
@@ -105,7 +105,7 @@ export const RECIPES = [
 		tips: 'Leftover meatballs freeze well and can be reheated in the oven at 375 degrees until warmed through (about 20 minutes).',
 		tags: ['Main', 'Meetball', 'NYT', 'Pork' ],
 		last_edited: '',
-		url: 'vietnamese-style-pork-meatballs ',
+		url: 'vietnamese-style-pork-meatballs'
 	},
 	{
 		title: '3 Cheese Cauliflower Casserole ',
@@ -114,39 +114,39 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 tablespoons butter, plus more for greasing',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 medium head cauliflower, broken into medium florets',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 tablespoons all-purpose flour',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 cup heavy cream',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¾ cup grated Gruyère cheese',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ cup grated fontina cheese',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '¼ cup bread crumbs',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 tablespoons parmesan',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 tablespoon of thyme',
-				order: 7,
+				order: 8
 			}
 		],
 		preparation: [
@@ -173,7 +173,7 @@ export const RECIPES = [
 		],
 		tags: ['Main', 'Vegetarian', 'Cheese', 'NYT', 'Cauliflower' ],
 		last_edited: '',
-		url: '5-cheese-cauliflower-casserole',
+		url: '5-cheese-cauliflower-casserole'
 	},
 	{
 		title: 'Maple Salmon With Green Beans',
@@ -182,36 +182,36 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '4 (6-ounce) skin-on salmon fillets, about 1-inch thick ',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '4 teaspoons maple syrup ',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon white or brown miso',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 tablespoon rice wine vinegar',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 teaspoons soy sauce',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 garlic clove, grated',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'half a kilo of green beans, trimmed',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 tablespoons olive oil',
-				order: 7,
-			},
+				order: 7
+			}
 		],
 		preparation: [
 			{
@@ -233,7 +233,7 @@ export const RECIPES = [
 		],
 		tags: ['Cheese', 'Salmon', 'Fish', 'Green beans', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'maple-salmon-with-green-beans',
+		url: 'maple-salmon-with-green-beans'
 	},
 	{
 		title: 'Everything Parker House Rolls',
@@ -242,60 +242,60 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 cup whole milk',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '4 tablespoons/57 grams (1/2 stick) unsalted butter, plus more for greasing',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 ½ cups/448 grams all-purpose flour',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '⅓ cup/32 grams dry milk powder',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¼ cup/50 grams granulated sugar',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 ¼ teaspoons instant yeast powder',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 teaspoon kosher salt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 large eggs',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 tablespoons sesame seeds',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 tablespoons poppy seeds',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '1 ½ tablespoons dried garlic flakes',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '1 ½ tablespoons dried minced onion',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '2 teaspoons kosher salt',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '6 tablespoons/85 grams (3/4 stick) melted unsalted butter, for brushing',
-				order: 13,
-			},
+				order: 13
+			}
 		],
 		preparation: [
 			{
@@ -329,12 +329,12 @@ export const RECIPES = [
 			{
 				step: 'Bake the rolls for 10 minutes, then brush the surface of the rolls generously with the melted butter. Bake until the rolls are evenly golden-brown, 15 to 20 minutes. Brush the baked rolls generously with the remaining melted butter. Let cool 10 to 15 minutes before serving. Store leftover rolls at room temperature in a resealable plastic bag. (See tip for reheating instructions).',
 				order: 7
-			},
+			}
 		],
 		tips: 'To reheat, wrap each roll in a lightly damp paper towel, and microwave for 20 to 25 seconds. Unwrap the rolls and serve immediately.',
 		tags: ['Bread', 'Vegetarian', 'NYT' ],
 		last_edited: '',
-		url: 'everything-parker-house-rolls',
+		url: 'everything-parker-house-rolls'
 	},
 	{
 		title: 'Roberta’s Pizza Dough',
@@ -345,23 +345,23 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '153 grams of flour (1 cup plus 1 tablespoon)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '153 grams all-purpose flour (1 cup plus 1 tablespoon and 2 teaspoons)',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '8 grams fine sea salt (1 teaspoon)',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 grams active dry yeast (3/4 teaspoon)',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '4 grams extra-virgin olive oil (1 teaspoon)',
-				order: 4,
+				order: 4
 			}
 		],
 		preparation: [
@@ -384,7 +384,7 @@ export const RECIPES = [
 		],
 		tags: ['Dough', 'Pizza', 'NYT' ],
 		last_edited: '',
-		url: 'roberta-s-pizza-dough',
+		url: 'roberta-s-pizza-dough'
 	},
 	{
 		title: 'Tomato-Parmesan Soup',
@@ -395,27 +395,27 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '6 tablespoons unsalted butter',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 yellow onion, chopped',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '5 garlic cloves, sliced',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '½ teaspoon red-pepper flakes',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 (800g) cans whole peeled tomatoes or 900G or tomatoes',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ Cup of grated parmesan, plus more for serving',
-				order: 5,
+				order: 5
 			}
 		],
 		preparation: [
@@ -442,7 +442,7 @@ export const RECIPES = [
 		],
 		tags: ['Tomato', 'Soup', 'Parmesan', 'NYT' ],
 		last_edited: '',
-		url: 'tomato-parmesan-soup',
+		url: 'tomato-parmesan-soup'
 	},
 	{
 		title: 'Fried Eggs With Garlicky Rice',
@@ -453,51 +453,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 cups brown or white basmati or long-grain rice, rinsed and drained',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '½ teaspoon kosher salt, plus more for seasoning',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 tablespoons olive oil',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '4 large eggs',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '½ small bunch kale, stems removed and leaves finely chopped (about 1 packed cup)',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ bunch fresh cilantro, stems discarded and leaves finely chopped (about 1 packed cup)',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '½ bunch fresh parsley, stems discarded and leaves finely chopped (about 1 packed cup)',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '4 garlic cloves, finely chopped',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 jalapeño, seeded and finely chopped',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '4 small pink radishes or 1 large watermelon radish, thinly sliced',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '4 ounces cotija cheese or queso fresco',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '2 limes, cut in wedges',
-				order: 11,
+				order: 11
 			}
 		],
 		preparation: [
@@ -520,7 +520,7 @@ export const RECIPES = [
 		],
 		tags: ['Rice', 'Vegetarian', 'Egg', 'NYT' ],
 		last_edited: '',
-		url: 'fried-eggs-with-garlicky-rice',
+		url: 'fried-eggs-with-garlicky-rice'
 	},
 	{
 		title: 'Ginger-Molasses Cookies',
@@ -531,51 +531,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '3 cups/435 grams all-purpose flour',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 tablespoon ground ginger',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 teaspoons ground cinnamon',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 teaspoon baking powder',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 teaspoon kosher salt',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ teaspoon ground allspice',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 ½ cups/341 grams (3 sticks) unsalted butter, at room temperature',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '¾ cup/177 milliliters molasses',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '½ cup/100 grams granulated sugar',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 large eggs',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '1 teaspoon vanilla extract ',
-				order: 10,
+				order: 10
 			},
 			{
 				name: 'About 3/4 cup/165 grams pearl, Demerara or coarse sugar, for rolling',
-				order: 11,
+				order: 11
 			}
 		],
 		preparation: [
@@ -607,7 +607,7 @@ export const RECIPES = [
 		tips: 'Cookie dough can be made 5 days ahead, refrigerated. Bring dough to room temperature before rolling. Cookies can be baked 2 days ahead, wrapped tightly and stored at room temperature. ',
 		tags: ['Gingner', 'Cookies', 'Dessert', 'NYT' ],
 		last_edited: '',
-		url: 'ginger-molasses-cookies',
+		url: 'ginger-molasses-cookies'
 	},
 	{
 		title: 'Soba Salad',
@@ -618,43 +618,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '3 to 4 ounces soba noodles',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 carrot, peeled and finely chopped',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 cups edamame (frozen are fine)',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 to 3 tablespoons soy sauce',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Juice of one lime',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 tablespoons white or light miso',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 tablespoon mirin or 1 teaspoon sugar, or to taste',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 10-ounce package fresh spinach, washed and trimmed',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '¼ cup chopped scallion ',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '1 tablespoon freshly grated ginger ',
-				order: 9,
+				order: 9
 			}
 		],
 		preparation: [
@@ -669,7 +669,7 @@ export const RECIPES = [
 		],
 		tags: ['Noodle', 'Salad', 'Lunch', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'soba-salad',
+		url: 'soba-salad'
 	},
 	{
 		title: 'Breakfast Salad',
@@ -680,51 +680,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '4 ounces feta cheese (not crumbled), preferably a creamy type made with some sheep’s milk',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 garlic clove, smashed and peeled',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 dozen black or mixed peppercorns, coarsely cracked',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Extra-virgin olive oil, preferably cold-pressed',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 large hearts romaine lettuce, outer leaves removed',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 lemons, halved',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 avocado, halved, pit removed',
-				order: 6,
+				order: 6
 			},
 			{
 				name: 'About 2 ounces sprouts, such as alfalfa, clover or rainbow',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 mini or Kirby cucumbers, cut into spears or sliced',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 or 3 hard-boiled eggs, at room temperature, peeled and halved',
-				order: 9,
+				order: 9
 			},
 			{
 				name: 'Flaky salt and coarsely ground black pepper',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '2 handfuls soft herbs, such as basil, chives, cilantro and mint',
-				order: 11,
+				order: 11
 			}
 		],
 		preparation: [
@@ -752,7 +752,7 @@ export const RECIPES = [
 		tips: 'If time is tight, plain feta can be used instead of marinating it first.',
 		tags: ['Salad', 'Breakfast', 'Avocado', 'NYT' ],
 		last_edited: '',
-		url: 'breakfast-salad',
+		url: 'breakfast-salad'
 	},
 	{
 		title: 'Union Square Tuna Club Sandwich',
@@ -763,107 +763,107 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 egg yolks',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 ½ tablespoons lemon juice',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 teaspoons red wine vinegar',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 tablespoon Dijon mustard',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 teaspoons finely minced garlic',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ teaspoon kosher salt',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 ½ cups olive oil',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '¾ teaspoon coarsely ground pepper',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '½ cup coarsely chopped onion',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '⅓ cup coarsely chopped carrot',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '⅓ cup sliced celery',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '1 bay leaf',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '3 whole black peppercorns',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '1 pound yellowfin tuna, skinless, cut into 2-inch pieces',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '1 teaspoon fennel seeds',
-				order: 14,
+				order: 14
 			},
 			{
 				name: '2 tablespoons diced red bell pepper',
-				order: 15,
+				order: 15
 			},
 			{
 				name: '2 tablespoons diced yellow bell pepper',
-				order: 16,
+				order: 16
 			},
 			{
 				name: '¼ cup minced red onion',
-				order: 17,
+				order: 17
 			},
 			{
 				name: '1 tablespoon julienned fresh basil leaves',
-				order: 18,
+				order: 18
 			},
 			{
 				name: '1 teaspoon finely chopped mint',
-				order: 19,
+				order: 19
 			},
 			{
 				name: '¾ teaspoon kosher salt',
-				order: 20,
+				order: 20
 			},
 			{
 				name: 'Freshly ground black pepper to taste',
-				order: 21,
+				order: 21
 			},
 			{
 				name: 'Fresh lemon juice to taste',
-				order: 22,
+				order: 22
 			},
 			{
 				name: '12 slices sourdough, white or whole wheat bread, lightly toasted',
-				order: 23,
+				order: 23
 			},
 			{
 				name: '2 ½ cups arugula, trimmed, washed and dried',
-				order: 24,
+				order: 24
 			},
 			{
 				name: '8 ( 1/4-inch-thick) slices slab bacon, cooked until crisp',
-				order: 25,
+				order: 25
 			}
 		],
 		preparation: [
@@ -894,7 +894,7 @@ export const RECIPES = [
 		],
 		tags: ['Tuna', 'Sandwich', 'Lunch', 'Fish', 'NYT' ],
 		last_edited: '',
-		url: 'union-square-tuna-club-sandwich',
+		url: 'union-square-tuna-club-sandwich'
 	},
 	{
 		title: 'Easiest Lentil Soup',
@@ -905,43 +905,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '6 tablespoons extra-virgin olive oil, plus more as needed',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 large onion, diced',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 ½ teaspoons kosher salt, plus more as needed',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 quart chicken, beef or vegetable stock, preferably homemade',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 cup brown or green lentils, rinsed',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 thyme or rosemary sprigs',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 to 2 garlic cloves, finely grated or pushed through a garlic press',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 teaspoon white-wine, sherry or cider vinegar, or lemon or lime juice, plus more to taste',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '½ cup parsley leaves, chopped',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '½ cup thinly sliced radicchio, or red or green cabbage (optional)',
-				order: 9,
+				order: 9
 			}
 		],
 		preparation: [
@@ -965,7 +965,7 @@ export const RECIPES = [
 		tips: 'Dairy (yogurt or sour cream, crumbled feta or goat cheese, or grated Parmesan); spices (toasted cumin seeds, chile flakes, or garam masala); savory vegetables and tart fruit (cubed avocado, browned leeks or onions, grated citrus zest, diced tomatoes, diced orange or grapefruit segments, diced roasted red peppers or pickled jalapeños); or salty finishes (croutons, chopped cooked bacon, sliced olives, crumbled nori or dried seaweed snacks, sesame seeds and sesame oil) are all worthy toppings.',
 		tags: ['Lentil', 'Soup', 'Lunch', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'easiest-lentil-soup',
+		url: 'easiest-lentil-soup'
 	},
 	{
 		title: 'Pasta Alla Vodka',
@@ -976,55 +976,55 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 pound rigatoni or penne pasta',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 tablespoons olive oil',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '4 ounces diced pancetta, optional',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 medium yellow onion, finely chopped',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 garlic cloves, finely chopped',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ teaspoon red-pepper flakes',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '¾ cup vodka',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 (28-ounce) can crushed tomatoes',
-				order: 7,
+				order: 7
 			},
 			{
 				name: 'Freshly ground black pepper',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '¾ cup heavy cream',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '¼ cup grated Grana Padano or Parmesan cheese, plus more for serving',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '1 tablespoon roughly chopped fresh oregano',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '2 tablespoons roughly chopped Italian parsley ',
-				order: 12,
+				order: 12
 			}
 		],
 		preparation: [
@@ -1047,7 +1047,7 @@ export const RECIPES = [
 		],
 		tags: ['Pasta', 'Vodka', 'Lunch', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'pasta-alla-vodka',
+		url: 'pasta-alla-vodka'
 	},
 	{
 		title: 'Takeout-Style Sesame Noodles',
@@ -1058,51 +1058,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 pound Chinese egg noodles (1/8-inch-thick), frozen or (preferably) fresh, available in Asian markets',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 tablespoons sesame oil, plus a splash',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 ½ tablespoons soy sauce',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 tablespoons Chinese rice vinegar',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 tablespoons Chinese sesame paste',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 tablespoon smooth peanut butter',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 tablespoon sugar',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 tablespoon finely grated ginger',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 teaspoons minced garlic',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 teaspoons chili-garlic paste, or to taste',
-				order: 9,
+				order: 9
 			},
 			{
 				name: 'Half a cucumber, peeled, seeded, and cut into 1/8-inch by 1/8-inch by 2-inch sticks',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '¼ cup chopped roasted peanuts',
-				order: 11,
+				order: 11
 			}
 		],
 		preparation: [
@@ -1122,7 +1122,7 @@ export const RECIPES = [
 		tips: 'The Chinese sesame paste called for here is made of toasted sesame seeds; it is not the same as tahini, the Middle Eastern paste made of plain, untoasted sesame. But you could use tahini in a pinch. You need only add a little toasted sesame oil to compensate for flavor, and perhaps some peanut butter to keep the sauce emulsified.',
 		tags: ['Vegetarian', 'Noodle', 'Chinese', 'Sesame', 'Lunch', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'takeout-style sesame noodles',
+		url: 'takeout-style sesame noodles'
 	},
 	{
 		title: 'Roasted Halibut and Potatoes With Rosemary',
@@ -1133,51 +1133,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 ½ pounds fingerling potatoes',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Kosher salt',
-				order: 1,
+				order: 1
 			},
 			{
 				name: 'Extra-virgin olive oil',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '4 (6- to 8-ounce) halibut fillets (or substitute other firm-fleshed white fish), about 1-inch thick',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Black pepper',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 garlic cloves, minced',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 teaspoon roughly chopped rosemary, plus 1/2 teaspoon finely chopped rosemary, for garnish',
-				order: 6,
+				order: 6
 			},
 			{
 				name: 'Pinch of red-pepper flakes',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '½ teaspoon crushed fennel seeds (optional)',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '3 tablespoons chopped parsley',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '½ teaspoon grated lemon zest',
-				order: 10,
+				order: 10
 			},
 			{
 				name: 'Lemon wedges, for serving',
-				order: 11,
+				order: 11
 			}
 		],
 		preparation: [
@@ -1208,7 +1208,7 @@ export const RECIPES = [
 		],
 		tags: ['Fish', 'Potatoes', 'Roasted', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'roasted-halibut-and-potatoes-with-rosemary',
+		url: 'roasted-halibut-and-potatoes-with-rosemary'
 	},
 	{
 		title: 'Blue-Cheese Hanger Steak',
@@ -1219,67 +1219,67 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '4 tablespoons unsalted butter, slightly softened',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 tablespoons good-quality blue cheese, such as Roquefort, Stilton or Gorgonzola',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon finely chopped shallot',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '¾ to 1 pound hanger or skirt steak, at room temperature',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Kosher salt and black pepper',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 tablespoon canola or grapeseed oil',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Flaky salt (optional)',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 Belgian endives, leaves separated',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '4 to 5 thinly sliced radishes, a variety of colors if you can find them',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '½ small fennel bulb, cored and thinly sliced (about 1/3 cup)',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '2 tablespoons good quality white-wine vinegar',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '¼ teaspoon orange zest',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '1 tablespoon plus 1 teaspoon olive oil',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '¼ cup Italian parsley leaves, torn',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '1 tablespoon chives, cut on an angle into 1/2-inch pieces',
-				order: 14,
+				order: 14
 			},
 			{
 				name: '1 tablespoon roughly chopped tarragon ',
-				order: 15,
+				order: 15
 			}
 		],
 		preparation: [
@@ -1307,7 +1307,7 @@ export const RECIPES = [
 		tips: 'There will most likely be leftover blue-cheese butter. Pass it at the table or slather it on top of a roast chicken later in the week. It will last up to five days in the fridge.',
 		tags: ['Meat', 'Steak', 'Salad', 'Dinner', 'NYT' ],
 		last_edited: '',
-		url: 'blue-cheese-hanger-steak',
+		url: 'blue-cheese-hanger-steak'
 	},
 	{
 		title: 'Ramen Carbonara',
@@ -1318,35 +1318,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '6 to 8 slices bacon or pancetta, cut crosswise into 1/2-inch strips or lardons (4 to 6 ounces)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 cups boiling water',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 tablespoons butter, plus more for frying eggs',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 cup grated Parmesan or pecorino, or a combination (about 4 ounces)',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 (3-ounce) packages ramen noodles (noodle blocks only; discard the seasoning packs)',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 eggs, whisked together until smooth',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Kosher salt and black pepper',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 whole eggs, at room temperature ',
-				order: 7,
+				order: 7
 			}
 		],
 		preparation: [
@@ -1373,7 +1373,7 @@ export const RECIPES = [
 		],
 		tags: ['carbonara', 'bacon', 'noodle', 'dinner', 'lunch', 'NYT' ],
 		last_edited: '',
-		url: 'ramen-carbonara',
+		url: 'ramen-carbonara'
 	},
 	{
 		title: 'Chocolate Lava Cake',
@@ -1384,35 +1384,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '3 ounces/85 grams bittersweet chocolate, 70 to 74 percent cacao (not chips), chopped (about 1/2 cup)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '3 tablespoons unsalted butter, cut into cubes, plus more for the ramekin',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 tablespoons granulated sugar, plus more for the ramekin',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 large egg',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 large egg yolk',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '½ teaspoon vanilla extract',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '⅛ teaspoon kosher salt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 tablespoons all-purpose flour ',
-				order: 7,
+				order: 7
 			}
 		],
 		preparation: [
@@ -1439,11 +1439,11 @@ export const RECIPES = [
 			{
 				step: 'Use an offset spatula or small knife to loosen the edges of the cake from the ramekin. Place a plate over the ramekin and carefully invert the warm cake. Use an oven mitt or clean kitchen towel to remove the ramekin, dust the cake with confectioners’ sugar and serve with ice cream or whipped cream.',
 				order: 5
-			},
+			}
 		],
 		tags: ['chocolate', 'melting', 'dessert', 'cake', 'NYT' ],
 		last_edited: '',
-		url: 'chocolate-lava-cake',
+		url: 'chocolate-lava-cake'
 	},
 	{
 		title: 'Crunchy Eggplant Parmesan',
@@ -1454,43 +1454,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '8 to 10 small eggplants',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Salt',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 tablespoons granulated sugar, plus more for the ramekin',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 cups all-purpose flour',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '3 large egg yolks',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 cups dry bread crumbs or panko, seasoned with 1 teaspoon each salt, black pepper, garlic powder and dried oregano',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Vegetable oil, for frying',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '3 cups tomato sauce',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '4 to 6 ounces packaged mozzarella, shredded or diced',
-				order: 8,
+				order: 8
 			},
 			{
 				name: ' Freshly minced basil or parsley, for serving',
-				order: 9,
+				order: 9
 			}
 		],
 		preparation: [
@@ -1525,11 +1525,11 @@ export const RECIPES = [
 			{
 				step: 'Divide eggplants on plates. Place a spoonful of sauce next to or on top of each eggplant. Top sauce with melted mozzarella, lifting it out with a slotted spoon. Sprinkle with fresh herbs, and serve immediately.',
 				order: 7
-			},
+			}
 		],
 		tags: ['vegetarian', 'italian', 'eggplan', 'parmesan', 'NYT' ],
 		last_edited: '',
-		url: 'crunch-eggplant-parmesan',
+		url: 'crunch-eggplant-parmesan'
 	},
 	{
 		title: 'Roasted Salmon With Fennel',
@@ -1540,35 +1540,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 limes',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 teaspoon fennel seeds, lightly crushed using a mortar and pestle or the flat side of a knife',
-				order: 1,
+				order: 1
 			},
 			{
 				name: 'Kosher salt and freshly ground black pepper',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '4 (6- to 8-ounce) skinless salmon fillets',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 large fennel bulb with fronds',
-				order: 4,
+				order: 4
 			},
 			{
 				name: 'Extra-virgin olive oil, for drizzling',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '6 fresh marjoram or thyme sprigs',
-				order: 6,
+				order: 6
 			},
 			{
 				name: 'Flaky sea salt, for serving',
-				order: 7,
+				order: 7
 			}
 		],
 		preparation: [
@@ -1599,7 +1599,7 @@ export const RECIPES = [
 		],
 		tags: ['fennel', 'salmon', 'fish', 'lime', 'NYT' ],
 		last_edited: '',
-		url: 'roasted-salmon-with-fennel',
+		url: 'roasted-salmon-with-fennel'
 	},
 	{
 		title: 'Pasta With Brown Butter and Parmesan',
@@ -1610,23 +1610,23 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: 'Kosher salt',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 pound spaghetti, linguine or other long noodle',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '8 tablespoons unsalted butter',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 cup freshly grated Parmesan, plus more for serving',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Freshly ground black pepper',
-				order: 4,
+				order: 4
 			}
 		],
 		preparation: [
@@ -1649,7 +1649,7 @@ export const RECIPES = [
 		],
 		tags: ['vegetarian', 'italian', 'butter', 'parmesan', 'pasta', 'NYT' ],
 		last_edited: '',
-		url: 'pasta-with-brown-butter-and-parmesan',
+		url: 'pasta-with-brown-butter-and-parmesan'
 	},
 	{
 		title: 'Cauliflower Adobo',
@@ -1660,47 +1660,47 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 large cauliflower (2 1/2 to 3 pounds)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Kosher salt',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 teaspoons black pepper, plus more as needed',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '3 tablespoons canola oil, plus more as needed',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '½ cup rice-wine vinegar',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '5 tablespoons soy sauce ',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '2 teaspoons raw or light brown sugar ',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '6 garlic cloves, smashed and peeled',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '3 bay leaves',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '1 Thai chile, halved lengthwise, or 1/4 teaspoon red-pepper flakes',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '3 scallions, thinly sliced, for serving',
-				order: 10,
+				order: 10
 			}
 		],
 		preparation: [
@@ -1728,7 +1728,7 @@ export const RECIPES = [
 		tags: ['vegetarian', 'vegan', 'filipino', 'cauliflower', 'rice', 'NYT' ],
 		tips: 'if you plan to eat rice with the adobo, bring 1 3/4 cups water to a boil in a medium saucepan before you start the recipe. Stir in 1 teaspoon salt and 1 cup long-grain rice, cover, and let simmer on the lowest heat possible for 18 minutes. Proceed with the adobo. Let the rice sit, covered and off the heat, until the adobo is ready. Fluff rice with a fork before serving.',
 		last_edited: '',
-		url: 'cauliflower-adobo',
+		url: 'cauliflower-adobo'
 	},
 	{
 		title: 'Quick Pizza Dough',
@@ -1739,27 +1739,27 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 ¾ cups/390 grams bread flour',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 ½ teaspoons/7 grams active dry yeast (1 packet)',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 teaspoons sea salt',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '¼ cup extra-virgin olive oil',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 cup warm water',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 or 3 tablespoons medium or coarse cornmeal',
-				order: 5,
+				order: 5
 			}
 		],
 		preparation: [
@@ -1786,7 +1786,7 @@ export const RECIPES = [
 		],
 		tags: ['active dry yeast', 'pizza', 'bread flour', 'dought', 'NYT' ],
 		last_edited: '',
-		url: 'quick-pizza-dough',
+		url: 'quick-pizza-dough'
 	},
 	{
 		title: 'Beef Tenderloin With Red Wine',
@@ -1797,55 +1797,55 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '4 tablespoons unsalted butter (1/2 stick), 2 tablespoons cut into small dice and chilled',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 tablespoons extra-virgin olive oil',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '8 shallots, sliced or minced',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Kosher salt',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 teaspoons fresh thyme leaves or 1 scant teaspoon dried thyme',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '8 garlic cloves, peeled and crushed with the flat side of a chef’s knife',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '12 anchovy fillets packed in olive oil, drained and minced',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 pieces beef tenderloin, 1 1/2 pounds each, trimmed and cleaned',
-				order: 7,
+				order: 7
 			},
 			{
 				name: 'Freshly milled black pepper',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 teaspoons sugar',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '¼ cup brandy',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '1 ¼ cups good red wine',
-				order: 11,
+				order: 11
 			},
 			{
 				name: 'Fresh arugula, for serving',
-				order: 12,
+				order: 12
 			}
 		],
 		preparation: [
@@ -1880,7 +1880,7 @@ export const RECIPES = [
 		],
 		tags: ['anchovy', 'beef tenderloin', 'red wine', 'shallot', 'meat', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'beef-tenderloin-with-red-wine',
+		url: 'beef-tenderloin-with-red-wine'
 	},
 	{
 		title: 'Greens and Beans With Bacon',
@@ -1891,39 +1891,39 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 bunches dark and sturdy leafy greens, like collards, kale or mustard greens (about 1 pound)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '4 bacon slices',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 large red onion (about 1 pound), finely chopped',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Kosher salt and black pepper',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '6 garlic cloves, sliced',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 teaspoon dried sage',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 cup chicken or vegetable stock',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 (15-ounce) cans red kidney beans, rinsed and drained',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 teaspoon hot sauce, plus more for serving',
-				order: 8,
+				order: 8
 			}
 		],
 		preparation: [
@@ -1954,7 +1954,7 @@ export const RECIPES = [
 		],
 		tags: ['bacon', 'collard green', 'gree', 'kale', 'kidney bean', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'greens-and-beans-with-bacon',
+		url: 'greens-and-beans-with-bacon'
 	},
 	{
 		title: 'Farro With Roasted Squash',
@@ -1965,67 +1965,67 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '3 tablespoons extra-virgin olive oil',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 teaspoons sugar',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '¾ teaspoon ground cinnamon',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '¾ teaspoon fine sea salt, more as needed',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¼ teaspoon black pepper ',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '⅛ teaspoon cayenne, or to taste',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '3 pounds winter squash, such as kabocha, carnival or butternut, seeded and cut into 1/2-inch thick slices (leave the peels on or remove as desired)',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 ½ cups apple cider',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 ½ teaspoons kosher salt, more to taste',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '1 ½ cups farro',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '2 tablespoons apple cider vinegar, more to taste',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '2 garlic cloves, grated on a Microplane or minced',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '½ teaspoon black pepper',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '7 tablespoons extra-virgin olive oil, more as needed',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '3 ounces feta cheese, crumbled (about 3/4 cup)',
-				order: 14,
+				order: 14
 			},
 			{
 				name: 'Fresh mint or arugula leaves, or both',
-				order: 15,
+				order: 15
 			}
 		],
 		preparation: [
@@ -2052,7 +2052,7 @@ export const RECIPES = [
 		],
 		tags: ['vegetarian', 'apple cider', 'faro', 'feta', 'mint', 'squash', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'farro-with-roasted-squash',
+		url: 'farro-with-roasted-squash'
 	},
 	{
 		title: 'Lemon Sheet Cake',
@@ -2063,63 +2063,63 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 cup/227 grams unsalted butter (2 sticks), softened, plus more for preparing the pan',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '3 cups/385 grams all-purpose flour, plus more for preparing the pan',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 ⅓ cups whole milk',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '¼ cup fresh lemon juice',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 ¼ teaspoons baking powder',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '¾ teaspoon baking soda',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 teaspoon kosher salt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 cups/403 grams granulated sugar',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '4 teaspoons packed finely grated lemon zest',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '4 large eggs, at room temperature',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '¾ cup/170 grams unsalted butter (1 1/2 sticks), softened',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '2 cups/246 grams confectioners’ sugar',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '1 teaspoon finely grated lemon zest',
-				order: 12,
+				order: 12
 			},
 			{
 				name: 'Pinch kosher salt',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '4 to 5 tablespoons fresh lemon juice',
-				order: 14,
+				order: 14
 			}
 		],
 		preparation: [
@@ -2150,7 +2150,7 @@ export const RECIPES = [
 		],
 		tags: ['lemon juice', 'lemon zest', 'dessert', 'cake', 'NYT' ],
 		last_edited: '',
-		url: 'lemon-sheet-cake',
+		url: 'lemon-sheet-cake'
 	},
 	{
 		title: 'Sausages With Potatoes and Cabbage',
@@ -2161,59 +2161,59 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '¼ cup extra-virgin olive oil',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 pound baby potatoes, halved crosswise or quartered if large',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '½ head red cabbage (about 1 pound), core removed, cut into 1-inch-thick wedges',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 teaspoon caraway seeds, lightly crushed',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 teaspoon coriander seeds, lightly crushed',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 teaspoon kosher salt',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 large onion, thinly sliced',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '4 thyme sprigs',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 rosemary sprigs',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '6 fresh pork, turkey, chicken or other sausages (about 1 1/2 pounds)',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '1 ½ tablespoons Dijon mustard, plus more for serving',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '½ cup freshly grated Parmesan',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '1 lemon',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '¼ cup chopped dill',
-				order: 13,
+				order: 13
 			}
 		],
 		preparation: [
@@ -2244,7 +2244,7 @@ export const RECIPES = [
 		],
 		tags: ['baby potato', 'red cabbage', 'sausages', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'sausages-with-potatoes-and-cabbage',
+		url: 'sausages-with-potatoes-and-cabbage'
 	},
 	{
 		title: 'Nutella Banana Bread',
@@ -2255,43 +2255,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '½ cup/113 grams unsalted butter (1 stick), plus more for greasing the pan ',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 cups/256 grams all-purpose flour, plus more for flouring the pan',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 teaspoon baking soda',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '¾ teaspoon kosher salt',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 ½ cups/310 grams mashed bananas, from about 3 medium bananas',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '⅔ cup/134 grams granulated sugar',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '¼ cup/57 grams plain Greek yogurt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 eggs',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 teaspoon vanilla extract',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '⅓ cup/99 grams chocolate-hazelnut spread, like Nutella',
-				order: 9,
+				order: 9
 			}
 		],
 		preparation: [
@@ -2318,7 +2318,7 @@ export const RECIPES = [
 		],
 		tags: ['banana', 'nutella', 'cake', 'dessert', 'NYT' ],
 		last_edited: '',
-		url: 'nutella-banana-bread',
+		url: 'nutella-banana-bread'
 	},
 	{
 		title: 'Honey-and-Soy-Glazed Chicken Thighs',
@@ -2329,39 +2329,39 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 tablespoons canola oil',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 tablespoon minced garlic',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon minced ginger',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '6 tablespoons low-sodium soy sauce (see tip)',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '5 tablespoons mild honey, such as clover, acacia or orange blossom',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '3 tablespoons unsalted butter',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Kosher salt and black pepper',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '8 bone-in, skin-on chicken thighs (about 3 pounds)',
-				order: 7,
+				order: 7
 			},
 			{
 				name: 'Lemon wedges, for serving',
-				order: 8,
+				order: 8
 			}
 		],
 		preparation: [
@@ -2381,7 +2381,7 @@ export const RECIPES = [
 		tips: 'The sauce can be made ahead and refrigerated overnight; just rewarm it in the microwave or stovetop before using. If gluten is a concern, substitute the soy sauce with low-sodium tamari.',
 		tags: ['asian', 'chicken', 'garlic', 'ginger', 'honey', 'soy Sauce', 'meat', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'honey-and-soy-glazed-chicken-thighs',
+		url: 'honey-and-soy-glazed-chicken-thighs'
 	},
 	{
 		title: 'Roasted Vegetables',
@@ -2392,23 +2392,23 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 to 3 pounds root or dense vegetable, peeled if you like and cut into 1-inch chunks or wedges (carrots, beets, potatoes, sweet potatoes, turnips, radishes, rutabaga, winter squashes)',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Oil (olive, coconut or grapeseed)',
-				order: 1,
+				order: 1
 			},
 			{
 				name: 'Salt and pepper',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Fried eggs and/or plain yogurt',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Fresh herbs, torn or chopped',
-				order: 4,
+				order: 4
 			}
 		],
 		preparation: [
@@ -2424,7 +2424,7 @@ export const RECIPES = [
 		tips: 'You can use 2 pounds high-moisture vegetables instead (eggplant, peppers, zucchini, fennel, onions, brussels sprouts). Slice them and cut into chunks or wedges. Roast at 450 degrees until golden brown all over, 10 to 40 minutes depending on variety and the size of the pieces. Or use 1 to 2 pounds hardy green vegetables (broccoli rabe, snow peas, green beans, kale, collard greens, chard) or cherry tomatoes, trimmed. Roast at 450 degrees for 7 to 15 minutes.',
 		tags: ['egg', 'root vedgetable', 'vegetarian', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'roasted-vegetables',
+		url: 'roasted-vegetables'
 	},
 	{
 		title: 'Creamy Queso With Pickled Jalapeños',
@@ -2435,55 +2435,55 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 jalapeños, with seeds, finely chopped',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '½ cup white distilled vinegar',
-				order: 1,
+				order: 1
 			},
 			{
 				name: 'Kosher salt, freshly ground pepper',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 tablespoons vegetable oil',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 cloves garlic, finely chopped',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 medium yellow onion, finely chopped',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 ¾ cups whole milk, plus more as needed',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 pound Monterey Jack or white Cheddar, grated',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 pound white or yellow American cheese, shredded or diced into 1/2-inch pieces',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '½ cup sour cream',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '4 scallions, white and light green parts, thinly sliced',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '¾ cup cilantro, tender leaves and stems, chopped',
-				order: 11,
+				order: 11
 			},
 			{
 				name: 'Tortilla chips, for serving',
-				order: 12,
+				order: 12
 			}
 		],
 		preparation: [
@@ -2506,7 +2506,7 @@ export const RECIPES = [
 		],
 		tags: ['mexican', 'vegetarial', 'soup', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'creamy-queso-with-pickled-jalapeños',
+		url: 'creamy-queso-with-pickled-jalapeños'
 	},
 	{
 		title: 'Muffuletta',
@@ -2517,75 +2517,75 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 cup roughly chopped pitted green olives, preferably Bella di Cerignola',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 cup roughly chopped pitted Kalamata olives',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '½ cup roughly chopped peeled roasted red peppers',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '⅓ cup roughly chopped flat-leaf parsley',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¼ cup celery leaves, torn',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '¾ cup thinly sliced celery',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 clove garlic, minced',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '¼ cup extra virgin olive oil',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 tablespoons red wine vinegar',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '½ teaspoon dried oregano',
-				order: 9,
+				order: 9
 			},
 			{
 				name: 'Pinch freshly ground black pepper',
-				order: 10,
+				order: 10
 			},
 			{
 				name: 'One (8 to 9 inches in diameter and 4 inches high) round loaf crusty Italian bread',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '4 ounces soppressata, thinly sliced',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '8 ounces provolone cheese, sliced',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '4 ounces Italian deli ham, thinly sliced',
-				order: 14,
+				order: 14
 			},
 			{
 				name: '4 ounces mortadella, thinly sliced',
-				order: 15,
+				order: 15
 			},
 			{
 				name: '4 ounces sweet coppa (cured Italian pork), thinly sliced',
-				order: 16,
+				order: 16
 			},
 			{
 				name: '4 ounces hard salami or bresaola, thinly sliced',
-				order: 17,
+				order: 17
 			}
 		],
 		preparation: [
@@ -2604,7 +2604,7 @@ export const RECIPES = [
 		],
 		tags: ['italian', 'green olive', 'provolone', 'salami', 'sandwich', 'lunch', 'NYT' ],
 		last_edited: '',
-		url: 'muffuletta',
+		url: 'muffuletta'
 	},
 	{
 		title: 'Citrus Salad With Peanuts',
@@ -2615,47 +2615,47 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 blood oranges',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 grapefruits',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '2 tangerines',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 ripe avocado',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¼ cup fish sauce',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 tablespoons packed light-brown sugar',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 tablespoon rice-wine vinegar',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 shallot, minced',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '1 handful mint leaves',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '1 handful cilantro leaves',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '½ cup roasted, salted peanuts, roughly chopped',
-				order: 10,
+				order: 10
 			}
 		],
 		preparation: [
@@ -2670,7 +2670,7 @@ export const RECIPES = [
 		],
 		tags: ['blod orange', 'salad', 'brown sugar', 'mint leave', 'salad', 'lunch', 'NYT' ],
 		last_edited: '',
-		url: 'citrus-salad-with-peanuts',
+		url: 'citrus-salad-with-peanuts'
 	},
 	{
 		title: 'Lemony Chicken Soup With Fennel',
@@ -2681,63 +2681,63 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 to 3 pounds bone-in, skin-on chicken legs, thighs, drumsticks or a mix',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Kosher salt and black pepper',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '6 tablespoons olive oil',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 large fennel bulb (preferably with the top on)',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '4 garlic cloves, thinly sliced',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 large yellow onion, coarsely chopped',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 pound small potatoes, sliced about 1/4-inch thick',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 lemon, coarsely chopped (discard the seeds), plus 1 additional lemon for zesting and juicing',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '4 dried chiles de árbol or 1/2 teaspoon red-pepper flakes (optional)',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '6 cups chicken or vegetable broth',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '1 tablespoon fennel seed',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '1 cup dill, coarsely chopped',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '2 scallions, thinly sliced',
-				order: 12,
+				order: 12
 			},
 			{
 				name: 'Sour cream, full-fat Greek yogurt or feta (optional)',
-				order: 13,
+				order: 13
 			},
 			{
 				name: 'Sumac (optional)',
-				order: 14,
+				order: 14
 			}
 		],
 		preparation: [
@@ -2776,7 +2776,7 @@ export const RECIPES = [
 		],
 		tags: ['chicken', 'dill', 'fennel', 'lemon', 'potato', 'soup', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'lemony-chicken-soup-with-fennel',
+		url: 'lemony-chicken-soup-with-fennel'
 	},
 	{
 		title: 'Beignets',
@@ -2787,43 +2787,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 ½ teaspoons active dry yeast',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '¼ cup/50 grams granulated sugar',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '¾ cup/180 milliliters warm water',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '½ cup/120 milliliters whole milk',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 large egg',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '2 tablespoons unsalted butter, melted',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '½ teaspoon kosher salt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '3 ½ cups/450 grams all-purpose flour, plus more for dusting',
-				order: 7,
+				order: 7
 			},
 			{
 				name: 'Vegetable oil, for greasing the bowl and deep-frying',
-				order: 8,
+				order: 8
 			},
 			{
 				name: 'Confectioners’ sugar, for dusting',
-				order: 9,
+				order: 9
 			}
 		],
 		preparation: [
@@ -2846,7 +2846,7 @@ export const RECIPES = [
 		],
 		tags: ['active dry yeast', 'confectioners sugar', 'milk', 'sugar', 'dessert', 'NYT' ],
 		last_edited: '',
-		url: 'beignets',
+		url: 'beignets'
 	},
 	{
 		title: 'Zuni Café’s Focaccia',
@@ -2857,35 +2857,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 ¼ cups/300 milliliters warm water',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 ½ teaspoons dry active yeast',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '3 tablespoons olive oil, plus more for greasing pan',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '2 teaspoons minced rosemary',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 ⅔ cups/215 grams bread flour',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 ⅔ cups/215 grams all-purpose flour, plus more for kneading',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 ½ teaspoons kosher salt',
-				order: 6,
+				order: 6
 			},
 			{
 				name: 'Fine cornmeal or semolina, for dusting bottom of pan',
-				order: 7,
+				order: 7
 			}
 		],
 		preparation: [
@@ -2925,7 +2925,7 @@ export const RECIPES = [
 		tips: 'Dough may be prepared through Step 2 up to 24 hours in advance and refrigerated in a resealable plastic bag. If you\'d prefer to make individual buns, weigh out 4-ounce/120-gram pieces of dough. Form into balls, then flatten. Place 3 inches apart on an oiled, cornmeal-dusted baking sheet. Cover loosely with a damp kitchen towel, and let rise until doubled, about 30 minutes. Bake at 400 degrees for 15 minutes, until nicely browned.',
 		tags: ['vegan', 'vegetarian sugar', 'italian', 'yeast', 'bread', 'rosemary', 'NYT' ],
 		last_edited: '',
-		url: 'zuni-café-s-focaccia',
+		url: 'zuni-café-s-focaccia'
 	},
 	{
 		title: 'Zuni Café’s Hamburger',
@@ -2936,31 +2936,31 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 ½ pounds boneless beef chuck, well marbled',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 generous teaspoon kosher salt',
-				order: 1,
+				order: 1
 			},
 			{
 				name: 'Focaccia <a routerLink="/recipe/zuni-café-s-focaccia">See recipe</a>',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Small-batch aioli',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Red oak leaf or other lettuce leaves, for garnish',
-				order: 4,
+				order: 4
 			},
 			{
 				name: 'Zucchini pickles',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Red onion pickles',
-				order: 6,
+				order: 6
 			}
 		],
 		preparation: [
@@ -2987,7 +2987,7 @@ export const RECIPES = [
 		],
 		tags: ['american', 'beef chunk', 'burger', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'zuni-café-s-hamburger',
+		url: 'zuni-café-s-hamburger'
 	},
 	{
 		title: 'Roman Egg Drop Soup',
@@ -2998,35 +2998,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '12 cups homemade chicken broth',
-				order: 0,
+				order: 0
 			},
 			{
 				name: 'Salt',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '6 large eggs',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Nutmeg, for grating',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Zest of 1 lemon, grated',
-				order: 4,
+				order: 4
 			},
 			{
 				name: 'Freshly ground black pepper',
-				order: 5,
+				order: 5
 			},
 			{
 				name: 'Parmesan for grating',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 to 3 tablespoons chopped Italian parsley',
-				order: 6,
+				order: 7
 			}
 		],
 		preparation: [
@@ -3049,7 +3049,7 @@ export const RECIPES = [
 		],
 		tags: ['soup', 'chicken broth', 'egg', 'italian', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'roman-egg-drop-soup',
+		url: 'roman-egg-drop-soup'
 	},
 	{
 		title: 'Toll House Chocolate Chip Cookies',
@@ -3060,43 +3060,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 ¼ cups all-purpose flour',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 teaspoon baking soda',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 teaspoon salt',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 cup butter (2 sticks), softened',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¾ cup granulated sugar',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '¾ cup packed brown sugar',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 teaspoon vanilla extract',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '2 large eggs',
-				order: 6,
+				order: 7
 			},
 			{
 				name: '2 cups/12 ounces semisweet chocolate chips',
-				order: 7,
+				order: 8
 			},
 			{
 				name: '1 cup chopped nuts (optional)',
-				order: 8,
+				order: 9
 			}
 		],
 		preparation: [
@@ -3111,7 +3111,7 @@ export const RECIPES = [
 		],
 		tags: ['dessert', 'cake', 'chocolate', 'NYT' ],
 		last_edited: '',
-		url: 'toll-couse-chocolate-chip-cookies',
+		url: 'toll-couse-chocolate-chip-cookies'
 	},
 	{
 		title: 'Chicken-Tarragon Pot Pie',
@@ -3122,75 +3122,75 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 cups all-purpose flour',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '14 tablespoons (1 3/4 sticks) cold unsalted butter, cut into pieces',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon cold vegetable shortening',
-				order: 2,
+				order: 2
 			},
 			{
 				name: 'Scant 1/2 teaspoon salt',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Scant 1/2 teaspoon sugar',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 egg',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '5 tablespoons unsalted butter',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 cup chopped carrot',
-				order: 6,
+				order: 7
 			},
 			{
 				name: '1 cup chopped celery',
-				order: 7,
+				order: 8
 			},
 			{
 				name: '1 cup thinly sliced leeks',
-				order: 8,
+				order: 9
 			},
 			{
 				name: '1 tablespoon chopped fresh tarragon',
-				order: 9,
+				order: 10
 			},
 			{
 				name: '1 cup frozen baby green peas',
-				order: 10,
+				order: 11
 			},
 			{
 				name: '4 tablespoons all-purpose flour',
-				order: 11,
+				order: 12
 			},
 			{
 				name: '2 ½ cups chicken broth',
-				order: 12,
+				order: 13
 			},
 			{
 				name: '1 cup heavy cream',
-				order: 13,
+				order: 14
 			},
 			{
 				name: '¼ teaspoon salt',
-				order: 14,
+				order: 15
 			},
 			{
 				name: '¼ teaspoon freshly ground pepper',
-				order: 15,
+				order: 16
 			},
 			{
 				name: '3 cups leftover roast chicken, cut into 1/2-inch chunks',
-				order: 16,
+				order: 17
 			}
 		],
 		preparation: [
@@ -3229,7 +3229,7 @@ export const RECIPES = [
 		],
 		tags: ['pie', 'dinner', 'chicken', 'NYT' ],
 		last_edited: '',
-		url: 'chicken-tarragon-pot-pie',
+		url: 'chicken-tarragon-pot-pie'
 	},
 	{
 		title: 'Irish Cream Poundcake',
@@ -3240,47 +3240,47 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: 'Nonstick cooking spray',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1 cup/225 grams unsalted butter (2 sticks), at room temperature, plus more for greasing the pan',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 ⅔ cups/215 grams all-purpose flour, plus more for dusting the pan',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '⅔ cup/145 grams light brown sugar',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '½ cup/100 grams granulated sugar',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '4 large eggs, at room temperature',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 ¼ teaspoons baking powder',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '½ teaspoon fine sea salt',
-				order: 6,
+				order: 7
 			},
 			{
 				name: '½ cup/120 milliliters Irish cream',
-				order: 7,
+				order: 8
 			},
 			{
 				name: '1 ¼ cups/155 grams confectioners’ sugar',
-				order: 8,
+				order: 9
 			},
 			{
 				name: '3 tablespoons Irish cream, plus more as needed',
-				order: 9,
+				order: 10
 			}
 		],
 		preparation: [
@@ -3307,7 +3307,7 @@ export const RECIPES = [
 		],
 		tags: ['irish', 'cake', 'dessert', 'irish cream', 'NYT' ],
 		last_edited: '',
-		url: 'irish-cream-poundcake',
+		url: 'irish-cream-poundcake'
 	},
 	{
 		title: 'Beef Short Rib Rice Bowls',
@@ -3318,63 +3318,63 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1 pound boneless beef short ribs, sliced 1/4-inch thick',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 tablespoons soy sauce',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 tablespoon grated fresh ginger',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 tablespoon light brown sugar',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '2 garlic cloves, grated',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 teaspoon ground coriander',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '1 teaspoon ground turmeric',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '½ teaspoon red-pepper flakes',
-				order: 6,
+				order: 7
 			},
 			{
 				name: 'Kosher salt',
-				order: 7,
+				order: 8
 			},
 			{
 				name: '2 tablespoons vegetable oil',
-				order: 8,
+				order: 9
 			},
 			{
 				name: '4 cups cooked short-grain rice',
-				order: 9,
+				order: 10
 			},
 			{
 				name: '1 small head green leaf lettuce, shredded',
-				order: 10,
+				order: 11
 			},
 			{
 				name: '2 stalks celery, thinly sliced crosswise',
-				order: 11,
+				order: 12
 			},
 			{
 				name: 'Fresh cilantro, for serving',
-				order: 12,
+				order: 13
 			},
 			{
 				name: 'Lime wedges, for serving',
-				order: 13,
+				order: 14
 			}
 		],
 		preparation: [
@@ -3393,7 +3393,7 @@ export const RECIPES = [
 		],
 		tags: ['celery', 'ginger', 'rice', 'shortrib', 'meat', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'beef-short-rib-rice-bowls',
+		url: 'beef-short-rib-rice-bowls'
 	},
 	{
 		title: 'Japanese-Style Pancake',
@@ -3404,23 +3404,23 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '2 egg yolks',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1/4 cup sugar',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1/2 cup milk',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '3/4 cup pancake mix',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '4 egg whites',
-				order: 4,
+				order: 4
 			}
 		],
 		preparation: [
@@ -3447,7 +3447,7 @@ export const RECIPES = [
 		],
 		tags: ['pancake', 'japanese', 'cake', 'dessert' ],
 		last_edited: '',
-		url: 'japanese-style-pancake',
+		url: 'japanese-style-pancake'
 	},
 	{
 		title: 'Katsu Curry',
@@ -3458,51 +3458,51 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '3 cubes Japanese curry roux',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '3/4 cup chicken broth',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1/2 lb mushroom',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 large potato',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 large carrot',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1/2 medium sweet onion',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 tbsp oil',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '2 slices pork loin chops',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '1 egg',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '2 tbsp flour',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '1 cup panko breadcrumb',
-				order: 9,
+				order: 9
 			},
 			{
 				name: 'oil for frying',
-				order: 10,
+				order: 10
 			}
 		],
 		preparation: [
@@ -3525,7 +3525,7 @@ export const RECIPES = [
 		],
 		tags: ['curry', 'japanese', 'pork', 'fried', 'dinner' ],
 		last_edited: '',
-		url: 'katsu-curry',
+		url: 'katsu-curry'
 	},
 	{
 		title: 'Chicken Teriyaki',
@@ -3536,43 +3536,43 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '1/2 cup brown sugar',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '1/2 cup soy sauce',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1/4 cup cider vinegar',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 clove of garlic, minced',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '1 tsp ground ginger',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 tsp ground black pepper',
-				order: 4,
+				order: 5
 			},
 			{
 				name: '1 tbsp cornstarch',
-				order: 5,
+				order: 6
 			},
 			{
 				name: '1 tbsp water',
-				order: 6,
+				order: 7
 			},
 			{
 				name: '1 tbsp sesame',
-				order: 7,
+				order: 8
 			},
 			{
 				name: '10 to 12 skinless chicken thighs',
-				order: 8,
+				order: 9
 			}
 		],
 		preparation: [
@@ -3599,7 +3599,7 @@ export const RECIPES = [
 		],
 		tags: ['chicken', 'japanese', 'teriyaki', 'sweet', 'dinner' ],
 		last_edited: '',
-		url: 'chicken-teriyaki',
+		url: 'chicken-teriyaki'
 	},
 	{
 		title: 'Chocolate Snacking Cake',
@@ -3610,63 +3610,63 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: '⅓ cup/80 milliliters neutral oil, such as grapeseed or canola, plus more for pan',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '¾ cup/95 grams all-purpose flour',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '½ cup/50 grams Dutch-processed cocoa powder',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '½ teaspoon baking soda',
-				order: 3,
+				order: 3
 			},
 			{
 				name: '¼ teaspoon baking powder',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '¼ teaspoon fine sea salt',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '½ cup/120 milliliters hot coffee',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '¾ cup/155 grams light brown sugar',
-				order: 7,
+				order: 7
 			},
 			{
 				name: '⅓ cup/80 milliliters sour cream',
-				order: 8,
+				order: 8
 			},
 			{
 				name: '2 large eggs',
-				order: 9,
+				order: 9
 			},
 			{
 				name: '1 teaspoon vanilla extract',
-				order: 10,
+				order: 10
 			},
 			{
 				name: '½ tablespoon finely grated tangerine zest',
-				order: 11,
+				order: 11
 			},
 			{
 				name: '1 tablespoon tangerine juice',
-				order: 12,
+				order: 12
 			},
 			{
 				name: '1 teaspoon fresh lemon juice',
-				order: 13,
+				order: 13
 			},
 			{
 				name: '1 cup/115 grams confectioners’ sugar',
-				order: 14,
+				order: 14
 			}
 		],
 		preparation: [
@@ -3693,7 +3693,7 @@ export const RECIPES = [
 		],
 		tags: ['coffee', 'sour cream', 'tangerine juice', 'cake', 'dessert', 'NYT' ],
 		last_edited: '',
-		url: 'chocolate-snacking-cake',
+		url: 'chocolate-snacking-cake'
 	},
 	{
 		title: 'Spaghetti Carbonara',
@@ -3704,35 +3704,35 @@ export const RECIPES = [
 		ingredients: [
 			{
 				name: 'Salt',
-				order: 0,
+				order: 0
 			},
 			{
 				name: '2 large eggs and 2 large yolks, room temperature',
-				order: 1,
+				order: 1
 			},
 			{
 				name: '1 ounce (about 1/3 packed cup) grated pecorino Romano, plus additional for serving',
-				order: 2,
+				order: 2
 			},
 			{
 				name: '1 ounce (about 1/3 packed cup) grated Parmesan ',
-				order: 3,
+				order: 3
 			},
 			{
 				name: 'Coarsely ground black pepper',
-				order: 4,
+				order: 4
 			},
 			{
 				name: '1 tablespoon olive oil ',
-				order: 5,
+				order: 5
 			},
 			{
 				name: '3 ½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about 1/4 inch thick by 1/3 inch square ',
-				order: 6,
+				order: 6
 			},
 			{
 				name: '12 ounces spaghetti (about 3/4 box)',
-				order: 7,
+				order: 7
 			}
 		],
 		preparation: [
@@ -3759,6 +3759,1275 @@ export const RECIPES = [
 		],
 		tags: ['italian', 'cheese', 'pasta', 'pancetta', 'lunch', 'dinner', 'NYT' ],
 		last_edited: '',
-		url: 'spaghetti-carbonara',
+		url: 'spaghetti-carbonara'
+	},
+	{
+		title: 'Green Okonomiyaki',
+		summary: 'Okonomiyaki are savory, fried Japanese pancakes that are crisp on the outside and custardy at their core. They traditionally feature cabbage and pork, but this meatless version opts for spinach, zucchini and Napa cabbage. You’ll want to visit a Japanese market for the more unusual ingredients like Hondashi, Kewpie mayo, okonomiyaki sauce and dried shaved bonito, though truthfully you can pick and choose your preferred toppings (Hondashi and shaved bonito contain fish, so skip them if you’re serving vegetarians). The vinegary okonomiyaki sauce combines with the creamy mayo and umami-rich bonito for a playful topping that makes these pancakes truly unique. Leftovers make a great breakfast sandwich filling or snack; reheat at 375 degrees until warmed through, about 15 minutes.',
+		yield: '2 pancakes',
+		time: 60,
+		illustration: '../../../assets/images/kc-green-okonomiyaki-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 teaspoon instant dashi powder, such as Hondashi',
+				order: 0
+			},
+			{
+				name: '2 large eggs',
+				order: 1
+			},
+			{
+				name: '¾ cup all-purpose flour (3 1/2 ounces)',
+				order: 2
+			},
+			{
+				name: '2 teaspoons kosher salt',
+				order: 3
+			},
+			{
+				name: '½ teaspoon baking powder',
+				order: 4
+			},
+			{
+				name: '10 ounces Napa cabbage, finely shredded (about 4 cups)',
+				order: 5
+			},
+			{
+				name: '1 medium zucchini (6 ounces), grated on the large holes of a box grater and squeezed dry',
+				order: 6
+			},
+			{
+				name: '2 ounces baby spinach (2 packed cups), coarsely chopped',
+				order: 7
+			},
+			{
+				name: '1 tablespoon drained pickled red ginger (or finely chopped pickled sushi ginger)',
+				order: 8
+			},
+			{
+				name: '¼ cup safflower or canola oil',
+				order: 9
+			},
+			{
+				name: 'Okonomiyaki sauce and Kewpie mayo, for drizzling',
+				order: 10
+			},
+			{
+				name: 'Dried shaved bonito (optional) and shredded nori, for serving',
+				order: 11
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large bowl, whisk 1 cup water with dashi powder (if using) until dashi is dissolved. (If you’re not using dashi, you can simply use plain water.) Whisk in eggs until well blended, then add flour, salt, baking powder and baking soda and whisk until smooth. Fold in cabbage, zucchini, spinach and ginger until well incorporated.',
+				order: 0
+			},
+			{
+				step: 'In an 8-inch nonstick skillet, heat 2 tablespoons oil. Add half the batter, spreading cabbage mixture into an even 6-inch round about 1-inch-thick (avoid the urge to push down on the cabbage, which would prevent fluffier pancakes). Cook over medium-low heat until pancake is set and golden-brown underneath, 8 to 10 minutes. Reduce heat to low and carefully flip pancake. (You might want to put a plate on top of the pancake, flip to invert the pancake onto the plate, then slide it back into the skillet.) Cook until golden-brown on second side and cooked through in center, about 8 minutes. Flip pancake over onto a fresh large plate. Wipe out skillet and repeat with remaining oil and batter.',
+				order: 1
+			},
+			{
+				step: 'Drizzle pancakes with okonomiyaki sauce and Kewpie mayo, and top with a handful of shaved bonito, if using, and nori. Serve warm.',
+				order: 2
+			}
+		],
+		tags: ['japanese', 'dashi', 'spinach', 'zucchini', 'pancake', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'green-okonomiyaki'
+	},
+	{
+		title: 'Reuben Sandwich',
+		summary: 'The original Reuben’s Delicatessen no longer exists in New York City, but its legend lives on in the form of this classic sandwich. The deli\'s owner, Arthur Reuben frequently named sandwiches after the actors that would frequent his deli and created a special for Annette Seelos — one of Charlie Chaplin’s leading ladies — in 1914. Mr. Reuben’s version called for ham and coleslaw but morphed into today’s Reuben, which sandwiches corned beef, sauerkraut, Swiss cheese and a healthy smear of Russian dressing between two slices of buttered rye bread. Homemade Russian dressing has a brighter, fresher flavor than the bottled variety, and comes together in just a few turns of a whisk. The best part of this toasted sandwich is the crispy crust and gooey cheese, so keep the heat low enough to allow the buttered bread to toast while the cheese melts.',
+		yield: '4 sandwiches',
+		time: 30,
+		illustration: '../../../assets/images/kc-reuben-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '½ cup mayonnaise',
+				order: 0
+			},
+			{
+				name: '5 tablespoons ketchup',
+				order: 1
+			},
+			{
+				name: '3 tablespoons dill pickle relish (not sweet)',
+				order: 2
+			},
+			{
+				name: '1 tablespoon minced onion',
+				order: 3
+			},
+			{
+				name: '1 teaspoon yellow mustard',
+				order: 4
+			},
+			{
+				name: '1 teaspoon Worcestershire sauce',
+				order: 5
+			},
+			{
+				name: '8 slices rye sandwich bread',
+				order: 6
+			},
+			{
+				name: '4 tablespoons unsalted butter, at room temperature',
+				order: 7
+			},
+			{
+				name: '1 pound thinly sliced corned beef',
+				order: 8
+			},
+			{
+				name: '1 cup drained sauerkraut (about 6 ounces)',
+				order: 9
+			},
+			{
+				name: '8 slices Swiss cheese (about 6 ounces)',
+				order: 10
+			}
+		],
+		preparation: [
+			{
+				step: 'Make the Russian dressing: In a small bowl, combine all ingredients and mix well.',
+				order: 0
+			},
+			{
+				step: 'Make the sandwiches: Spread one side of each bread slice with 1/2 tablespoon butter. In a large nonstick skillet, arrange 2 slices of bread, buttered side down, over medium-low heat. Spread 2 tablespoons of Russian dressing on each slice of bread, then top each with 1/4 pound corned beef, 1/4 cup sauerkraut and 2 slices cheese. Top each with 1 slice of bread, buttered side up. Cook until golden and crispy underneath, about 5 minutes. Flip the sandwiches and cook, pressing down gently with a spatula, until second side is golden and cheese melts, about 3 minutes more. Transfer sandwiches to plates and wipe out skillet. Repeat with the remaining bread, sauce, corned beef, sauerkraut and cheese. Serve warm.',
+				order: 1
+			}
+		],
+		tags: ['american', 'corned beef', 'sandwich', 'swiss cheese', 'rye bread', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'reuben-sandwich'
+	},
+	{
+		title: 'Herbed Rice With Tahdig',
+		summary: 'Cooked in two stages, this herbed rice, or sabzi polo, is a constant at the Persian New Year table, where everyone fights over the crust of crisp rice called tahdig. You can use a food processor to chop the herbs if you like. It\'s key to do the herbs in batches (don\'t overfill the bowl of the processor), to pulse rather than run and to stop and scrape a few times for even chopping. Work until the pieces are nice and small, about an eighth of an inch or the size of a small sunflower seed, but not so far that they begin to break down and form a paste.',
+		yield: '4 to 6 servings',
+		time: 75,
+		illustration: '../../../assets/images/15NOWRUZ6-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 cups basmati rice',
+				order: 0
+			},
+			{
+				name: '5 tablespoons unsalted butter',
+				order: 1
+			},
+			{
+				name: '4 cups finely diced leeks, including the dark green parts (2 medium leeks or 1 very large leek)',
+				order: 2
+			},
+			{
+				name: 'Fine sea salt or kosher salt',
+				order: 3
+			},
+			{
+				name: '¼ teaspoon ground turmeric',
+				order: 4
+			},
+			{
+				name: '1 cup finely chopped dill leaves and tender stems (about 2 bunches)',
+				order: 5
+			},
+			{
+				name: '1 cup finely chopped cilantro leaves and tender stems (about 2 large bunches)',
+				order: 6
+			},
+			{
+				name: '3 tablespoons Greek yogurt',
+				order: 7
+			},
+			{
+				name: '3 tablespoons neutral-tasting oil, such as canola',
+				order: 8
+			}
+		],
+		preparation: [
+			{
+				step: 'Place rice in a bowl and rinse with cold water. Swirl vigorously with your fingers to release the starch, and change the water at least five times, until it runs clear. Once the water runs clear, let rice soak for 30 minutes.',
+				order: 0
+			},
+			{
+				step: 'Fill a large stockpot with 4 quarts of water. Cover and bring to a boil over high heat.',
+				order: 1
+			},
+			{
+				step: 'Set a very well-seasoned 10-inch cast-iron skillet or a nonstick frying pan over medium heat and add 2 tablespoons butter. When butter melts, add leeks and a pinch of salt. Cook for 10 to 12 minutes, stirring occasionally, until tender.',
+				order: 2
+			},
+			{
+				step: 'Once water comes to a boil, season it very heavily with either 6 tablespoons fine sea salt or a generous 1/2 cup kosher salt and the ground turmeric. (Don’t worry about oversalting; the rice will spend only a few minutes in this water.) Drain rice, then add it to the pot and stir. Set a fine-mesh sieve or colander in the sink. Cook rice, stirring occasionally, until al dente, 5 to 7 minutes. Drain into the sieve, then rinse with cold water to keep rice from cooking further. Drain rice well and place in a large bowl.',
+				order: 3
+			},
+			{
+				step: 'Add leeks, dill and cilantro to rice. Stir well to combine. Taste and adjust seasoning with salt if needed. Remove 1 heaping cup of the rice mixture to a small bowl and mix with yogurt.',
+				order: 4
+			},
+			{
+				step: 'Rinse and dry the skillet and return it to medium-high heat. Add remaining 3 tablespoons butter and the oil. When butter melts, add rice-yogurt mixture and spread it out into a thin, even layer with a heatproof spatula.',
+				order: 5
+			},
+			{
+				step: 'Pile remaining rice into the pan, mounding it gently toward the center. Using the handle of a wooden spoon, gently dig 6 holes into the rice down to the bottom of the pot, which will be barely sizzling. Dig 5 of the holes about 2 inches from the sides of the pan, and put one in the center. (The holes will allow steam to escape from the bottommost layer of rice and allow a crisp crust to form.) There should be enough oil in the pan that you can see it bubbling up the sides; add a little more oil along the edges of the rice if needed to see these bubbles.',
+				order: 6
+			},
+			{
+				step: 'Continue cooking rice over medium-high heat for 8 minutes, or until evenly browned along the edges, rotating the pan a half turn after 4 minutes to ensure even browning. Wrap a lid with a kitchen towel and cover pan. Turn the heat as low as it will go and continue cooking another 45 minutes, rotating the pan a quarter turn every 10 to 12 minutes. The rice is done when it’s cooked completely through.',
+				order: 7
+			},
+			{
+				step: 'To unmold the rice, carefully run an offset spatula or butter knife along the edges of the pan to ensure that no part of the crust is sticking. Tip out any excess fat at the bottom of the pan into a bowl, gather your courage, and then carefully flip it onto a platter or cutting board. Serve immediately.',
+				order: 8
+			}
+		],
+		tags: ['vegetarian', 'pancake', 'middle easter', 'basmati rice', 'greek yogurt', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'herbed-rice-with-tahdig'
+	},
+	{
+		title: 'Roasted Butternut Squash Bread Salad',
+		summary: 'This sheet-pan recipe is an easy way to get a hearty vegetarian meal on the table in under an hour. Inspired by panzanella, which traditionally provides new life for stale bread by tossing it with juicy tomatoes, this bread salad instead gets its moisture from an earthy tahini dressing. The creamy tahini is lightly sweetened with honey, which plays well with the buttery squash, while a flourish of fresh herbs adds a light, springy finish. This makes for a nice supper on its own, but it would also work well as a side to roasted chicken or fish.',
+		yield: '4 servings',
+		time: 35,
+		illustration: '../../../assets/images/merlin_151400877_fc916069-a429-4dd6-9819-f30d421a54a8-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 butternut squash (about 2 pounds), peeled, seeded and cut into 1/2- to 1-inch wedges',
+				order: 0
+			},
+			{
+				name: '4 tablespoons olive oil',
+				order: 1
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 2
+			},
+			{
+				name: '½ teaspoon red-pepper flakes (optional)',
+				order: 3
+			},
+			{
+				name: '3 (1-inch thick) slices country bread or round peasant loaf, torn into 1- to 1 1/2-inch pieces',
+				order: 4
+			},
+			{
+				name: '2 tablespoons tahini',
+				order: 5
+			},
+			{
+				name: '2 tablespoons lime juice',
+				order: 6
+			},
+			{
+				name: '1 teaspoon honey',
+				order: 7
+			},
+			{
+				name: '¼ cup roughly chopped cilantro, parsley or dill, or a combination of all three (optional)',
+				order: 8
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 425 degrees. Line a large sheet pan with parchment paper or foil. In a large bowl, toss the squash with 2 tablespoons olive oil. Season well with salt, black pepper and red-pepper flakes (if using) and toss again. Spread the squash in an even layer on the sheet pan and roast until it begins to brown in spots, 10 to 15 minutes.',
+				order: 0
+			},
+			{
+				step: 'While the squash roasts, in the same bowl (no need to wipe it out), toss the bread with the remaining olive oil and season with salt and pepper. After the squash has roasted for 10 to 15 minutes, remove from the oven and turn the squash pieces over. Add the bread to the sheet pan. Roast 10 to 15 minutes more, turning the bread halfway through, until the croutons are golden and crisp and the squash is tender.',
+				order: 1
+			},
+			{
+				step: 'While the squash and croutons roast, whisk together the tahini, lime juice, honey and 2 tablespoons water. Season to taste with salt.',
+				order: 2
+			},
+			{
+				step: 'Arrange the squash and croutons on a platter or in a bowl and drizzle with the dressing. Scatter with the herbs, if using.',
+				order: 3
+			}
+		],
+		tags: ['bread', 'butternut', 'tahini', 'roast', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'roasted-butternut-squash-bread-salad'
+	},
+	{
+		title: 'Chicken and Escarole Salad With Anchovy Croutons',
+		summary: 'Think of this salad as an umami-charged version of a classic Caesar. The central difference is that the egg yolk, which is typically emulsified into a creamy dressing, is plopped directly onto the lettuces, leaving you to break it and let it mingle with the salty, garlicky, lemony dressing, which is bolstered with a bit of soy sauce. (If the whole, raw egg yolks freak you out, swap them for jammy soft-boiled eggs or crispy fried eggs.) The true reason to make this salad, though, is that it’s adorned with chicken-fat-laced anchovy croutons, made in the oven while the chicken finishes cooking. They are worth the price of admission.',
+		yield: '4 servings',
+		time: 40,
+		illustration: '../../../assets/images/merlin_152005611_30054f65-d1f3-4dc8-bb61-5bfdc58f0ecc-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ¼ pounds bone-in, skin-on chicken breasts or thighs',
+				order: 0
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 1
+			},
+			{
+				name: '6 tablespoons olive oil, plus more as needed',
+				order: 2
+			},
+			{
+				name: '4 anchovy fillets, plus more if you like',
+				order: 3
+			},
+			{
+				name: '¼ loaf of crusty bread, torn into 1-inch pieces (about 2 cups)',
+				order: 4
+			},
+			{
+				name: '1 garlic clove, finely grated',
+				order: 5
+			},
+			{
+				name: '¼ cup fresh lemon juice, plus more as needed',
+				order: 6
+			},
+			{
+				name: '1 tablespoon soy sauce',
+				order: 7
+			},
+			{
+				name: '1 large head escarole or 2 heads romaine lettuce, torn into large pieces',
+				order: 8
+			},
+			{
+				name: '1 cup parsley, tender leaves and stems',
+				order: 9
+			},
+			{
+				name: 'Pecorino or Parmesan, for shaving',
+				order: 10
+			},
+			{
+				name: '4 large egg yolks (optional)',
+				order: 11
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat oven to 375 degrees. Season chicken with salt and pepper. Heat 1 tablespoon olive oil in a large skillet (preferably cast-iron) over medium-high heat.',
+				order: 0
+			},
+			{
+				step: 'Add chicken, skin-side down, and cook without moving until the pieces are golden brown and crispy, 5 to 8 minutes. Flip the chicken and continue to cook until well browned on the other side, another 5 to 8 minutes.',
+				order: 1
+			},
+			{
+				step: 'Move the chicken to one side of the skillet and tilt the skillet a little so that the fat and drippings pool on one side. Add the anchovies and let them sizzle a bit to melt down. Add the croutons, along with 2 tablespoons olive oil. Season with salt and pepper and toss them to coat in the anchovy-chicken fat.',
+				order: 2
+			},
+			{
+				step: 'Place the skillet in the oven and roast until the chicken is cooked through and croutons are golden brown and crispy, 12 to 15 minutes.',
+				order: 3
+			},
+			{
+				step: 'Meanwhile, whisk the grated garlic, lemon juice and soy sauce in a small bowl and season with salt and pepper.',
+				order: 4
+			},
+			{
+				step: 'Place escarole and parsley in a large bowl or on a platter and dress with lemon-garlic mixture. Season with salt, pepper and more lemon juice if you like. Drizzle with remaining 2 tablespoons olive oil and shave some pecorino over the whole thing.',
+				order: 5
+			},
+			{
+				step: 'Remove the chicken from the oven and let it rest a minute or two. Cut the meat off the bone and thinly slice. Place on top of the salad, along with the croutons. Top each serving with an egg yolk, if using, and more anchovies, if you like.',
+				order: 6
+			}
+		],
+		tags: ['anchovy', 'chicken', 'crusty bread', 'salad', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'chicken-and-escarole-salad-with-anchovy-croutons'
+	},
+	{
+		title: 'Caramelized Citrus',
+		summary: 'This is a modernized version of a dessert that was popular in Britain during the 1970s, a simple, stylish confection that was a standby of posh dinner parties: caramelized oranges. It was then and remains the sort of dish that is not particularly difficult to make, but still signals a home cook’s understanding of elegance. My recipe nods to, but is not of, that era. It calls for saffron, which infuses the sauce with its sweet-savory, haylike aroma, and for yogurt, which is a delicious partner to the fruit. On which subject, an important final note: Be careful to remove all the white pith beneath the skin of the citrus, as it is exceedingly bitter.',
+		yield: 'Serves 4-8',
+		time: 30,
+		illustration: '../../../assets/images/20mag-20eat-t_CA1-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '4 assorted sweet citrus fruits, like blood or navel oranges or grapefruit',
+				order: 0
+			},
+			{
+				name: '1 cup or 285 grams Greek-style yogurt',
+				order: 1
+			},
+			{
+				name: '1 ½ cups or 300 grams light brown sugar',
+				order: 2
+			},
+			{
+				name: '1 pinch saffron threads',
+				order: 3
+			}
+		],
+		preparation: [
+			{
+				step: 'Using a small, sharp knife, cut off the tops and bottoms of the oranges and grapefruit, then slice the peel off them vertically, taking care to remove all the white pith below the skin of the fruit.',
+				order: 0
+			},
+			{
+				step: 'Spoon the yogurt onto a platter or into a large bowl. Turn each fruit on its side, then slice it into rounds that are between 1/4-inch and 1/8-inch thick. Place the sliced fruit on top of the yogurt in an attractive pattern, then place the platter or bowl into the refrigerator.',
+				order: 1
+			},
+			{
+				step: 'Make the caramel. Put the sugar in a large sauté pan set over medium heat, then add to it 1/2 cup or 125 milliliters of water, and swirl the pan to dissolve the sugar. Let the mixture come slowly to a boil, without stirring, then lower heat slightly, and cook until the syrup has gone a very deep amber color, approximately 5 to 6 minutes. Remove from heat, add the saffron to the caramel and swirl to mix it in.',
+				order: 2
+			},
+			{
+				step: 'Pour the caramel over the sliced fruit. Return to the refrigerator for an hour or so, or serve right away.',
+				order: 3
+			}
+		],
+		tags: ['caramel', 'citrus', 'agrumes', 'salad', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'caramelized-citrus'
+	},
+	{
+		title: 'Big Salad With Grains',
+		summary: 'There\'s no true recipe for a big salad, but for this robust green meal, you will want to keep a few rules in mind. Skip the soft lettuces, which tend to get squashed in a big salad, and start with sturdier greens, like kale or escarole. Add fruits and vegetables, a protein, like a hard-boiled egg, and a starch or two. You want a total of six to eight ingredients, before toppings. Too few, and it could get boring; too many, and the bowl gets crowded and confusing. Finish it off with a substantial dressing, like avocado, yogurt or tahini, and add a couple of toppings, like chives or chopped nuts. Serve with a side of whole-grain bread for a filling and healthy meal.',
+		yield: '1 serving',
+		time: 10,
+		illustration: '../../../assets/images/09SALADGUIDE9-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 cups sturdy salad greens, such as romaine, iceberg, escarole or kale',
+				order: 0
+			},
+			{
+				name: '½ cup cooked grains, like quinoa, farro, bulgur wheat or barley',
+				order: 1
+			},
+			{
+				name: '1 cup roasted vegetables, like potatoes, sweet potatoes or winter squash',
+				order: 2
+			},
+			{
+				name: '¼ cup thinly sliced raw vegetables, like bell peppers, celery, carrots, fennel, mushrooms, onions, radishes, snap or snow peas, summer squash or tomatoes',
+				order: 3
+			},
+			{
+				name: '¼ cup salad dressing, like yogurt, tahini or a vinaigrette, plus more to taste',
+				order: 4
+			},
+			{
+				name: '½ avocado, thinly sliced',
+				order: 5
+			},
+			{
+				name: '1 hard-boiled egg, peeled and halved',
+				order: 6
+			},
+			{
+				name: '2 teaspoons snipped chives, plus more to taste',
+				order: 7
+			},
+			{
+				name: '2 teaspoons sliced or chopped nuts, like almonds, walnuts, pecans or hazelnuts, plus more to taste',
+				order: 8
+			},
+			{
+				name: 'Whole-grain bread, for serving',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'Place greens in bottom of serving bowl. Add grains in an even layer over greens. Repeat with the roasted vegetables, then the raw vegetables.',
+				order: 0
+			},
+			{
+				step: 'Top with dressing, and toss gently. Fan out avocado on top on one side of bowl.',
+				order: 1
+			},
+			{
+				step: 'Place hard-boiled egg pieces on the side opposite the avocado. Top with chives and nuts. Serve with whole-grain bread.',
+				order: 2
+			}
+		],
+		tags: ['vegetarian', 'avocado', 'egg', 'grain', 'salad', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'big-salad-with-grains'
+	},
+	{
+		title: 'Vegan Broccoli Soup With Cashew Cream',
+		summary: 'This nourishing, three-vegetable soup is thick and creamy, even without dairy. It takes very little skill and only 25 minutes to make, but success lies in proper blending: Use a high-powered blender for the creamiest soup, or let it go a few minutes longer in a standard blender. Fennel and celery provide welcome depth, and the quick cashew cream feels luxurious spooned over the top or stirred right in. Save any extra to drizzle on other blended soups or even roasted vegetables. Finish this vibrant bowl with celery leaves, parsley or dill, and two basic but crucial ingredients: an extra drizzle of olive oil and a dusting of freshly ground pepper.',
+		yield: '4 serving',
+		time: 25,
+		illustration: '../../../assets/images/sc-broccoli-soup-with-cashew-cream-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ cups raw cashew pieces (or whole raw cashews)',
+				order: 0
+			},
+			{
+				name: 'Fine sea salt',
+				order: 1
+			},
+			{
+				name: '1 cup boiling water',
+				order: 2
+			},
+			{
+				name: '1 large head broccoli (about 1 1/2 pounds), florets chopped into bite-size pieces and stems peeled and roughly chopped',
+				order: 3
+			},
+			{
+				name: '1 small fennel bulb, trimmed, quartered, cored and roughly chopped',
+				order: 4
+			},
+			{
+				name: '2 large stalks celery, trimmed and roughly chopped, leaves reserved for garnish',
+				order: 5
+			},
+			{
+				name: '2 tablespoons extra-virgin olive oil, plus more for drizzling',
+				order: 6
+			},
+			{
+				name: 'Torn fresh dill or parsley leaves',
+				order: 7
+			},
+			{
+				name: 'Freshly ground black pepper',
+				order: 8
+			}
+		],
+		preparation: [
+			{
+				step: 'Place the cashews in a blender along with a pinch sea salt. Pour the boiling water on top. Cover and let sit to allow the cashews to soften while you make the soup.',
+				order: 0
+			},
+			{
+				step: 'Combine the broccoli, fennel, celery, 2 tablespoons oil, 1 teaspoon sea salt and 3 cups water in a pot and cover loosely with a lid, leaving a small opening so steam can escape (this helps the soup keep its bright-green color). Bring to a boil over high, then steam vegetables over medium until they are tender, 8 to 10 minutes. Remove from the heat.',
+				order: 1
+			},
+			{
+				step: 'Purée the cashews and water until completely smooth and frothy (the cashew cream should be the consistency of very loose whipped cream). Add additional water, 1 tablespoon at a time, if desired to thin the mixture. Spoon the cashew cream into a bowl.',
+				order: 2
+			},
+			{
+				step: 'Working in batches if necessary, transfer the steamed vegetables and their cooking liquid to the blender and purée on high until completely smooth and frothy. Taste, and add more salt as needed. Divide the soup among bowls and top with cashew cream, celery leaves, dill, pepper and a drizzle of olive oil. Serve warm.',
+				order: 3
+			}
+		],
+		tags: ['vegetarian', 'vegan', 'broccolis', 'cashew', 'celery', 'soup', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'vegan-broccoli-soup-with-cashew-cream'
+	},
+	{
+		title: 'Turmeric Rice With Tomatoes',
+		summary: 'There are a few foolproof ways of cooking perfect, fluffy long-grain rice, and this is one of them. The pot is covered with a lid and a tea towel for a short time, then set aside to let the rice finish cooking in the steam that has built up. The finished dish is deliciously rich and lemony and would go perfectly with some grilled fish or chicken. The bright yellow of the turmeric and the red pop of the cherry tomatoes mean that it’s also a treat for the eyes.',
+		yield: '4 to 6 side servings',
+		time: 50,
+		illustration: '../../../assets/images/merlin_135414816_bec2b321-e454-4804-9d0b-d2090b70ed47-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '5 garlic cloves, thinly sliced',
+				order: 0
+			},
+			{
+				name: '10 cardamom pods, crushed (keep a few of the pods and all the seeds)',
+				order: 1
+			},
+			{
+				name: '1 ½ tablespoons fresh thyme leaves',
+				order: 2
+			},
+			{
+				name: '5 tablespoons/75 milliliters olive oil, divided',
+				order: 3
+			},
+			{
+				name: '1 lemon, yellow peel shaved into 5 wide strips, and fruit squeezed to get 2 tablespoons juice',
+				order: 4
+			},
+			{
+				name: '1 teaspoon ground turmeric',
+				order: 5
+			},
+			{
+				name: '1 pint/400 grams cherry tomatoes',
+				order: 6
+			},
+			{
+				name: 'Salt and black pepper',
+				order: 7
+			},
+			{
+				name: '1 ⅔ cups/300 grams basmati rice',
+				order: 8
+			},
+			{
+				name: '2 cups/500 milliliters vegetable stock or water',
+				order: 9
+			},
+			{
+				name: '¼ cup/5 grams loosely packed parsley leaves, roughly chopped',
+				order: 10
+			}
+		],
+		preparation: [
+			{
+				step: 'In a medium-size deep skillet with a tight-fitting lid, combine garlic, cardamom, thyme, 3 tablespoons oil and the lemon peel strips. Turn heat to medium-low and gently cook for 5 to 6 minutes, stirring often, until garlic just begins to soften and turn golden.',
+				order: 0
+			},
+			{
+				step: 'Add turmeric, tomatoes and 1 1/4 teaspoons salt and cook 3 to 4 minutes more, stirring occasionally, until the tomatoes begin to blister, taking care not to break them apart. Add rice, stock (or water) and a generous grind of pepper and gently stir to combine. Bring to a gentle simmer, then cover the pan with a clean tea towel and seal with the lid, securing the towel edges well over the lid so they don’t catch fire.',
+				order: 1
+			},
+			{
+				step: 'Reduce heat to very low and let cook undisturbed 15 minutes. Remove from the heat, leaving the lid on, and let rest 5 minutes. Remove lid and towel and use a large fork to gently fluff rice and evenly disperse the tomatoes. Gently stir in lemon juice, remaining 2 tablespoons oil and parsley. Let rest 5 minutes more before serving.',
+				order: 2
+			}
+		],
+		tags: ['vegetarian', 'vegan', 'basmati rice', 'tomatoe', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'turmeric-rice-with-tomatoes'
+	},
+	{
+		title: 'Three-Cup Vegetables',
+		summary: 'This vegan dish is inspired by three-cup chicken, a deeply savory Taiwanese specialty that can be traced back to the 13th century, to the execution of Wen Tianxiang, a scholar-general of the Song dynasty who resisted Kublai Khan’s invasion. The night before Wen’s death, a guard is said to have made him the surprisingly pungent chicken dish with the prison’s limited resources. It has many variations, but usually calls for braising chicken in rice wine, soy sauce and sesame oil with plenty of ginger, garlic and basil. Here, root vegetables like carrots, parsnips, sweet potatoes and turnips take the place of the chicken, but feel free to also add tofu and quick-cooking vegetables like broccoli or snap peas with the roots. Serve over rice or ramen noodles to soak up sauce.',
+		yield: '4 servings',
+		time: 30,
+		illustration: '../../../assets/images/as-3-cup-roots-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '2 tablespoons canola or other neutral oil',
+				order: 0
+			},
+			{
+				name: '6 cups root vegetables, such as carrots, parsnips, sweet potatoes and-or turnips, cut into 1/4-inch slices and halved or quartered if large (about 2 pounds)',
+				order: 1
+			},
+			{
+				name: '1 (1-inch) piece ginger, peeled and thinly sliced',
+				order: 2
+			},
+			{
+				name: '10 garlic cloves, smashed and peeled',
+				order: 3
+			},
+			{
+				name: '¾ cup Chinese rice wine',
+				order: 4
+			},
+			{
+				name: '6 tablespoons low-sodium soy sauce',
+				order: 5
+			},
+			{
+				name: '3 tablespoons toasted sesame oil',
+				order: 6
+			},
+			{
+				name: '2 tablespoons dark brown sugar',
+				order: 7
+			},
+			{
+				name: '2 dried chiles, like chiles de árbol, or 1/4 teaspoon red-pepper flakes',
+				order: 8
+			},
+			{
+				name: '2 cups fresh basil leaves, torn if large',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large skillet, heat oil over medium-high heat until it shimmers. Add the vegetables, ginger and garlic, and cook, stirring occasionally, until vegetables are crisp-tender and browned in spots, 7 to 10 minutes.',
+				order: 0
+			},
+			{
+				step: 'Lower the heat to medium and stir in the rice wine, soy sauce, sesame oil, brown sugar and red-pepper flakes. Cook, stirring occasionally, until the vegetables are tender and the sauce has reduced, 10 to 15 minutes. Remove from heat, and stir in the basil.',
+				order: 1
+			}
+		],
+		tags: ['chinese', 'basil', 'ginger', 'vegan', 'vegetarian', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'three-cup-vegetables'
+	},
+	{
+		title: 'Fettuccine With Asparagus and Smoked Salmon',
+		summary: 'Fresh pasta, asparagus and smoked salmon are tossed with shallot cream sauce in this elegant weeknight dinner that can be prepared in well under an hour.',
+		yield: '4 servings',
+		time: 35,
+		illustration: '../../../assets/images/Fettuccine-With-Asparagus-And-Smoked-Salmon-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '½ pound fresh asparagus, medium thickness ',
+				order: 0
+			},
+			{
+				name: 'Salt',
+				order: 1
+			},
+			{
+				name: '1 tablespoon butter',
+				order: 2
+			},
+			{
+				name: '½ tablespoon minced shallots',
+				order: 3
+			},
+			{
+				name: '1 cup heavy cream',
+				order: 4
+			},
+			{
+				name: '4 ounces smoked salmon sliced 1/4-inch thick',
+				order: 5
+			},
+			{
+				name: 'Freshly ground black pepper',
+				order: 6
+			},
+			{
+				name: '1 teaspoon fresh lemon juice',
+				order: 7
+			},
+			{
+				name: '9 to 10 ounces fresh green fettuccine noodles',
+				order: 8
+			},
+			{
+				name: '2 tablespoons minced fresh dill',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'Snap off the ends of the asparagus where they break naturally and peel the stalks. Cut the asparagus on a slant to pieces about an inch long.',
+				order: 0
+			},
+			{
+				step: 'Steam the asparagus until they are just barely tender and still bright green, about three minutes. Rinse under cold water, drain well on paper towels and set aside.',
+				order: 1
+			},
+			{
+				step: 'Bring a large pot of salted water to a boil for the pasta.',
+				order: 2
+			},
+			{
+				step: 'While the water is coming to a boil, melt the butter in a large heavy skillet. Add the shallots and saute until soft but not brown. Stir in the cream and simmer about five minutes, until the cream has thickened somewhat.',
+				order: 3
+			},
+			{
+				step: 'Cut the salmon into slivers, add it to the cream and remove the skillet from the heat. Season with pepper and lemon juice. Add the asparagus.',
+				order: 4
+			},
+			{
+				step: 'When the pot of water is boiling, add the fettuccine, stir it once or twice, then cook two to three minutes after the water has returned to a boil. Drain well.',
+				order: 5
+			},
+			{
+				step: 'Briefly reheat the sauce. Transfer the fettuccine to a warm serving bowl, pour the sauce over it and toss. Sprinkle with dill and serve.',
+				order: 6
+			}
+		],
+		tags: ['italian', 'aspargus', 'pasta', 'salmon', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'fettuccine-with-asparagus-and-smoked-salmon'
+	},
+	{
+		title: 'Chocolate Mug Cake',
+		summary: 'If you Google “mug cake,” you’ll get more than 100 million results for the one-serving cake that’s baked in a mug in the microwave. Yet finding the right recipe — not too dense, not too sweet — is harder than one might hope. This version, adapted from “Baking Class: 50 Fun Recipes Kids Will Love to Bake!” by Deanna F. Cook, is great, and requires just a few pantry staples. For a molten chocolate mug cake, sprinkle the top with some mini chocolate chips before popping it into the microwave, then remove it a few seconds early. This cute little cake may have been developed for children, but everyone loves it.',
+		yield: '1 servings',
+		time: 5,
+		illustration: '../../../assets/images/merlin_151072980_3fd8a112-5e7b-4616-a9dc-506e3782f4f9-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 tablespoon unsalted butter',
+				order: 0
+			},
+			{
+				name: '1 egg',
+				order: 1
+			},
+			{
+				name: 'A few drops vanilla extract',
+				order: 2
+			},
+			{
+				name: '3 to 4 tablespoons granulated sugar, to taste',
+				order: 3
+			},
+			{
+				name: '3 tablespoons unsweetened cocoa powder',
+				order: 4
+			},
+			{
+				name: 'A pinch of kosher salt',
+				order: 5
+			},
+			{
+				name: '1 teaspoon semisweet chocolate chips (optional)',
+				order: 6
+			},
+			{
+				name: 'Confectioners’ sugar or vanilla ice cream (optional)',
+				order: 7
+			}
+		],
+		preparation: [
+			{
+				step: 'Microwave the butter in a microwave-safe mug in 10-second increments until melted, 20 to 30 seconds. Crack the egg into a small bowl; add the vanilla and whisk to combine using a small whisk or fork. Pour the egg mixture into the mug over the butter and whisk to combine.',
+				order: 0
+			},
+			{
+				step: 'Add the sugar, cocoa powder and salt and whisk until mostly smooth (a few lumps are O.K.). Scrape down the sides the best you can with a spoon or a small silicone spatula. Sprinkle with mini chocolate chips, if desired.',
+				order: 1
+			},
+			{
+				step: 'Cook in the microwave on high for 1 to 1 1/2 minutes, or until a toothpick inserted in the center comes out mostly clean. Sift a little confectioners’ sugar on top or serve with a scoop of vanilla ice cream, if desired. Dig in with a spoon.',
+				order: 2
+			}
+		],
+		tags: ['vegetarian', 'american', 'chocolate chip', 'cocao powder', 'cake', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'chocolate-mug-cake'
+	},
+	{
+		title: 'Classic Mashed Potatoes',
+		summary: 'Mashed potatoes are very forgiving, and with a good masher, hot potatoes and enough butter and salt, cooks can accommodate religionists of the fluffy style and partisans of the creamy and dense. Be openhanded with salt and butter but stingy with milk, which will flatten out the bright, earthy potato taste. (And for everything you need to know to make perfect potatoes, visit our potato guide.)',
+		yield: '4 to 6 servings',
+		time: 45,
+		illustration: '../../../assets/images/26COOKING-MASHED2-articleLarge.jpg',
+		ingredients: [
+			{
+				name: 'Salt',
+				order: 0
+			},
+			{
+				name: '2 ½ pounds potatoes (about 6 large potatoes), preferably a combination of russet (baking) potatoes and large Yukon Golds, or all Yukon Golds',
+				order: 1
+			},
+			{
+				name: '4 tablespoons butter, more for dotting',
+				order: 2
+			},
+			{
+				name: '⅓ cup whole milk',
+				order: 3
+			}
+		],
+		preparation: [
+			{
+				step: 'In a large pot, bring a gallon of water and 2 tablespoons salt to a boil over high heat. Peel and quarter potatoes and keep in cold water until ready to cook. (This can be done up to 4 hours in advance.) Add potatoes to boiling water and boil about 15 to 20 minutes, until soft; a knife should go in with almost no resistance. (It is better to overcook than to undercook.)',
+				order: 0
+			},
+			{
+				step: 'In a saucepan or a microwave oven, heat butter and milk together until butter melts and mixture steams. Drain potatoes well and return to pot. Shake them around in the hot pan or over very low heat for a minute (you want dry potatoes). Using an extruding masher or a ricer, mash hot potatoes until smooth, about 2 minutes. Lightly mix in about half of hot butter mixture, just until blended. Taste for salt and add more butter mixture until seasoned to your liking.',
+				order: 1
+			},
+			{
+				step: 'Stop here for fluffy potatoes. For creamy potatoes, keep stirring potato mixture, using a sturdy spoon to press it against sides and bottom of pot. Mix until dense and thick. For whipped potatoes, use a stand mixer to mash hot potatoes just until smooth, about 30 seconds. Add all the butter mixture and salt to taste, pulsing machine in short bursts at medium speed. When light and creamy, stop mixing immediately. (Potatoes can quickly become sticky.)',
+				order: 2
+			},
+			{
+				step: 'To keep hot until ready to serve, transfer to serving bowl, dot top with butter, cover tightly and keep in a warm place, like the back of the stove. Potatoes will stay hot for at least 30 minutes. To keep longer, place covered bowl in a pan holding about an inch of gently simmering water. Before serving, mix well.',
+				order: 3
+			}
+		],
+		tips: 'This recipe can be doubled, tripled and more.',
+		tags: ['vegetarian', 'potatoes', 'mash', 'lunch', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'classic-mashed-potatoes'
+	},
+	{
+		title: 'Spring Chicken Miso Soup',
+		summary: 'Soup is welcome all year round, but it goes without saying a springtime soup veers lighter, even if the weather is still cool. Fresh green vegetables, like young leeks, peas and spinach, should play a major role. This delicate yet flavorful soup re-works the comforting chicken-noodle concept with a Japanese-inspired ingredient list.',
+		yield: '6 servings',
+		time: 60,
+		illustration: '../../../assets/images/merlin_151978797_381fae9e-3caa-41b0-b43a-97efe3762a57-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ pounds boneless, skinless chicken thighs',
+				order: 0
+			},
+			{
+				name: 'Salt and pepper',
+				order: 1
+			},
+			{
+				name: '2 tablespoons vegetable oil',
+				order: 2
+			},
+			{
+				name: '2 garlic cloves, minced',
+				order: 3
+			},
+			{
+				name: '2 teaspoons grated ginger',
+				order: 4
+			},
+			{
+				name: '1 tablespoon mirin or sherry',
+				order: 5
+			},
+			{
+				name: '1 tablespoon sugar',
+				order: 6
+			},
+			{
+				name: '1 tablespoon tamari or light soy sauce',
+				order: 7
+			},
+			{
+				name: '8 ounces soba (buckwheat noodles)',
+				order: 8
+			},
+			{
+				name: '8 ounces sugar snap peas or snow peas, trimmed',
+				order: 9
+			},
+			{
+				name: '8 cups water',
+				order: 10
+			},
+			{
+				name: '2 medium leeks, white and tender green part, diced, about 2 cups',
+				order: 11
+			},
+			{
+				name: '¼ cup white miso, or more to taste',
+				order: 12
+			},
+			{
+				name: '5 ounces baby spinach, about 4 cups',
+				order: 13
+			},
+			{
+				name: 'A few basil or shiso leaves, julienned ',
+				order: 14
+			}
+		],
+		preparation: [
+			{
+				step: 'Season chicken thighs on all sides with salt and pepper. Put oil in a heavy-bottomed soup pot over medium high heat. Add thighs and cook for 3 to 4 minutes, reducing heat to keep meat from browning. Turn and cook other side for about 2 minutes.',
+				order: 0
+			},
+			{
+				step: 'Add garlic and ginger and let sizzle without browning. Add mirin, sugar, tamari and 8 cups water, then bring mixture to boil. Lower heat and simmer gently for 20 minutes. Turn off heat. Remove thighs and chop into 1/2-inch chunks, then return meat to pot. Taste broth and adjust salt if necessary.',
+				order: 1
+			},
+			{
+				step: 'In a separate pot, cook buckwheat noodles according to package directions, being careful not to overcook. Drain noodles and refresh with cool water, then leave at room temperature.',
+				order: 2
+			},
+			{
+				step: 'Bring a small pot of salted water to boil. Add snap peas and leeks and simmer 1 minute, then drain and refresh with cool water. Leave at room temperature.',
+				order: 3
+			},
+			{
+				step: 'To serve, reheat broth to just under a boil. Dilute miso with a little hot broth and whisk into soup. Add spinach and let wilt slightly, then add leeks and snap peas and let them warm for 1 minute. Divide the noodles among 6 warmed bowls and ladle soup over. Top each bowl with a little basil.',
+				order: 4
+			}
+		],
+		tags: ['japanses', 'chicken', 'soup', 'noodle', 'lunch', 'dinner', 'NYT' ],
+		last_edited: '',
+		url: 'spring-chicken-miso-soup'
+	},
+	{
+		title: 'Lemon Cream Cheese Cookies',
+		summary: 'Chewy and sweet, these simple cookies are heavenly with a cup of tea — and a lavish dose of fresh lemon zest provides some pluck. Cream cheese is the star ingredient in both the cookie and its glaze, and performs two tasks: It imparts tanginess and contributes to the soft texture. These cookies are simple but delicate, so you’ll want to pull them from the oven as soon as they begin to turn golden, then let them cool directly on the baking sheets until they firm up. The glaze is optional, but it’s easy to whip together while the cookies cool.',
+		yield: '1 1/2 dozen cookies',
+		time: 30,
+		illustration: '../../../assets/images/ss-lemon-cookies-articleLarge-v2.jpg',
+		ingredients: [
+			{
+				name: '1 ½ cups/190 grams all-purpose flour',
+				order: 0
+			},
+			{
+				name: '½ teaspoon baking soda',
+				order: 1
+			},
+			{
+				name: '½ teaspoon kosher salt',
+				order: 2
+			},
+			{
+				name: '6 tablespoons/85 grams unsalted butter (3/4 stick), at room temperature',
+				order: 3
+			},
+			{
+				name: '4 ounces/105 grams cream cheese, at room temperature',
+				order: 4
+			},
+			{
+				name: '1 cup/200 grams granulated sugar',
+				order: 5
+			},
+			{
+				name: '1 lemon, zested and juiced (about 4 teaspoons zest and 2 tablespoons juice)',
+				order: 6
+			},
+			{
+				name: '1 large egg',
+				order: 7
+			},
+			{
+				name: '3 tablespoons confectioners’ sugar',
+				order: 8
+			},
+			{
+				name: '1 ½ tablespoons milk, plus more, as needed',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 350 degrees. In a medium bowl, whisk together the flour, baking soda and salt. In a large bowl with an electric mixer on medium, beat together the butter and half the cream cheese until combined, about 2 minutes. Beat in the granulated sugar and 4 teaspoons lemon zest until creamy, 1 to 2 minutes more. Beat in the egg until combined. Add flour mixture and beat until combined.',
+				order: 0
+			},
+			{
+				step: 'Line two rimmed baking sheets with parchment paper. Portion the dough into 2-tablespoon scoops and arrange them on the sheets at least 1 1/2 inches apart.',
+				order: 1
+			},
+			{
+				step: 'Bake, rotating halfway through baking, until the cookies are puffed and set and just beginning to turn golden, 10 to 12 minutes. Transfer baking sheets to wire racks until cookies are completely cooled.',
+				order: 2
+			},
+			{
+				step: 'Meanwhile, prepare the glaze: Whisk together the remaining cream cheese with the confectioners’ sugar, milk and 1 1/2 tablespoons lemon juice until smooth. Add additional lemon juice or milk until mixture forms the proper consistency for a glaze. Drizzle over cooled cookies. Let cookies stand at room temperature until the glaze has set. Store in an airtight container at room temperature for up to one week or in the freezer for a month.',
+				order: 3
+			}
+		],
+		tags: ['american', 'vegetarian', 'cookie', 'dessert', 'NYT' ],
+		last_edited: '',
+		url: 'lemon-cream-cheese-cookies'
+	},
+	{
+		title: 'Pasta With Roasted Broccoli, Almonds and Anchovies',
+		summary: 'This no-fuss weeknight pasta makes marvelous use of basic ingredients found in almost every kitchen — and calls for some smart multitasking: Get the broccoli roasting while the pasta cooks, then create an easy emulsified sauce using butter, anchovies, red-pepper flakes, lemon juice and a splash of pasta cooking water. A sprinkle of toasted almonds provides texture and crunch. This dish is endlessly adaptable: Go for cauliflower instead of the broccoli (or a combination of the two); use parmesan or any other hard cheese in place of pecorino; opt for walnuts or pistachios instead of the almonds — or bypass nuts altogether and use toasted panko or breadcrumbs. If you don’t have campanelle or fusilli, that’s fine too. Any pasta with plenty of nooks and crannies to capture the buttery sauce will do.',
+		yield: '4 to 6 servings',
+		time: 30,
+		illustration: '../../../assets/images/merlin_150866628_2aaaec98-2ea9-4b07-98af-40680932169d-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 ½ pounds broccoli, cut into bite-size florets, stems cut into 1/2-inch slices',
+				order: 0
+			},
+			{
+				name: '2 tablespoons olive oil',
+				order: 1
+			},
+			{
+				name: 'Kosher salt and black pepper',
+				order: 2
+			},
+			{
+				name: '1 pound shaped pasta, such as campanelle or fusilli',
+				order: 3
+			},
+			{
+				name: '½ cup chopped almonds',
+				order: 4
+			},
+			{
+				name: '8 tablespoons unsalted butter (1 stick)',
+				order: 5
+			},
+			{
+				name: '6 to 8 anchovy fillets, roughly chopped',
+				order: 6
+			},
+			{
+				name: '2 garlic cloves, chopped',
+				order: 7
+			},
+			{
+				name: '½ teaspoon red-pepper flakes',
+				order: 8
+			},
+			{
+				name: '⅓ cup fresh lemon juice',
+				order: 9
+			},
+			{
+				name: 'Grated pecorino, for serving (optional)',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 425 degrees. On a large sheet pan, toss the broccoli with the olive oil. Season generously with salt and pepper and toss again. Spread the mixture in an even layer and roast until crisp and lightly browned, tossing halfway through to ensure even cooking, 20 to 25 minutes.',
+				order: 0
+			},
+			{
+				step: 'Meanwhile, bring a large pot of well-salted water (2 heaping tablespoons kosher salt to about 7 quarts water) to a boil and cook the pasta according to package instructions until it’s just short of al dente. Reserve 1 cup pasta water and drain.',
+				order: 1
+			},
+			{
+				step: 'In a large skillet over medium-low heat, toast the almonds, stirring frequently so they don’t burn, 4 to 5 minutes. Set the almonds aside and wipe out the skillet.',
+				order: 2
+			},
+			{
+				step: 'In the skillet, melt the butter over medium heat. Stir in the anchovies, garlic and red-pepper flakes and cook, stirring frequently, until the anchovies have melted into the sauce and the garlic is fragrant, about 2 minutes. Add 1/2 cup of the reserved pasta water along with the lemon juice and simmer until it emulsifies, 2 to 3 minutes.',
+				order: 3
+			},
+			{
+				step: 'Add the pasta and toss to coat, adding more pasta water as needed. Stir in the roasted broccoli and gently toss and season to taste with salt and pepper. Top with the toasted almonds and serve with cheese, if you’d like.',
+				order: 4
+			}
+		],
+		tags: ['almond', 'anchovy', 'salad', 'lunch', 'NYT' ],
+		last_edited: '',
+		url: 'pasta-with-roasted-broccoli-almonds-and-anchovies'
+	},
+	{
+		title: 'Date-and-Walnut Bars',
+		summary: 'This recipe for golden, chewy, date-and-walnut-packed bars comes from the Los Angeles pastry chef Margarita Manzke, who grew up in the Philippines and now runs the sweet side of the kitchen at République. When she was in high school, Manzke came across the classic recipe for “food for the gods” in a thin pamphlet of Filipino desserts, and she made the bars again and again, learning how to produce a consistently tender, chewy batch: Don’t overcream the butter, and don’t use a light hand with the dates. Manzke sells fresh bars at République, but know that at home the cooled, cut bars store well in the freezer, ready to pop out and defrost at a moment\'s notice.',
+		yield: 'About 24 bars',
+		time: 60,
+		illustration: '../../../assets/images/07mag-eat-slideshow-slide-X5CG-articleLarge-v2.jpg',
+		ingredients: [
+			{
+				name: '2 ⅔ cups/340 grams all-purpose flour',
+				order: 0
+			},
+			{
+				name: '1 teaspoon baking powder',
+				order: 1
+			},
+			{
+				name: '1 teaspoon baking soda',
+				order: 2
+			},
+			{
+				name: '½ teaspoon kosher salt',
+				order: 3
+			},
+			{
+				name: '4 cups/400 grams large Medjool dates, pitted and roughly chopped into 1/2-inch pieces',
+				order: 4
+			},
+			{
+				name: '1 pound/450 grams unsalted butter (4 sticks), at room temperature',
+				order: 5
+			},
+			{
+				name: '2 ⅓ packed cups/515 grams dark brown sugar',
+				order: 6
+			},
+			{
+				name: '¼ cup/50 grams granulated sugar',
+				order: 7
+			},
+			{
+				name: '6 eggs',
+				order: 8
+			},
+			{
+				name: '2 ⅓ cups/280 grams walnuts, roughly chopped',
+				order: 9
+			}
+		],
+		preparation: [
+			{
+				step: 'Heat the oven to 325, and line a 13-by-18-inch sheet pan with parchment paper. Whisk together the flour, baking powder, baking soda and salt in a large bowl until well mixed and no lumps remain. Tip about 1/2 cup of the flour mixture into a medium bowl; add the dates, and toss well to coat, breaking up the dates as you go. Set aside.',
+				order: 0
+			},
+			{
+				step: 'In a stand mixer fitted with the paddle attachment, cream the butter with both sugars just until smoothly incorporated, about 2 minutes on medium speed. Add the eggs in 3 batches, mixing well each time and scraping down the sides of the bowl and the paddle between additions.',
+				order: 1
+			},
+			{
+				step: 'Add the flour mixture and date mixture, and mix gently on low just until incorporated. Remove the bowl from the mixer, and use a spatula to fold in the walnuts. Transfer the mixture to the parchment-lined sheet pan, and use an offset spatula to spread it in an even layer, pushing it into the edges and corners and smoothing the surface. Bake until brown and set, about 45 minutes.',
+				order: 2
+			},
+			{
+				step: 'Cool completely in the pan, then remove and cut into squares. Serve right away, or store in an airtight container for up to 5 days.',
+				order: 3
+			}
+		],
+		tags: ['filipino', 'flour', 'date', 'cake', 'snack', 'NYT' ],
+		last_edited: '',
+		url: 'date-and-walnut-bars'
+	},
+	{
+		title: 'Speculoos Cookie Butter Pie',
+		summary: 'Traditionally served on St. Nicholas Day in Belgium and the Netherlands, crisp, gingerbread-like speculoos cookies have risen in popularity after airlines began offering them as mid-flight snacks. Cookie butter, a creamy spread, incorporate that cookie’s flavors. This easy pie uses crumbled speculoos (also known as speculaas) in its crust and the cookie butter in its filling, doubling up on the flavor of warm spices like cinnamon and ginger. The whole thing comes together in about 30 minutes. The pie is perfect all on its own, but if you want to dress it up, add some unsweetened whipped cream and a sprinkle of cookie crumbs. Avoid sweetened whipped cream, which would take this pie from sweet to cloying.',
+		yield: '8 to 10 servings',
+		time: 30,
+		illustration: '../../../assets/images/merlin_152025021_0161c8fa-4764-4738-b7a8-8c8a435c7998-articleLarge.jpg',
+		ingredients: [
+			{
+				name: 'Nonstick cooking spray',
+				order: 0
+			},
+			{
+				name: '30 speculoos cookies or about 10 graham crackers (8 ounces/227 grams), plus more for garnish (optional)',
+				order: 1
+			},
+			{
+				name: '4 tablespoons/55 grams unsalted butter, melted',
+				order: 2
+			},
+			{
+				name: '8 ounces/230 grams cream cheese, at room temperature',
+				order: 3
+			},
+			{
+				name: '1 cup/280 grams speculoos cookie butter',
+				order: 4
+			},
+			{
+				name: '1 cup/125 grams confectioners’ sugar',
+				order: 5
+			},
+			{
+				name: '1 ¼ cups/300 milliliters heavy cream, plus 3/4 cup/180 milliliters heavy cream for topping (optional)',
+				order: 6
+			},
+			{
+				name: '1 teaspoon vanilla extract',
+				order: 7
+			},
+			{
+				name: '¼ teaspoon fine sea salt ',
+				order: 8
+			}
+		],
+		preparation: [
+			{
+				step: 'Lightly spray a 9-inch pie plate with nonstick spray.',
+				order: 0
+			},
+			{
+				step: 'In the bowl of a food processor, pulse the cookies into fine crumbs, about 1 minute. (You should have about 1 1/2 cups.) Add the melted butter and pulse until the mixture is uniformly combined and sticks together when pressed, 15 to 20 seconds. Press the crust evenly into the base and up the sides of the pie plate. Freeze the crust while you heat the oven to 350 degrees.',
+				order: 1
+			},
+			{
+				step: 'Bake the chilled crust until it appears set and the edges start to darken slightly, 8 to 10 minutes. Cool completely.',
+				order: 2
+			},
+			{
+				step: 'In the bowl of an electric mixer fitted with the whisk attachment, beat the cream cheese and cookie butter on medium speed, 1 to 2 minutes. Scrape down the sides of the bowl, then add the confectioners’ sugar and mix on low speed until fully incorporated, 1 to 2 minutes. Scrape down the sides of the bowl.',
+				order: 3
+			},
+			{
+				step: 'In a liquid measuring cup with a spout, mix the 1 1/4 cups cream with the vanilla and salt to combine. Increase the mixer speed to medium and gradually add the cream mixture to the cream cheese mixture in a slow, steady stream. Continue to mix just until the mixture has thickened and holds medium peaks, 30 seconds to 1 minute. Do not overwhip, which could cause the mixture to separate.',
+				order: 4
+			},
+			{
+				step: 'Pour the filling into the cooled pie crust and smooth into an even layer. Freeze the pie for 20 minutes to set the filling, then transfer to the refrigerator to chill until the filling is firm, about 45 minutes.',
+				order: 5
+			},
+			{
+				step: 'Prepare the whipped cream, if using: In the bowl of an electric mixer fitted with the whip attachment, whip the remaining 3/4 cup cream to medium peaks. Spread in an even layer on top of the chilled pie and garnish with a sprinkling of cookie crumbs, if desired. Refrigerate until ready to serve.',
+				order: 6
+			}
+		],
+		tags: ['american', 'sugar', 'speculos', 'cake', 'NYT' ],
+		last_edited: '',
+		url: 'speculoos-cookie-butter-pie'
 	}
 ]; 
