@@ -17,7 +17,6 @@ import { SearcherPipe } from './pipes/searcher/searcher.pipe';
 
 //DIRECTIVE
 import { LoginModalDirective } from './directives/login_modal/login-modal.directive';
-import { TestComponent } from './views/test/test.component';
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent, data: { title: 'Recipes' } },
@@ -30,7 +29,6 @@ const routes: Routes = [
     AppComponent,
     RecipesComponent,
     RecipeComponent,
-    TestComponent,
     SanitizerPipe,
     SearcherPipe,
     LoginModalDirective,
