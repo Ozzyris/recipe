@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 	providedIn: 'root'
 })
 
-export class PublicApiService {
-	base_url = environment.api_url + 'public/';
+export class AuthService {
+	base_url = environment.api_url + 'auth/';
 	httpOptions: any;
 
 	constructor( private http: HttpClient ){
@@ -19,13 +19,8 @@ export class PublicApiService {
 		};
 	}
 
-	get_all_recipes(){
-		let url = this.base_url + 'get-all-recipes';
-		return this.http.get(url, this.httpOptions);
-	}
-
-	get_recipe( payload ):Observable<any>{
-		let url = this.base_url + 'get-recipe';
+	login( payload ): Observable<any>{
+		let url = this.base_url + 'signin';
 		return this.http.post(url, payload, this.httpOptions);
 	}
 }

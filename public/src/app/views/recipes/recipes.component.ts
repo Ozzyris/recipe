@@ -13,6 +13,7 @@ import { PublicApiService } from '../../services/public/public-api.service';
 
 export class RecipesComponent implements OnInit {
 	all_recipes: any = [];
+	is_user_logged_in: boolean = false;
 	search_input: string;
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
@@ -20,8 +21,18 @@ export class RecipesComponent implements OnInit {
 	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
 		this.all_recipes = this.publicApi_service.get_all_recipes();
+		this.check_session();
 	}
 
+	check_session(){
+		this.get_session_from_storage()
+			.then( session => {
+				console.log(session);
+				if(session != null){
+					this.is_user_logged_in = true;
+				}
+			})
+	}
 	display_search(){
 		if(this.search_input != ''){
 			this.is_search_active = true;
@@ -29,4 +40,14 @@ export class RecipesComponent implements OnInit {
 			this.is_search_active = false;
 		}
 	}
+	logout(){
+		localStorage.clear();
+		this.is_user_logged_in = false;
+	}
+	get_session_from_storage(): Promise<any>{
+		return new Promise((resolve, reject)=>{
+			resolve( localStorage.getItem('user_session') );
+		})
+	}
+	
 }

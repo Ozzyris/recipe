@@ -1,0 +1,216 @@
+// =============================================================================
+// IMPORT
+// =============================================================================
+@import "../../../assets/styles/ui_mixines";
+
+section.add_recipe{
+	div.breadcrumb{
+		@include container_sizing( 600px );
+		padding: 18px 0;
+		a{
+			font-family: 'courrier_new';
+			color: #3C4F71;
+			font-weight: 800;
+			font-size: 20px;
+			cursor: pointer;
+
+			span.icon{
+				font-family: 'font_awesome';
+				color: #3C4F71;
+				font-weight: 800;
+				font-size: 16px;
+			}
+		}
+	}
+	div.inner_container{
+		@include container_sizing( 600px );
+		box-shadow: 0 0 5px rgba(black,.2);
+		border-radius: 3px;
+		padding: 24px 0 24px 24px;
+		overflow: auto;
+
+		div.input_group{
+			margin: 0 24px 24px;
+
+			label{
+				font-size: 12px;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+			}
+			input{
+				border: 1px solid rgba(#3C4F71, .4);
+				border-radius: 2px;
+				width: calc(100% - 26px);
+				padding: 6px 12px;
+				font-size: 14px;
+				font-family: 'courrier_new';
+				color: #3C4F71;
+			}
+			textarea{
+				border: 1px solid rgba(#3C4F71, .4);
+				font-family: 'courrier_new';
+				border-radius: 2px;
+				width: calc(100% - 26px);
+				padding: 6px 12px;
+				font-size: 14px;
+				height: 70px;
+				color: #3C4F71;
+				resize: vertical;
+				font-weight: 400;
+			}
+			li.tags{
+				// padding: 10px 0;
+				cursor: text;
+				list-style-type: none;
+				border: 1px solid rgba(#3C4F71, .4);
+				border-radius: 2px;
+				background-color: #fff;
+
+				ul.input{
+					list-style : none;   
+  					display:inline-block;
+  					height: 70px;
+    				font-size:14px;
+    				width: calc(100% - 12px);
+    				border-radius:2px;
+    				overflow:hidden;
+    				transition: all 200ms;
+    				padding: 6px 12px;
+
+					li{
+						float:left;
+						padding: 0;
+
+						&.tag{
+							background: white;
+							border: 1px solid rgba(#3C4F71, .4);
+							border-radius:2px;
+							margin: 0 5px 5px 0;
+							position: relative;
+							line-height: 22px;
+							padding: 0 20px 0 5px;
+							color: #3C4F71;
+							font-family: 'courrier_new';
+
+							span.icon{
+								position: absolute;
+								font-family: 'font_awesome';
+								right: 6px;
+								top: 0px;
+								color: #3C4F71;
+								cursor:pointer;
+								opacity: .7;
+								font-size: 14px;
+								transition: all 200ms;
+
+								&:hover{
+									opacity: 1;
+								}
+							}
+						}
+						&.tag-new{
+							height: 24px;
+							width: 130px;
+
+							input{
+								border:0;
+								margin: 0;
+								padding: 0;
+								font-size: 14px;
+								line-height: 24px;
+								width: auto;
+								color: #3C4F71;
+								font-family: 'courrier_new';
+							}
+						}
+					}
+				}
+			}
+			p.informational_message{
+				font-size: 12px;
+				font-weight: 200;
+				color: $classic_red;
+				margin: 10px 0 0 0;
+				font-family: 'courrier_new';
+				display: block;
+	
+				&::ng-deep span{
+					font-family: 'font_awesome';
+					font-weight: 300;
+					margin-right: 5px;
+					display: inline;
+				}
+			}
+		}
+		div.footer{
+			overflow: auto;
+			float: right;
+			width:300px;
+			overflow: auto;
+
+			div{
+				span.icon{
+					font-family: 'font_awesome';
+					color: #00cc00;
+					font-weight: 900;
+					font-size: 14px;
+					margin: 5px 24px 0 10px;
+					float: right;
+				}
+				p{
+					font-size: 12px;
+					color: #3C4F71;
+					font-family: 'courrier_new';
+					line-height: 24px;
+					float: right;
+				}
+				&.loading{
+					span.icon{
+						color: #3C4F71;
+						animation: spin 4000ms infinite linear;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(359deg); 
+    }
+}
+
+/*
+    TABLET VERSION
+*/
+@media screen and (min-width: 768px ){
+	section.add_recipe{
+		padding: 40px 0;
+
+		div.breadcrumb{
+			a{
+				span.icon{}
+			}
+		}
+		div.inner_container{}
+	}
+}
+
+
+/*
+    SMALL SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 992px ){}
+
+/*
+    LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1200px ){}
+
+
+/*
+    SUPER LARGE SCREEN COMPUTER VERSION
+*/
+@media screen and (min-width: 1600px ){}

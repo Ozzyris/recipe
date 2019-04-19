@@ -8,6 +8,7 @@
 // FONTS
 // =============================================================================
 @include font-face(font_awesome, './assets/fonts/font_awesome/fa-light-300', 300, normal, eot woff ttf svg); 
+@include font-face(font_awesome, './assets/fonts/font_awesome/fa-solid-900', 900, normal, eot woff ttf svg); 
 @include font-face(courrier_new, './assets/fonts/Courrier_new/Bold/courier_new_bold', 800, normal, ttf);
 @include font-face(courrier_new, './assets/fonts/Courrier_new/Regular/courier_new_regular', 400, normal, ttf);
 

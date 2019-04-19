@@ -1,0 +1,55 @@
+<section class="add_recipe">
+	<div class="breadcrumb">
+		<a routerLink="/recipes">
+			<span class="icon"></span>
+			Back
+		</a>
+	</div>
+	<div class="inner_container">
+		<div class="input_group">
+			<label for="input_title">Title</label>
+			<input id="input_title" type="text" placeholder="Quiche Lorraine" [(ngModel)]="recipe.title" (blur)="update_title()">
+			<p class="informational_message" [innerHTML]="feedback.title | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label for="input_url">Url</label>
+			<input id="input_url" type="text" placeholder="quiche-lorraine" [(ngModel)]="recipe.url" (blur)="update_url()">
+			<p class="informational_message" [innerHTML]="feedback.url | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label for="input_summary">Introduction</label>
+			<textarea id="input_summary" [(ngModel)]="recipe.summary" (blur)="update_summary()"></textarea>
+			<p class="informational_message" [innerHTML]="feedback.summary | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label for="input_time">Time</label>
+			<input id="input_time" type="text" placeholder="67" [(ngModel)]="recipe.time" (blur)="update_time()">
+			<p class="informational_message" [innerHTML]="feedback.time | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label for="input_yield">Yield</label>
+			<input id="input_yield" type="text" placeholder="4 servings" [(ngModel)]="recipe.yield" (blur)="update_yield()">
+			<p class="informational_message" [innerHTML]="feedback.yield | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label for="input_tips">Tips</label>
+			<textarea id="input_tips" [(ngModel)]="recipe.tips" (blur)="update_tips()" placeholder="You can scale the yield by doubling the amount."></textarea>
+			<p class="informational_message" [innerHTML]="feedback.tips | sanitizer : 'html'"></p>
+		</div>
+		<div class="input_group">
+			<label>Tags</label>
+			<li class="tags">
+				<ul class="input">
+    				<li *ngFor="let tag of recipe.tags; index as index" class="tag">{{tag}}<span class="icon" (click)="delete_tags(index)" ></span></li>
+    				<li class="tag-new">
+      					<input type="text" [(ngModel)]="tag_temporary_input" (keyup.enter)="add_tag()"> 
+    				</li>
+				</ul>
+			</li>
+		</div>
+		<div class="footer" *ngIf="recipe.edit_time != ''">
+			<div class="loading" *ngIf="is_loading" ><span class="icon"></span><p>loading</p></div>
+			<div *ngIf="!is_loading" ><span class="icon"></span><p>Last updated {{recipe.edit_time | amTimeAgo}}</p></div>
+		</div>
+	</div>
+</section>

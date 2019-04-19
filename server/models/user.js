@@ -92,7 +92,7 @@ user.statics.get_auth_detail_from_xtoken = function( xtoken ){
 }
 user.statics.update_token_timestamp_from_xtoken = function( xtoken, session ){
     return new Promise((resolve, reject) => {
-        user.update({ 'auth_record.active_auth.token': xtoken }, {
+        user.updateOne({ 'auth_record.active_auth.token': xtoken }, {
             'auth_record.active_auth.last_modification_date': moment(),
             'auth_record.active_auth.expiration_date': session.expiration_date,
         }).exec()
@@ -117,7 +117,7 @@ user.statics.get_password_from_email = function( email ){
 }
 user.statics.save_session_detail_from_id = function (session, user_id){
     return new Promise((resolve, reject) => {
-        user.update({ _id: user_id }, {
+        user.updateOne({ _id: user_id }, {
             auth_record: {
                 active_auth: {
                     creation_date: moment(),

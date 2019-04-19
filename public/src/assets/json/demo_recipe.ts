@@ -5029,5 +5029,194 @@ export const RECIPES = [
 		tags: ['american', 'sugar', 'speculos', 'cake', 'NYT' ],
 		last_edited: '',
 		url: 'speculoos-cookie-butter-pie'
+	},
+	{
+		title: 'Saffron Honey Marshmallows',
+		summary: 'Of all the D.I.Y. projects I’ve contemplated, nothing could be more apropos than making my own Easter chicks. The recipe for homemade marshmallows has a complex flavor from substituting good, fragrant honey for bland corn syrup. A small pinch of ground saffron gives a faint yellow cast while adding an earthy, spicy note to the chicks.',
+		yield: 'About 2 dozen marshmallows',
+		time: 45,
+		illustration: '../../../assets/images/Saffron-Honey-Marshmallows-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '6 drops yellow food coloring (optional)',
+				order: 0
+			},
+			{
+				name: '⅔ cup superfine sugar',
+				order: 1
+			},
+			{
+				name: '2 cups plus 1 teaspoon granulated sugar',
+				order: 2
+			},
+			{
+				name: '½ teaspoon crumbled saffron threads',
+				order: 3
+			},
+			{
+				name: '3 tablespoons unflavored gelatin (about 3 envelopes)',
+				order: 4
+			},
+			{
+				name: '¼ cup honey',
+				order: 5
+			},
+			{
+				name: '2 large egg whites',
+				order: 6
+			},
+			{
+				name: '¼ teaspoon kosher salt',
+				order: 7
+			}
+		],
+		preparation: [
+			{
+				step: 'Place parchment or waxed paper on the bottom and sides of a 12 7/8-by- 17 3 /4-inch baking sheet. If using the food coloring, combine it with the superfine sugar in a small bowl; stir or massage with your fingers until color is evenly distributed. Sift half of the superfine sugar, with or without color, over the bottom of the pan.',
+				order: 0
+			},
+			{
+				step: 'Using a spice grinder or mortar and pestle, finely grind 1 teaspoon granulated sugar with the saffron threads. Place in a bowl and cover with 2 tablespoons very hot water. When cool, cover with 3/4 cup plus 2 tablespoons cold water. Stir the gelatin into the water and let rest until the mixture becomes very thick.',
+				order: 1
+			},
+			{
+				step: 'In a saucepan over medium heat, cook the remaining 2 cups granulated sugar, honey and 1/2 cup water, stirring, until the sugar dissolves and the mixture reaches 240 degrees on a candy thermometer.',
+				order: 2
+			},
+			{
+				step: 'Meanwhile, with an electric mixer on medium speed, whisk the egg whites and salt until soft peaks form, about 4 minutes. With the mixer running, carefully pour the 240-degree sugar syrup down the side of the mixing bowl in a slow and steady drizzle. Continue whisking until the mixture has cooled slightly, about 2 minutes. Scrape in the gelatin mixture. Continue whisking until the mixture begins to thicken and quadruples in volume, about 10 minutes. Scrape the mixture into the prepared pan and smooth the top. Sift the remaining superfine sugar over the marshmallows. Allow marshmallows to set for 4 hours or overnight at room temperature.',
+				order: 3
+			},
+			{
+				step: 'Use cookie cutters or a knife to cut marshmallows into shapes or squares.',
+				order: 4
+			}
+		],
+		tips: 'Pomegranate variation: Eliminate the food coloring and skip Step 2. Stir the gelatin into 1 cup pomegranate juice and let it thicken. Proceed with Step 3.',
+		tags: ['american', 'sugar', 'candy', 'NYT' ],
+		last_edited: '',
+		url: 'saffron-honey-marshmallows'
+	},
+	{
+		title: 'Hot-Cross Buns',
+		summary: 'A hot-cross bun is essentially what the English call a Chelsea bun, a confection sold all year. The difference is that for Good Friday, a cross is traced on the top of the bun. Unlike their American counterparts who use frosting, English bakers create the cross by slashing the dough or by laying strips of pastry across the top of the bun. While these are at their best when served warm, preferably soon after they have been baked, a quick toasting and a slather of butter would more than salvage a day-old bun.',
+		yield: '2 dozen',
+		time: 180,
+		illustration: '../../../assets/images/hot-cross-buns-articleLarge.jpg',
+		ingredients: [
+			{
+				name: '1 package active dry yeast',
+				order: 0
+			},
+			{
+				name: '1 cup warm milk',
+				order: 1
+			},
+			{
+				name: '5 tablespoons butter, softened',
+				order: 2
+			},
+			{
+				name: '½ cup brown sugar',
+				order: 3
+			},
+			{
+				name: '2 large eggs',
+				order: 4
+			},
+			{
+				name: '½ teaspoon ground nutmeg',
+				order: 5
+			},
+			{
+				name: '½ teaspoon ground cloves',
+				order: 6
+			},
+			{
+				name: '½ teaspoon ground cinnamon',
+				order: 7
+			},
+			{
+				name: '1 teaspoon salt',
+				order: 7
+			},
+			{
+				name: '3 ½ cups, approximately, all-purpose flour',
+				order: 7
+			},
+			{
+				name: '¾ cup dried currants',
+				order: 7
+			},
+			{
+				name: '3 tablespoons milk mixed with 3 tablespoons granulated sugar',
+				order: 7
+			},
+			{
+				name: '1 tablespoon cold milk (optional)',
+				order: 7
+			},
+			{
+				name: '1 cup sifted confectioners\' sugar (optional)',
+				order: 7
+			},
+			{
+				name: '½ teaspoon lemon juice (optional)',
+				order: 7
+			}
+		],
+		preparation: [
+			{
+				step: 'Mix the yeast with 4 tablespoons of the warm milk in a small bowl and set aside about 5 minutes.',
+				order: 0
+			},
+			{
+				step: 'Meanwhile, cream 4 tablespoons of the butter and brown sugar and beat in the eggs. When yeast mixture becomes frothy, stir it in, along with the spices, salt and remaining warm milk. Beat in the flour a cup at a time until a soft ball of dough can be gathered together. Dough can be mixed by machine if desired.',
+				order: 1
+			},
+			{
+				step: 'Place dough on a floured work surface and lightly knead in the currants, adding more flour as necessary to keep dough from sticking. Kneading should take no more than a few minutes.',
+				order: 2
+			},
+			{
+				step: 'Using some of the remaining butter, grease a bowl. Place the dough in the bowl and turn to butter all sides. Cover and set aside to rise until doubled, about 1 1/2 hours.',
+				order: 3
+			},
+			{
+				step: 'Butter two baking sheets with the remaining butter.',
+				order: 4
+			},
+			{
+				step: 'Punch the dough down, divide it in half, then divide each piece in half again. Divide each portion of dough into six equal pieces and shape each into a ball.',
+				order: 4
+			},
+			{
+				step: 'Place balls of dough on baking sheets, leaving about 2 inches between them. Set aside, covered lightly with waxed paper, to rise until they have doubled in size, 45 minutes to an hour.',
+				order: 4
+			},
+			{
+				step: 'Preheat oven to 400 degrees.',
+				order: 4
+			},
+			{
+				step: 'Carefully slash a cross into the top of each bun, using a very sharp razor blade and cutting through the skin of the dough at least one-quarter inch deep. Or snip a small cross in the top with sharp scissors. Try not to compress the bun as you cut.',
+				order: 4
+			},
+			{
+				step: 'Bake buns about 20 minutes, until they are lightly browned. Just before they come out of the oven, bring milk and sugar mixture to a boil. As soon as buns are done, brush them with milk and sugar glaze.',
+				order: 4
+			},
+			{
+				step: 'Allow the buns to cool for 30 minutes, then serve while still warm.',
+				order: 4
+			},
+			{
+				step: 'If desired, or if you have not cut the cross into the tops of the buns, the cross can be applied with icing. The buns must be completely cooled before the icing is applied. Mix the confectioners\' sugar with the cold milk and lemon juice and, using the handle of a spoon or a chopstick, spread the icing to form a cross on top or to fill the cross-shaped cut.',
+				order: 4
+			}
+		],
+		tags: ['british', 'vegetarian', 'pastry', 'NYT' ],
+		last_edited: '',
+		url: 'hot-cross-buns'
 	}
 ]; 
