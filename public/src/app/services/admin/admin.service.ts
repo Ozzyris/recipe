@@ -61,12 +61,20 @@ export class AdminService {
 		let url = this.base_url + 'update-tips';
 		return this.http.post(url, payload, this.httpOptions);
 	}
-	add_tags( payload ):Observable<any>{
-		let url = this.base_url + 'add-tags';
+	add_tag( payload ):Observable<any>{
+		let url = this.base_url + 'add-tag';
 		return this.http.post(url, payload, this.httpOptions);
 	}
-	delete_tags( payload ):Observable<any>{
-		let url = this.base_url + 'delete-tags';
+	delete_tag( payload ):Observable<any>{
+		let url = this.base_url + 'delete-tag';
+		return this.http.post(url, payload, this.httpOptions);
+	}
+	add_ingredient( payload ):Observable<any>{
+		let url = this.base_url + 'add-ingredient';
+		return this.http.post(url, payload, this.httpOptions);
+	}
+	update_ingredient( payload ):Observable<any>{
+		let url = this.base_url + 'update-ingredient';
 		return this.http.post(url, payload, this.httpOptions);
 	}
 }

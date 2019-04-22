@@ -105,7 +105,7 @@ recipe.statics.update_yield = function(recipe_id, payload){
     })
 };
 //TAGS
-recipe.statics.add_tags = function(recipe_id, payload){
+recipe.statics.add_tag = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
         recipe.updateOne({ _id: recipe_id }, {
             $push:{
@@ -118,7 +118,7 @@ recipe.statics.add_tags = function(recipe_id, payload){
         })
     })
 };
-recipe.statics.delete_tags = function(recipe_id, payload){
+recipe.statics.delete_tag = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
         recipe.updateOne({ _id: recipe_id }, {
             $pull: { 
@@ -140,29 +140,31 @@ recipe.statics.count_ingredients = function(recipe_id){
         })
     })
 };
-recipe.statics.add_ingredients = function(recipe_id, ingredient){
+recipe.statics.add_ingredient = function(recipe_id, payload, edit_date){
     return new Promise((resolve, reject) => {
         recipe.updateOne({ _id: recipe_id }, {
             $push:{
-                'ingredients': ingredient
-            }
+                'ingredients': payload
+            },
+            edit_date: edit_date
         }).exec()
-        .then (wallet => {
-            resolve( true );
+        .then (is_ingredient_added => {
+            resolve( is_ingredient_added );
         })
     })
 };
-recipe.statics.update_ingredients = function(recipe_id, ingredient){
+recipe.statics.update_ingredient = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
-        recipe.updateOne({ _id: recipe_id, 'ingredients._id': ingredient.id }, 
+        recipe.updateOne({ _id: recipe_id, 'ingredients._id': payload.ingredient_id }, 
             { $set: 
                 { 
-                    "ingredients.$.name" : ingredient.name,
-                    "ingredients.$.order" : ingredient.order,
-                }
+                    "ingredients.$.name" : payload.name,
+                    "ingredients.$.order" : payload.order,
+                },
+            edit_date: payload.edit_date
             }).exec()
-            .then (ingredient => {
-                resolve( true );
+            .then ( is_ingredient_updated => {
+                resolve( is_ingredient_updated );
             })
     })
 };
@@ -194,7 +196,7 @@ recipe.statics.get_all_recipes = function(){
 };
 recipe.statics.get_recipes = function(recipe_url){
     return new Promise((resolve, reject) => {
-        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparation':1}).exec()
+        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'edit_date': 1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparation':1}).exec()
             .then(articles => {
                 if( articles ){
                     resolve( articles );

@@ -26,7 +26,7 @@ section.add_recipe{
 		@include container_sizing( 600px );
 		box-shadow: 0 0 5px rgba(black,.2);
 		border-radius: 3px;
-		padding: 24px 0 24px 24px;
+		padding: 24px 0 24px 0px;
 		overflow: auto;
 
 		div.input_group{
@@ -122,6 +122,84 @@ section.add_recipe{
 								color: #3C4F71;
 								font-family: 'courrier_new';
 							}
+						}
+					}
+				}
+			}
+			p.informational_message{
+				font-size: 12px;
+				font-weight: 200;
+				color: $classic_red;
+				margin: 10px 0 0 0;
+				font-family: 'courrier_new';
+				display: block;
+	
+				&::ng-deep span{
+					font-family: 'font_awesome';
+					font-weight: 300;
+					margin-right: 5px;
+					display: inline;
+				}
+			}
+		}
+		div.ingredients{
+			margin: 24px auto 24px auto;
+			width: calc(100% - 48px);
+			border-radius: 2px;
+			
+			label{
+				font-size: 12px;
+				color: #3C4F71;
+				font-family: 'courrier_new';
+			}
+			ul{
+				li{
+					border: 1px solid rgba(#3C4F71, .4);
+					overflow: auto;
+					border-radius: 2px;
+					background-color: white;
+					margin-bottom: 5px;
+
+					span.icon{
+						font-family: 'font_awesome';
+						color: #3C4F71;
+						font-weight: 800;
+						font-size: 16px;
+						width: 30px;
+						height: 30px;
+						float: left;
+						line-height: 30px;
+						text-align: center;
+						cursor: move;
+						cursor: grab;
+					}
+					p.number{
+						width: 30px;
+						height: 30px;
+						float: left;
+						font-size: 14px;
+						font-weight: 800;
+						color: #3C4F71;
+						font-family: 'courrier_new';
+						line-height: 30px;
+						text-align: center;
+					}
+					textarea{
+						font-family: 'courrier_new';
+						padding: 0px 12px 0 0;
+						height: 30px;
+						margin: 0;
+						width: calc(100% - 72px);
+						font-size: 14px;
+						color: #3C4F71;
+						resize: none;
+						font-weight: 400;
+						border: 0;
+						line-height: 30px;
+					}
+					&.add{
+						textarea{
+							width: calc(100% - 42px);
 						}
 					}
 				}

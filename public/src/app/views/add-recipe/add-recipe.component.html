@@ -40,13 +40,31 @@
 			<label>Tags</label>
 			<li class="tags">
 				<ul class="input">
-    				<li *ngFor="let tag of recipe.tags; index as index" class="tag">{{tag}}<span class="icon" (click)="delete_tags(index)" ></span></li>
+    				<li *ngFor="let tag of recipe.tags; index as index" class="tag">{{tag}}<span class="icon" (click)="delete_tag(index)" ></span></li>
     				<li class="tag-new">
       					<input type="text" [(ngModel)]="tag_temporary_input" (keyup.enter)="add_tag()"> 
     				</li>
 				</ul>
 			</li>
+			<p class="informational_message" [innerHTML]="feedback.tags | sanitizer : 'html'"></p>
 		</div>
+
+		<div class="ingredients">
+			<label for="input_ingredients">Ingredients</label>
+			<ul>
+				<li *ngFor="let ingredient of recipe.ingredients; index as index">
+					<span class="icon"></span>
+					<p class="number">{{index + 1}}</p>
+					<textarea id="{{'ingredient_'+index}}" (keyup)="autogrow( 'ingredient_'+index )" (blur)="update_ingredient( ingredient, index )" [(ngModel)]="ingredient.name"></textarea>
+				</li>
+				<li class="add">
+					<span class="icon"></span>
+					<textarea id="ingredient_add" [(ngModel)]="ingredient_temporary_input.name" (keyup)="autogrow( 'ingredient_add' )" (blur)="add_ingredient()" placeholder="156 grams of flour (1 cup plus 2 tablespoon)"></textarea>
+				</li>
+			</ul>
+			<p class="informational_message" [innerHTML]="feedback.ingredients | sanitizer : 'html'"></p>
+		</div>
+
 		<div class="footer" *ngIf="recipe.edit_time != ''">
 			<div class="loading" *ngIf="is_loading" ><span class="icon"></span><p>loading</p></div>
 			<div *ngIf="!is_loading" ><span class="icon"></span><p>Last updated {{recipe.edit_time | amTimeAgo}}</p></div>

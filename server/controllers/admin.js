@@ -126,81 +126,76 @@ router.use(bodyParser.json());
 			})
 	});
 
-	router.post('/add-tags', function (req, res) {
+	router.post('/add-tag', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
 				tag: req.body.tag,
 				edit_date: moment()
 			};
 
-		recipe_model.add_tags( recipe_id, payload )
-			.then( is_tags_updated => {
-				res.status(200).json({message: 'Tags added', code: 'tags_added', edit_date: payload.edit_date});
+		recipe_model.add_tag( recipe_id, payload )
+			.then( is_tag_updated => {
+				res.status(200).json({message: 'Tag added', code: 'tag_added', edit_date: payload.edit_date});
 			})
 			.catch( error => {
 				res.status(401).json( error );
 			})
 	});
 	
-	router.post('/delete-tags', function (req, res) {
+	router.post('/delete-tag', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
 				tag: req.body.tag,
 				edit_date: moment()
 			};
-			console.log( recipe_id, payload);
-		recipe_model.delete_tags( recipe_id, payload )
-			.then( is_tags_deleted => {
-				console.log(is_tags_deleted);
-				res.status(200).json({message: 'Tags deleted', code: 'tags_deleted', edit_date: payload.edit_date});
+		recipe_model.delete_tag( recipe_id, payload )
+			.then( is_tag_deleted => {
+				res.status(200).json({message: 'Tag deleted', code: 'tag_deleted', edit_date: payload.edit_date});
 			})
 			.catch( error => {
 				res.status(401).json( error );
 			})
 	});
 
-	router.post('/add-ingredients', function (req, res) {
+	router.post('/add-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
-			ingredient = {
+			payload = {
 				name: req.body.name,
 				order: req.body.order
-			}
+			},
+			edit_date = moment();
 
 		recipe_model.count_ingredients( recipe_id )
 			.then( ingredient_count => {
-				if( ingredient.order == ingredient_count){
-					return recipe_model.add_ingredients( recipe_id, ingredient );
+				if( payload.order == ingredient_count){
+					return recipe_model.add_ingredient( recipe_id, payload );
 				}else{
 					throw { message: 'Your ingredient position isn\'t correct', code: 'wrong_ingredient_position'};
 				}
 			})
 			.then( is_ingredient_updated => {
-				res.status(200).json({message: 'Ingredient added', code: 'ingredient_added'});
+				console.log( is_ingredient_updated );
+				res.status(200).json({message: 'Ingredient added', code: 'ingredient_added', id: '', name: payload.name, order: payload.order, edit_date: payload.edit_date});
 			})
 			.catch( error => {
+				console.log(error);
 				res.status(401).json( error );
 			})
 	});
 
-	router.post('/update-ingredients', function (req, res) {
+	router.post('/update-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
-			ingredient = {
-				id: req.body.ingredient_id,
+			payload = {
+				ingredient_id: req.body.ingredient_id,
 				name: req.body.name,
-				order: req.body.order
+				order: req.body.order,
+				edit_date: moment()
 			}
+			console.log(payload, recipe_id);
 
-		recipe_model.count_ingredients( recipe_id )
-			.then( ingredient_count => {
-				if( ingredient.order < ingredient_count){
-					console.log( ingredient_count );
-					return recipe_model.update_ingredients( recipe_id, ingredient );
-				}else{
-					throw { message: 'Your ingredient position isn\'t correct', code: 'wrong_ingredient_position' };
-				}
-			})
+		recipe_model.update_ingredient( recipe_id, payload )
 			.then( is_ingredient_updated => {
-				res.status(200).json({message: 'Ingredient updated', code: 'ingredient_updated'});
+				res.status(200).json({message: 'Ingredient updated', code: 'ingredient_updated', edit_date: payload.edit_date});
 			})
 			.catch( error => {
 				res.status(401).json( error );

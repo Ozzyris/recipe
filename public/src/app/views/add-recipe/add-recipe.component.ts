@@ -7,6 +7,10 @@ import { ValidatorService } from '../../services/validator/validator.service';
 import { AdminService } from '../../services/admin/admin.service';
 import { PublicApiService } from '../../services/public/public-api.service';
 
+
+//Interface
+import { recipe_interface } from '../../interfaces/recipe';
+
 @Component({
 	selector: 'app-add-recipe',
 	templateUrl: './add-recipe.component.html',
@@ -14,15 +18,17 @@ import { PublicApiService } from '../../services/public/public-api.service';
 })
 
 export class AddRecipeComponent implements OnInit {
-	recipe: any = {
+	recipe: recipe_interface = {
 		title: '',
 		url: '',
 		summary: '',
-		time: '',
+		time: 0,
 		yield: '',
 		tips: '',
-		edit_time: '',
-		tags: []
+		edit_time: 0,
+		tags: [],
+		ingredients: [],
+		preparation:[]
 	};
 	feedback: any = {
 		title: '',
@@ -33,16 +39,20 @@ export class AddRecipeComponent implements OnInit {
 		tips: '',
 		edit_time: '',
 		tags: '',
+		ingredients: ''
 	}
 	is_recipe_created: boolean = false;
 	recipe_id: string = '';
 	is_loading: boolean = false;
 	tag_temporary_input: string = '';
+	ingredient_temporary_input: any = {
+		name: '',
+		order: 0,
+	};
 
 	constructor( private route: ActivatedRoute, private validator_service: ValidatorService, private admin_service: AdminService, private location: Location, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
 		this.route.queryParams.subscribe(params => {
-        	console.log( params['url'] );
         	this.get_recipe( params['url'] )
     	});
 	}
@@ -51,7 +61,6 @@ export class AddRecipeComponent implements OnInit {
 	get_recipe( url ){
 		this.publicApi_service.get_recipe( {recipe_url: url} )
 			.subscribe( recipe_detail => {
-				console.log(recipe_detail[0]);
 				this.recipe.title = recipe_detail[0].title;
 				this.recipe.url = recipe_detail[0].url;
 				this.recipe.summary = recipe_detail[0].summary;
@@ -59,6 +68,8 @@ export class AddRecipeComponent implements OnInit {
 				this.recipe.yield = recipe_detail[0].yield;
 				this.recipe.tips = recipe_detail[0].tips;
 				this.recipe.tags = recipe_detail[0].tags;
+				this.ingredient_temporary_input.order = recipe_detail[0].ingredients.length;
+				this.recipe.ingredients = recipe_detail[0].ingredients;
 			})	
 	}
 
@@ -66,6 +77,12 @@ export class AddRecipeComponent implements OnInit {
 		return new Promise((resolve, reject)=>{
 			resolve( localStorage.getItem('recipe_id') );
 		})
+	}
+	autogrow( id ){
+		let  textArea = document.getElementById(id)       
+		textArea.style.overflow = 'hidden';
+		textArea.style.height = '0px';
+		textArea.style.height = textArea.scrollHeight + 'px';
 	}
 
 	update_title(){
@@ -145,7 +162,7 @@ export class AddRecipeComponent implements OnInit {
 		}
 	}
 	update_time(){
-		if( this.recipe.time != '' ){
+		if( this.recipe.time != null ){
 			this.feedback.time = '';
 			this.is_loading = true;
 			this.get_recipe_id_from_storage()
@@ -209,16 +226,15 @@ export class AddRecipeComponent implements OnInit {
 	}
 
 	//TAGS
-	delete_tags( index ){
+	delete_tag( index ){
 		this.is_loading = true;
 		let tag_to_delete = this.recipe.tags[index];
 		console.log(tag_to_delete);
 		this.recipe.tags.splice(index, 1);
 		this.get_recipe_id_from_storage()
 				.then( recipe_id => {
-					this.admin_service.delete_tags( {recipe_id: recipe_id, tag: tag_to_delete} )
+					this.admin_service.delete_tag( {recipe_id: recipe_id, tag: tag_to_delete} )
 						.subscribe(is_tag_deleted => {
-							console.log( is_tag_deleted );
 							this.is_loading = false;
 							this.recipe.edit_time = is_tag_deleted.edit_date;
 						})
@@ -230,7 +246,7 @@ export class AddRecipeComponent implements OnInit {
     		this.recipe.tags.push(this.tag_temporary_input);
     		this.get_recipe_id_from_storage()
 				.then( recipe_id => {
-					this.admin_service.add_tags( {recipe_id: recipe_id, tag: this.tag_temporary_input} )
+					this.admin_service.add_tag( {recipe_id: recipe_id, tag: this.tag_temporary_input} )
 						.subscribe(is_tag_added => {
 							this.is_loading = false;
 							this.tag_temporary_input = '';
@@ -239,9 +255,65 @@ export class AddRecipeComponent implements OnInit {
 				})
 		}else{
 			this.is_loading = false;
+			this.feedback.tags = '<span class="icon"></span>This field is required';
 			this.tag_temporary_input = '';
 		}
 
+	}
+
+	//INGREDIENTS
+	add_ingredient(){
+		this.is_loading = true;
+		if( this.ingredient_temporary_input.name != '' && this.ingredient_temporary_input.name.replace(/\s/g, '').length != 0 ){
+			this.get_recipe_id_from_storage()
+				.then( recipe_id => {
+					this.admin_service.add_ingredient( {recipe_id: recipe_id, name: this.ingredient_temporary_input.name, order: this.ingredient_temporary_input.order} )
+						.subscribe(is_ingredient_added => {
+							let new_ingredient = {
+								id: is_ingredient_added.id,
+								name: is_ingredient_added.name,
+								order: is_ingredient_added.order
+							}
+							this.recipe.ingredients.push( new_ingredient );
+							this.is_loading = false;
+							this.ingredient_temporary_input.name = '';
+							this.ingredient_temporary_input.order = this.ingredient_temporary_input.order+1;
+							this.recipe.edit_time = is_ingredient_added.edit_date;
+						})
+				})
+		}else{
+			this.is_loading = false;
+			this.feedback.ingredients = '<span class="icon"></span>This field is required';
+			this.ingredient_temporary_input = '';
+		}
+	}
+	update_ingredient( ingredient, index ){
+		this.is_loading = true;
+		if( ingredient.name != '' && ingredient.name.replace(/\s/g, '').length != 0 ){
+			this.get_recipe_id_from_storage()
+				.then( recipe_id => {
+					let payload = {
+						recipe_id: recipe_id,
+						ingredient_id: ingredient._id,
+						name: ingredient.name,
+						order: ingredient.order
+					}
+					this.admin_service.update_ingredient( payload )
+						.subscribe( is_ingredient_updated => {
+							this.recipe.ingredients[ index ] = {
+								id: payload.ingredient_id,
+								name: payload.name,
+								order: payload.order
+							}
+							this.is_loading = false;
+							this.recipe.edit_time = is_ingredient_updated.edit_date;
+						})
+				})
+		}else{
+			this.is_loading = false;
+			this.feedback.ingredients = '<span class="icon"></span>This field is required';
+			this.ingredient_temporary_input = '';
+		}
 	}
 
 }
