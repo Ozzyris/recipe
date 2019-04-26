@@ -79,7 +79,7 @@ export class AddRecipeComponent implements OnInit {
 		})
 	}
 	autogrow( id ){
-		let  textArea = document.getElementById(id)       
+		let textArea = document.getElementById(id)       
 		textArea.style.overflow = 'hidden';
 		textArea.style.height = '0px';
 		textArea.style.height = textArea.scrollHeight + 'px';
@@ -314,6 +314,24 @@ export class AddRecipeComponent implements OnInit {
 			this.feedback.ingredients = '<span class="icon"></span>This field is required';
 			this.ingredient_temporary_input = '';
 		}
+	}
+	delete_ingredient( ingredient, index ){
+		this.is_loading = true;
+		this.get_recipe_id_from_storage()
+				.then( recipe_id => {
+					let payload = {
+						recipe_id: recipe_id,
+						ingredient_id: ingredient._id,
+						name: ingredient.name,
+						order: ingredient.order
+					}
+					this.admin_service.delete_ingredient( payload )
+						.subscribe( is_ingredient_deleted => {
+							this.recipe.ingredients.splice( index, 1 );
+							this.is_loading = false;
+							this.recipe.edit_time = is_ingredient_deleted.edit_date;
+						})
+				})
 	}
 
 }

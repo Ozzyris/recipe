@@ -55,11 +55,13 @@
 				<li *ngFor="let ingredient of recipe.ingredients; index as index">
 					<span class="icon"></span>
 					<p class="number">{{index + 1}}</p>
-					<textarea id="{{'ingredient_'+index}}" (keyup)="autogrow( 'ingredient_'+index )" (blur)="update_ingredient( ingredient, index )" [(ngModel)]="ingredient.name"></textarea>
+					<textarea id="{{'ingredient_'+index}}" (keyup)="autogrow( 'ingredient_'+index )" (blur)="update_ingredient( ingredient, index )" (keydown.enter)="update_ingredient( ingredient, index );false" [(ngModel)]="ingredient.name"></textarea>
+					{{ autogrow( 'ingredient_'+index ) }}
+					<span class="delete_icon" (click)="delete_ingredient( ingredient, index )"></span>
 				</li>
 				<li class="add">
 					<span class="icon"></span>
-					<textarea id="ingredient_add" [(ngModel)]="ingredient_temporary_input.name" (keyup)="autogrow( 'ingredient_add' )" (blur)="add_ingredient()" placeholder="156 grams of flour (1 cup plus 2 tablespoon)"></textarea>
+					<textarea id="ingredient_add" [(ngModel)]="ingredient_temporary_input.name" (keyup)="autogrow( 'ingredient_add' )" (keydown.enter)="add_ingredient();false" (blur)="add_ingredient()" placeholder="156 grams of flour (1 cup plus 2 tablespoon)"></textarea>
 				</li>
 			</ul>
 			<p class="informational_message" [innerHTML]="feedback.ingredients | sanitizer : 'html'"></p>

@@ -189,13 +189,25 @@ section.add_recipe{
 						padding: 0px 12px 0 0;
 						height: 30px;
 						margin: 0;
-						width: calc(100% - 72px);
+						width: calc(100% - 102px);
 						font-size: 14px;
 						color: #3C4F71;
 						resize: none;
 						font-weight: 400;
 						border: 0;
 						line-height: 30px;
+					}
+					span.delete_icon{
+						font-family: 'font_awesome';
+						color: #3C4F71;
+						font-weight: 800;
+						font-size: 16px;
+						width: 30px;
+						height: 30px;
+						float: right;
+						line-height: 30px;
+						text-align: center;
+						cursor: pointer;
 					}
 					&.add{
 						textarea{

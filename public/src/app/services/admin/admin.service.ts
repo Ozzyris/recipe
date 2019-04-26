@@ -77,4 +77,8 @@ export class AdminService {
 		let url = this.base_url + 'update-ingredient';
 		return this.http.post(url, payload, this.httpOptions);
 	}
+	delete_ingredient( payload ):Observable<any>{
+		let url = this.base_url + 'delete-ingredient';
+		return this.http.post(url, payload, this.httpOptions);
+	}
 }

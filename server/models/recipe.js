@@ -135,9 +135,9 @@ recipe.statics.delete_tag = function(recipe_id, payload){
 recipe.statics.count_ingredients = function(recipe_id){
     return new Promise((resolve, reject) => {
         recipe.findOne({ _id: recipe_id }).exec()
-        .then( recipe => {
-            resolve( recipe.ingredients.length );
-        })
+            .then( recipe => {
+                resolve( recipe.ingredients.length );
+            })
     })
 };
 recipe.statics.add_ingredient = function(recipe_id, payload, edit_date){
@@ -155,29 +155,29 @@ recipe.statics.add_ingredient = function(recipe_id, payload, edit_date){
 };
 recipe.statics.update_ingredient = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
-        recipe.updateOne({ _id: recipe_id, 'ingredients._id': payload.ingredient_id }, 
-            { $set: 
-                { 
-                    "ingredients.$.name" : payload.name,
-                    "ingredients.$.order" : payload.order,
-                },
+        recipe.updateOne({ _id: recipe_id, 'ingredients._id': payload.ingredient_id }, {
+            $set: { 
+                "ingredients.$.name" : payload.name,
+                "ingredients.$.order" : payload.order,
+            },
             edit_date: payload.edit_date
-            }).exec()
-            .then ( is_ingredient_updated => {
-                resolve( is_ingredient_updated );
-            })
+        }).exec()
+        .then ( is_ingredient_updated => {
+            resolve( is_ingredient_updated );
+        })
     })
 };
-recipe.statics.remove_ingredients = function(recipe_id, ingredient){
+recipe.statics.delete_ingredient = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
-        recipe.updateOne({ _id: recipe_id, 'ingredients._id': ingredient.id }, {
-            pull: { 
-                "ingredients.$" : ingredient,
-                }
-            }).exec()
-            .then (ingredient => {
-                resolve( true );
-            })
+        recipe.updateOne({ _id: recipe_id, 'ingredients.$._id': payload.ingredient_id }, {
+            $pull: { 
+                "ingredients" : payload.ingredient,
+            },
+            edit_date: payload.edit_date
+        }).exec()
+        .then (is_ingredient_deleted => {
+            resolve( is_ingredient_deleted );
+        })
     })
 };
 

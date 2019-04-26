@@ -202,15 +202,22 @@ router.use(bodyParser.json());
 			})
 	});
 
-	router.post('/remove-ingredients', function (req, res) {
+	router.post('/delete-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
-			ingredient = {
-				id: req.body.ingredient_id
+			payload = {
+				ingredient: {
+					ingredient_id: req.body.ingredient_id,
+					name: req.body.name,
+					order: req.body.order
+				},
+				edit_date: moment()
 			}
+			console.log(recipe_id, payload);
 
-			recipe_model.remove_ingredients( recipe_id, ingredient )
+			recipe_model.delete_ingredient( recipe_id, payload )
 			.then( is_ingredient_deleted => {
-				res.status(200).json({message: 'Ingredient removed', code: 'ingredient_removed'});
+				console.log(is_ingredient_deleted);
+				res.status(200).json({message: 'Ingredient deleted', code: 'ingredient_deleted', edit_date: payload.edit_date});
 			})
 			.catch( error => {
 				res.status(401).json( error );
