@@ -50,13 +50,13 @@
 		</div>
 
 		<div class="ingredients">
-			<label for="input_ingredients">Ingredients</label>
+			<label>Ingredients</label>
 			<ul>
 				<li *ngFor="let ingredient of recipe.ingredients; index as index">
 					<span class="icon"></span>
 					<p class="number">{{index + 1}}</p>
 					<textarea id="{{'ingredient_'+index}}" (keyup)="autogrow( 'ingredient_'+index )" (blur)="update_ingredient( ingredient, index )" (keydown.enter)="update_ingredient( ingredient, index );false" [(ngModel)]="ingredient.name"></textarea>
-					{{ autogrow( 'ingredient_'+index ) }}
+					<!-- {{ autogrow( 'ingredient_'+index ) }} -->
 					<span class="delete_icon" (click)="delete_ingredient( ingredient, index )"></span>
 				</li>
 				<li class="add">
@@ -65,6 +65,23 @@
 				</li>
 			</ul>
 			<p class="informational_message" [innerHTML]="feedback.ingredients | sanitizer : 'html'"></p>
+		</div>
+		<div class="preparation">
+			<label>Preparation</label>
+			<ul>
+				<li *ngFor="let preparation of recipe.preparations; index as index">
+					<span class="icon"></span>
+					<p class="number">{{index + 1}}</p>
+					<textarea id="{{'preparation_'+index}}" (blur)="update_preparation( preparation, index )" (keydown.enter)="update_preparation( preparation, index );false" (keyup)="autogrow( 'preparation_'+index )" [(ngModel)]="preparation.step"></textarea>
+					<!-- {{ autogrow( 'preparation_'+index ) }} -->
+					<span class="delete_icon"></span>
+				</li>
+				<li class="add">
+					<span class="icon"></span>
+					<textarea id="ingredient_add" [(ngModel)]="preparation_temporary_input.step" (keydown.enter)="add_preparation();false" (blur)="add_preparation()" placeholder="Place egg whites in the bowl of a stand mixer or a medium bowl"></textarea>
+				</li>
+			</ul>
+			<p class="informational_message" [innerHTML]="feedback.preparations | sanitizer : 'html'"></p>
 		</div>
 
 		<div class="footer" *ngIf="recipe.edit_time != ''">

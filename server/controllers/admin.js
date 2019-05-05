@@ -29,6 +29,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//TITLE
 	router.post('/update-title', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -44,6 +45,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//URL
 	router.post('/update-url', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -61,6 +63,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//SUMMARY
 	router.post('/update-summary', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -77,6 +80,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//TIPS
 	router.post('/update-tips', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -93,6 +97,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//TIME
 	router.post('/update-time', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -109,6 +114,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//YIELD
 	router.post('/update-yield', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -126,6 +132,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//TAG
 	router.post('/add-tag', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -141,7 +148,6 @@ router.use(bodyParser.json());
 				res.status(401).json( error );
 			})
 	});
-	
 	router.post('/delete-tag', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -157,6 +163,7 @@ router.use(bodyParser.json());
 			})
 	});
 
+	//INGREDIENT
 	router.post('/add-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -164,7 +171,6 @@ router.use(bodyParser.json());
 				order: req.body.order
 			},
 			edit_date = moment();
-
 		recipe_model.count_ingredients( recipe_id )
 			.then( ingredient_count => {
 				if( payload.order == ingredient_count){
@@ -182,7 +188,6 @@ router.use(bodyParser.json());
 				res.status(401).json( error );
 			})
 	});
-
 	router.post('/update-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -191,8 +196,6 @@ router.use(bodyParser.json());
 				order: req.body.order,
 				edit_date: moment()
 			}
-			console.log(payload, recipe_id);
-
 		recipe_model.update_ingredient( recipe_id, payload )
 			.then( is_ingredient_updated => {
 				res.status(200).json({message: 'Ingredient updated', code: 'ingredient_updated', edit_date: payload.edit_date});
@@ -201,7 +204,6 @@ router.use(bodyParser.json());
 				res.status(401).json( error );
 			})
 	});
-
 	router.post('/delete-ingredient', function (req, res) {
 		let recipe_id = req.body.recipe_id,
 			payload = {
@@ -212,12 +214,52 @@ router.use(bodyParser.json());
 				},
 				edit_date: moment()
 			}
-			console.log(recipe_id, payload);
-
 			recipe_model.delete_ingredient( recipe_id, payload )
 			.then( is_ingredient_deleted => {
-				console.log(is_ingredient_deleted);
 				res.status(200).json({message: 'Ingredient deleted', code: 'ingredient_deleted', edit_date: payload.edit_date});
+			})
+			.catch( error => {
+				res.status(401).json( error );
+			})
+	});
+
+	//PREPARATION
+	router.post('/add-preparation', function (req, res) {
+		let recipe_id = req.body.recipe_id,
+			payload = {
+				step: req.body.step,
+				order: req.body.order
+			},
+			edit_date = moment();
+		recipe_model.count_preparations( recipe_id )
+			.then( preparations_count => {
+				if( payload.order == preparations_count){
+					return recipe_model.add_preparation( recipe_id, payload );
+				}else{
+					throw { message: 'Your preparation position isn\'t correct', code: 'wrong_preparation_position'};
+				}
+			})
+			.then( is_preparation_updated => {
+				res.status(200).json({message: 'Preparation added', code: 'preparation_added', id: '', step: payload.step, order: payload.order, edit_date: payload.edit_date});
+			})
+			.catch( error => {
+				res.status(401).json( error );
+			})
+	});
+	router.post('/update-preparation', function (req, res) {
+		let recipe_id = req.body.recipe_id,
+			payload = {
+				preparation_id: req.body.preparation_id,
+				order: req.body.order,
+				step: req.body.step,
+				edit_date: moment()
+			}
+			console.log(payload, recipe_id);
+
+		recipe_model.update_preparation( recipe_id, payload )
+			.then( is_preparation_updated => {
+				console.log( is_preparation_updated );
+				res.status(200).json({message: 'Preparation updated', code: 'preparation_updated', edit_date: payload.edit_date});
 			})
 			.catch( error => {
 				res.status(401).json( error );

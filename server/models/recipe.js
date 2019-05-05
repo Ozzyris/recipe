@@ -19,7 +19,7 @@ var recipe = new mongoose.Schema({
             order: {type: Number},
         }
     ],
-    preparation: [
+    preparations: [
         {
             step: {type: String},
             order: {type: Number},
@@ -131,6 +131,7 @@ recipe.statics.delete_tag = function(recipe_id, payload){
         })
     })
 };
+
 //INGREDIENTS
 recipe.statics.count_ingredients = function(recipe_id){
     return new Promise((resolve, reject) => {
@@ -181,6 +182,43 @@ recipe.statics.delete_ingredient = function(recipe_id, payload){
     })
 };
 
+//PREPARATION
+recipe.statics.count_preparations = function(recipe_id){
+    return new Promise((resolve, reject) => {
+        recipe.findOne({ _id: recipe_id }).exec()
+            .then( recipe => {
+                resolve( recipe.preparations.length );
+            })
+    })
+};
+recipe.statics.add_preparation = function(recipe_id, payload, edit_date){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            $push:{
+                'preparations': payload
+            },
+            edit_date: edit_date
+        }).exec()
+        .then (is_preparation_added => {
+            resolve( is_preparation_added );
+        })
+    })
+};
+recipe.statics.update_preparation = function(recipe_id, payload){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id, 'preparations._id': payload.preparation_id }, {
+            $set: { 
+                "preparations.$.step" : payload.step,
+                "preparations.$.order" : payload.order,
+            },
+            edit_date: payload.edit_date
+        }).exec()
+        .then ( is_preparation_updated => {
+            resolve( is_preparation_updated );
+        })
+    })
+};
+
 //PUBLIC
 recipe.statics.get_all_recipes = function(){
     return new Promise((resolve, reject) => {
@@ -196,7 +234,7 @@ recipe.statics.get_all_recipes = function(){
 };
 recipe.statics.get_recipes = function(recipe_url){
     return new Promise((resolve, reject) => {
-        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'edit_date': 1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparation':1}).exec()
+        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'edit_date': 1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparations':1}).exec()
             .then(articles => {
                 if( articles ){
                     resolve( articles );

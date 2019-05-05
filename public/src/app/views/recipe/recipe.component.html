@@ -20,7 +20,7 @@
 		<div class="preparation">
 			<h3>Preparation</h3>
 			<ol>
-				<li *ngFor="let step of recipe_content.preparation; let index = index"><p>{{index+1}}. </p>{{step.step}}</li>
+				<li *ngFor="let step of recipe_content.preparations; let index = index"><p>{{index+1}}. </p>{{step.step}}</li>
 			</ol>
 		</div>
 		<div class="tips" *ngIf="recipe_content.tips">

@@ -28,7 +28,7 @@ export class AddRecipeComponent implements OnInit {
 		edit_time: 0,
 		tags: [],
 		ingredients: [],
-		preparation:[]
+		preparations: []
 	};
 	feedback: any = {
 		title: '',
@@ -39,7 +39,8 @@ export class AddRecipeComponent implements OnInit {
 		tips: '',
 		edit_time: '',
 		tags: '',
-		ingredients: ''
+		ingredients: '',
+		preparations: ''
 	}
 	is_recipe_created: boolean = false;
 	recipe_id: string = '';
@@ -47,6 +48,10 @@ export class AddRecipeComponent implements OnInit {
 	tag_temporary_input: string = '';
 	ingredient_temporary_input: any = {
 		name: '',
+		order: 0,
+	};
+	preparation_temporary_input: any = {
+		step: '',
 		order: 0,
 	};
 
@@ -70,6 +75,8 @@ export class AddRecipeComponent implements OnInit {
 				this.recipe.tags = recipe_detail[0].tags;
 				this.ingredient_temporary_input.order = recipe_detail[0].ingredients.length;
 				this.recipe.ingredients = recipe_detail[0].ingredients;
+				this.preparation_temporary_input.order = recipe_detail[0].preparations.length;
+				this.recipe.preparations = recipe_detail[0].preparations;
 			})	
 	}
 
@@ -267,7 +274,12 @@ export class AddRecipeComponent implements OnInit {
 		if( this.ingredient_temporary_input.name != '' && this.ingredient_temporary_input.name.replace(/\s/g, '').length != 0 ){
 			this.get_recipe_id_from_storage()
 				.then( recipe_id => {
-					this.admin_service.add_ingredient( {recipe_id: recipe_id, name: this.ingredient_temporary_input.name, order: this.ingredient_temporary_input.order} )
+					let payload = {
+						recipe_id: recipe_id,
+						name: this.ingredient_temporary_input.name,
+						order: this.ingredient_temporary_input.order
+					}
+					this.admin_service.add_ingredient( payload )
 						.subscribe(is_ingredient_added => {
 							let new_ingredient = {
 								id: is_ingredient_added.id,
@@ -312,7 +324,7 @@ export class AddRecipeComponent implements OnInit {
 		}else{
 			this.is_loading = false;
 			this.feedback.ingredients = '<span class="icon"></span>This field is required';
-			this.ingredient_temporary_input = '';
+			this.ingredient_temporary_input.name = '';
 		}
 	}
 	delete_ingredient( ingredient, index ){
@@ -334,4 +346,63 @@ export class AddRecipeComponent implements OnInit {
 				})
 	}
 
+	//PREPARATION
+	add_preparation(){
+		this.is_loading = true;
+		if( this.preparation_temporary_input.step != '' && this.preparation_temporary_input.step.replace(/\s/g, '').length != 0 ){
+		this.get_recipe_id_from_storage()
+				.then( recipe_id => {
+					let payload = {
+						recipe_id: recipe_id,
+						step: this.preparation_temporary_input.step,
+						order: this.preparation_temporary_input.order
+					}
+					this.admin_service.add_preparation( payload )
+						.subscribe(is_preparation_added => {
+							let new_ingredient = {
+								id: is_preparation_added.id,
+								step: is_preparation_added.step,
+								order: is_preparation_added.order
+							}
+							this.recipe.preparations.push( new_ingredient );
+							this.is_loading = false;
+							this.preparation_temporary_input.step = '';
+							this.preparation_temporary_input.order = this.preparation_temporary_input.order+1;
+							this.recipe.edit_time = is_preparation_added.edit_date;
+						})
+				})
+		}else{
+			this.is_loading = false;
+			this.feedback.preparations = '<span class="icon"></span>This field is required';
+			this.preparation_temporary_input.step = '';
+		}
+	}
+	update_preparation( preparation, index ){
+		this.is_loading = true;
+		if( preparation.step != '' && preparation.step.replace(/\s/g, '').length != 0 ){
+			this.get_recipe_id_from_storage()
+				.then( recipe_id => {
+					let payload = {
+						recipe_id: recipe_id,
+						preparation_id: preparation._id,
+						step: preparation.step,
+						order: preparation.order
+					}
+					this.admin_service.update_preparation( payload )
+						.subscribe( is_preparation_updated => {
+							this.recipe.preparations[ index ] = {
+								id: payload.preparation_id,
+								step: payload.step,
+								order: payload.order
+							}
+							this.is_loading = false;
+							this.recipe.edit_time = is_preparation_updated.edit_date;
+						})
+				})
+		}else{
+			this.is_loading = false;
+			this.feedback.preparations = '<span class="icon"></span>This field is required';
+			this.preparation_temporary_input.step = '';
+		}
+	}
 }

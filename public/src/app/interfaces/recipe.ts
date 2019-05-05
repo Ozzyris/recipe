@@ -8,7 +8,7 @@ export interface recipe_interface {
 	edit_time: number,
 	tags: Array<string>,
 	ingredients: Array<ingredients_interface>,
-	preparation: Array<preparation_interface>
+	preparations: Array<preparation_interface>
 }
 
 export interface ingredients_interface {
@@ -18,7 +18,7 @@ export interface ingredients_interface {
 }
 
 export interface preparation_interface {
-	name: string,
+	step: string,
 	order: number,
 	id: string
 }

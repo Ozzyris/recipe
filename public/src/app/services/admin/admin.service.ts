@@ -81,4 +81,12 @@ export class AdminService {
 		let url = this.base_url + 'delete-ingredient';
 		return this.http.post(url, payload, this.httpOptions);
 	}
+	add_preparation( payload ):Observable<any>{
+		let url = this.base_url + 'add-preparation';
+		return this.http.post(url, payload, this.httpOptions);
+	}
+	update_preparation( payload ):Observable<any>{
+		let url = this.base_url + 'update-preparation';
+		return this.http.post(url, payload, this.httpOptions);
+	}
 }
