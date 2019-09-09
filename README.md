@@ -1,2 +1,2 @@
 # Recipe
-A cooking recipe manager who got some taste!
+A cooking recipe manager with some taste!
