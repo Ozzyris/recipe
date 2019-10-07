@@ -35,8 +35,8 @@ recipe.statics.update_title = function(recipe_id, payload){
             edit_date: payload.edit_date
         })
         .exec()
-        .then(session =>{
-            resolve( true );
+        .then(is_title_updated =>{
+            resolve( is_title_updated );
         })
     })
 };
@@ -48,8 +48,8 @@ recipe.statics.update_url = function(recipe_id, payload){
             edit_date: payload.edit_date
         })
         .exec()
-        .then(session =>{
-            resolve( true );
+        .then(is_url_updated =>{
+            resolve( is_url_updated );
         })
     })
 };
@@ -61,8 +61,8 @@ recipe.statics.update_summary = function(recipe_id, payload){
             edit_date: payload.edit_date
 
         }).exec()
-        .then(session =>{
-            resolve(true);
+        .then(is_summary_updated =>{
+            resolve(is_summary_updated);
         })
     })
 };
@@ -74,8 +74,8 @@ recipe.statics.update_tips = function(recipe_id, payload){
             edit_date: payload.edit_date
 
         }).exec()
-        .then(session =>{
-            resolve(true);
+        .then(is_tips_updated =>{
+            resolve(is_tips_updated);
         })
     })
 };
@@ -86,8 +86,8 @@ recipe.statics.update_time = function(recipe_id, payload){
             time: payload.time,
             edit_date: payload.edit_date
         }).exec()
-        .then(session =>{
-            resolve(true);
+        .then(is_time_updated =>{
+            resolve(is_time_updated);
         })
     })
 };
@@ -99,8 +99,21 @@ recipe.statics.update_yield = function(recipe_id, payload){
             edit_date: payload.edit_date
 
         }).exec()
-        .then(session =>{
-            resolve(session);
+        .then(is_yield_updated =>{
+            resolve(is_yield_updated);
+        })
+    })
+};
+//ILLUSTRATION
+recipe.statics.update_illustration = function(recipe_id, payload){
+    return new Promise((resolve, reject) => {
+        recipe.updateOne({ _id: recipe_id }, {
+            illustration: payload.illustration,
+            edit_date: payload.edit_date
+
+        }).exec()
+        .then(is_illustration_updated =>{
+            resolve(is_illustration_updated);
         })
     })
 };
@@ -113,7 +126,7 @@ recipe.statics.add_tag = function(recipe_id, payload){
             },
             edit_date: payload.edit_date
         }).exec()
-        .then(session =>{
+        .then(is_tag_updated =>{
             resolve(session);
         })
     })
@@ -126,8 +139,8 @@ recipe.statics.delete_tag = function(recipe_id, payload){
             },
             edit_date: payload.edit_date
         }).exec()
-        .then(session =>{
-            resolve(session);
+        .then(is_tag_deleted =>{
+            resolve(true);
         })
     })
 };

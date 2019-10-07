@@ -10,6 +10,7 @@
   "author": "Alexandre Nicol",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.543.0",
     "bcryptjs": "*",
     "bluebird": "*",
     "body-parser": "*",
@@ -17,6 +18,8 @@
     "moment": "*",
     "mongoose": "*",
     "morgan": "*",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
     "uuid": "*"
   }
 }
