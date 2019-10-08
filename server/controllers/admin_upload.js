@@ -17,24 +17,24 @@ router.use(bodyParser.json());
 	});
 
 	router.post('/recipe-header', function (req, res) {
-		let recipe_id = req.body.recipe_id,
-			payload = {
-				illustration: '',
-				edit_date: moment()
-			};
-
 		single_image_upload(req, res, function(err){
-			payload.illustration = req.file.location;
+				let recipe_id = req.body.recipe_id,
+				payload = {
+					illustration: req.file.location,
+					edit_date: moment()
+				};
 			
-			console.log(payload);
+			// check if element already exist
 			recipe_model.update_illustration( recipe_id, payload )
 				.then( is_title_updated => {
+					console.log(is_title_updated);
 					res.status(200).json({message: 'Illustration updated', code: 'illustration_updated', edit_date: payload.edit_date});
 				})
 				.catch( error => {
 					res.status(401).json( error );
 				})
 			})
+			// if upload success delete old illustration 
 	});
 
 module.exports = {

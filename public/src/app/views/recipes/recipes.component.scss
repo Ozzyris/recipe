@@ -105,34 +105,50 @@ section.recipes{
 				article{
 					background-color: white;
 					border-radius: 3px;
-					background-size: cover;
-					background-position: center, center;
 					box-shadow: 0px 0px 5px rgba(black, 0.2);
 					margin: 10px 0 15px;
 					width: 100%;
-					cursor: pointer;
-					// padding: 100px 0 20px 0;
 					outline: none;
 					height: 180px;
 					position: relative;
-	
-					div.content{
-						width: 70%;
-						background-color: rgba(white, .9);
-						border-top-right-radius: 3px;
-						border-bottom-right-radius: 3px;
-						padding: 12px;
-						position: absolute;
-						left: 0;
-						bottom: 20px;
-	
-						h3{
-							font-family: 'courrier_new';
-							font-size: 18px;
-							font-weight: 800;
-							color: #3C4F71;
+
+					span.edit{
+						font-family: 'font_awesome';
+						color: white;
+						background-color: rgba(0, 0, 0, 0.7);
+						padding: 10px;
+						border-radius: 50%;
+						float: right;
+						margin: -10px -10px 0 0;
+						cursor: pointer;
+						outline: none;
+					}
+					div.article{
+						background-size: cover;
+						background-position: center, center;
+						width: 100%;
+						cursor: pointer;
+						height: 100%;
+
+						div.content{
+							width: 70%;
+							background-color: rgba(white, .9);
+							border-top-right-radius: 3px;
+							border-bottom-right-radius: 3px;
+							padding: 12px;
+							position: absolute;
+							left: 0;
+							bottom: 20px;
+		
+							h3{
+								font-family: 'courrier_new';
+								font-size: 18px;
+								font-weight: 800;
+								color: #3C4F71;
+							}
 						}
 					}
+
 				}
 			}
 			div.empty_states{
