@@ -17,8 +17,8 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 	is_modal_active: Boolean = false;
 	modal_subscription: Subscription;
 	credential: any = {
-		email: 'nemokervi@yahoo.fr',
-		password: 'griica',
+		email: '',
+		password: '',
 		keep_session: false
 	};
 	feedback: any = {
@@ -64,9 +64,13 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 					user_details = JSON.stringify( user_object );
 					localStorage.setItem('user_session', login_details.session);
 					localStorage.setItem('user_details', user_details);
-				});
 
-				this.loginModal_service.close_modal();
+					//Next if user logged in
+					this.loginModal_service.close_modal();
+				}, err => {
+					this.feedback.password = '<span class="icon""></span> ' + err.error.message;
+				});
+				
 		}
 		
 	}

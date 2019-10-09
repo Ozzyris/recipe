@@ -56,15 +56,16 @@ export class AddRecipeComponent implements OnInit {
 
 	constructor( private route: ActivatedRoute, private validator_service: ValidatorService, private admin_service: AdminService, private location: Location, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
-		this.route.queryParams.subscribe(params => {
-        	this.get_recipe( params['url'] )
-    	});
+    	this.route.params.subscribe( params => {
+			this.get_recipe( params.url )
+		})
 	}
 
 	//COMMON
 	get_recipe( url ){
 		this.publicApi_service.get_recipe( {recipe_url: url} )
 			.subscribe( recipe_detail => {
+				localStorage.setItem('recipe_id', recipe_detail[0]._id);
 				this.recipe.title = recipe_detail[0].title;
 				this.recipe.url = recipe_detail[0].url;
 				this.recipe.summary = recipe_detail[0].summary;
@@ -72,6 +73,7 @@ export class AddRecipeComponent implements OnInit {
 				this.recipe.yield = recipe_detail[0].yield;
 				this.recipe.tips = recipe_detail[0].tips;
 				this.recipe.tags = recipe_detail[0].tags;
+				this.recipe.edit_time  = recipe_detail[0].edit_date;
 				this.ingredient_temporary_input.order = recipe_detail[0].ingredients.length;
 				this.recipe.ingredients = recipe_detail[0].ingredients;
 				this.preparation_temporary_input.order = recipe_detail[0].preparations.length;
@@ -139,7 +141,7 @@ export class AddRecipeComponent implements OnInit {
 						.subscribe( is_url_updated=> {
 							this.is_loading = false;
 							this.recipe.edit_time = is_url_updated.edit_date;
-							this.location.go('add-recipe?url=' + payload.url);
+							this.location.go('add-recipe/' + payload.url);
 						})
 				})
 		}else{

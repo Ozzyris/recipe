@@ -247,7 +247,7 @@ recipe.statics.get_all_recipes = function(){
 };
 recipe.statics.get_recipes = function(recipe_url){
     return new Promise((resolve, reject) => {
-        recipe.find({url: recipe_url}, {'title':1, 'url':1, 'edit_date': 1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparations':1}).exec()
+        recipe.find({url: recipe_url}, {'_id':1, 'title':1, 'url':1, 'edit_date': 1, 'illustration':1, 'summary':1, 'time':1, 'yield':1, 'tips':1, 'tags':1, 'ingredients':1, 'preparations':1}).exec()
             .then(articles => {
                 if( articles ){
                     resolve( articles );

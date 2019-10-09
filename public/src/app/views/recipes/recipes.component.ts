@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RECIPES } from '../../../assets/json/demo_recipe';
 
 //Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
@@ -27,7 +26,6 @@ export class RecipesComponent implements OnInit {
 	check_session(){
 		this.get_session_from_storage()
 			.then( session => {
-				console.log(session);
 				if(session != null){
 					this.is_user_logged_in = true;
 				}

@@ -25,8 +25,8 @@
 		<div class="recipe_group" *ngIf="!is_search_active">
 			<div class="body">
 				<article *ngFor="let recipe of all_recipes | async">
-					<span class="edit" *ngIf="is_user_logged_in" routerLink="['/add-recipe', recipe.url]"></span>
-					<div class="article" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
+					<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
+					<div class="article" [routerLink]="['/recipe', recipe.url]" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
 						<div class="content">
 							<h3>{{recipe.title}}</h3>
 						</div>
@@ -38,10 +38,13 @@
 
 		<!-- Searched Recipe -->
 		<div class="recipe_group" *ngIf="is_search_active">
-			<div class="body" >
-				<article *ngFor="let recipe of all_recipes | async | searcher_pipe: search_input" routerLink="/recipe/{{recipe.url}}" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
-					<div class="content">
-						<h3>{{recipe.title}}</h3>
+			<div class="body">
+				<article *ngFor="let recipe of all_recipes | async | searcher_pipe: search_input">
+					<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
+					<div class="article" [routerLink]="['/recipe', recipe.url]" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
+						<div class="content">
+							<h3>{{recipe.title}}</h3>
+						</div>
 					</div>
 				</article>
 			</div>

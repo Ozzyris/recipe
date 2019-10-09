@@ -22,6 +22,7 @@ import { LoginModalDirective } from './directives/login_modal/login-modal.direct
 
 const routes: Routes = [
   { path: 'recipes', component: RecipesComponent, data: { title: 'Recipes' } },
+  { path: 'add-recipe/:url', component: AddRecipeComponent, data: { title: 'Add recipes' } },
   { path: 'add-recipe', component: AddRecipeComponent, data: { title: 'Add recipes' } },
   { path: '',   redirectTo: 'recipes', pathMatch: 'full' },
   { path: 'recipe/:url', component: RecipeComponent, data: { title: 'Recipe' } }
