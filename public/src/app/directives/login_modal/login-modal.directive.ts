@@ -67,6 +67,8 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 
 					//Next if user logged in
 					this.loginModal_service.close_modal();
+					this.loginModal_service.loggedin_user();
+
 				}, err => {
 					this.feedback.password = '<span class="icon""></span> ' + err.error.message;
 				});

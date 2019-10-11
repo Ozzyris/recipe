@@ -33,7 +33,8 @@
 					</div>
 				</article>
 			</div>
-			<p class="recipe-number" >{{(all_recipes | async).length}} Recipes</p>
+			<p class="recipe-number" *ngIf="is_async_loading | async">Loading recipes</p>
+			<p class="recipe-number" *ngIf="!(is_async_loading | async)">{{(all_recipes | async).length}} Recipes</p>
 		</div>
 
 		<!-- Searched Recipe -->

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+
 
 //Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
@@ -16,11 +18,20 @@ export class RecipesComponent implements OnInit {
 	search_input: string;
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
+	is_user_loggin_succeded: Subscription;
 
 	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
 		this.all_recipes = this.publicApi_service.get_all_recipes();
 		this.check_session();
+
+		this.is_user_loggin_succeded = this.loginModal_service.get_login_status().subscribe(
+			is_user_loggedin => {
+				this.is_user_logged_in = is_user_loggedin.status;
+			});
+	}
+	ngOnDestroy(){
+		this.is_user_loggin_succeded.unsubscribe();
 	}
 
 	check_session(){
