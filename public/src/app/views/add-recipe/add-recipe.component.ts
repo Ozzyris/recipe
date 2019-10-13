@@ -5,6 +5,7 @@ import {Location} from '@angular/common';
 // Service
 import { ValidatorService } from '../../services/validator/validator.service';
 import { AdminService } from '../../services/admin/admin.service';
+import { AdminUploadService } from '../../services/admin_upload/admin-upload.service';
 import { PublicApiService } from '../../services/public/public-api.service';
 
 //Interface
@@ -18,8 +19,10 @@ import { recipe_interface } from '../../interfaces/recipe';
 
 export class AddRecipeComponent implements OnInit {
 	recipe: recipe_interface = {
+		id: '',
 		title: '',
 		url: '',
+		illustration: '',
 		summary: '',
 		time: 0,
 		yield: '',
@@ -32,6 +35,7 @@ export class AddRecipeComponent implements OnInit {
 	feedback: any = {
 		title: '',
 		url: '',
+		illustration: '',
 		summary: '',
 		time: '',
 		yield: '',
@@ -45,6 +49,12 @@ export class AddRecipeComponent implements OnInit {
 	recipe_id: string = '';
 	is_loading: boolean = false;
 	tag_temporary_input: string = '';
+	illustration_process: any = {
+    	is_file_uploaded: false,
+    	is_icon_rotating: 'icon', 
+    	icon: '',
+    	gauge_width: 0
+  	};
 	ingredient_temporary_input: any = {
 		name: '',
 		order: 0,
@@ -54,7 +64,7 @@ export class AddRecipeComponent implements OnInit {
 		order: 0,
 	};
 
-	constructor( private route: ActivatedRoute, private validator_service: ValidatorService, private admin_service: AdminService, private location: Location, public publicApi_service: PublicApiService ){}
+	constructor( private route: ActivatedRoute, private validator_service: ValidatorService, private admin_service: AdminService, private admin_upload_service: AdminUploadService, private location: Location, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
     	this.route.params.subscribe( params => {
 			this.get_recipe( params.url )
@@ -66,6 +76,7 @@ export class AddRecipeComponent implements OnInit {
 		this.publicApi_service.get_recipe( {recipe_url: url} )
 			.subscribe( recipe_detail => {
 				localStorage.setItem('recipe_id', recipe_detail[0]._id);
+				this.recipe.id = recipe_detail[0]._id;
 				this.recipe.title = recipe_detail[0].title;
 				this.recipe.url = recipe_detail[0].url;
 				this.recipe.summary = recipe_detail[0].summary;
@@ -73,6 +84,7 @@ export class AddRecipeComponent implements OnInit {
 				this.recipe.yield = recipe_detail[0].yield;
 				this.recipe.tips = recipe_detail[0].tips;
 				this.recipe.tags = recipe_detail[0].tags;
+				this.recipe.illustration  = recipe_detail[0].illustration;
 				this.recipe.edit_time  = recipe_detail[0].edit_date;
 				this.ingredient_temporary_input.order = recipe_detail[0].ingredients.length;
 				this.recipe.ingredients = recipe_detail[0].ingredients;
@@ -146,6 +158,57 @@ export class AddRecipeComponent implements OnInit {
 				})
 		}else{
 			this.feedback.url = '<span class="icon"></span>This field is required';
+		}
+	}
+
+	prepare_file( file ): Promise<any>{
+		return new Promise((resolve, reject)=>{
+			const formData: FormData = new FormData();
+			formData.append('illustration_file', file);
+			resolve( formData );
+		})
+	}
+	upload_illustration( event: any ){
+		if( event.target.files && event.target.files[0] && event.target.files.length == 1 ){
+			let open_door = true;
+			this.illustration_process.is_file_uploaded = true;
+			this.illustration_process.is_icon_rotating = 'icon rotate';
+			this.illustration_process.icon = '';
+			this.illustration_process.gauge_width = '1px';
+	
+			if( event.target.files[0].size > 2500000 ){
+				open_door = false;
+				alert('The header picture is too heavy. it must be less than 1mb');
+			}else if( event.target.files[0].type != 'image/jpeg' ){
+				open_door = false;
+				alert('The header picture must be in jpg');
+			}
+	
+			if(open_door){
+				this.prepare_file( event.target.files[0] )
+					.then( form => {
+						this.admin_upload_service.upload_illustration( form, this.recipe.id )
+							.subscribe(is_picture_updated => {
+								this.illustration_process.is_file_uploaded = false;
+								this.illustration_process.icon = '';
+								this.illustration_process.is_icon_rotating = 'icon';
+								this.recipe.illustration  = is_picture_updated.new_illustration;
+							}, error => {
+								console.log(error);
+								this.illustration_process.is_icon_rotating = 'icon';
+								this.illustration_process.icon = '';
+								let timer = setTimeout(() => {  
+									this.illustration_process.is_file_uploaded = false;
+									clearTimeout(timer);
+								}, 1000);
+							 
+							})
+				})
+			}else{
+				this.illustration_process.is_file_uploaded = false;
+				this.illustration_process.is_icon_rotating = 'icon';
+				this.illustration_process.icon = '';
+			}
 		}
 	}
 	update_summary(){

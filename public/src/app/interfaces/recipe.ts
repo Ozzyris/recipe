@@ -1,6 +1,8 @@
 export interface recipe_interface {
+	id: string,
 	title: string,
 	url: string,
+	illustration: string,
 	summary: string,
 	time: number,
 	yield: string,

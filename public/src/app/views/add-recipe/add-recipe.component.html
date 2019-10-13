@@ -6,6 +6,17 @@
 		</a>
 	</div>
 	<div class="inner_container">
+		<div class="illustration_container">
+			<label for="recipe_illustration">
+				<div class="illustration_input" [ngClass]="{'active': illustration_process.is_file_uploaded}" [style.backgroundImage]="'url(' + recipe.illustration + ')'">
+					<span class="background_hover">
+						<span class="icon" [className]="illustration_process.is_icon_rotating" [innerHtml]="illustration_process.icon"></span>
+						<span class="gauge" [ngClass]="{'active': !illustration_process.is_file_uploaded}" [ngStyle]="{'width': illustration_process.gauge_width}"></span>
+					</span>
+				</div>
+			</label>
+			<input id="recipe_illustration" (change)="upload_illustration( $event )" name="recipe_illustration" style="display: none;" type="file" />
+		</div>
 		<div class="input_group">
 			<label for="input_title">Title</label>
 			<input id="input_title" type="text" placeholder="Quiche Lorraine" [(ngModel)]="recipe.title" (blur)="update_title()">

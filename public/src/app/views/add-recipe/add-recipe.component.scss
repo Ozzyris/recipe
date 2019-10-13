@@ -29,6 +29,72 @@ section.add_recipe{
 		padding: 24px 0 24px 0px;
 		overflow: auto;
 
+		div.illustration_container{
+			margin: 0 24px 24px;
+
+			label{
+				div.illustration_input{
+					width: 100%;
+					height: 250px;
+					margin: 0 0 20px 0;
+					background-color: #F2F2F2;
+					background-position: center center;
+					background-size: cover;
+					border-radius: 3px;
+					position: relative;
+
+					&:hover, &.active{
+						span.background_hover{
+							opacity: 1;
+						}	
+					}
+					span.background_hover{
+						opacity: 0;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background-color: rgba(#000000, .4);
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+						transition: all 200ms;
+						cursor: pointer;
+
+						span.icon{
+							display: inline;
+							line-height: 20px;
+							margin-right: 10px;
+							font-family: 'font_awesome';
+							font-size: 24px;
+							color: white;
+	
+							&.rotate{
+								animation:spin 2s linear infinite;
+								@keyframes spin { 100% { transform: rotate(360deg); } }
+							}
+						}
+						span.gauge{
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 50%;
+							height: 4px;
+							background-color: #F2F2F2;
+							opacity: 0;
+							transition: all 200ms;
+	
+							&.active{
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+			input#recipe_illustration{}
+		}
+
 		div.input_group{
 			margin: 0 24px 24px;
 
