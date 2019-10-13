@@ -15,6 +15,6 @@ A cooking recipe manager with some taste!
 
 ## server
 - [x] get recipe_id from server
-- [ ] upload file
-	- [ ] check file on server
-	- [ ] Delete previuous file before uploading new one
+- [x] upload file
+	- [x] check file on server
+	- [x] Delete previuous file before uploading new one

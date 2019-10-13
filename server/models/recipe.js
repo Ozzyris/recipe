@@ -105,6 +105,18 @@ recipe.statics.update_yield = function(recipe_id, payload){
     })
 };
 //ILLUSTRATION
+recipe.statics.get_illustration_from_id = function(recipe_id){
+    return new Promise((resolve, reject) => {
+        recipe.find({_id: recipe_id}, {'illustration':1}).exec()
+            .then(articles => {
+                if( articles ){
+                    resolve( articles[0] );
+                }else{
+                    resolve( undefined );
+                }
+            })
+    })
+};
 recipe.statics.update_illustration = function(recipe_id, payload){
     return new Promise((resolve, reject) => {
         recipe.updateOne({ _id: recipe_id }, {
