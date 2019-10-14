@@ -9,7 +9,7 @@ A cooking recipe manager with some taste!
 - [x] update menu when logged in or logged out
 - [ ] Vérifier le compteur de recettes
 - [ ] Add uploading file
-	- [ ] Add error message for upload file
+	- [x] Add error message for upload file
 	- [ ] Add loading gauge
 - [ ] Add logout if session expired
 

@@ -92,7 +92,21 @@ section.add_recipe{
 					}
 				}
 			}
-			input#recipe_illustration{}
+			p.informational_message{
+				font-size: 12px;
+				font-weight: 200;
+				color: $classic_red;
+				margin: 10px 0 0 0;
+				font-family: 'courrier_new';
+				display: block;
+	
+				&::ng-deep span{
+					font-family: 'font_awesome';
+					font-weight: 300;
+					margin-right: 5px;
+					display: inline;
+				}
+			}
 		}
 
 		div.input_group{

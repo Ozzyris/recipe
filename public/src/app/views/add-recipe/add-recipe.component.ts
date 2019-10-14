@@ -35,7 +35,7 @@ export class AddRecipeComponent implements OnInit {
 	feedback: any = {
 		title: '',
 		url: '',
-		illustration: '',
+		illustration: 'hello',
 		summary: '',
 		time: '',
 		yield: '',
@@ -170,6 +170,7 @@ export class AddRecipeComponent implements OnInit {
 	}
 	upload_illustration( event: any ){
 		if( event.target.files && event.target.files[0] && event.target.files.length == 1 ){
+			this.feedback.illustration = '';
 			let open_door = true;
 			this.illustration_process.is_file_uploaded = true;
 			this.illustration_process.is_icon_rotating = 'icon rotate';
@@ -178,10 +179,10 @@ export class AddRecipeComponent implements OnInit {
 	
 			if( event.target.files[0].size > 2500000 ){
 				open_door = false;
-				alert('The header picture is too heavy. it must be less than 1mb');
+				this.feedback.illustration = '<span class="icon"></span>The header picture is too heavy. it must be less than 1mb';
 			}else if( event.target.files[0].type != 'image/jpeg' ){
 				open_door = false;
-				alert('The header picture must be in jpg');
+				this.feedback.illustration = '<span class="icon"></span>The header picture must be in jpg';
 			}
 	
 			if(open_door){
@@ -194,6 +195,7 @@ export class AddRecipeComponent implements OnInit {
 								this.illustration_process.is_icon_rotating = 'icon';
 								this.recipe.illustration  = is_picture_updated.new_illustration;
 							}, error => {
+								this.feedback.illustration = '<span class="icon"></span>' + error;
 								console.log(error);
 								this.illustration_process.is_icon_rotating = 'icon';
 								this.illustration_process.icon = '';

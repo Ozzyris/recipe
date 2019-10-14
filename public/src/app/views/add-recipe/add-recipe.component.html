@@ -16,6 +16,7 @@
 				</div>
 			</label>
 			<input id="recipe_illustration" (change)="upload_illustration( $event )" name="recipe_illustration" style="display: none;" type="file" />
+			<p class="informational_message" [innerHTML]="feedback.illustration | sanitizer : 'html'"></p>
 		</div>
 		<div class="input_group">
 			<label for="input_title">Title</label>
