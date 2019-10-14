@@ -35,7 +35,7 @@ export class AddRecipeComponent implements OnInit {
 	feedback: any = {
 		title: '',
 		url: '',
-		illustration: 'hello',
+		illustration: '',
 		summary: '',
 		time: '',
 		yield: '',
