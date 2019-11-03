@@ -2,7 +2,10 @@ var mongoose = require('mongoose'),
 	config = require('../config'),
 	mongoDB = config.database;
 
-	mongoose.connect(mongoDB, { useNewUrlParser: true });
+	mongoose.connect(mongoDB, {
+		useUnifiedTopology: true,
+		useNewUrlParser: true,
+	});
 	mongoose.Promise = global.Promise;
 	var db = mongoose.connection;
 
