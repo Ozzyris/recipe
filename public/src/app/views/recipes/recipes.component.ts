@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-
 //Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
 import { PublicApiService } from '../../services/public/public-api.service';

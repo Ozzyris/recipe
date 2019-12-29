@@ -1,0 +1,60 @@
+<ion-content>
+	
+	<nav class="top_container">
+		<div class="inner_container">
+		  <div class="logo">
+		  	<img src="../../assets/images/salad.gif" alt="">
+		  	<h2>Recipe</h2>
+		  </div>
+		  <ul class="menu">
+		  	<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
+		  	<!-- <li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li> -->
+		  	<!-- <li><a *ngIf="is_user_logged_in" routerLink="/add-recipe">Add recipe</a></li> -->
+		  </ul>
+		</div>
+	</nav>
+
+	<section class="recipes">
+		<div class="hero" style="background-image: url('../../../assets/images/illustration_1.jpg');"></div>
+		<div class="search">
+			<span class="icon"></span>
+			<input type="text" placeholder="SEARCH" [(ngModel)]="search_input" (ngModelChange)="display_search()">
+		</div>
+		<div class="main_container">
+			<!-- All Recipe -->
+			<div class="recipe_group" *ngIf="!is_search_active">
+				<div class="body">
+					<article *ngFor="let recipe of all_recipes">
+						<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
+						<div class="article" [routerLink]="['/recipe', recipe.url]" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
+							<div class="content">
+								<h3>{{recipe.title}}</h3>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!-- <p class="recipe-number" *ngIf="is_async_loading | async">Loading recipes</p> -->
+				<!-- <p class="recipe-number" *ngIf="!(is_async_loading | async)">{{(all_recipes | async).length}} Recipes</p> -->
+			</div>
+	
+			<!-- Searched Recipe -->
+			<!-- <div class="recipe_group" *ngIf="is_search_active">
+				<div class="body">
+					<article *ngFor="let recipe of all_recipes | async | searcher_pipe: search_input">
+						<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
+						<div class="article" [routerLink]="['/recipe', recipe.url]" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 	'style'">
+							<div class="content">
+								<h3>{{recipe.title}}</h3>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="empty_states" *ngIf="(all_recipes | async | searcher_pipe: search_input).length === 0">
+					<img src="../../../assets/images/nothing-found.png" alt="Nothing found">
+					<p>Nothing found</p>
+				</div>
+			</div> -->
+		</div>
+	</section>
+
+</ion-content>

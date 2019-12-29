@@ -1,17 +1,17 @@
 <login-modal></login-modal>
 
 <nav class="top_container">
-  <div class="inner_container">
-    <div class="logo">
-    	<img src="../../assets/images/salad.gif" alt="">
-    	<h2>Recipe</h2>
-    </div>
-    <ul class="menu">
-    	<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
-    	<li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li>
-    	<li><a *ngIf="is_user_logged_in" routerLink="/add-recipe">Add recipe</a></li>
-    </ul>
-  </div>
+	<div class="inner_container">
+		<div class="logo">
+			<img src="../../assets/images/salad.gif" alt="">
+			<h2>Recipe</h2>
+		</div>
+		<ul class="menu">
+			<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
+			<li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li>
+			<li><a *ngIf="is_user_logged_in" routerLink="/add-recipe">Add recipe</a></li>
+		</ul>
+	</div>
 </nav>
 
 <section class="recipes">
