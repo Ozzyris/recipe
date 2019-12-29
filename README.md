@@ -7,7 +7,7 @@ A cooking recipe manager with some taste!
 - [x] fix the last updated 50 years ago
 - [x] Add error message if email or password is invalid
 - [x] update menu when logged in or logged out
-- [ ] Vérifier le compteur de recettes
+- [x] Vérifier le compteur de recettes
 - [ ] Add uploading file
 	- [x] Add error message for upload file
 	- [ ] Add loading gauge

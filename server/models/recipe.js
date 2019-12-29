@@ -9,7 +9,7 @@ var recipe = new mongoose.Schema({
     yield: {type: String},
     illustration: {type: String},
     tips: {type: String},
-    tags: {type: Array, default: "Add a tag"},
+    tags: {type: Array},
     creation_date: {type: Date, default: moment()},
     edit_date: {type: Date, default: moment()},
     url: {type: String},
