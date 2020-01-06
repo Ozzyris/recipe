@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 //Services
@@ -11,7 +11,7 @@ import { PublicApiService } from '../../services/public/public-api.service';
 	styleUrls: ['./recipes.component.scss']
 })
 
-export class RecipesComponent implements OnInit {
+export class RecipesComponent implements OnInit, OnDestroy {
 	all_recipes: any = [];
 	is_user_logged_in: boolean = false;
 	search_input: string;

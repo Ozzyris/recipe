@@ -24,7 +24,7 @@
 			<!-- All Recipe -->
 			<div class="recipe_group" *ngIf="!is_search_active">
 				<div class="body">
-					<article *ngFor="let recipe of all_recipes">
+					<article *ngFor="let recipe of all_recipes | async">
 						<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
 						<div class="article" [routerLink]="['/recipe', recipe.url]" [style.backgroundImage]="'url(' + recipe.illustration + ')' | sanitizer: 'style'">
 							<div class="content">
@@ -33,12 +33,12 @@
 						</div>
 					</article>
 				</div>
-				<!-- <p class="recipe-number" *ngIf="is_async_loading | async">Loading recipes</p> -->
+				<p class="recipe-number" *ngIf="is_async_loading | async">Loading recipes</p>
 				<!-- <p class="recipe-number" *ngIf="!(is_async_loading | async)">{{(all_recipes | async).length}} Recipes</p> -->
 			</div>
 	
 			<!-- Searched Recipe -->
-			<!-- <div class="recipe_group" *ngIf="is_search_active">
+			<div class="recipe_group" *ngIf="is_search_active">
 				<div class="body">
 					<article *ngFor="let recipe of all_recipes | async | searcher_pipe: search_input">
 						<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>
@@ -53,7 +53,7 @@
 					<img src="../../../assets/images/nothing-found.png" alt="Nothing found">
 					<p>Nothing found</p>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</section>
 

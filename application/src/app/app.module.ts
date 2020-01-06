@@ -1,15 +1,23 @@
+//INTERNAL PACKAGE
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-//IONIC PACKAGE
+//EXTERNAL PACKAGE
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { IonicStorageModule } from '@ionic/storage';
+
+//SERVICES
+import { interceptor_service } from './services/interceptor/interceptor.service';
 
 //DIRECTIVE
+
+//ROUTES
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
 	declarations: [
@@ -19,12 +27,21 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 	imports: [
 		BrowserModule,
 		IonicModule.forRoot(),
-		AppRoutingModule
+		AppRoutingModule,
+		HttpClientModule
 	],
 	providers: [
 		StatusBar,
 		SplashScreen,
-		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+		{
+			provide: RouteReuseStrategy,
+			useClass: IonicRouteStrategy
+		},
+		// {
+		// 	provide: HTTP_INTERCEPTORS,
+		// 	useClass: interceptor_service,
+		// 	multi: true
+		// }
 	],
 	bootstrap: [AppComponent]
 })
