@@ -17,7 +17,8 @@ import { MomentPipe } from './moment/moment.pipe';
     ],
     exports: [
         SanitizerPipe,
-        SearcherPipe
+        SearcherPipe,
+        MomentPipe
     ]
 })
 export class PipesModule{}

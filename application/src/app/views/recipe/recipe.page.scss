@@ -49,7 +49,6 @@ section.recipes{
 			}
 		}
 		div.ingredient{
-			@include container_sizing( 600px );
 			padding: 20px 0 40px 0;
 			position: relative;
 			background-color: #F9FAFC;
@@ -68,10 +67,12 @@ section.recipes{
 				font-weight: 800;
 				color: #3C4F71;
 				font-family: 'courrier_new';
+				@include container_sizing( 600px );
 				margin-bottom: 20px;
 			}
 			ul{
 				overflow: auto;
+				@include container_sizing( 600px );
 
 				li{
 					span.checkbox{
@@ -80,24 +81,39 @@ section.recipes{
 						float: left;
 
 						input{
-							margin: -2px 0 0 0;
+							margin: 0 0 0 0;
+							-webkit-appearance: none;
+
+							&:checked{
+								border-color: #3C4F71;
+								&:after {
+									content: '';
+									display: block;
+									margin-top: 1px;
+									margin-left: 4px;
+									width: 4px;
+									height: 8px;
+									border: solid #3C4F71;
+									border-width: 0 2px 2px 0;
+									transform: rotate(45deg);
+								}
+							}
 						}
 					}
 					label{
 						display: block;
 						float: left;
-						width: calc(100% - 20px);
+						width: calc(100% - 22px);
 						font-size: 16px;
 						color: #3C4F71;
 						font-family: 'courrier_new';
-						margin-bottom: 20px;
+						margin: 0 0 20px 2px;
 					}
 					
 				}
 			}
 		}
 		div.preparation{
-			@include container_sizing( 600px );
 			padding: 20px 0 40px 0;
 			position: relative;
 			background-color: #F9FAFC;
@@ -116,10 +132,12 @@ section.recipes{
 				font-weight: 800;
 				color: #3C4F71;
 				font-family: 'courrier_new';
+				@include container_sizing( 600px );
 				margin-bottom: 20px;
 			}
 			ol{
 				padding-left: 0px;
+				@include container_sizing( 600px );
 
 				li{
 					font-size: 16px;
@@ -137,7 +155,6 @@ section.recipes{
 			}
 		}
 		div.tips{
-			@include container_sizing( 600px );
 			padding: 20px 0 40px 0;
 			position: relative;
 			background-color: #F9FAFC;
@@ -156,9 +173,11 @@ section.recipes{
 				font-weight: 800;
 				color: #3C4F71;
 				font-family: 'courrier_new';
+				@include container_sizing( 600px );
 				margin-bottom: 20px;
 			}
 			p{
+				@include container_sizing( 600px );
 				font-size: 16px;
 				color: #3C4F71;
 				font-family: 'courrier_new';

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RECIPES } from '../../../assets/json/demo_recipe';
 
 //Services
 import { PublicApiService } from '../../services/public/public-api.service';
