@@ -6,7 +6,7 @@
 nav.top_container{
     margin-top: 10px;
 	width: 100%;
-	height: 40px;
+	height: 60px;
 	padding: 5px 0;
 	background-color: white;
 
@@ -22,13 +22,14 @@ nav.top_container{
     			float: left;
     			margin-top: 0;
     			height: 40px;
-    			margin: -10px 10px 0 0;
+    			margin: 0px 10px 0 0;
     		}
     		h2{
     			float: left;
     			line-height: 40px;
     			font-family: 'courrier_new';
     			color: #3C4F71;
+                margin-top: 10px;
     			font-weight: 400;
 
     		}
@@ -38,7 +39,8 @@ nav.top_container{
 
 			li{
 				float: right;
-				margin-left: 15px; 
+				margin-left: 15px;
+                margin-top: 10px;
 				
 				a{
 					font-family: 'courrier_new';

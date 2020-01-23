@@ -14,6 +14,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { interceptor_service } from './services/interceptor/interceptor.service';
 
 //DIRECTIVE
+import { LoginModalDirective } from './directives/login_modal/login-modal.directive';
 
 //ROUTES
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
 	declarations: [
 		AppComponent,
+		LoginModalDirective,
 	],
 	entryComponents: [],
 	imports: [
