@@ -13,12 +13,14 @@ export class LoginModalService {
 
     //opening observable
     open_modal(){
+        console.log('alex');
         this.$is_modal_open.next({status: true});
     }
     close_modal(){
         this.$is_modal_open.next({status: false});
     }
     get_modal_status(): Observable<any> {
+        console.log('alex2');
         return this.$is_modal_open;
     }
 

@@ -9,12 +9,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { IonicStorageModule } from '@ionic/storage';
+import { Network } from '@ionic-native/network/ngx';
 
 //SERVICES
 import { interceptor_service } from './services/interceptor/interceptor.service';
 
 //DIRECTIVE
-import { LoginModalDirective } from './directives/login_modal/login-modal.directive';
 
 //ROUTES
 import { AppComponent } from './app.component';
@@ -23,7 +23,6 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
 	declarations: [
 		AppComponent,
-		LoginModalDirective,
 	],
 	entryComponents: [],
 	imports: [
@@ -35,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
 	providers: [
 		StatusBar,
 		SplashScreen,
+		Network,
 		{
 			provide: RouteReuseStrategy,
 			useClass: IonicRouteStrategy

@@ -1,6 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
+//Ionic plugin
+import { Network } from '@ionic-native/network/ngx';
+
 //Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
 import { PublicApiService } from '../../services/public/public-api.service';
@@ -8,7 +11,7 @@ import { PublicApiService } from '../../services/public/public-api.service';
 @Component({
 	selector: 'app-recipes',
 	templateUrl: './recipes.page.html',
-	styleUrls: ['./recipes.page.scss'],
+	styleUrls: ['./recipes.page.scss']
 })
 
 export class RecipesPage implements OnInit, OnDestroy {
@@ -18,11 +21,15 @@ export class RecipesPage implements OnInit, OnDestroy {
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
 	is_user_loggin_succeded: Subscription;
+	no_internet_message: boolean = false;
 
-	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
+	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService, private network: Network ){}
 	ngOnInit(){
 		this.all_recipes = this.publicApi_service.get_all_recipes();
 		// this.check_session();
+
+		//watch for internet connection
+		this.check_internet();
 
 		this.is_user_loggin_succeded = this.loginModal_service.get_login_status().subscribe(
 			is_user_loggedin => {
@@ -31,6 +38,17 @@ export class RecipesPage implements OnInit, OnDestroy {
 	}
 	ngOnDestroy(){
 		this.is_user_loggin_succeded.unsubscribe();
+
+	}
+
+	check_internet(){
+		this.network.onDisconnect().subscribe(() => {
+			this.no_internet_message = true;
+		});
+
+		this.network.onConnect().subscribe(() => {
+  			this.no_internet_message = false;
+		});
 	}
 
 	check_session(){
