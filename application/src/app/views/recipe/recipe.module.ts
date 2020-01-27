@@ -9,6 +9,9 @@ import { RecipePageRoutingModule } from './recipe-routing.module';
 //PIPES
 import { PipesModule } from "../../pipes/pipe.module";
 
+//SERVICES
+import { PublicApiService } from '../../services/public/public-api.service';
+
 //TEMPLATE
 import { RecipePage } from './recipe.page';
 
@@ -20,6 +23,11 @@ import { RecipePage } from './recipe.page';
     RecipePageRoutingModule,
     PipesModule
   ],
-  declarations: [RecipePage]
+  declarations: [
+  	RecipePage
+  ],
+  providers: [
+  	PublicApiService
+  ]
 })
 export class RecipePageModule {}

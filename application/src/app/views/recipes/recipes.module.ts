@@ -9,6 +9,9 @@ import { RecipesPageRoutingModule } from './recipes-routing.module';
 //PIPES
 import { PipesModule } from "../../pipes/pipe.module";
 
+//SERVICES
+import { NetworkService } from '../../services/network/network.service';
+
 //TEMPLATE
 import { RecipesPage } from './recipes.page';
 
@@ -22,6 +25,9 @@ import { RecipesPage } from './recipes.page';
   ],
   declarations: [
   	RecipesPage
+  ],
+  providers: [
+    NetworkService
   ]
 })
 export class RecipesPageModule {}

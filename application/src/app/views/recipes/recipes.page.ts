@@ -1,8 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
-//Ionic plugin
-import { Network } from '@ionic-native/network/ngx';
+//SERVICES
+import { NetworkService } from '../../services/network/network.service';
 
 //Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
@@ -23,7 +24,7 @@ export class RecipesPage implements OnInit, OnDestroy {
 	is_user_loggin_succeded: Subscription;
 	no_internet_message: boolean = false;
 
-	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService, private network: Network ){}
+	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService, private networkService: NetworkService ){}
 	ngOnInit(){
 		this.all_recipes = this.publicApi_service.get_all_recipes();
 		// this.check_session();
@@ -42,13 +43,10 @@ export class RecipesPage implements OnInit, OnDestroy {
 	}
 
 	check_internet(){
-		this.network.onDisconnect().subscribe(() => {
-			this.no_internet_message = true;
-		});
-
-		this.network.onConnect().subscribe(() => {
-  			this.no_internet_message = false;
-		});
+		this.networkService.getNetworkStatus().pipe(debounceTime(300))
+			.subscribe((connected: boolean) => {
+				this.no_internet_message = !connected;
+			});
 	}
 
 	check_session(){

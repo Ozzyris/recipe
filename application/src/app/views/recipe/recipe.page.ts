@@ -7,8 +7,7 @@ import { PublicApiService } from '../../services/public/public-api.service';
 @Component({
 	selector: 'app-recipe',
 	templateUrl: './recipe.page.html',
-	styleUrls: ['./recipe.page.scss'],
-	providers: [PublicApiService]
+	styleUrls: ['./recipe.page.scss']
 })
 export class RecipePage implements OnInit {
 	recipe_content: any = {};
