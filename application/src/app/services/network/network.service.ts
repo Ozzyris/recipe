@@ -17,6 +17,7 @@ export class NetworkService {
         }).pipe(mapTo(true));
 
         if (this.platform.is('cordova')) {
+            console.log('it is working');
             // on Device
             this.online$ = merge(
                 this.network.onConnect().pipe(mapTo(true)),

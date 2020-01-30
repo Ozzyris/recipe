@@ -15,16 +15,21 @@ import { NetworkService } from '../../services/network/network.service';
 //TEMPLATE
 import { RecipesPage } from './recipes.page';
 
+//COMPONENTS
+import { ToasterComponent } from '../../components/toaster/toaster.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     RecipesPageRoutingModule,
-    PipesModule
+    PipesModule,
   ],
   declarations: [
-  	RecipesPage
+  	RecipesPage,
+    ToasterComponent
   ],
   providers: [
     NetworkService

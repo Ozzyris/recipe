@@ -3,11 +3,9 @@ import { Subscription } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
 //SERVICES
-import { NetworkService } from '../../services/network/network.service';
-
-//Services
 import { LoginModalService } from '../../services/login_modal/login-modal.service';
 import { PublicApiService } from '../../services/public/public-api.service';
+import { NetworkService } from '../../services/network/network.service';
 
 @Component({
 	selector: 'app-recipes',

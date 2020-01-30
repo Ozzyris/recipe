@@ -14,8 +14,6 @@ import { Network } from '@ionic-native/network/ngx';
 //SERVICES
 import { interceptor_service } from './services/interceptor/interceptor.service';
 
-//DIRECTIVE
-
 //ROUTES
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
