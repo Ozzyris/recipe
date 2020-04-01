@@ -18,3 +18,14 @@ A cooking recipe manager with some taste!
 - [x] upload file
 	- [x] check file on server
 	- [x] Delete previuous file before uploading new one
+
+## New features
+- [ ] Categories of tags
+	- [ ] Redesign tags structure (table de tags et association de produits & tags)
+	- [ ] Featured tags on front end
+	- [ ] Tags page when you click on the featured tags.
+	- [ ] Create unspash illustration for each tag, admin can refresh them.
+	- [ ] Query in url for tags
+- [ ] pagination of the recipes
+	- [ ] udpate server to only send X amount of repicpe with pagination ( merge with query ).
+	- [ ] implement angular natif lazyloading.
