@@ -24,8 +24,8 @@ export class RecipesComponent implements OnInit, OnDestroy {
 		this.all_recipes = this.publicApi_service.get_all_recipes();
 		this.check_session();
 
-		this.is_user_loggin_succeded = this.loginModal_service.get_login_status().subscribe(
-			is_user_loggedin => {
+		this.is_user_loggin_succeded = this.loginModal_service.get_login_status()
+			.subscribe( is_user_loggedin => {
 				this.is_user_logged_in = is_user_loggedin.status;
 			});
 	}
