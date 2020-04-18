@@ -20,6 +20,7 @@ A cooking recipe manager with some taste!
 	- [x] Delete previuous file before uploading new one
 
 ## New features
+- [ ] Sort the home page by Newest first, fastest first, ect
 - [ ] Categories of tags
 	- [ ] Redesign tags structure (table de tags et association de produits & tags)
 	- [ ] Featured tags on front end
