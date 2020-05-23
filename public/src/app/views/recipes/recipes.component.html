@@ -9,7 +9,8 @@
 		<ul class="menu">
 			<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
 			<li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li>
-			<li><a *ngIf="is_user_logged_in" routerLink="/add-recipe">Add recipe</a></li>
+			<li><a *ngIf="is_user_logged_in" routerLink="/planning" routerLinkActive="active">Planning</a></li>
+			<li><a *ngIf="is_user_logged_in" routerLink="/recipes" routerLinkActive="active">Recipes</a></li>
 		</ul>
 	</div>
 </nav>
@@ -23,6 +24,7 @@
 	<div class="main_container">
 		<!-- All Recipe -->
 		<div class="recipe_group" *ngIf="!is_search_active">
+			<div class="action" *ngIf="is_user_logged_in"><a class="button add" routerLink="/add-recipe"><span class="icon"></span><span class="text">Add a recipe</span></a></div>
 			<div class="body">
 				<article *ngFor="let recipe of all_recipes | async">
 					<span class="edit" *ngIf="is_user_logged_in" [routerLink]="['/add-recipe', recipe.url]"></span>

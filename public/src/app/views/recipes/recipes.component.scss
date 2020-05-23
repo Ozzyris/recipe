@@ -17,23 +17,23 @@ nav.top_container{
 			float: left;
 			overflow: auto;
 
-    		img{
-    			float: left;
-    			margin-top: 0;
-    			height: 40px;
-    			margin: -10px 10px 0 0;
-    		}
-    		h2{
-    			float: left;
-    			line-height: 40px;
-    			font-family: 'courrier_new';
-    			color: #3C4F71;
-    			font-weight: 400;
+			img{
+				float: left;
+				margin-top: 0;
+				height: 40px;
+				margin: -10px 10px 0 0;
+			}
+			h2{
+				float: left;
+				line-height: 40px;
+				font-family: 'courrier_new';
+				color: #3C4F71;
+				font-weight: 400;
 
-    		}
-    	}
-    	ul.menu{
-    		float: right;
+			}
+		}
+		ul.menu{
+			float: right;
 
 			li{
 				float: right;
@@ -41,15 +41,18 @@ nav.top_container{
 				
 				a{
 					font-family: 'courrier_new';
-    				color: #3C4F71;
-    				font-weight: 800;
-    				font-size: 14px;
+					color: #3C4F71;
+					font-weight: 800;
+					font-size: 14px;
 					line-height: 40px;
-                    cursor: pointer;
+					cursor: pointer;
+
+					&.active{
+						border-bottom: 2px solid #3C4F71;
+					}
 				}
 			}
-    	}
-
+		}
 	}
 }
 
@@ -101,6 +104,38 @@ section.recipes{
 		div.recipe_group{
 			width: 100%;
 
+			div.action{
+				position: relative;
+				overflow: auto;
+				padding-bottom: 20px;
+
+				a.button.add{
+					float: right;
+					background-color: rgba(#3C4F71, .1);
+					border-radius: 30px;
+					padding: 8px 12px;
+					overflow: auto;
+					display: block;
+					width: 138px;
+					cursor: pointer;
+	
+					span.icon{
+						font-family: 'font_awesome';
+						color: #3C4F71;
+						line-height: 20px;
+						display: block;
+						float: left;
+					}
+					span.text{
+						font-family: 'courrier_new';
+						color: #3C4F71;
+						line-height: 20px;
+						margin-left: 10px;
+						display: block;
+						float: left;
+					}
+				}	
+			}
 			div.body{
 				article{
 					background-color: white;

@@ -1,0 +1,33 @@
+<nav class="top_container">
+	<div class="inner_container">
+		<div class="logo">
+			<img src="../../assets/images/salad.gif" alt="">
+			<h2>Recipe</h2>
+		</div>
+		<ul class="menu">
+			<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
+			<li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li>
+			<li><a *ngIf="is_user_logged_in" routerLink="/planning" routerLinkActive="active">Planning</a></li>
+			<li><a *ngIf="is_user_logged_in" routerLink="/recipes" routerLinkActive="active">Recipes</a></li>
+		</ul>
+	</div>
+</nav>
+
+<section class="planning">
+	<div class="planner">
+		<div class="spacer"></div>
+		<div class="week" [attr.day-of-the-week]="todays_date">
+			<div class="day" *ngFor="let weekday of weekdays" [innerHtml]="weekday"></div>
+		</div>
+		<div class="time">
+			<div class="hour"></div>
+			<div class="hour">09:00</div>
+			<div class="hour">12:00</div>
+			<div class="hour">20:00</div>
+		</div>
+		<div class="content">
+			<div *ngFor="let cell of cells" class="cell"></div>
+			<span *ngFor="let task of tasks" class="task" [routerLink]="['/add-planning', task.id]" [innerHtml]="task.content"></span>
+		</div>
+	</div>
+</section>
