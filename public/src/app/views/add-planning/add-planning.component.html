@@ -26,9 +26,9 @@
 			<input id="input_meal" type="text" placeholder="Lunch" [(ngModel)]="task.meal" disabled>
 			<p class="informational_message" [innerHTML]="feedback.meal | sanitizer : 'html'"></p>
 		</div>
-		<div class="footer" *ngIf="task.edit_time != 0">
+		<div class="footer" *ngIf="task.edit_date != 0">
 			<div class="loading" *ngIf="is_loading" ><span class="icon"></span><p>loading</p></div>
-			<div *ngIf="!is_loading" ><span class="icon"></span><p>Last updated {{task.edit_time | amTimeAgo}}</p></div>
+			<div *ngIf="!is_loading" ><span class="icon"></span><p>Last updated {{task.edit_date | amTimeAgo}}</p></div>
 		</div>
 	</div>
 </section>

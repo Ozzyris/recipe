@@ -181,10 +181,15 @@ section.planning{
 					color: #3C4F71;
 					margin-right: 10px;
 				}
-				&.active{
+				&.alex{
 					white-space: normal;
 					background: linear-gradient(to right,#ffd073,#ffb54c);
 					color: #333333;
+				}
+				&.ale{
+					white-space: normal;
+					background: linear-gradient(to right,#025373,#6BBFA0);
+					color: #ffffff;
 				}
 				@for $i from 1 through 1 {
 					&:nth-of-type(7n + #{$i}) {

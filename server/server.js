@@ -28,3 +28,4 @@ app.use('/public', require('./controllers/public').public);
 app.use('/auth', require('./controllers/auth').auth);
 app.use('/admin', require('./controllers/admin').admin);
 app.use('/admin-upload', require('./controllers/admin_upload').admin_upload);
+app.use('/planning', require('./controllers/planning').planning);

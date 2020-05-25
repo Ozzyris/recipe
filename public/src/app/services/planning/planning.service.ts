@@ -34,7 +34,22 @@ export class PlanningService {
 	}
 
 	create_task( payload ):Observable<any>{
-		let url = this.base_url + 'create-planning';
+		let url = this.base_url + 'create-task';
+		return this.http.put(url, payload, this.httpOptions);
+	}
+
+	update_content( payload ):Observable<any>{
+		let url = this.base_url + 'update-content';
+		return this.http.post(url, payload, this.httpOptions);
+	}
+
+	get_task( payload ):Observable<any>{
+		let url = this.base_url + 'get-task';
+		return this.http.post(url, payload, this.httpOptions);
+	}
+
+	get_weekly_tasks( payload ):Observable<any>{
+		let url = this.base_url + 'get-weekly-tasks';
 		return this.http.post(url, payload, this.httpOptions);
 	}
 }

@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'add-recipe', component: AddRecipeComponent, data: { title: 'Add recipes' } },
   { path: 'planning', component: PlanningComponent, data: { title: 'Planning' } },
   { path: 'add-planning', component: AddPlanningComponent, data: { title: 'Add planning' } },
-  { path: 'add-planning/:id', component: AddPlanningComponent, data: { title: 'Add planning' } },
+  { path: 'add-planning/:url', component: AddPlanningComponent, data: { title: 'Add planning' } },
   { path: '',   redirectTo: 'recipes', pathMatch: 'full' },
   { path: 'recipe/:url', component: RecipeComponent, data: { title: 'Recipe' } }
 ];

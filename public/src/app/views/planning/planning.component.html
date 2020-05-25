@@ -27,7 +27,7 @@
 		</div>
 		<div class="content">
 			<div *ngFor="let cell of cells" class="cell"></div>
-			<span *ngFor="let task of tasks" class="task" [routerLink]="['/add-planning', task.id]" [innerHtml]="task.content"></span>
+			<span *ngFor="let task of tasks" class="task" [routerLink]="['/add-planning', task.url]" [ngClass]="{'ale': task.author == 'Alison', 'alex': task.author == 'Alexandre'}"[innerHtml]="task.content"></span>
 		</div>
 	</div>
 </section>

@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-//EXTERNAL PACKAGE
+//external package
 import * as moment from 'moment';
 
+// Service
+import { PlanningService } from '../../services/planning/planning.service';
 
 @Component({
 	selector: 'app-planning',
@@ -18,11 +20,11 @@ export class PlanningComponent implements OnInit {
 	is_user_logged_in: boolean = false;
 	todays_date: any = parseInt(moment().format('d')); 
 
-	constructor( private router: Router ){}
+	constructor( private router: Router, private planning_service: PlanningService ){}
 	ngOnInit(){
 		this.check_session();
 		this.get_date( moment().startOf('isoWeek') );
-		this.get_events( moment().startOf('isoWeek') );
+		this.build_placeholder_events( moment().startOf('isoWeek') );
 	}
 
 	check_session(){
@@ -55,15 +57,12 @@ export class PlanningComponent implements OnInit {
 		}
 	}
 
-	get_events( last_monday ){
+	build_placeholder_events( last_monday ){
 		for (var i = 0; i < 7; i++) {
 			let this_date = moment(last_monday).add(i, 'day');
 			let task = {
 				content: '<span class="icon"></span>Add a meal',
-				id: this_date.format('DDMMYYYY') + 'l',
-				author: 'alexandre',
-				creation_date: '',
-				last_edit: '',
+				url: this_date.format('DDMMYYYY') + 'l',
 			};
 			this.tasks.push( task );
 		}
@@ -71,13 +70,33 @@ export class PlanningComponent implements OnInit {
 			let this_date = moment(last_monday).add(i, 'day');
 			let task = {
 				content: '<span class="icon"></span>Add a meal',
-				id: this_date.format('DDMMYYYY') + 'd',
-				author: 'alexandre',
-				creation_date: '',
-				last_edit: '',
+				url: this_date.format('DDMMYYYY') + 'd',
 			};
 			this.tasks.push( task );
 		}
+		this.get_event(last_monday);
+	}
+	get_event(last_monday){
+
+		this.planning_service.get_weekly_tasks( {first_date: last_monday, last_date: moment(last_monday).add(7, 'day')} )
+			.subscribe( tasks => {
+				console.log(tasks);
+				for (var i = 0; i < tasks.length; i++) {
+					console.log(tasks[i]);
+					let isoday,
+						meal_calibrator = 0;
+					if( parseInt(moment(tasks[i].date).format('d')) == 0 ){ //dimanche
+						isoday = 6;
+					}else{
+						isoday = parseInt(moment(tasks[i].date).format('d')) - 1;
+					}
+					if( tasks[i].meal == "Dinner" ){
+						meal_calibrator = 7;
+					}
+					this.tasks[(isoday + meal_calibrator)] = tasks[i];
+				}
+
+			})
 	}
 	logout(){
 		localStorage.clear();
