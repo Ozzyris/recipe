@@ -30,6 +30,7 @@ export class PlanningComponent implements OnInit {
 	check_session(){
 		this.get_session_from_storage()
 			.then( session => {
+				console.log(session);
 				if(session != null){
 					this.is_user_logged_in = true;
 				}else{
@@ -37,6 +38,7 @@ export class PlanningComponent implements OnInit {
 				}
 			})
 	}
+
 	get_session_from_storage(): Promise<any>{
 		return new Promise((resolve, reject)=>{
 			resolve( localStorage.getItem('user_session') );
@@ -76,8 +78,8 @@ export class PlanningComponent implements OnInit {
 		}
 		this.get_event(last_monday);
 	}
-	get_event(last_monday){
 
+	get_event(last_monday){
 		this.planning_service.get_weekly_tasks( {first_date: last_monday, last_date: moment(last_monday).add(7, 'day')} )
 			.subscribe( tasks => {
 				console.log(tasks);
@@ -98,6 +100,7 @@ export class PlanningComponent implements OnInit {
 
 			})
 	}
+
 	logout(){
 		localStorage.clear();
 		this.is_user_logged_in = false;
