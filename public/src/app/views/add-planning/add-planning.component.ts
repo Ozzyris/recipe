@@ -47,11 +47,11 @@ export class AddPlanningComponent implements OnInit {
 				if(task_detail == null){
 					this.task.date = moment(url.substring(0, 8), 'DDMMYYYY').format('DDMMYYYY');//
 					if(url.substring(8, 9) == 'b'){
-						this.task.meal = 'Breakfast'
+						this.task.meal = 'breakfast'
 					}else if(url.substring(8, 9) == 'l'){
-						this.task.meal = 'Lunch'
+						this.task.meal = 'lunch'
 					}else if(url.substring(8, 9) == 'd'){
-						this.task.meal = 'Dinner'
+						this.task.meal = 'dinner'
 					}
 					this.get_author_from_storage();
 				}else{

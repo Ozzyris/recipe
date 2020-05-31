@@ -14,11 +14,12 @@
 </nav>
 
 <section class="planning">
-	<div class="planner">
-		<div class="spacer"></div>
-		<div class="week" [attr.day-of-the-week]="todays_date">
-			<div class="day" *ngFor="let weekday of weekdays" [innerHtml]="weekday"></div>
-		</div>
+ 	<div class="header">
+		<div class="arrow arrow_left" (click)="update_date( 'back' )" ><span class="icon"></span></div>
+		<div class="week_number">Week {{weeks_number}}</div>
+		<div class="arrow arrow_right" (click)="update_date( 'next' )" ><span class="icon"></span></div>
+	</div>
+	<div class="body"> 
 		<div class="time">
 			<div class="hour"></div>
 			<div class="hour">09:00</div>
@@ -26,8 +27,19 @@
 			<div class="hour">20:00</div>
 		</div>
 		<div class="content">
-			<div *ngFor="let cell of cells" class="cell"></div>
-			<span *ngFor="let task of tasks" class="task" [routerLink]="['/add-planning', task.url]" [ngClass]="{'ale': task.author == 'Alison', 'alex': task.author == 'Alexandre'}"[innerHtml]="task.content"></span>
+			<div class="day" *ngFor="let weekday of weekdays">
+				<div class="weekday"><p class="date">{{weekday.date.weekday}} <span class="digit" [ngClass]="weekday.date.class">{{weekday.date.day}}</span></p></div>
+				<div class="empty"></div>
+				<div class="breakfast">
+					<div *ngIf="weekday.breakfast.content" class="task" [routerLink]="['/add-planning', weekday.breakfast.url]" [innerHtml]="weekday.breakfast.content" [ngClass]="weekday.breakfast.author"></div>
+				</div>
+				<div class="lunch">
+					<div *ngIf="weekday.lunch.content" class="task" [routerLink]="['/add-planning', weekday.lunch.url]" [innerHtml]="weekday.lunch.content" [ngClass]="weekday.lunch.author"></div>
+				</div>
+				<div class="dinner">
+					<div *ngIf="weekday.dinner.content" class="task" [routerLink]="['/add-planning', weekday.dinner.url]" [innerHtml]="weekday.dinner.content" [ngClass]="weekday.dinner.author"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

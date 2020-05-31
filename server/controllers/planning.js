@@ -23,11 +23,8 @@ router.use(bodyParser.json());
 			})
 	});
 
-	router.post('/get-weekly-tasks', function (req, res) {
-
-		console.log(req.body.first_date, req.body.last_date);
-
-		planning_model.get_weelky_tasks( req.body.first_date, req.body.last_date )
+	router.post('/get-tasks', function (req, res) {
+		planning_model.get_tasks( req.body.first_date, req.body.last_date )
 			.then( all_tasks => {
 				res.status(200).json( all_tasks );
 			})
@@ -47,10 +44,8 @@ router.use(bodyParser.json());
 			url: req.body.url,
 		};
 
-		console.log(payload.date);
 		new planning_model(payload).save()
 			.then( is_task_created => {
-				console.log(is_task_created)
 				res.status(200).json({message: 'New task added to the database', code: 'task_created', edit_date: payload.edit_date});
 			})
 			.catch( error => {

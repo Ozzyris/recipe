@@ -41,10 +41,10 @@ planning.statics.get_task = function(task_url){
 };
 
 // GET TASKS
-planning.statics.get_weelky_tasks = function( first_date, last_date ){
+planning.statics.get_tasks = function( first_date, last_date ){
 	return new Promise((resolve, reject) => {
 		planning.find({
-			creation_date: {
+			date: {
         		$gte: first_date,
         		$lt: last_date
     		}

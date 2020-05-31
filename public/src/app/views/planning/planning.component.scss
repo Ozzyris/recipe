@@ -57,148 +57,176 @@ nav.top_container{
 }
 
 section.planning{
-	position: relative;
+	@include container_sizing( 1000px );
+	margin-top: 5%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(#3C4F71, .2);
+	background-color: white;
 
-	div.planner{
-		@include container_sizing( 1000px );
-		display: block;
-		margin-top: 5%;
-		height: auto;
-		border-radius: 10px;
-		box-shadow: 0px 4px 10px rgba(#3C4F71, .2);
-		background-color: white;
-		display: grid;
-		grid-template-columns: 50px auto;
-		grid-template-rows: 50px auto;
+ 	div.header{
+ 		overflow: auto;
+		border-bottom: 1px solid rgba(#3C4F71, .2);
 
-		div.spacer{
-			border-bottom: 1px solid rgba(#3C4F71, .2);
-			position: sticky;
-			top: 0;
-			background-color: white;
-			border-top-left-radius: 10px;
-		}
-		div.week{
-			z-index: 1;
-			display: grid;
-			grid-template-columns: repeat(1, 1fr);
-			align-items: center;
-			justify-items: center;
-			position: sticky;
-			top: 0;
-			background-color: #fff;
-			border-top-right-radius: 10px;
-			border-bottom: 1px solid rgba(#3C4F71, .2);
+		div.arrow{
+ 			width: 50px;
+			height: 50px;
+			float: left;
+			cursor: pointer;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 
-			div.day{
-				font-family: 'courrier_new';
-				color: #3C4F71;
-				font-size: 14px;
+			span.icon{
+				display: block;
+				width: 100%;
+				font-size: 20px;
+				font-family: 'font_awesome';
+				color: rgba(#3C4F71, .6);
+				text-align: center;
+				line-height: 50px;
+				font-weight: 800;
+				transition: all 200ms;
+			}
 
-				&:nth-child(n+2){ display: none; }
-				&::ng-deep span.date{
-					font-family: 'courrier_new';
-					margin-left: 5px;
-					color: #3C4F71;
-
-					&.active{
-						background-color: #e66b6b;
-						color: white;
-						font-weight: 800;
-						padding: 5px;
-						border-radius: 50%;
-					}
-				}
+			&:hover span.icon{
+				color: rgba(#3C4F71, 1);
 			}
 		}
+		div.week_number{
+			width: calc(100% - 100px);
+			height: 50px;
+			float: left;
+			font-family: 'courrier_new';
+			color: #3C4F71;
+			text-align: center;
+			line-height: 50px;
+			font-weight: 800;
+		}
+	}
+	div.body{
+		overflow: auto;
+		height: 77vh;
+
 		div.time{
-			display: grid;
-			grid-auto-rows: 75px;
-			align-items: align;
-			justify-items: center;
+			width: 50px;
+			height : 75px;
+			margin-top: 50px;
+			height: calc(100% - 50px);
+			float: left;
 
 			div.hour{
+				height: calc((77vh - 50px) / 4);
+				width: 100%;
 				font-family: 'courrier_new';
 				color: #3C4F71;
 				font-size: 12px;
-				line-height: 0;
+				text-align: center;
+				line-height: 2px;
 			}
 		}
 		div.content{
-			display: grid;
-			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(auto-fill, minmax(75px, 1fr));
+			float: left;
+			width: calc(100% - 50px);
+			height: 100%;
 
-			div.cell{
-				position: relative;
-    			box-sizing: border-box;
-				
-				display: none;
-				&:nth-child(1){ display: block; }
-				&:nth-child(8){ display: block; }
-				&:nth-child(15){ display: block; }
-				&:nth-child(22){ display: block; }
+			div.day{
+				width: 100%;
 
-				&:not(:nth-of-type(7n)) {
-					border-right: 1px dashed rgba(#3C4F71, .2);
+				div.weekday{
+					border-bottom: 1px solid rgba(#3C4F71, .2);
+					height: 50px;
+					display: flex;
+
+					p.date{
+						font-family: 'courrier_new';
+						color: #3C4F71;
+						font-size: 14px;
+						margin: 0 auto;
+						line-height: 50px;
+
+						span.digit{
+							font-family: 'courrier_new';
+							color: #3C4F71;
+
+							&.active{
+								background-color: #e66b6b;
+								color: white;
+								font-weight: 800;
+								width: 25px;
+								height: 25px;
+								display: inline-block;
+								text-align: center;
+								line-height: 25px;
+								border-radius: 50%;
+							}
+						}
+					}
 				}
-				&:not(:nth-last-of-type(-n + 7)) {
+				div.empty{
+					width: 100%;
+					height: calc((77vh - 55px) / 4);
 					border-bottom: 1px dashed rgba(#3C4F71, .2);
 				}
-				@for $i from 1 through 7 {
-					&:nth-of-type(7n + #{$i}) {
-					  grid-column: #{$i};
-					}
+				div.breakfast{
+					width: 100%;
+					height: calc((77vh - 55px) / 4);
+					border-bottom: 1px dashed rgba(#3C4F71, .2);
+					display: inline-block
 				}
-				@for $j from 1 through 4 {
-					&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-						grid-row: $j;
-					}
+				div.lunch{
+					width: 100%;
+					height: calc((77vh - 55px) / 4);
+					border-bottom: 1px dashed rgba(#3C4F71, .2);
+					display: inline-block
 				}
-			}
-			span.task{
-				position: relative;
-				overflow: hidden;
-				margin: 8px;
-				padding: 8px;
-				border-radius: 4px;
-				font-size: 14px;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				transition: margin 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), border-radius 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-				background-color: rgba(#3C4F71, .1);
-				color: #3C4F71;
-				font-family: 'courrier_new';
-				cursor: pointer;
+				div.dinner{
+					width: 100%;
+					height: calc((77vh - 55px) / 4);
+					display: inline-block
+				}
+	
+				div{
+					div.task{
+						margin: 8px;
+						padding: 8px;
+						overflow: hidden;
+						height: calc(((77vh - 55px) / 4) - 32px);
+						border-radius: 4px;
+						width: auto;
+						font-size: 14px;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+						background-color: rgba(#3C4F71, .1);
+						color: #3C4F71;
+						font-family: 'courrier_new';
+						cursor: pointer;
 
-				display: none;
-				&:nth-child(29){ display: block; }
-				&:nth-child(36){ display: block; }
-
-				&::ng-deep span.icon{
-					font-size: 10px;
-					font-family: 'font_awesome';
-					color: #3C4F71;
-					margin-right: 10px;
-				}
-				&.alex{
-					white-space: normal;
-					background: linear-gradient(to right,#ffd073,#ffb54c);
-					color: #333333;
-				}
-				&.ale{
-					white-space: normal;
-					background: linear-gradient(to right,#025373,#6BBFA0);
-					color: #ffffff;
-				}
-				@for $i from 1 through 1 {
-					&:nth-of-type(7n + #{$i}) {
-					  grid-column: #{$i} / span 1;
-					}
-				}
-				@for $j from 1 through 4 {
-					&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-						grid-row: $j + 2;
+						&.Alexandre{
+							white-space: normal;
+							background: linear-gradient(to right,#ffd073,#ffb54c);
+							color: #333333;
+						}
+						&.Alison{
+							white-space: normal;
+							background: linear-gradient(to right,#025373,#6BBFA0);
+							color: #ffffff;
+						}
+						&::ng-deep span.icon{
+							font-size: 10px;
+							font-family: 'font_awesome';
+							color: #3C4F71;
+							margin-right: 10px;
+						}
+						&:hover {
+							margin: 1px;
+							border-radius: 0;
+							height: calc(((77vh - 50px) / 4) - 20px);
+						}
 					}
 				}
 			}
@@ -206,97 +234,85 @@ section.planning{
 	}
 }
 
-
 /*
     TABLET VERSION
 */
 @media screen and (min-width: 768px ){
-	section.planning{
-		div.planner{
-			div.spacer{
-				border-top-left-radius: 10px;
+	nav.top_container{
+		div.inner_container{
+			div.logo{
+				img{}
+				h2{}
 			}
-			div.week{
-				grid-template-columns: repeat(4, 1fr);
-
-				div.day{
-					display: block;
-
-					&:nth-child(n+2){ display: block; }
-					&:nth-child(n+5){ display: none; }
-					span.date{
+			ul.menu{
+				li{
+					a{
 						&.active{}
 					}
 				}
 			}
+		}
+	}
+	
+	section.planning{
+		div.header{
+			div.arrow{
+				span.icon{
+				}
+	
+				&:hover span.icon{}
+			}
+			div.week_number{}
+		}
+		div.body{
+			height: 52vh;
+
 			div.time{
-				div.hour{}
+				div.hour{
+					height: calc((50vh - 50px) / 4);
+				}
 			}
 			div.content{
-				grid-template-columns: repeat(4, 1fr);
-	
-				div.cell{
-					
-					display: none;
-					&:nth-child(1){ display: block; }
-					&:nth-child(2){ display: block; }
-					&:nth-child(3){ display: block; }
-					&:nth-child(4){ display: block; }
-					&:nth-child(8){ display: block; }
-					&:nth-child(9){ display: block; }
-					&:nth-child(10){ display: block; }
-					&:nth-child(11){ display: block; }
-					&:nth-child(15){ display: block; }
-					&:nth-child(16){ display: block; }
-					&:nth-child(17){ display: block; }
-					&:nth-child(18){ display: block; }
-					&:nth-child(22){ display: block; }
-					&:nth-child(23){ display: block; }
-					&:nth-child(24){ display: block; }
-					&:nth-child(25){ display: block; }
+				overflow: auto;
 
-					&:not(:nth-of-type(4n)) {
-						border-right: 1px dashed rgba(#3C4F71, .2);
-					}
-					&:not(:nth-last-of-type(-n + 4)) {
-						border-bottom: 1px dashed rgba(#3C4F71, .2);
-					}
-					@for $i from 1 through 4 {
-						&:nth-of-type(7n + #{$i}) {
-						  grid-column: #{$i};
-						}
-					}
-					@for $j from 1 through 4 {
-						&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-							grid-row: $j;
-						}
-					}
-				}
-				span.task{
-					&:nth-child(29){ display: block; }
-					&:nth-child(30){ display: block; }
-					&:nth-child(31){ display: block; }
-					&:nth-child(32){ display: block; }
-					&:nth-child(36){ display: block; }
-					&:nth-child(37){ display: block; }
-					&:nth-child(38){ display: block; }
-					&:nth-child(39){ display: block; }
+				div.day{
+					width: calc( (100% / 4) - 1px );
+					float: left;
+					border-right: 1px dashed rgba(#3C4F71, .2);
 
-					span.icon{}
-					&.active{}
-					@for $i from 1 through 7 {
-						&:nth-of-type(7n + #{$i}) {
-						  grid-column: #{$i} / span 1;
+					&:last-child{
+						border-right: 0px;
+					}
+
+					div.weekday{
+						p.date{
+							span.digit{
+								&.active{}
+							}
 						}
 					}
-					@for $j from 1 through 4 {
-						&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-							grid-row: $j + 2;
-						}
+					div.empty{
+						height: calc((50vh - 55px) / 4);
 					}
-					&:hover {
-						margin: 0;
-						border-radius: 0;
+					div.breakfast{
+						height: calc((50vh - 55px) / 4);
+					}
+					div.lunch{
+						height: calc((50vh - 55px) / 4);
+					}
+					div.dinner{
+						height: calc((50vh - 55px) / 4);
+					}
+		
+					div{
+						div.task{
+							height: calc(((50vh - 55px) / 4) - 32px);
+
+							&::ng-deep span.icon{}
+							&:hover {
+								height: calc(((50vh - 50px) / 4) - 20px);
+							}
+						}
 					}
 				}
 			}
@@ -308,72 +324,78 @@ section.planning{
     SMALL SCREEN COMPUTER VERSION
 */
 @media screen and (min-width: 992px ){
-	section.planning{
-		position: relative;
-	
-		div.planner{
-			grid-template-columns: 50px auto;
-			grid-template-rows: 50px auto;
-	
-			div.spacer{}
-			div.week{
-				grid-template-columns: repeat(7, 1fr);
-
-				div.day{
-					&:nth-child(n+5){ display: block; }
-
-					span.date{
+	nav.top_container{
+		div.inner_container{
+			div.logo{
+				img{}
+				h2{}
+			}
+			ul.menu{
+				li{
+					a{
 						&.active{}
 					}
 				}
 			}
-			div.time{
-				grid-auto-rows: 75px;
+		}
+	}
 	
-				div.hour{}
+	section.planning{
+		div.header{
+			div.arrow{
+				span.icon{
+				}
+	
+				&:hover span.icon{}
+			}
+			div.week_number{}
+		}
+		div.body{
+			height: 44vh;
+
+			div.time{
+				div.hour{
+					height: calc((44vh - 50px) / 4);
+				}
 			}
 			div.content{
-				grid-template-columns: repeat(7, 1fr);
-				// grid-template-rows: repeat(auto-fill, minmax(75px, 1fr));
-	
-				div.cell{
-					display: block;
+				overflow: auto;
 
-					&:not(:nth-of-type(4n)){ border-right: 0px; }
-					&:not(:nth-last-of-type(-n + 4)){ border-bottom: 0px; }
-					&:not(:nth-of-type(7n)) {
-						border-right: 1px dashed rgba(#3C4F71, .2);
-					}
-					&:not(:nth-last-of-type(-n + 7)) {
-						border-bottom: 1px dashed rgba(#3C4F71, .2);
-					}
-					@for $i from 1 through 7 {
-						&:nth-of-type(7n + #{$i}) {
-						  grid-column: #{$i};
-						}
-					}
-					@for $j from 1 through 4 {
-						&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-							grid-row: $j;
-						}
-					}
-				}
-				span.task{
-					display: block;
+				div.day{
+					width: calc( (100% / 7) - 1px );
 
-					span.icon{}
-					&.active{}
-					@for $i from 1 through 7 {
-						&:nth-of-type(7n + #{$i}) {
-						  grid-column: #{$i} / span 1;
+					&:last-child{}
+
+					div.weekday{
+						p.date{
+							span.digit{
+								&.active{}
+							}
 						}
 					}
-					@for $j from 1 through 4 {
-						&:nth-of-type(n + #{1 + (($j - 1) * 7)}):nth-of-type(-n + #{$j * 7}) {
-							grid-row: $j + 2;
+					div.empty{
+						height: calc((44vh - 55px) / 4);
+					}
+					div.breakfast{
+						height: calc((44vh - 55px) / 4);
+					}
+					div.lunch{
+						height: calc((44vh - 55px) / 4);
+					}
+					div.dinner{
+						height: calc((44vh - 55px) / 4);
+					}
+		
+					div{
+						div.task{
+							height: calc(((44vh - 55px) / 4) - 32px);
+
+							&::ng-deep span.icon{}
+							&:hover {
+								height: calc(((44vh - 50px) / 4) - 20px);
+							}
 						}
 					}
-					&:hover {}
 				}
 			}
 		}

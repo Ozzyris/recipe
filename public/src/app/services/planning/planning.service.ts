@@ -48,8 +48,8 @@ export class PlanningService {
 		return this.http.post(url, payload, this.httpOptions);
 	}
 
-	get_weekly_tasks( payload ):Observable<any>{
-		let url = this.base_url + 'get-weekly-tasks';
+	get_tasks( payload ):Observable<any>{
+		let url = this.base_url + 'get-tasks';
 		return this.http.post(url, payload, this.httpOptions);
 	}
 }
