@@ -8,12 +8,12 @@
 		<div class="body">
 			<div class="input_container">
 				<label for="email">Email</label>
-				<input type="text" id="email" placeholder="john.doe@gmail.com" [(ngModel)]="credential.email">
+				<input type="text" id="email" placeholder="john.doe@gmail.com" [(ngModel)]="credential.email" autocorrect="off" autocapitalize="none">
 				<p class="error_message" [innerHTML]="feedback.email | sanitizer : 'html'"></p>
 			</div>
 			<div class="input_container">
 				<label for="password">Password</label>
-				<input type="password" id="password" placeholder="GhY64hn8i" [(ngModel)]="credential.password">
+				<input type="password" id="password" placeholder="GhY64hn8i" [(ngModel)]="credential.password" autocorrect="off" autocapitalize="none">
 				<p class="error_message" [innerHTML]="feedback.password | sanitizer : 'html'"></p>
 			</div>
 		</div>

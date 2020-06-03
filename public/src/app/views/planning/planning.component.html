@@ -4,12 +4,27 @@
 			<img src="../../assets/images/salad.gif" alt="">
 			<h2>Recipe</h2>
 		</div>
-		<ul class="menu">
-			<li><a *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a></li>
-			<li><a *ngIf="is_user_logged_in" (click)="logout()">Logout</a></li>
-			<li><a *ngIf="is_user_logged_in" routerLink="/planning" routerLinkActive="active">Planning</a></li>
-			<li><a *ngIf="is_user_logged_in" routerLink="/recipes" routerLinkActive="active">Recipes</a></li>
-		</ul>
+		<div class="menu_container">
+			<a class="login" *ngIf="!is_user_logged_in" (click)="loginModal_service.open_modal()">Login</a>
+			<div class="menu_inner_container" *ngIf="is_user_logged_in" [ngClass]="{'active': menu_active}">
+				<div class="hamburger_icon" (click)="menu_active = !menu_active"><span class="icon"></span></div>
+				<ul class="menu">
+					<li class="user">
+						<div class="avatar"></div>
+						<div class="content">
+							<p class=name>Alison Bert</p>
+							<p class=email>alison.bert@yahoo.fr</p>
+						</div>
+					</li>
+					<li class="link"><a routerLink="/recipes" routerLinkActive="active"><span class="icon"></span>Recipes</a></li>
+					<li class="link"><a routerLink="/planning" routerLinkActive="active"><span class="icon"></span>Planning</a></li>
+					<li class="link todo" ><a><span class="icon"></span>Shopping list</a></li>
+					<li class="link profil" ><a>Profil</a></li>
+					<li class="link"><a (click)="logout()"><span class="icon"></span>Logout</a></li>
+				</ul>
+				<div class="darkshadow" (click)="menu_active = !menu_active"></div>
+			</div>
+		</div>
 	</div>
 </nav>
 

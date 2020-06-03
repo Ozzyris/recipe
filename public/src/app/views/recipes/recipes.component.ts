@@ -18,6 +18,7 @@ export class RecipesComponent implements OnInit, OnDestroy {
 	is_search_active: boolean = false;
 	is_modal_actice: boolean = true;
 	is_user_loggin_succeded: Subscription;
+	menu_active: boolean = false;
 
 	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
 	ngOnInit(){

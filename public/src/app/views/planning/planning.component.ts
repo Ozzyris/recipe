@@ -15,13 +15,12 @@ import { PlanningService } from '../../services/planning/planning.service';
 })
 
 export class PlanningComponent implements OnInit {
-	// tasks: any = [];
 	is_user_logged_in: boolean = false;
 	weeks_number: any = moment().format('W');
 	nb_of_day_to_display: any;
 	weekdays : any = [];
 	current_displayed_date: any;
-
+	menu_active: boolean = false;
 
 	constructor( private router: Router, private planning_service: PlanningService ){}
 	ngOnInit(){

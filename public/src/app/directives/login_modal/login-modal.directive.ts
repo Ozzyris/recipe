@@ -19,7 +19,7 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 	credential: any = {
 		email: '',
 		password: '',
-		keep_session: false
+		keep_session: true
 	};
 	feedback: any = {
 		email: '',

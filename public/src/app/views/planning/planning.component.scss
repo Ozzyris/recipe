@@ -4,17 +4,16 @@
 @import "../../../assets/styles/ui_mixines";
 
 nav.top_container{
-	width: 100%;
-	height: 40px;
-	padding: 5px 0;
-	background-color: white;
+		width: 100%;
+		height: 40px;
+		padding: 5px 0;
+		background-color: white;
 
 	div.inner_container{
-		overflow: auto;
 		@include container_sizing( 800px );
 
 		div.logo{
-			float: left;
+			float: right;
 			overflow: auto;
 
 			img{
@@ -29,27 +28,128 @@ nav.top_container{
 				font-family: 'courrier_new';
 				color: #3C4F71;
 				font-weight: 400;
-
 			}
 		}
-		ul.menu{
-			float: right;
+		div.menu_container{
+			float: left;
 
-			li{
-				float: right;
-				margin-left: 15px; 
-				
-				a{
-					font-family: 'courrier_new';
-					color: #3C4F71;
-					font-weight: 800;
-					font-size: 14px;
-					line-height: 40px;
+			a.login{
+				font-family: 'courrier_new';
+				color: #3C4F71;
+				font-weight: 800;
+				font-size: 14px;
+				line-height: 40px;
+				cursor: pointer;
+			}
+			div.menu_inner_container{
+
+				&.active{
+					div.darkshadow{
+						display: block;
+						opacity: .7;
+					}
+					ul.menu{
+						transform: translateX(80%);
+					}
+				}
+				div.hamburger_icon{
+					float: right;
+					width: 30px;
 					cursor: pointer;
 
-					&.active{
-						border-bottom: 2px solid #3C4F71;
+					span.icon{
+						font-size: 20px;
+						font-family: 'font_awesome';
+						color: rgba(#3C4F71, 1);
+						text-align: center;
+						line-height: 40px;
+						font-weight: 800;
+						user-select: none;
 					}
+				}
+				ul.menu{
+					position: absolute;
+					top: 0;
+					left: -100%;
+					bottom: 0;
+					width: calc(100% - (20% + 48px));
+					background-color: white;
+					z-index: 10;
+					padding: 24px 24px 24px calc(20% + 24px);
+					transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+					
+					li{
+						cursor: pointer;
+
+						&.user{
+							overflow: auto;
+							div.avatar{
+								width: 50px;
+								height: 50px;
+								border-radius: 100%;
+								background-color: #F2F2F2;
+								float: left;
+								margin: 0 15px 48px 0;
+							}
+							div.content{
+								float: left;
+								width: calc(100% - 75px);
+								margin-top: 10px;
+
+								p.name{
+									font-size: 20px;
+									color: rgba(#3C4F71, 1);
+								}
+								p.email{
+									font-size: 10px;
+									color: rgba(#3C4F71, .8);
+								}
+							}
+						}
+						&.link{
+							padding: 16px 0;
+							border-bottom: 1px solid rgba(#3C4F71, .2);
+
+							a{
+								line-height: 16px;
+								font-size: 16px;
+								margin-left: 12px;
+								color: #3C4F71;
+								display: block;
+								width: calc(100% - 12px);
+
+								span.icon{
+									font-family: 'font_awesome';
+									font-size: 12px;
+									font-weight: 800;
+									margin-right: 12px;
+								}
+
+								&.active{
+									border-right: 3px solid rgba(#3C4F71, 1);
+								}
+							}
+							&.profil{
+								display: none;
+							}
+							&.todo{
+								&:after{}
+							}
+						}
+					}
+				}
+				div.darkshadow{
+					display: none;
+					position: fixed;
+					content: '';
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 2;
+					opacity: 0;
+					background-color: #3C4F71;
+					transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 				}
 			}
 		}
@@ -73,11 +173,6 @@ section.planning{
 			height: 50px;
 			float: left;
 			cursor: pointer;
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
 			user-select: none;
 
 			span.icon{
@@ -109,7 +204,7 @@ section.planning{
 	}
 	div.body{
 		overflow: auto;
-		height: 77vh;
+		height: 65vh;
 
 		div.time{
 			width: 50px;
@@ -119,7 +214,7 @@ section.planning{
 			float: left;
 
 			div.hour{
-				height: calc((77vh - 50px) / 4);
+				height: calc((65vh - 50px) / 4);
 				width: 100%;
 				font-family: 'courrier_new';
 				color: #3C4F71;
@@ -168,24 +263,24 @@ section.planning{
 				}
 				div.empty{
 					width: 100%;
-					height: calc((77vh - 55px) / 4);
+					height: calc((65vh - 55px) / 4);
 					border-bottom: 1px dashed rgba(#3C4F71, .2);
 				}
 				div.breakfast{
 					width: 100%;
-					height: calc((77vh - 55px) / 4);
+					height: calc((65vh - 55px) / 4);
 					border-bottom: 1px dashed rgba(#3C4F71, .2);
 					display: inline-block
 				}
 				div.lunch{
 					width: 100%;
-					height: calc((77vh - 55px) / 4);
+					height: calc((65vh - 55px) / 4);
 					border-bottom: 1px dashed rgba(#3C4F71, .2);
 					display: inline-block
 				}
 				div.dinner{
 					width: 100%;
-					height: calc((77vh - 55px) / 4);
+					height: calc((65vh - 55px) / 4);
 					display: inline-block
 				}
 	
@@ -194,7 +289,7 @@ section.planning{
 						margin: 8px;
 						padding: 8px;
 						overflow: hidden;
-						height: calc(((77vh - 55px) / 4) - 32px);
+						height: calc(((65vh - 55px) / 4) - 32px);
 						border-radius: 4px;
 						width: auto;
 						font-size: 14px;
@@ -225,7 +320,7 @@ section.planning{
 						&:hover {
 							margin: 1px;
 							border-radius: 0;
-							height: calc(((77vh - 50px) / 4) - 20px);
+							height: calc(((65vh - 50px) / 4) - 20px);
 						}
 					}
 				}
@@ -240,14 +335,86 @@ section.planning{
 @media screen and (min-width: 768px ){
 	nav.top_container{
 		div.inner_container{
+	
 			div.logo{
+				float: left;
+	
 				img{}
 				h2{}
 			}
-			ul.menu{
-				li{
-					a{
-						&.active{}
+			div.menu_container{
+				float: right;
+				width: calc(100% - 150px);
+				height: 40px;
+
+				div.hamburger_icon{
+					display: none;
+
+					span.icon{}
+				}
+				a.login{}
+				div.menu_inner_container{
+
+					&.active{
+						div.darkshadow{
+							display: none;
+						}
+						ul.menu{
+							transform: translateX(0%);
+						}
+					}
+					ul.menu{
+						width: 400px;
+						overflow: auto;
+						position: relative;
+						top: auto;
+						bottom: auto;
+						left: auto;
+						right: auto;
+						padding: 0;
+						transform: translateX(0%);
+						float: right;
+
+						li{
+							&.user{
+								display: none;
+
+								div.avatar{}
+								div.content{
+									p.name{}
+									p.email{}
+								}
+							}
+							&.link{
+								float: left;
+								padding: 0;
+								border-bottom: 0;
+
+								a{
+									line-height: 40px;
+									font-weight: 800;
+									font-size: 14px;
+
+									span.icon{
+										display: none;
+									}
+
+									&.active{
+										border-right: 0px;
+										text-decoration: underline;
+									}
+								}
+								&.profil{
+									display: block;
+								}
+								&.todo{
+									&:after{}
+								}
+							}
+						}
+					}
+					div.darkshadow{
+						display: none;
 					}
 				}
 			}
