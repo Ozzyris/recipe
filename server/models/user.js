@@ -7,6 +7,7 @@ var user = new mongoose.Schema({
     given_name: {type: String},
     family_name: {type: String},
     password: {type: String},
+    avatar: {type: String},
     auth_record: {
         active_auth: {
             creation_date: {type: String},

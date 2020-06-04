@@ -50,7 +50,7 @@ nav.top_container{
 						opacity: .7;
 					}
 					ul.menu{
-						transform: translateX(80%);
+						transform: translateX(-25%);
 					}
 				}
 				div.hamburger_icon{
@@ -71,7 +71,8 @@ nav.top_container{
 				ul.menu{
 					position: absolute;
 					top: 0;
-					left: -100%;
+					transform: translateX(-120%);
+					// left: -100%;
 					bottom: 0;
 					width: calc(100% - (20% + 48px));
 					background-color: white;
@@ -91,6 +92,8 @@ nav.top_container{
 								background-color: #F2F2F2;
 								float: left;
 								margin: 0 15px 48px 0;
+								background-size: cover;
+								background-position: center center;
 							}
 							div.content{
 								float: left;

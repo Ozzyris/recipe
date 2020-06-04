@@ -85,8 +85,15 @@ router.use(bodyParser.json());
 				return user_model.get_userdetail_from_id( user.id );
 			})
 			.then(user_details => {
-				console.log(user_details);
-				res.status(200).json({ user_id: user.id, session: session.token, given_name: user_details.given_name, family_name: user_details.family_name});
+				let payload = {
+					user_id: user.id,
+					session: session.token,
+					given_name: user_details.given_name,
+					family_name: user_details.family_name,
+					email: user_details.email,
+					avatar: user_details.avatar,
+				}
+				res.status(200).json( payload );
 			})
 			.catch( error => {
 				res.status(401).json( error );

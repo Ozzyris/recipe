@@ -60,8 +60,11 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 					let user_object = {
 						family_name: login_details.family_name,
 						given_name: login_details.given_name,
+						email: login_details.email,
+						avatar: login_details.avatar
 					},
 					user_details = JSON.stringify( user_object );
+
 					localStorage.setItem('user_session', login_details.session);
 					localStorage.setItem('user_details', user_details);
 

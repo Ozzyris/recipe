@@ -21,16 +21,19 @@ export class PlanningComponent implements OnInit {
 	weekdays : any = [];
 	current_displayed_date: any;
 	menu_active: boolean = false;
+	user_details: any = {};
 
 	constructor( private router: Router, private planning_service: PlanningService ){}
 	ngOnInit(){
 		this.check_session();
 		const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 		this.check_screen_type( width );
+		this.get_player_info();
 	}
 
 	check_session(){
-		this.get_session_from_storage()
+		// SESSION EXPIRÉ BUG
+		this.get_from_storage( 'user_session' )
 			.then( session => {
 				if(session != null){
 					this.is_user_logged_in = true;
@@ -39,10 +42,18 @@ export class PlanningComponent implements OnInit {
 				}
 			})
 	}
+	get_player_info(){
+		this.get_from_storage( 'user_details' )
+			.then( user_details => {
+				if(user_details != null){
+					this.user_details = JSON.parse(user_details);
+				}
+			})
+	}
 
-	get_session_from_storage(): Promise<any>{
+	get_from_storage( key ): Promise<any>{
 		return new Promise((resolve, reject)=>{
-			resolve( localStorage.getItem('user_session') );
+			resolve( localStorage.getItem(key) );
 		})
 	}
 
@@ -73,10 +84,8 @@ export class PlanningComponent implements OnInit {
 	}
 
 	get_tasks( first_date, last_date ){
-		console.log(first_date, last_date);
 		this.planning_service.get_tasks( {first_date: first_date, last_date: last_date} )
 			.subscribe( tasks => {
-				console.log( tasks );
 				this.insert_task( tasks );
 			})
 	}
@@ -206,7 +215,6 @@ export class PlanningComponent implements OnInit {
 	}
 
 	add_placeholder_task(){
-		console.log(this.weekdays.length);
 		for (var i = this.weekdays.length - 1; i >= 0; i--) {
 			if( !this.weekdays[i].lunch.content ){
 				let task = {
@@ -224,65 +232,11 @@ export class PlanningComponent implements OnInit {
 			}
 		}
 	}
-	// get_date( last_monday ){
-	// 	for (var i = 0; i < 7; i++) {
-	// 		let day,
-	// 			this_date = moment(last_monday).add(i, 'day');
-
-	// 		if( this_date.isSame(moment(), 'day') ){
-	// 			day = '<span class="date active">' + this_date.format('D') + '</span>'
-	// 		}else{
-	// 			day = '<span class="date">' + this_date.format('D') + '</span>'
-	// 		}
-	// 		this.weekdays.push( this_date.format('dddd') + day );
-	// 	}
-	// }
-
-	// build_placeholder_events( last_monday ){
-	// 	for (var i = 0; i < 7; i++) {
-	// 		let this_date = moment(last_monday).add(i, 'day');
-	// 		let task = {
-	// 			content: '<span class="icon"></span>Add a meal',
-	// 			url: this_date.format('DDMMYYYY') + 'l',
-	// 		};
-	// 		this.tasks.push( task );
-	// 	}
-	// 	for (var i = 0; i < 7; i++) {
-	// 		let this_date = moment(last_monday).add(i, 'day');
-	// 		let task = {
-	// 			content: '<span class="icon"></span>Add a meal',
-	// 			url: this_date.format('DDMMYYYY') + 'd',
-	// 		};
-	// 		this.tasks.push( task );
-	// 	}
-	// 	this.get_event(last_monday);
-	// }
-
-	// get_event(last_monday){
-	// 	this.planning_service.get_weekly_tasks( {first_date: last_monday, last_date: moment(last_monday).add(7, 'day')} )
-	// 		.subscribe( tasks => {
-	// 			console.log(tasks);
-	// 			for (var i = 0; i < tasks.length; i++) {
-	// 				console.log(tasks[i]);
-	// 				let isoday,
-	// 					meal_calibrator = 0;
-	// 				if( parseInt(moment(tasks[i].date).format('d')) == 0 ){ //dimanche
-	// 					isoday = 6;
-	// 				}else{
-	// 					isoday = parseInt(moment(tasks[i].date).format('d')) - 1;
-	// 				}
-	// 				if( tasks[i].meal == "Dinner" ){
-	// 					meal_calibrator = 7;
-	// 				}
-	// 				this.tasks[(isoday + meal_calibrator)] = tasks[i];
-	// 			}
-
-	// 		})
-	// }
 
 	logout(){
 		localStorage.clear();
 		this.is_user_logged_in = false;
+		this.menu_active = false;
 		this.router.navigate(['/recipes']);
 	}
 }

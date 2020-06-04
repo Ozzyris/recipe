@@ -10,10 +10,10 @@
 				<div class="hamburger_icon" (click)="menu_active = !menu_active"><span class="icon"></span></div>
 				<ul class="menu">
 					<li class="user">
-						<div class="avatar"></div>
+						<div class="avatar" [style.backgroundImage]="'url(' + user_details.avatar + ')' | sanitizer: 'style'"></div>
 						<div class="content">
-							<p class=name>Alison Bert</p>
-							<p class=email>alison.bert@yahoo.fr</p>
+							<p class=name>{{user_details.given_name}} {{user_details.family_name}}</p>
+							<p class=email>{{user_details.email}}</p>
 						</div>
 					</li>
 					<li class="link"><a routerLink="/recipes" routerLinkActive="active"><span class="icon"></span>Recipes</a></li>

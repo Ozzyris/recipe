@@ -13,7 +13,7 @@
 			</div>
 			<div class="input_container">
 				<label for="password">Password</label>
-				<input type="password" id="password" placeholder="GhY64hn8i" [(ngModel)]="credential.password" autocorrect="off" autocapitalize="none">
+				<input type="password" id="password" placeholder="GhY64hn8i" [(ngModel)]="credential.password" autocorrect="off" autocapitalize="none" (keyup.enter)="login()">
 				<p class="error_message" [innerHTML]="feedback.password | sanitizer : 'html'"></p>
 			</div>
 		</div>
