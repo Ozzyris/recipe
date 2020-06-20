@@ -28,15 +28,14 @@ export class RecipesComponent implements OnInit, OnDestroy {
 	constructor( public loginModal_service: LoginModalService, public publicApi_service: PublicApiService ){}
 	ngOnInit(){
 		this.all_recipes = this.publicApi_service.get_all_recipes();
-		// this.check_session();
-		// this.get_player_info();
 
 		this.is_user_loggin_succeded = this.loginModal_service.get_login_status()
 			.subscribe( is_user_loggedin => {
 				this.is_user_logged_in = is_user_loggedin.status;
-				this.get_player_info();
-				this.check_session();
 			});
+
+		this.get_player_info();
+		this.check_session();
 	}
 	ngOnDestroy(){
 		this.is_user_loggin_succeded.unsubscribe();
@@ -72,6 +71,7 @@ export class RecipesComponent implements OnInit, OnDestroy {
 		this.menu_active = false;
 		this.is_user_logged_in = false;
 	}
+
 	get_from_storage( key ): Promise<any>{
 		return new Promise((resolve, reject)=>{
 			resolve( localStorage.getItem( key ) );
