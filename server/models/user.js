@@ -3,28 +3,60 @@ var mongoose = require("./mongoose"),
     Promise = require('bluebird');
 
 var user = new mongoose.Schema({
-    email: {type: String},
-    given_name: {type: String},
-    family_name: {type: String},
-    password: {type: String},
-    avatar: {type: String},
-    auth_record: {
-        active_auth: {
-            creation_date: {type: String},
-            last_modification_date: {type: String},
-            expiration_date: {type: String},
-            keep_session: {type: Boolean, default: false},
-            token: {type: String}
-        },
-        recorded_auth: [
-            {
-                creation_date: {type: String},
-                last_modification_date: {type: String},
-                ending_date: {type: String},
-                keep_session: {type: String},
-            }
-        ]
-    }
+	email: {type: String},
+	given_name: {type: String},
+	family_name: {type: String},
+	password: {type: String},
+	avatar: {type: String},
+	friends: {
+		// sent: [
+		// 	{
+		// 		user_id: {type: String},
+		// 		given_name: {type: String},
+		// 		family_name: {type: String},
+		// 		email: {type: String},
+		// 		avatar: {type: String},
+		// 		date: {type: Date, default: moment()},
+		// 	}
+		// ],
+		// received: [
+		// 	{
+		// 		user_id: {type: String},
+		// 		given_name: {type: String},
+		// 		family_name: {type: String},
+		// 		email: {type: String},
+		// 		avatar: {type: String},
+		// 		date: {type: Date, default: moment()},
+		// 	}
+		// ],
+		added: [
+			{
+				user_id: {type: String},
+				given_name: {type: String},
+				family_name: {type: String},
+				email: {type: String},
+				avatar: {type: String},
+				date: {type: Date, default: moment()},
+			}
+		]
+	},
+	auth_record: {
+		active_auth: {
+			creation_date: {type: String},
+			last_modification_date: {type: String},
+			expiration_date: {type: String},
+			keep_session: {type: Boolean, default: false},
+			token: {type: String}
+		},
+		recorded_auth: [
+			{
+				creation_date: {type: String},
+				last_modification_date: {type: String},
+				ending_date: {type: String},
+				keep_session: {type: String},
+			}
+		]
+	}
 }, {collection: 'user'});
 
 //COMMON

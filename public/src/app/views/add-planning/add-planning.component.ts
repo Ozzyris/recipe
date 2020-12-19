@@ -16,6 +16,7 @@ import { PlanningService } from '../../services/planning/planning.service';
 export class AddPlanningComponent implements OnInit {
 	task: any = {
 		author: '',
+		author_id: '',
 		content: '',
 		date: '',
 		edit_date: '',
@@ -34,7 +35,6 @@ export class AddPlanningComponent implements OnInit {
 	constructor( private route: ActivatedRoute, private planning_service: PlanningService ){}
 	ngOnInit(){
 		this.route.params.subscribe( params => {
-			console.log( params.url);
 			this.task.url = params.url;
 			this.get_task( params.url );
 		})
@@ -43,7 +43,6 @@ export class AddPlanningComponent implements OnInit {
 	get_task( url ){
 		this.planning_service.get_task( {task_url: url} )
 			.subscribe( task_detail => {
-
 				if(task_detail == null){
 					this.task.date = moment(url.substring(0, 8), 'DDMMYYYY').format('DDMMYYYY');//
 					if(url.substring(8, 9) == 'b'){
@@ -55,7 +54,6 @@ export class AddPlanningComponent implements OnInit {
 					}
 					this.get_author_from_storage();
 				}else{
-					console.log(task_detail);
 					this.task.author = task_detail.author;
 					this.task.content = task_detail.content;
 					this.task.date = task_detail.date;
@@ -71,6 +69,7 @@ export class AddPlanningComponent implements OnInit {
 			.then( user_details => {
 				let json = JSON.parse(user_details);
 				this.task.author = json.given_name;
+				this.task.author_id = json.user_id;
 			})
 	}
 
@@ -86,7 +85,6 @@ export class AddPlanningComponent implements OnInit {
 			this.is_loading = true;
 			if( this.task.edit_date == '' ){ // new task
 				if( this.is_task_created == false ){
-					console.log(this.task);
 					this.planning_service.create_task( this.task )
 						.subscribe( is_task_created=> {
 							this.is_loading = false;

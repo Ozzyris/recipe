@@ -58,6 +58,7 @@ export class LoginModalDirective implements OnInit, OnDestroy{
 			this.auth_service.login( this.credential )
 				.subscribe( login_details => {
 					let user_object = {
+						user_id: login_details.user_id,
 						family_name: login_details.family_name,
 						given_name: login_details.given_name,
 						email: login_details.email,

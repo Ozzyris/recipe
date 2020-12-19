@@ -37,3 +37,4 @@ function check_auth(req, res, next) {
 
 module.exports={
     'check_auth': check_auth
+}

@@ -40,6 +40,11 @@ router.use(bodyParser.json());
 			creation_date: moment(),
 			date: moment(req.body.date, 'DDMMYYYY').hours(12).toDate(),
 			edit_date: moment(),
+			shared_with: [
+				{
+					user_id: req.body.author_id,
+				}
+			],
 			meal: req.body.meal,
 			url: req.body.url,
 		};

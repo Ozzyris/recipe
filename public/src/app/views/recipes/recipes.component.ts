@@ -55,7 +55,7 @@ export class RecipesComponent implements OnInit, OnDestroy {
 				if(user_details != null){
 					this.user_details = JSON.parse(user_details);
 				}else{
-					alert('user detail is null');
+					// alert('user detail is null');
 				}
 			})
 	}
