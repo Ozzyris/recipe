@@ -1,14 +1,21 @@
 {
   "name": "recipe",
-  "version": "0.0.1",
+  "version": "1.5.0",
   "description": "Organizing, Updating and Remembering good recipes.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ozzyris/recipe.git"
   },
   "author": "Alexandre Nicol",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ozzyris/recipe/issues"
+  },
+  "homepage": "https://github.com/Ozzyris/recipe#readme",
   "dependencies": {
     "aws-sdk": "^2.543.0",
     "bcryptjs": "*",
@@ -21,6 +28,6 @@
     "morgan": "*",
     "multer": "^1.4.2",
     "multer-s3": "^2.9.0",
-    "uuid": "*"
+    "uuid": "^8.3.2"
   }
 }

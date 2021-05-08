@@ -1,4 +1,4 @@
-var uuid = require('uuid/v4'),
+var { v4: uuid } = require('uuid'),
 	Promise = require('bluebird'),
 	moment = require('moment');
 
